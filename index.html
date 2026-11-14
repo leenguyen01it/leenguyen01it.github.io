@@ -14,36 +14,55 @@
          font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width:720px; margin:0 auto; padding:56px 16px; }
   h1 { font-size:28px; margin:0 0 4px; }
-  p.sub { color:var(--muted); margin:0 0 32px; }
-  a.card { display:block; padding:20px; margin-bottom:12px; background:var(--card);
-           border:1px solid var(--border); border-radius:12px; color:inherit; text-decoration:none;
-           transition:border-color .15s; }
-  a.card:hover { border-color:var(--accent); }
-  a.card strong { display:block; font-size:18px; margin-bottom:4px; }
-  a.card span { color:var(--muted); font-size:14px; }
+  h2 { font-size:18px; margin:40px 0 12px; }
+  p.sub, p.note { color:var(--muted); margin:0 0 32px; }
+  p.note { font-size:14px; margin:12px 0 0; }
+  .card { display:flex; align-items:center; gap:12px; padding:20px; margin-bottom:12px; background:var(--card);
+          border:1px solid var(--border); border-radius:12px; transition:border-color .15s; }
+  .card:hover { border-color:var(--accent); }
+  .card a.main { flex:1; color:inherit; text-decoration:none; min-width:0; }
+  .card strong { display:block; font-size:18px; margin-bottom:4px; }
+  .card span { color:var(--muted); font-size:14px; }
+  .card a.pdf { flex:none; font-size:14px; color:var(--accent); text-decoration:none; padding:6px 10px;
+                border:1px solid var(--border); border-radius:8px; white-space:nowrap; }
+  .card a.pdf:hover { border-color:var(--accent); }
 </style>
 </head>
 <body>
 <main>
   <h1>Tài liệu học tập</h1>
-  <p class="sub">Tổng hợp giáo trình tự học.</p>
+  <p class="sub">Tổng hợp giáo trình tự học. Bấm vào tên để đọc trên web, hoặc tải PDF khổ A4 để in.</p>
 
-  <a class="card" href="giao-trinh-python-ai-engineer.html">
-    <strong>Giáo trình Python từ số 0 đến AI Engineer</strong>
-    <span>Python, LLM &amp; AI Agent</span>
-  </a>
-  <a class="card" href="Tong-hop-ngu-phap-tieng-Anh.html">
-    <strong>Tổng hợp ngữ pháp tiếng Anh</strong>
-    <span>12 thì và các cấu trúc quan trọng</span>
-  </a>
-  <a class="card" href="Tong-hop-ngu-phap-tieng-Trung.html">
-    <strong>Tổng hợp ngữ pháp tiếng Trung</strong>
-    <span>Các cấu trúc ngữ pháp tiếng Trung</span>
-  </a>
-  <a class="card" href="Tu-vung-HSK-1-5-co-vi-du.html">
-    <strong>Từ vựng HSK 1–5 (HSK 3.0)</strong>
-    <span>Có ví dụ minh hoạ</span>
-  </a>
+  <div class="card">
+    <a class="main" href="giao-trinh-python-ai-engineer.html">
+      <strong>Giáo trình Python từ số 0 đến AI Engineer</strong>
+      <span>Python, LLM &amp; AI Agent</span>
+    </a>
+    <a class="pdf" href="pdf/giao-trinh-python-ai-engineer.pdf" download>PDF · 47 tr</a>
+  </div>
+  <div class="card">
+    <a class="main" href="Tong-hop-ngu-phap-tieng-Anh.html">
+      <strong>Tổng hợp ngữ pháp tiếng Anh</strong>
+      <span>12 thì và các cấu trúc quan trọng</span>
+    </a>
+    <a class="pdf" href="pdf/Tong-hop-ngu-phap-tieng-Anh.pdf" download>PDF · 47 tr</a>
+  </div>
+  <div class="card">
+    <a class="main" href="Tong-hop-ngu-phap-tieng-Trung.html">
+      <strong>Tổng hợp ngữ pháp tiếng Trung</strong>
+      <span>Các cấu trúc ngữ pháp tiếng Trung</span>
+    </a>
+    <a class="pdf" href="pdf/Tong-hop-ngu-phap-tieng-Trung.pdf" download>PDF · 36 tr</a>
+  </div>
+  <div class="card">
+    <a class="main" href="Tu-vung-HSK-1-5-co-vi-du.html">
+      <strong>Từ vựng HSK 1–5 (HSK 3.0)</strong>
+      <span>3.557 từ, có ví dụ minh hoạ</span>
+    </a>
+    <a class="pdf" href="pdf/Tu-vung-HSK-1-5-co-vi-du.pdf" download>PDF · 110 tr</a>
+  </div>
+
+  <p class="note">PDF khổ A4, đã đánh số trang, lề trái rộng hơn để đóng gáy.</p>
 </main>
 </body>
 </html>

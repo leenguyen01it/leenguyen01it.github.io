@@ -54,9 +54,16 @@ time{color:inherit}
 .to-top:hover{text-decoration:none;opacity:.9}
 @media (max-width:640px){main{padding:20px 16px;margin-top:-16px;border-radius:0}
   header.page h1{font-size:1.6rem}}
-@media print{body{background:#fff} header.page{background:none;color:var(--ink);padding:0 0 12px}
-  main{box-shadow:none;margin:0;padding:0;max-width:none} .to-top{display:none}
-  h2,h3{break-after:avoid} table,figure,blockquote{break-inside:avoid}
+@page{size:A4;margin:16mm 14mm 18mm 20mm;@bottom-center{content:counter(page);font-size:9pt;color:#5b6470}}
+@media print{body{background:#fff;font-size:10.5pt;line-height:1.5} header.page{background:none;color:var(--ink);padding:0 0 12px}
+  header.page h1{font-size:22pt}
+  main{box-shadow:none;margin:0;padding:0;max-width:none;border-radius:0} .to-top{display:none}
+  h2{font-size:15pt} h3{font-size:12pt}
+  h2,h3{break-after:avoid} table,figure,blockquote{break-inside:avoid} tr{break-inside:avoid}
+  .table-wrap{overflow:visible} table{font-size:9.5pt}
+  figure.diagram img{max-height:230mm;object-fit:contain}
+  h2#mục-lục+p{display:none}
+  main a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#5b6470;word-break:break-all}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
