@@ -50,7 +50,15 @@ input.chk{width:20px;height:20px;accent-color:var(--l3);cursor:pointer}
 .empty{text-align:center;color:var(--muted);padding:30px}
 .note{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
 .top{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
-@media (max-width:600px){.han{font-size:20px}.prog b{min-width:110px}td,th{padding:7px 6px}}
+@media (max-width:600px){.han{font-size:20px}.prog b{min-width:110px}td,th{padding:7px 6px}
+  main{padding:0 10px}.card{padding:12px}
+  table thead{display:none}
+  #tb tr{display:grid;grid-template-columns:minmax(78px,max-content) minmax(0,1fr) 30px;grid-template-areas:"han vi chk" "py vi chk";column-gap:10px;padding:10px 4px;border-bottom:1px solid var(--line)}
+  #tb tr:nth-child(even){background:#faf9fd} #tb tr.done{background:#eef8ee}
+  #tb td{display:block;padding:0;border:0;background:none!important}
+  #tb td.stt{display:none} #tb td.han{grid-area:han;white-space:normal} #tb td.py{grid-area:py;font-size:14px}
+  #tb td.vi{grid-area:vi} #tb td:last-child{grid-area:chk;align-self:center;justify-self:end}
+  .top{width:40px;height:40px;right:12px;bottom:12px;opacity:.85}}
 #printall{display:none}
 @page{size:A4;margin:14mm 12mm 16mm 18mm;@bottom-center{content:counter(page);font-size:9pt;color:#6b6b80}}
 @media print{

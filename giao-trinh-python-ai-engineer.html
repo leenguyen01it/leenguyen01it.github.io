@@ -15,7 +15,7 @@ h1{font-size:34px;line-height:1.2;margin:0 0 8px;background:linear-gradient(90de
 h1+p{color:var(--muted);margin-top:0}
 h2{font-size:25px;margin:56px 0 12px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,#efedff,transparent);border-left:5px solid var(--accent)}
 h3{font-size:19px;margin:32px 0 8px;color:#3b2fa0}
-code{font-family:"JetBrains Mono","Fira Code",Consolas,monospace;font-size:.88em;background:#f1eefc;color:#5b3fc4;padding:1px 6px;border-radius:5px}
+code{font-family:"JetBrains Mono","Fira Code","SF Mono",Menlo,Consolas,"Noto Sans Mono","Liberation Mono",monospace;font-size:.88em;background:#f1eefc;color:#5b3fc4;padding:1px 6px;border-radius:5px}
 .code{position:relative;margin:16px 0}
 .code .lang{position:absolute;top:8px;right:12px;font-size:11px;color:#8b949e;text-transform:uppercase;letter-spacing:.08em}
 pre.hl{background:#0d1117;color:#e6edf3;padding:18px 20px;border-radius:12px;overflow:auto;line-height:1.55;font-size:13.5px;margin:0;box-shadow:0 2px 10px rgba(0,0,0,.08)}
@@ -127,7 +127,14 @@ figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:8px}
 .formula{text-align:center;font-family:"Cambria Math",Georgia,serif;font-size:19px;padding:14px;background:#fff;border:1px dashed #c9c3ef;border-radius:10px;margin:16px 0}
 a{color:#5b3fc4}
 strong{color:#111}
-@media (max-width:900px){.wrap{grid-template-columns:1fr} nav{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line)} main{padding:24px 18px 80px}}
+nav summary.t{cursor:pointer;list-style:none} nav summary.t::-webkit-details-marker{display:none}
+.hl .c,.hl .ch,.hl .cm,.hl .cp,.hl .cpf,.hl .c1,.hl .cs{font-style:normal!important}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr)} nav{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);padding:14px 18px} main{padding:24px 16px 80px}
+  nav summary.t{margin:0;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:14px}
+  nav summary.t::after{content:" ▾";float:right} nav details[open] summary.t{margin-bottom:10px} nav details[open] summary.t::after{content:" ▴"}
+  h1{font-size:27px} h2{font-size:21px;margin-top:40px} pre.hl{font-size:12.5px;padding:30px 14px 14px}
+  .code .lang{top:7px;right:10px}
+  figure.diagram{overflow-x:auto;padding:12px} .diagram svg{min-width:600px}}
 .upd{margin:14px 0;padding:12px 16px;background:#fff7e0;border-left:4px solid #d4a017;border-radius:0 10px 10px 0;font-size:15px}
 @page{size:A4;margin:16mm 14mm 18mm 20mm;@bottom-center{content:counter(page);font-size:9pt;color:#57606a}}
 @media print{
@@ -147,7 +154,8 @@ strong{color:#111}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style></head>
-<body><div class="wrap"><nav><div class="t">Mục lục</div><a href="#tổng-quan-lộ-trình">Tổng quan lộ trình</a><a href="#giai-đoạn-1-python-cơ-bản-34-tuần">Giai đoạn 1: Python cơ bản (3–4 tuần)</a><a href="#giai-đoạn-2-cấu-trúc-dữ-liệu-và-xử-lý-file-34-tuần">Giai đoạn 2: Cấu trúc dữ liệu và xử lý file (3–4 tuần)</a><a href="#giai-đoạn-3-lập-trình-hướng-đối-tượng-và-python-nâng-cao-45-tuần">Giai đoạn 3: Lập trình hướng đối tượng và Python nâng cao (4–5 tuần)</a><a href="#giai-đoạn-4-công-cụ-của-lập-trình-viên-23-tuần">Giai đoạn 4: Công cụ của lập trình viên (2–3 tuần)</a><a href="#giai-đoạn-5-ai-engineer-llm-và-ai-agent-1620-tuần">Giai đoạn 5: AI Engineer — LLM và AI Agent (16–20 tuần)</a><a href="#51-python-bổ-sung-cho-ai-engineer-2-tuần">5.1. Python bổ sung cho AI engineer (2 tuần)</a><a href="#52-làm-việc-trực-tiếp-với-llm-3-tuần">5.2. Làm việc trực tiếp với LLM (3 tuần)</a><a href="#53-rag-cho-llm-đọc-dữ-liệu-riêng-3-tuần">5.3. RAG — cho LLM đọc dữ liệu riêng (3 tuần)</a><a href="#54-xây-dựng-ai-agent-56-tuần">5.4. Xây dựng AI Agent (5–6 tuần)</a><a href="#55-đánh-giá-giám-sát-và-an-toàn-23-tuần">5.5. Đánh giá, giám sát và an toàn (2–3 tuần)</a><a href="#56-triển-khai-lên-môi-trường-thật-2-tuần">5.6. Triển khai lên môi trường thật (2 tuần)</a><a href="#dự-án-tốt-nghiệp-và-lịch-học-theo-tuần">Dự án tốt nghiệp và lịch học theo tuần</a><a href="#tài-liệu-học-và-nguồn-tham-khảo">Tài liệu học và nguồn tham khảo</a></nav><main>
+<body><div class="wrap"><nav><details id="toc" open><summary class="t">Mục lục</summary><a href="#tổng-quan-lộ-trình">Tổng quan lộ trình</a><a href="#giai-đoạn-1-python-cơ-bản-34-tuần">Giai đoạn 1: Python cơ bản (3–4 tuần)</a><a href="#giai-đoạn-2-cấu-trúc-dữ-liệu-và-xử-lý-file-34-tuần">Giai đoạn 2: Cấu trúc dữ liệu và xử lý file (3–4 tuần)</a><a href="#giai-đoạn-3-lập-trình-hướng-đối-tượng-và-python-nâng-cao-45-tuần">Giai đoạn 3: Lập trình hướng đối tượng và Python nâng cao (4–5 tuần)</a><a href="#giai-đoạn-4-công-cụ-của-lập-trình-viên-23-tuần">Giai đoạn 4: Công cụ của lập trình viên (2–3 tuần)</a><a href="#giai-đoạn-5-ai-engineer-llm-và-ai-agent-1620-tuần">Giai đoạn 5: AI Engineer — LLM và AI Agent (16–20 tuần)</a><a href="#51-python-bổ-sung-cho-ai-engineer-2-tuần">5.1. Python bổ sung cho AI engineer (2 tuần)</a><a href="#52-làm-việc-trực-tiếp-với-llm-3-tuần">5.2. Làm việc trực tiếp với LLM (3 tuần)</a><a href="#53-rag-cho-llm-đọc-dữ-liệu-riêng-3-tuần">5.3. RAG — cho LLM đọc dữ liệu riêng (3 tuần)</a><a href="#54-xây-dựng-ai-agent-56-tuần">5.4. Xây dựng AI Agent (5–6 tuần)</a><a href="#55-đánh-giá-giám-sát-và-an-toàn-23-tuần">5.5. Đánh giá, giám sát và an toàn (2–3 tuần)</a><a href="#56-triển-khai-lên-môi-trường-thật-2-tuần">5.6. Triển khai lên môi trường thật (2 tuần)</a><a href="#dự-án-tốt-nghiệp-và-lịch-học-theo-tuần">Dự án tốt nghiệp và lịch học theo tuần</a><a href="#tài-liệu-học-và-nguồn-tham-khảo">Tài liệu học và nguồn tham khảo</a></details></nav>
+<script>if(matchMedia("(max-width:900px)").matches)document.getElementById("toc").removeAttribute("open")</script><main>
 <h1 id="giáo-trình-python-từ-số-0-đến-ai-engineer-llm-ai-agent">Giáo trình Python từ số 0 đến AI Engineer (LLM &amp; AI Agent)</h1>
 <p><time data-atom="date" datetime="2026-11-13">2026-11-13</time> · Giáo trình tự học</p>
 <div class="upd"><strong>Cập nhật lần cuối: tháng 11/2026.</strong> Giai đoạn 1–4 (Python, OOP, Git, test, SQL) là kiến thức nền, nhiều năm nữa vẫn đúng. Giai đoạn 5 (LLM, RAG, agent, framework) thay đổi rất nhanh: <strong>nếu đọc sau năm 2028, hãy coi giai đoạn 5 là bản đồ khái niệm</strong> và đối chiếu lại tên thư viện, framework, cú pháp SDK với tài liệu chính thức hiện hành trước khi làm theo.</div>
