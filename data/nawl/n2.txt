@@ -1,0 +1,192 @@
+acute|adj|cấp tính; gay gắt|There is an acute shortage of teachers.|Đang thiếu giáo viên trầm trọng.
+adverse|adj|bất lợi, có hại|The drug has few adverse effects.|Thuốc có ít tác dụng phụ.
+aesthetic|adj, n|thẩm mỹ|The building has great aesthetic value.|Tòa nhà có giá trị thẩm mỹ cao.
+aluminum|n|nhôm|Cans are made of aluminum.|Lon được làm bằng nhôm.
+ancestor|n|tổ tiên|Vietnamese people worship their ancestors.|Người Việt thờ cúng tổ tiên.
+anthropology|n|nhân học|Anthropology studies human societies.|Nhân học nghiên cứu các xã hội loài người.
+array|n|dãy, loạt|The shop sells a wide array of goods.|Cửa hàng bán rất nhiều loại hàng.
+arrow|n|mũi tên|Follow the arrows to the exit.|Đi theo mũi tên để ra lối thoát.
+articulate|v, adj|diễn đạt rõ ràng; ăn nói lưu loát|She can articulate her ideas clearly.|Cô ấy diễn đạt ý tưởng rất rõ ràng.
+artificial|adj|nhân tạo|Artificial intelligence is changing many jobs.|Trí tuệ nhân tạo đang thay đổi nhiều nghề.
+audio|adj, n|âm thanh|Listen to the audio recording.|Nghe bản ghi âm.
+autonomy|n|quyền tự chủ|Universities want more autonomy.|Các trường đại học muốn có thêm quyền tự chủ.
+barrel|n|thùng (dầu: 159 lít)|Oil prices reached 100 dollars a barrel.|Giá dầu đạt 100 đô la một thùng.
+basin|n|lưu vực; chậu|The Mekong basin is very fertile.|Lưu vực sông Mê Kông rất màu mỡ.
+biologist|n|nhà sinh học|Biologists study living things.|Các nhà sinh học nghiên cứu sinh vật.
+bizarre|adj|kỳ quặc|It was a bizarre situation.|Đó là một tình huống kỳ quặc.
+bubble|n|bong bóng|The housing bubble burst in 2008.|Bong bóng nhà đất vỡ vào năm 2008.
+bullet|n|viên đạn|The bullet hit the wall.|Viên đạn trúng vào tường.
+bundle|n|bó, gói|He carried a bundle of papers.|Anh ấy mang một bó giấy tờ.
+calcium|n|canxi|Milk is rich in calcium.|Sữa giàu canxi.
+capitalism|n|chủ nghĩa tư bản|Capitalism is based on private ownership.|Chủ nghĩa tư bản dựa trên sở hữu tư nhân.
+capitalist|n, adj|nhà tư bản; tư bản chủ nghĩa|It is a capitalist economy.|Đó là một nền kinh tế tư bản.
+censor|v|kiểm duyệt|The film was censored.|Bộ phim đã bị kiểm duyệt.
+chunk|n|khúc, mảng lớn|Rent takes a large chunk of my salary.|Tiền thuê nhà chiếm phần lớn lương của tôi.
+classification|n|sự phân loại|The classification of animals is complex.|Việc phân loại động vật rất phức tạp.
+clay|n|đất sét|The pots are made of clay.|Những chiếc nồi làm bằng đất sét.
+clone|v, n|nhân bản; bản sao|Scientists cloned a sheep in 1996.|Các nhà khoa học nhân bản một con cừu năm 1996.
+cognitive|adj|thuộc nhận thức|Reading improves cognitive skills.|Đọc sách cải thiện kỹ năng nhận thức.
+coherent|adj|mạch lạc|Your essay must be coherent.|Bài luận của bạn phải mạch lạc.
+commodity|n|hàng hóa (nguyên liệu)|Rice is an important commodity.|Gạo là một mặt hàng quan trọng.
+comparative|adj|so sánh; tương đối|This is a comparative study of two cities.|Đây là nghiên cứu so sánh hai thành phố.
+competence|n|năng lực|Language competence takes years to build.|Năng lực ngôn ngữ cần nhiều năm để xây dựng.
+complement|v, n|bổ sung|Exercise complements a healthy diet.|Tập thể dục bổ trợ cho chế độ ăn lành mạnh.
+configuration|n|cấu hình|Check the network configuration.|Kiểm tra cấu hình mạng.
+consensus|n|sự đồng thuận|There is a consensus that climate change is real.|Có sự đồng thuận rằng biến đổi khí hậu là có thật.
+credibility|n|sự đáng tin cậy|The scandal damaged his credibility.|Vụ bê bối làm tổn hại uy tín của ông ấy.
+critique|n|bài phê bình|She wrote a critique of the policy.|Cô ấy viết bài phê bình chính sách.
+crude|adj|thô; sơ sài|Crude oil prices fell.|Giá dầu thô giảm.
+decay|v, n|mục nát, phân hủy; sâu (răng)|Sugar causes tooth decay.|Đường gây sâu răng.
+deficiency|n|sự thiếu hụt|Iron deficiency causes tiredness.|Thiếu sắt gây mệt mỏi.
+diagnosis|n|sự chẩn đoán|Early diagnosis is important.|Chẩn đoán sớm rất quan trọng.
+diameter|n|đường kính|The pipe is 10 cm in diameter.|Ống có đường kính 10 cm.
+diary|n|nhật ký|She keeps a diary.|Cô ấy viết nhật ký.
+dictionary|n|từ điển|Look up the word in a dictionary.|Tra từ trong từ điển.
+differentiate|v|phân biệt|Children learn to differentiate colors.|Trẻ em học cách phân biệt màu sắc.
+differentiation|n|sự phân biệt, khác biệt hóa|Product differentiation helps companies compete.|Khác biệt hóa sản phẩm giúp các công ty cạnh tranh.
+dilemma|n|tình thế khó xử|She faced a difficult dilemma.|Cô ấy rơi vào tình thế khó xử.
+dioxide|n|đi-ô-xít (carbon dioxide: CO2)|Trees absorb carbon dioxide.|Cây hấp thụ khí CO2.
+disadvantage|n|bất lợi, nhược điểm|What are the disadvantages of living in a city?|Sống ở thành phố có những bất lợi gì?
+displacement|n|sự di dời|The dam caused the displacement of thousands of people.|Con đập khiến hàng nghìn người phải di dời.
+dissolve|v|hòa tan; giải thể|Sugar dissolves in water.|Đường tan trong nước.
+domain|n|lĩnh vực; tên miền|This is outside my domain.|Việc này nằm ngoài lĩnh vực của tôi.
+donor|n|người hiến tặng|She is a blood donor.|Cô ấy là người hiến máu.
+ecological|adj|thuộc sinh thái|The oil spill was an ecological disaster.|Vụ tràn dầu là một thảm họa sinh thái.
+electron|n|điện tử (hạt)|Electrons have a negative charge.|Electron mang điện tích âm.
+elementary|adj|cơ bản; tiểu học|This is an elementary mistake.|Đây là một lỗi sơ đẳng.
+emperor|n|hoàng đế|The emperor lived in Hue.|Nhà vua sống ở Huế.
+empirical|adj|thực nghiệm|There is little empirical evidence.|Có rất ít bằng chứng thực nghiệm.
+entity|n|thực thể|The company is a separate legal entity.|Công ty là một pháp nhân riêng.
+essence|n|bản chất, cốt lõi|The essence of the problem is money.|Bản chất của vấn đề là tiền.
+ethical|adj|thuộc đạo đức|Animal testing raises ethical questions.|Thử nghiệm trên động vật đặt ra các câu hỏi đạo đức.
+fever|n|cơn sốt|The child has a high fever.|Đứa trẻ bị sốt cao.
+fluid|n, adj|chất lỏng; linh hoạt|Drink plenty of fluids.|Uống nhiều nước.
+fossil|n|hóa thạch|Fossil fuels cause pollution.|Nhiên liệu hóa thạch gây ô nhiễm.
+fraction|n|phân số; phần nhỏ|Only a fraction of students passed.|Chỉ một phần nhỏ học sinh đỗ.
+fracture|n, v|vết gãy; gãy (xương)|He has a fracture in his arm.|Anh ấy bị gãy xương tay.
+fringe|n|rìa, ngoài lề|The village is on the fringe of the city.|Ngôi làng nằm ở rìa thành phố.
+fusion|n|sự kết hợp; nhiệt hạch|This restaurant serves fusion food.|Nhà hàng này phục vụ món ăn kết hợp.
+gauge|v, n|đánh giá; đồng hồ đo|It is hard to gauge public opinion.|Khó đánh giá dư luận.
+goat|n|con dê|Goats eat grass.|Dê ăn cỏ.
+grid|n|lưới (điện); ô lưới|The house is not connected to the power grid.|Ngôi nhà chưa được nối lưới điện.
+gut|n|ruột; trực giác|My gut feeling says no.|Trực giác mách bảo tôi là không.
+habitat|n|môi trường sống|Forests are the natural habitat of tigers.|Rừng là môi trường sống tự nhiên của hổ.
+harvest|n, v|vụ thu hoạch; thu hoạch|The rice harvest was good this year.|Vụ lúa năm nay được mùa.
+hierarchy|n|hệ thống thứ bậc|Many companies have a strict hierarchy.|Nhiều công ty có hệ thống cấp bậc chặt chẽ.
+horizon|n|đường chân trời|The sun sank below the horizon.|Mặt trời lặn xuống dưới đường chân trời.
+horizontal|adj|nằm ngang|Draw a horizontal line.|Vẽ một đường nằm ngang.
+hormone|n|hoóc-môn|Stress hormones affect sleep.|Hoóc-môn căng thẳng ảnh hưởng đến giấc ngủ.
+hydrogen|n|hiđrô|Water contains hydrogen and oxygen.|Nước chứa hiđrô và ôxy.
+illusion|n|ảo tưởng, ảo giác|Freedom without rules is an illusion.|Tự do không có luật lệ là ảo tưởng.
+implicit|adj|ngầm hiểu|There was an implicit agreement.|Đã có một thỏa thuận ngầm.
+impulse|n|sự thôi thúc, bốc đồng|Many people buy things on impulse.|Nhiều người mua sắm theo cảm hứng.
+incidence|n|tỷ lệ mắc, mức độ xảy ra|The incidence of diabetes is rising.|Tỷ lệ mắc tiểu đường đang tăng.
+incline|v, n|nghiêng; có xu hướng; dốc|I'm inclined to agree.|Tôi có xu hướng đồng ý.
+inclusion|n|sự bao gồm, hòa nhập|Schools promote the inclusion of disabled students.|Các trường thúc đẩy giáo dục hòa nhập cho học sinh khuyết tật.
+indifference|n|sự thờ ơ|Public indifference to politics is a problem.|Sự thờ ơ của công chúng với chính trị là một vấn đề.
+indigenous|adj|bản địa|Indigenous cultures should be protected.|Các nền văn hóa bản địa cần được bảo vệ.
+induce|v|gây ra, xui khiến|The drug may induce sleep.|Thuốc có thể gây buồn ngủ.
+infinite|adj|vô hạn|Natural resources are not infinite.|Tài nguyên thiên nhiên không phải vô hạn.
+inhibit|v|kìm hãm, ức chế|High taxes may inhibit growth.|Thuế cao có thể kìm hãm tăng trưởng.
+inhibition|n|sự ức chế, rụt rè|Alcohol reduces inhibitions.|Rượu làm giảm sự e dè.
+insect|n|côn trùng|Many insects are useful.|Nhiều loài côn trùng có ích.
+interface|n|giao diện|The app has a simple interface.|Ứng dụng có giao diện đơn giản.
+interval|n|khoảng (thời gian)|Buses run at ten-minute intervals.|Xe buýt chạy cách nhau mười phút.
+invade|v|xâm lược|The army invaded the country.|Quân đội đã xâm lược đất nước đó.
+leaf|n|chiếc lá|The leaves turn yellow in autumn.|Lá chuyển vàng vào mùa thu.
+lever|n|đòn bẩy, cần gạt|Pull the lever to open the door.|Kéo cần gạt để mở cửa.
+limb|n|chân tay|He lost a limb in the war.|Ông ấy mất một chân trong chiến tranh.
+linear|adj|tuyến tính|Growth is not always linear.|Tăng trưởng không phải lúc nào cũng tuyến tính.
+linguistic|adj|thuộc ngôn ngữ|Vietnam has great linguistic diversity.|Việt Nam có sự đa dạng ngôn ngữ lớn.
+linguistics|n|ngôn ngữ học|She studies linguistics.|Cô ấy học ngôn ngữ học.
+liver|n|gan|Alcohol damages the liver.|Rượu làm hại gan.
+loop|n|vòng lặp; vòng|The road forms a loop around the lake.|Con đường tạo thành một vòng quanh hồ.
+lung|n|phổi|Smoking causes lung cancer.|Hút thuốc gây ung thư phổi.
+magnitude|n|độ lớn, tầm quan trọng|We did not understand the magnitude of the problem.|Chúng tôi không hiểu tầm cỡ của vấn đề.
+manuscript|n|bản thảo|The manuscript was sent to the publisher.|Bản thảo đã được gửi đến nhà xuất bản.
+marble|n|đá cẩm thạch|The floor is made of marble.|Sàn nhà làm bằng đá cẩm thạch.
+matrix|n|ma trận|The data is stored in a matrix.|Dữ liệu được lưu trong một ma trận.
+mediate|v|hòa giải, làm trung gian|A lawyer mediated between the two sides.|Một luật sư làm trung gian hòa giải giữa hai bên.
+metaphor|n|phép ẩn dụ|"Time is money" is a metaphor.|"Thời gian là tiền bạc" là một phép ẩn dụ.
+minimal|adj|tối thiểu|The damage was minimal.|Thiệt hại là rất nhỏ.
+momentum|n|đà|The campaign is gaining momentum.|Chiến dịch đang có đà.
+monetary|adj|thuộc tiền tệ|The central bank controls monetary policy.|Ngân hàng trung ương điều hành chính sách tiền tệ.
+monopoly|n|sự độc quyền|The company has a monopoly on electricity.|Công ty độc quyền về điện.
+multiply|v|nhân lên; tăng lên nhiều|Bacteria multiply quickly.|Vi khuẩn sinh sôi nhanh.
+noble|adj|cao quý|Teaching is a noble profession.|Dạy học là một nghề cao quý.
+nonetheless|adv|tuy nhiên, dù sao|The task was hard; nonetheless, they finished it.|Nhiệm vụ khó; tuy vậy họ vẫn hoàn thành.
+nonlinear|adj|phi tuyến tính|The relationship is nonlinear.|Mối quan hệ này là phi tuyến tính.
+norm|n|chuẩn mực|Social norms differ between cultures.|Chuẩn mực xã hội khác nhau giữa các nền văn hóa.
+obscure|adj, v|khó hiểu, ít người biết; che khuất|The origin of the word is obscure.|Nguồn gốc của từ này không rõ.
+optical|adj|thuộc quang học|The internet uses optical fiber.|Internet dùng cáp quang.
+organism|n|sinh vật|Bacteria are tiny organisms.|Vi khuẩn là những sinh vật nhỏ bé.
+overlap|v, n|chồng lên nhau, trùng lặp|The two studies overlap in some areas.|Hai nghiên cứu trùng nhau ở một số phần.
+oxygen|n|ôxy|Plants produce oxygen.|Cây xanh tạo ra ôxy.
+paradox|n|nghịch lý|It is a paradox that rich countries have poor people.|Một nghịch lý là các nước giàu vẫn có người nghèo.
+parameter|n|thông số; giới hạn|We must work within these parameters.|Chúng ta phải làm việc trong các giới hạn này.
+particle|n|hạt; tiểu từ|Dust particles cause allergies.|Các hạt bụi gây dị ứng.
+peripheral|adj|ngoại vi; thứ yếu|The issue is only peripheral.|Vấn đề này chỉ là thứ yếu.
+plural|n, adj|số nhiều|"Children" is the plural of "child".|"Children" là số nhiều của "child".
+polar|adj|thuộc vùng cực; trái ngược|Polar ice is melting.|Băng ở vùng cực đang tan.
+portray|v|miêu tả, khắc họa|The media often portray young people negatively.|Truyền thông thường khắc họa giới trẻ một cách tiêu cực.
+portrayal|n|sự miêu tả|The film's portrayal of war is realistic.|Cách bộ phim miêu tả chiến tranh rất chân thực.
+predator|n|động vật săn mồi|Lions are predators.|Sư tử là loài săn mồi.
+predominantly|adv|chủ yếu|The population is predominantly young.|Dân số chủ yếu là người trẻ.
+prejudice|n|định kiến|We must fight racial prejudice.|Chúng ta phải chống lại định kiến chủng tộc.
+prevalence|n|sự phổ biến|The prevalence of obesity is increasing.|Tình trạng béo phì ngày càng phổ biến.
+prey|n|con mồi|The eagle caught its prey.|Đại bàng bắt được con mồi.
+primitive|adj|nguyên thủy, thô sơ|They used primitive tools.|Họ dùng những công cụ thô sơ.
+proposition|n|đề xuất; mệnh đề|It is an attractive business proposition.|Đó là một đề xuất kinh doanh hấp dẫn.
+protocol|n|giao thức; nghi thức|Follow the safety protocol.|Tuân theo quy trình an toàn.
+pulse|n|mạch đập|The nurse checked his pulse.|Y tá kiểm tra mạch của anh ấy.
+realm|n|lĩnh vực; vương quốc|It is within the realm of possibility.|Điều đó nằm trong phạm vi có thể.
+regression|n|sự thoái lui; hồi quy|We used regression analysis.|Chúng tôi dùng phân tích hồi quy.
+rehabilitation|n|sự phục hồi chức năng; cải tạo|Prisons should focus on rehabilitation.|Nhà tù nên tập trung vào cải tạo.
+residual|adj|còn sót lại|There is a residual risk.|Vẫn còn một rủi ro tồn dư.
+residue|n|cặn, chất còn lại|Wash fruit to remove pesticide residue.|Rửa trái cây để loại bỏ dư lượng thuốc trừ sâu.
+rhetoric|n|lối nói hoa mỹ, tu từ|The speech was full of empty rhetoric.|Bài phát biểu đầy những lời hoa mỹ sáo rỗng.
+robot|n|rô-bốt|Robots now work in many factories.|Rô-bốt giờ làm việc trong nhiều nhà máy.
+rotate|v|xoay; luân phiên|The earth rotates once a day.|Trái đất tự quay một vòng mỗi ngày.
+rotation|n|sự quay; luân canh|Crop rotation keeps soil healthy.|Luân canh giữ cho đất khỏe.
+scenario|n|kịch bản, tình huống|In the worst-case scenario, we lose everything.|Trong tình huống xấu nhất, chúng ta mất tất cả.
+sensation|n|cảm giác; sự náo động|I had a burning sensation in my throat.|Tôi có cảm giác bỏng rát ở cổ họng.
+shallow|adj|nông; hời hợt|The water is shallow here.|Ở đây nước nông.
+simulate|v|mô phỏng|The program simulates traffic flow.|Chương trình mô phỏng dòng giao thông.
+simulation|n|sự mô phỏng|Pilots train using simulations.|Phi công được huấn luyện bằng mô phỏng.
+skip|v|bỏ qua; nhảy|Don't skip breakfast.|Đừng bỏ bữa sáng.
+sodium|n|natri|Salt contains sodium.|Muối chứa natri.
+span|n, v|khoảng (thời gian); kéo dài|Attention span is getting shorter.|Khả năng tập trung ngày càng ngắn hơn.
+spatial|adj|thuộc không gian|Architects need good spatial skills.|Kiến trúc sư cần kỹ năng không gian tốt.
+specimen|n|mẫu vật|The museum has many rare specimens.|Bảo tàng có nhiều mẫu vật quý hiếm.
+spectrum|n|phổ; dải|People across the political spectrum agree.|Mọi người thuộc mọi khuynh hướng chính trị đều đồng ý.
+sphere|n|hình cầu; lĩnh vực|Women are active in the public sphere.|Phụ nữ hoạt động tích cực trong đời sống công cộng.
+spontaneous|adj|tự phát|The crowd gave a spontaneous cheer.|Đám đông tự phát reo hò.
+stance|n|lập trường|What is your stance on this issue?|Lập trường của bạn về vấn đề này là gì?
+stereotype|n|khuôn mẫu, định kiến|Avoid gender stereotypes.|Tránh các định kiến giới.
+straightforward|adj|đơn giản, dễ hiểu|The process is straightforward.|Quy trình đơn giản.
+strand|n|sợi; khía cạnh|There are several strands to the argument.|Lập luận có một số khía cạnh.
+subjective|adj|chủ quan|Beauty is subjective.|Cái đẹp mang tính chủ quan.
+surgeon|n|bác sĩ phẫu thuật|The surgeon operated on her heart.|Bác sĩ phẫu thuật tim cho bà ấy.
+surplus|n|thặng dư|The country has a trade surplus.|Đất nước có thặng dư thương mại.
+syndrome|n|hội chứng|Stress can lead to burnout syndrome.|Căng thẳng có thể dẫn đến hội chứng kiệt sức.
+synthesis|n|sự tổng hợp|The essay is a synthesis of several studies.|Bài luận là sự tổng hợp nhiều nghiên cứu.
+thesis|n|luận văn; luận điểm|She is writing her master's thesis.|Cô ấy đang viết luận văn thạc sĩ.
+thread|n|sợi chỉ; chuỗi (thảo luận)|Read the whole email thread.|Đọc cả chuỗi email.
+threshold|n|ngưỡng|The tax threshold was raised.|Ngưỡng chịu thuế đã được nâng lên.
+thumb|n|ngón tay cái|He gave me a thumbs up.|Anh ấy giơ ngón cái với tôi.
+toxic|adj|độc hại|Some plastics release toxic chemicals.|Một số loại nhựa thải ra hóa chất độc hại.
+trait|n|đặc điểm, nét|Honesty is a positive trait.|Trung thực là một nét tính cách tốt.
+transcription|n|bản chép lại|Read the transcription of the interview.|Đọc bản ghi lại cuộc phỏng vấn.
+transplant|n, v|sự cấy ghép; cấy ghép|He needs a kidney transplant.|Ông ấy cần ghép thận.
+trauma|n|chấn thương (tâm lý)|War causes lasting trauma.|Chiến tranh gây chấn thương tâm lý lâu dài.
+triangle|n|hình tam giác|Draw a triangle.|Vẽ một hình tam giác.
+tumor|n|khối u|The doctor removed the tumor.|Bác sĩ đã cắt bỏ khối u.
+tutor|n|gia sư|She hired a tutor for her son.|Cô ấy thuê gia sư cho con trai.
+undermine|v|làm suy yếu|Corruption undermines public trust.|Tham nhũng làm suy giảm lòng tin của người dân.
+unify|v|thống nhất|The country was unified in 1975.|Đất nước được thống nhất năm 1975.
+upward|adj, adv|đi lên|There is an upward trend in prices.|Giá cả có xu hướng đi lên.
+utilize|v|sử dụng, tận dụng|We must utilize our resources better.|Chúng ta phải tận dụng nguồn lực tốt hơn.
+utterance|n|lời nói, phát ngôn|Each utterance was recorded.|Mỗi câu nói đều được ghi âm.
+vein|n|tĩnh mạch|Blood returns to the heart through veins.|Máu trở về tim qua tĩnh mạch.
+vertical|adj|thẳng đứng|Draw a vertical line.|Vẽ một đường thẳng đứng.
+viable|adj|khả thi|Solar power is a viable option.|Điện mặt trời là một lựa chọn khả thi.

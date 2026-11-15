@@ -1,0 +1,298 @@
+amongst|prep|giữa, trong số|The idea is popular amongst young people.|Ý tưởng này phổ biến trong giới trẻ.
+backward|adj, adv|lùi lại; lạc hậu|He took a step backward.|Anh ấy lùi lại một bước.
+bodily|adj|thuộc cơ thể|Sleep is necessary for bodily health.|Giấc ngủ cần thiết cho sức khỏe thể chất.
+collective|adj|tập thể, chung|It was a collective decision.|Đó là một quyết định tập thể.
+computation|n|sự tính toán|The computation took several hours.|Việc tính toán mất vài giờ.
+continuity|n|tính liên tục|Good teachers ensure continuity in learning.|Giáo viên giỏi đảm bảo tính liên tục trong việc học.
+freely|adv|tự do|People can travel freely within the region.|Người dân có thể đi lại tự do trong khu vực.
+generalize|v|khái quát hóa|It is dangerous to generalize from one example.|Khái quát hóa từ một ví dụ là nguy hiểm.
+goodness|n|lòng tốt; chất dinh dưỡng|Fresh fruit is full of natural goodness.|Trái cây tươi chứa nhiều dưỡng chất tự nhiên.
+historically|adv|về mặt lịch sử|Historically, the city was a trading port.|Về mặt lịch sử, thành phố từng là một cảng thương mại.
+importantly|adv|quan trọng là|More importantly, the plan is cheap.|Quan trọng hơn, kế hoạch này rẻ.
+interestingly|adv|điều thú vị là|Interestingly, older users liked the app more.|Điều thú vị là người dùng lớn tuổi thích ứng dụng hơn.
+marker|n|dấu hiệu; bút đánh dấu|Income is a marker of social class.|Thu nhập là một dấu hiệu của tầng lớp xã hội.
+namely|adv|cụ thể là|Two countries, namely Vietnam and Thailand, joined.|Hai nước, cụ thể là Việt Nam và Thái Lan, đã tham gia.
+nationalism|n|chủ nghĩa dân tộc|Nationalism grew after the war.|Chủ nghĩa dân tộc trỗi dậy sau chiến tranh.
+nicely|adv|tốt đẹp, dễ chịu|The plan worked nicely.|Kế hoạch diễn ra tốt đẹp.
+outer|adj|bên ngoài|The outer layer protects the seed.|Lớp ngoài bảo vệ hạt giống.
+painful|adj|đau đớn|It was a painful decision.|Đó là một quyết định đau lòng.
+pardon|n, v|sự tha thứ; xin lỗi (pardon?)|I beg your pardon?|Xin lỗi, anh nói lại được không?
+parental|adj|thuộc cha mẹ|Parental support helps children succeed.|Sự hỗ trợ của cha mẹ giúp trẻ thành công.
+photographic|adj|thuộc nhiếp ảnh|She has a photographic memory.|Cô ấy có trí nhớ như chụp ảnh.
+problematic|adj|có vấn đề, khó giải quyết|The new rule is problematic.|Quy định mới có nhiều vấn đề.
+readily|adv|sẵn sàng; dễ dàng|The data is readily available online.|Dữ liệu sẵn có trên mạng.
+realism|n|chủ nghĩa hiện thực; tính thực tế|The film is praised for its realism.|Bộ phim được khen vì tính chân thực.
+ruler|n|người cai trị; thước kẻ|The ruler built many temples.|Vị vua đã xây nhiều đền chùa.
+sexuality|n|giới tính, tính dục|Sexuality is a sensitive topic in some cultures.|Tính dục là chủ đề nhạy cảm ở một số nền văn hóa.
+subset|n|tập con, nhóm nhỏ|Only a subset of users saw the change.|Chỉ một nhóm nhỏ người dùng thấy thay đổi.
+supposedly|adv|được cho là|The drug is supposedly safe.|Loại thuốc này được cho là an toàn.
+systematic|adj|có hệ thống|We need a systematic approach.|Chúng ta cần một cách tiếp cận có hệ thống.
+terribly|adv|cực kỳ; tệ hại|I'm terribly sorry.|Tôi vô cùng xin lỗi.
+thickness|n|độ dày|Measure the thickness of the wall.|Đo độ dày bức tường.
+underneath|prep, adv|bên dưới|The cables run underneath the floor.|Dây cáp chạy bên dưới sàn.
+whichever|det, pron|bất cứ cái nào|Choose whichever method is cheaper.|Chọn phương pháp nào rẻ hơn.
+adaptation|n|sự thích nghi; bản chuyển thể|Adaptation to climate change is urgent.|Thích ứng với biến đổi khí hậu là cấp bách.
+adaptive|adj|thích nghi|Animals have adaptive behaviors.|Động vật có những hành vi thích nghi.
+bang|n, v|tiếng nổ; đập mạnh|There was a loud bang.|Có một tiếng nổ lớn.
+bat|n|con dơi; gậy (bóng chày)|Bats are active at night.|Dơi hoạt động vào ban đêm.
+blank|adj, n|trống; chỗ trống|Fill in the blanks.|Điền vào chỗ trống.
+bleed|v|chảy máu|His nose was bleeding.|Mũi anh ấy đang chảy máu.
+broadly|adv|nói chung, đại thể|Broadly speaking, the results were positive.|Nói chung, kết quả là tích cực.
+bucket|n|cái xô|Fill the bucket with water.|Đổ đầy nước vào xô.
+characterization|n|sự mô tả đặc điểm; cách xây dựng nhân vật|The novel has strong characterization.|Cuốn tiểu thuyết xây dựng nhân vật rất tốt.
+cheat|v|gian lận|Students who cheat will fail.|Học sinh gian lận sẽ bị đánh trượt.
+cheers|int|cảm ơn; cạn ly|Cheers for your help!|Cảm ơn đã giúp nhé!
+clever|adj|thông minh, khéo léo|That's a clever solution.|Đó là một giải pháp thông minh.
+commentary|n|bài bình luận|The book includes a detailed commentary.|Cuốn sách có kèm phần bình luận chi tiết.
+comparable|adj|có thể so sánh, tương đương|The two schools are comparable in size.|Hai trường có quy mô tương đương.
+conditional|adj|có điều kiện|The offer is conditional on your results.|Lời mời phụ thuộc vào kết quả của bạn.
+connector|n|từ nối; đầu nối|Use connectors like "however" in essays.|Dùng các từ nối như "however" trong bài luận.
+conscious|adj|có ý thức, nhận thức|People are more conscious of their health.|Mọi người ý thức hơn về sức khỏe.
+consciousness|n|ý thức|He lost consciousness after the fall.|Anh ấy bất tỉnh sau cú ngã.
+cure|n, v|cách chữa; chữa khỏi|There is no cure for the disease yet.|Bệnh này chưa có cách chữa.
+detection|n|sự phát hiện|Early detection of cancer saves lives.|Phát hiện sớm ung thư cứu được nhiều mạng sống.
+developmental|adj|thuộc sự phát triển|Play is important for developmental growth.|Vui chơi quan trọng với sự phát triển của trẻ.
+directive|n|chỉ thị|The government issued a new directive.|Chính phủ ban hành chỉ thị mới.
+disturbance|n|sự xáo trộn, quấy rối|Noise can cause sleep disturbance.|Tiếng ồn có thể gây rối loạn giấc ngủ.
+enormously|adv|vô cùng, cực kỳ|The internet has changed enormously.|Internet đã thay đổi rất nhiều.
+equality|n|sự bình đẳng|Gender equality is a global goal.|Bình đẳng giới là mục tiêu toàn cầu.
+flip|v|lật|Flip the coin.|Tung đồng xu.
+ghost|n|con ma|Many people believe in ghosts.|Nhiều người tin vào ma.
+hedge|n, v|hàng rào cây; phòng ngừa rủi ro|Gold is a hedge against inflation.|Vàng là cách phòng ngừa lạm phát.
+incredible|adj|khó tin, phi thường|The view was incredible.|Phong cảnh thật khó tin.
+incredibly|adv|vô cùng|The task was incredibly difficult.|Nhiệm vụ cực kỳ khó.
+industrialization|n|công nghiệp hóa|Industrialization changed rural life.|Công nghiệp hóa đã thay đổi đời sống nông thôn.
+industrialize|v|công nghiệp hóa|Vietnam is industrializing rapidly.|Việt Nam đang công nghiệp hóa nhanh chóng.
+inequality|n|sự bất bình đẳng|Income inequality is rising.|Bất bình đẳng thu nhập đang gia tăng.
+instability|n|sự bất ổn|Political instability hurts the economy.|Bất ổn chính trị làm tổn hại kinh tế.
+intensity|n|cường độ|The intensity of the storm increased.|Cường độ cơn bão tăng lên.
+intensive|adj|chuyên sâu, tập trung|She took an intensive English course.|Cô ấy học một khóa tiếng Anh cấp tốc.
+interviewer|n|người phỏng vấn|The interviewer asked about my goals.|Người phỏng vấn hỏi về mục tiêu của tôi.
+likelihood|n|khả năng xảy ra|There is little likelihood of rain.|Khả năng mưa là thấp.
+lump|n|cục, khối u|She found a lump in her neck.|Cô ấy phát hiện một khối u ở cổ.
+mathematical|adj|thuộc toán học|The problem needs a mathematical model.|Vấn đề cần một mô hình toán học.
+minus|prep, adj|trừ; âm|Ten minus four is six.|Mười trừ bốn bằng sáu.
+monkey|n|con khỉ|Monkeys live in the forest.|Khỉ sống trong rừng.
+nasty|adj|khó chịu, xấu xa|It was a nasty accident.|Đó là một tai nạn khủng khiếp.
+nest|n|tổ (chim)|The bird built a nest.|Con chim đã làm tổ.
+observer|n|người quan sát|Observers say the election was fair.|Giới quan sát cho rằng cuộc bầu cử công bằng.
+periodic|adj|định kỳ|Machines need periodic checks.|Máy móc cần kiểm tra định kỳ.
+physically|adv|về mặt thể chất|The job is physically demanding.|Công việc đòi hỏi nhiều thể lực.
+politically|adv|về mặt chính trị|The issue is politically sensitive.|Vấn đề này nhạy cảm về chính trị.
+positively|adv|tích cực|The public reacted positively.|Công chúng phản ứng tích cực.
+presume|v|cho rằng, đoán|I presume you are the new manager.|Tôi đoán anh là quản lý mới.
+processor|n|bộ xử lý|The phone has a fast processor.|Điện thoại có bộ xử lý nhanh.
+progression|n|sự tiến triển|There is a clear progression in her work.|Công việc của cô ấy có sự tiến triển rõ rệt.
+progressive|adj|tiến bộ; tăng dần|The country has progressive laws.|Đất nước có những đạo luật tiến bộ.
+pronounce|v|phát âm; tuyên bố|How do you pronounce this word?|Từ này phát âm thế nào?
+punch|v, n|đấm; cú đấm|He punched the wall.|Anh ta đấm vào tường.
+punish|v|trừng phạt|Should parents punish their children?|Cha mẹ có nên phạt con cái không?
+punishment|n|sự trừng phạt|Harsh punishment does not reduce crime.|Hình phạt nặng không làm giảm tội phạm.
+purely|adv|hoàn toàn, thuần túy|The decision was purely financial.|Quyết định hoàn toàn vì lý do tài chính.
+quotation|n|câu trích dẫn; báo giá|Start your essay with a quotation.|Mở đầu bài luận bằng một câu trích dẫn.
+reactive|adj|phản ứng (lại); dễ phản ứng|We should be proactive, not reactive.|Chúng ta nên chủ động thay vì bị động.
+reactor|n|lò phản ứng|The nuclear reactor was shut down.|Lò phản ứng hạt nhân đã bị đóng cửa.
+resistant|adj|có khả năng chống lại|This material is resistant to heat.|Vật liệu này chịu nhiệt.
+ridiculous|adj|lố bịch, vô lý|The price is ridiculous.|Giá cả thật vô lý.
+rope|n|dây thừng|Tie the boat with a rope.|Buộc thuyền bằng dây thừng.
+rub|v|chà xát|Rub your hands together.|Xoa hai tay vào nhau.
+selective|adj|có chọn lọc|The university is very selective.|Trường đại học tuyển chọn rất gắt gao.
+separation|n|sự tách biệt, chia ly|The separation of powers is important.|Sự phân chia quyền lực là quan trọng.
+slavery|n|chế độ nô lệ|Slavery was abolished in the 19th century.|Chế độ nô lệ bị xóa bỏ vào thế kỷ 19.
+snake|n|con rắn|Some snakes are dangerous.|Một số loài rắn rất nguy hiểm.
+socially|adv|về mặt xã hội|Smoking is less socially acceptable now.|Hút thuốc giờ ít được xã hội chấp nhận hơn.
+stabilize|v|ổn định|Prices have stabilized.|Giá cả đã ổn định.
+standardize|v|tiêu chuẩn hóa|Tests are standardized across schools.|Bài kiểm tra được chuẩn hóa giữa các trường.
+sword|n|thanh kiếm|The sword is in the museum.|Thanh kiếm được trưng bày trong bảo tàng.
+tense|adj, n|căng thẳng; thì (ngữ pháp)|The atmosphere was tense.|Bầu không khí căng thẳng.
+tricky|adj|khó, mẹo|This question is tricky.|Câu hỏi này hóc búa.
+unstable|adj|không ổn định|The building is unstable.|Tòa nhà không vững chắc.
+variability|n|tính biến thiên|There is great variability in rainfall.|Lượng mưa biến động rất lớn.
+variance|n|sự khác biệt; phương sai|There is some variance between the results.|Có chút khác biệt giữa các kết quả.
+variant|n|biến thể|A new variant of the virus appeared.|Một biến thể mới của virus đã xuất hiện.
+wisdom|n|sự thông thái|Grandparents pass on their wisdom.|Ông bà truyền lại sự khôn ngoan.
+absorption|n|sự hấp thụ|Vitamin D helps calcium absorption.|Vitamin D giúp hấp thụ canxi.
+accelerate|v|tăng tốc|Technology accelerates change.|Công nghệ thúc đẩy thay đổi nhanh hơn.
+acceleration|n|sự tăng tốc|The car has rapid acceleration.|Xe tăng tốc nhanh.
+accumulation|n|sự tích tụ|The accumulation of waste is a problem.|Sự tích tụ rác thải là một vấn đề.
+acid|n|axit|Acid rain damages forests.|Mưa axit làm hại rừng.
+acidic|adj|có tính axit|Lemon juice is acidic.|Nước chanh có tính axit.
+adolescent|n, adj|thanh thiếu niên|Adolescents need more sleep.|Thanh thiếu niên cần ngủ nhiều hơn.
+affirm|v|khẳng định|The study affirms earlier findings.|Nghiên cứu khẳng định các phát hiện trước đó.
+agriculture|n|nông nghiệp|Agriculture employs many people in Vietnam.|Nông nghiệp tạo việc làm cho nhiều người ở Việt Nam.
+alien|adj, n|xa lạ; người nước ngoài; người ngoài hành tinh|The idea was alien to them.|Ý tưởng đó hoàn toàn xa lạ với họ.
+alliance|n|liên minh|The two parties formed an alliance.|Hai đảng đã thành lập liên minh.
+allocation|n|sự phân bổ|The allocation of funds was unfair.|Việc phân bổ ngân sách không công bằng.
+approximation|n|sự xấp xỉ|This number is only an approximation.|Con số này chỉ là xấp xỉ.
+archaeology|n|khảo cổ học|She studies archaeology.|Cô ấy học khảo cổ học.
+assert|v|khẳng định|He asserted that he was innocent.|Anh ấy khẳng định mình vô tội.
+atom|n|nguyên tử|Everything is made of atoms.|Mọi thứ đều được tạo từ nguyên tử.
+atomic|adj|thuộc nguyên tử|Atomic energy is controversial.|Năng lượng nguyên tử gây tranh cãi.
+bacterial|adj|do vi khuẩn|Antibiotics treat bacterial infections.|Kháng sinh chữa nhiễm khuẩn.
+beam|n|chùm (tia sáng); dầm|A beam of light came through the window.|Một chùm sáng xuyên qua cửa sổ.
+behavioral|adj|thuộc hành vi|There are behavioral differences between boys and girls.|Có sự khác biệt về hành vi giữa nam và nữ.
+cattle|n|gia súc (bò)|Farmers raise cattle on the hills.|Nông dân nuôi bò trên đồi.
+civilization|n|nền văn minh|Ancient civilizations developed near rivers.|Các nền văn minh cổ đại phát triển gần sông.
+colonial|adj|thuộc địa|The building dates from the colonial period.|Tòa nhà có từ thời thuộc địa.
+colony|n|thuộc địa; bầy (côn trùng)|Ants live in colonies.|Kiến sống theo bầy.
+communicative|adj|giao tiếp|The course uses a communicative approach.|Khóa học dùng phương pháp giao tiếp.
+communist|adj, n|cộng sản|Vietnam is led by the Communist Party.|Việt Nam do Đảng Cộng sản lãnh đạo.
+competent|adj|có năng lực|She is a competent engineer.|Cô ấy là một kỹ sư có năng lực.
+composer|n|nhà soạn nhạc|Mozart was a famous composer.|Mozart là một nhà soạn nhạc nổi tiếng.
+conceive|v|hình dung, nghĩ ra; thụ thai|It is hard to conceive of life without phones.|Khó hình dung cuộc sống thiếu điện thoại.
+conception|n|quan niệm; sự thụ thai|People have different conceptions of success.|Mỗi người có quan niệm khác nhau về thành công.
+conceptual|adj|thuộc khái niệm|The study provides a conceptual framework.|Nghiên cứu đưa ra một khung khái niệm.
+conduction|n|sự dẫn (nhiệt, điện)|Metals allow heat conduction.|Kim loại dẫn nhiệt.
+confine|v|giới hạn, giam|The disease was confined to one area.|Dịch bệnh được khoanh vùng ở một khu vực.
+conservation|n|sự bảo tồn|Water conservation is important in dry areas.|Tiết kiệm nước rất quan trọng ở vùng khô hạn.
+conserve|v|bảo tồn, tiết kiệm|We must conserve energy.|Chúng ta phải tiết kiệm năng lượng.
+constitution|n|hiến pháp; thể trạng|The constitution protects free speech.|Hiến pháp bảo vệ quyền tự do ngôn luận.
+constrain|v|hạn chế, ràng buộc|Growth is constrained by a lack of workers.|Tăng trưởng bị hạn chế do thiếu lao động.
+continent|n|châu lục|Asia is the largest continent.|Châu Á là châu lục lớn nhất.
+contradictory|adj|mâu thuẫn|The evidence is contradictory.|Các bằng chứng mâu thuẫn nhau.
+controversy|n|cuộc tranh cãi|The new law caused controversy.|Luật mới gây tranh cãi.
+coordination|n|sự phối hợp|The project needs better coordination.|Dự án cần phối hợp tốt hơn.
+correlate|v|tương quan|Income correlates with education.|Thu nhập có tương quan với trình độ học vấn.
+correlation|n|mối tương quan|There is a strong correlation between diet and health.|Có mối tương quan chặt chẽ giữa ăn uống và sức khỏe.
+corruption|n|tham nhũng|Corruption slows economic growth.|Tham nhũng làm chậm tăng trưởng kinh tế.
+critically|adv|một cách phê phán; nghiêm trọng|Students should think critically.|Học sinh nên tư duy phản biện.
+crystal|n|tinh thể; pha lê|Salt forms crystals.|Muối kết tinh thành tinh thể.
+curriculum|n|chương trình học|Coding is now part of the school curriculum.|Lập trình giờ là một phần của chương trình học.
+cyclic|adj|có tính chu kỳ|The economy is cyclic.|Nền kinh tế có tính chu kỳ.
+damp|adj|ẩm ướt|The room is cold and damp.|Căn phòng lạnh và ẩm thấp.
+deliberately|adv|cố ý|He deliberately ignored the rules.|Anh ta cố ý phớt lờ quy định.
+demonstrator|n|người biểu tình|Demonstrators gathered in the square.|Người biểu tình tập trung ở quảng trường.
+dense|adj|dày đặc|The city has a dense population.|Thành phố có dân cư đông đúc.
+depict|v|miêu tả, khắc họa|The painting depicts village life.|Bức tranh khắc họa cuộc sống làng quê.
+derivative|n, adj|sản phẩm phái sinh; đạo hàm|Gasoline is a derivative of oil.|Xăng là sản phẩm từ dầu mỏ.
+dictate|v|ra lệnh; chi phối; đọc chính tả|Money should not dictate our choices.|Tiền không nên chi phối lựa chọn của chúng ta.
+dimensional|adj|thuộc chiều (2D, 3D)|They printed a three-dimensional model.|Họ in một mô hình ba chiều.
+disability|n|khuyết tật|People with disabilities need better access.|Người khuyết tật cần được tiếp cận tốt hơn.
+discharge|v, n|thải ra; cho ra viện|Factories discharge waste into rivers.|Các nhà máy xả thải ra sông.
+discourse|n|diễn ngôn, bài nói|Political discourse has become more negative.|Diễn ngôn chính trị trở nên tiêu cực hơn.
+discrimination|n|sự phân biệt đối xử|Age discrimination is illegal.|Phân biệt đối xử vì tuổi tác là phạm pháp.
+diverse|adj|đa dạng|The city has a diverse population.|Thành phố có dân cư đa dạng.
+dominant|adj|chiếm ưu thế|English is the dominant language online.|Tiếng Anh là ngôn ngữ chiếm ưu thế trên mạng.
+domination|n|sự thống trị|The company's domination of the market worries critics.|Sự thống trị thị trường của công ty khiến giới phê bình lo ngại.
+drain|v, n|thoát nước; cống|Drain the pasta.|Chắt nước khỏi mì.
+drift|v|trôi dạt|The boat drifted out to sea.|Con thuyền trôi ra biển.
+elaborate|adj, v|công phu; giải thích chi tiết|Could you elaborate on that point?|Bạn có thể giải thích kỹ hơn ý đó không?
+elevation|n|độ cao|The village is at an elevation of 1,500 meters.|Ngôi làng ở độ cao 1.500 mét.
+elimination|n|sự loại bỏ|The elimination of poverty is a key goal.|Xóa đói giảm nghèo là mục tiêu then chốt.
+elite|n, adj|tầng lớp tinh hoa|Only the elite could afford education.|Chỉ giới tinh hoa mới có điều kiện học hành.
+emergence|n|sự xuất hiện|The emergence of the internet changed everything.|Sự ra đời của internet đã thay đổi mọi thứ.
+emission|n|sự phát thải|Car emissions pollute the air.|Khí thải ô tô làm ô nhiễm không khí.
+emit|v|phát ra|Factories emit carbon dioxide.|Nhà máy thải ra khí CO2.
+enforcement|n|sự thi hành (luật)|Law enforcement must be fair.|Việc thực thi pháp luật phải công bằng.
+essentially|adv|về cơ bản|The two plans are essentially the same.|Hai kế hoạch về cơ bản là giống nhau.
+estimation|n|sự ước tính|By my estimation, it will cost 1 million.|Theo ước tính của tôi, sẽ tốn 1 triệu.
+evolutionary|adj|thuộc tiến hóa|Fear has an evolutionary purpose.|Nỗi sợ có mục đích tiến hóa.
+execute|v|thực hiện; xử tử|The plan was executed perfectly.|Kế hoạch được thực hiện hoàn hảo.
+execution|n|sự thực hiện; vụ hành quyết|Good ideas need good execution.|Ý tưởng tốt cần được thực hiện tốt.
+explicit|adj|rõ ràng, tường minh|The rules must be explicit.|Quy định phải rõ ràng.
+explicitly|adv|một cách rõ ràng|The law explicitly bans smoking indoors.|Luật cấm rõ ràng việc hút thuốc trong nhà.
+exploit|v|khai thác; bóc lột|Workers were exploited by the company.|Công nhân bị công ty bóc lột.
+fertility|n|khả năng sinh sản; độ màu mỡ|Fertility rates are falling in many countries.|Tỷ lệ sinh đang giảm ở nhiều nước.
+fiber|n|chất xơ; sợi|Vegetables are high in fiber.|Rau củ giàu chất xơ.
+flesh|n|thịt (cơ thể)|The fruit has sweet flesh.|Quả có phần thịt ngọt.
+formulation|n|sự xây dựng, soạn thảo; công thức|The formulation of the policy took a year.|Việc xây dựng chính sách mất một năm.
+fundamentally|adv|về cơ bản|The system is fundamentally flawed.|Hệ thống có sai sót cơ bản.
+genetically|adv|về mặt di truyền|Genetically modified crops are controversial.|Cây trồng biến đổi gen gây tranh cãi.
+genetics|n|di truyền học|Genetics affects our health.|Di truyền ảnh hưởng đến sức khỏe của chúng ta.
+globalization|n|toàn cầu hóa|Globalization has benefits and costs.|Toàn cầu hóa có cả lợi ích lẫn cái giá phải trả.
+grasp|v, n|nắm bắt|It is hard to grasp the size of the problem.|Thật khó hình dung quy mô của vấn đề.
+gravity|n|trọng lực; tính nghiêm trọng|Gravity keeps us on the ground.|Trọng lực giữ chúng ta trên mặt đất.
+gross|adj|tổng (gộp); thô thiển|Gross domestic product rose by 6%.|Tổng sản phẩm quốc nội tăng 6%.
+hip|n|hông|She hurt her hip.|Bà ấy bị đau hông.
+ideology|n|hệ tư tưởng|Political ideology shapes policy.|Hệ tư tưởng chính trị định hình chính sách.
+immune|adj|miễn dịch|The immune system fights disease.|Hệ miễn dịch chống lại bệnh tật.
+independently|adv|độc lập|Students should learn to work independently.|Học sinh nên học cách làm việc độc lập.
+inevitably|adv|không thể tránh khỏi|Prices will inevitably rise.|Giá cả chắc chắn sẽ tăng.
+infect|v|lây nhiễm|The virus infected thousands of people.|Virus đã lây cho hàng nghìn người.
+infectious|adj|truyền nhiễm|Measles is highly infectious.|Bệnh sởi rất dễ lây.
+initiate|v|khởi xướng|The government initiated a new program.|Chính phủ đã khởi động một chương trình mới.
+initiation|n|sự khởi đầu; lễ kết nạp|The initiation of the project was delayed.|Việc khởi động dự án bị trì hoãn.
+inject|v|tiêm; bơm vào|The government injected money into the economy.|Chính phủ bơm tiền vào nền kinh tế.
+injection|n|mũi tiêm|The nurse gave him an injection.|Y tá tiêm cho anh ấy một mũi.
+instinct|n|bản năng|Birds build nests by instinct.|Chim làm tổ theo bản năng.
+integration|n|sự hội nhập, tích hợp|Economic integration in Asia is growing.|Hội nhập kinh tế ở châu Á đang tăng.
+interact|v|tương tác|Children learn by interacting with others.|Trẻ học hỏi bằng cách tương tác với người khác.
+intervene|v|can thiệp|The government should intervene to control prices.|Chính phủ nên can thiệp để kiểm soát giá.
+invasion|n|cuộc xâm lược; sự xâm phạm|Cameras can be an invasion of privacy.|Camera có thể xâm phạm quyền riêng tư.
+justification|n|sự biện minh, lý lẽ|There is no justification for violence.|Không có lý lẽ nào biện minh cho bạo lực.
+legend|n|truyền thuyết; huyền thoại|The legend of Hoan Kiem Lake is famous.|Truyền thuyết Hồ Hoàn Kiếm rất nổi tiếng.
+legitimate|adj|hợp pháp, chính đáng|That is a legitimate concern.|Đó là một mối lo chính đáng.
+liable|adj|chịu trách nhiệm (pháp lý); dễ bị|Drivers are liable for any damage.|Tài xế chịu trách nhiệm cho mọi thiệt hại.
+magnetic|adj|có từ tính|The earth has a magnetic field.|Trái đất có từ trường.
+manipulate|v|thao túng; điều khiển khéo léo|Advertising can manipulate people.|Quảng cáo có thể thao túng con người.
+manipulation|n|sự thao túng|Data manipulation is a serious offense.|Thao túng dữ liệu là vi phạm nghiêm trọng.
+marginal|adj|nhỏ, không đáng kể; bên lề|There was only a marginal improvement.|Chỉ có một cải thiện nhỏ.
+methodology|n|phương pháp luận|The study's methodology was weak.|Phương pháp luận của nghiên cứu còn yếu.
+migrate|v|di cư|Many birds migrate south in winter.|Nhiều loài chim di cư về phương nam vào mùa đông.
+migration|n|sự di cư|Rural-to-urban migration is increasing.|Di cư từ nông thôn ra thành thị đang tăng.
+missile|n|tên lửa|The army tested a new missile.|Quân đội thử nghiệm một tên lửa mới.
+mobility|n|tính di động; sự thăng tiến|Education increases social mobility.|Giáo dục tăng khả năng thăng tiến xã hội.
+molecular|adj|thuộc phân tử|She works in molecular biology.|Cô ấy làm về sinh học phân tử.
+molecule|n|phân tử|A water molecule has three atoms.|Một phân tử nước có ba nguyên tử.
+morality|n|đạo đức|Religion often shapes morality.|Tôn giáo thường định hình đạo đức.
+mortality|n|tỷ lệ tử vong|Infant mortality has fallen sharply.|Tỷ lệ tử vong ở trẻ sơ sinh giảm mạnh.
+motive|n|động cơ|What was the motive for the crime?|Động cơ của vụ án là gì?
+myth|n|thần thoại; quan niệm sai lầm|It is a myth that we only use 10% of our brain.|Chuyện chúng ta chỉ dùng 10% bộ não là một ngộ nhận.
+naked|adj|trần truồng|It is visible to the naked eye.|Có thể nhìn thấy bằng mắt thường.
+neutral|adj|trung lập|Switzerland remained neutral during the war.|Thụy Sĩ giữ trung lập trong chiến tranh.
+objection|n|sự phản đối|There were strong objections to the plan.|Kế hoạch gặp phản đối mạnh mẽ.
+oral|adj|bằng miệng|There will be an oral exam.|Sẽ có một bài thi vấn đáp.
+organ|n|cơ quan (cơ thể); đàn organ|The heart is a vital organ.|Tim là một cơ quan sống còn.
+peasant|n|nông dân (thời xưa)|Most peasants lived in poverty.|Phần lớn nông dân sống trong nghèo khổ.
+philosopher|n|nhà triết học|Confucius was a great philosopher.|Khổng Tử là một nhà triết học lớn.
+philosophical|adj|thuộc triết học|It is a philosophical question.|Đó là một câu hỏi mang tính triết học.
+powder|n|bột|Mix the powder with water.|Trộn bột với nước.
+practitioner|n|người hành nghề|Medical practitioners need regular training.|Người hành nghề y cần được đào tạo thường xuyên.
+probe|v, n|thăm dò, điều tra; tàu thăm dò|Scientists sent a probe to Mars.|Các nhà khoa học đã gửi một tàu thăm dò lên sao Hỏa.
+profound|adj|sâu sắc|The internet has had a profound effect on society.|Internet có ảnh hưởng sâu sắc đến xã hội.
+psychiatric|adj|thuộc tâm thần học|He received psychiatric treatment.|Ông ấy được điều trị tâm thần.
+psychologist|n|nhà tâm lý học|Psychologists study human behavior.|Các nhà tâm lý học nghiên cứu hành vi con người.
+psychology|n|tâm lý học|She studied psychology at university.|Cô ấy học tâm lý học ở đại học.
+quantitative|adj|định lượng|The study uses quantitative data.|Nghiên cứu dùng dữ liệu định lượng.
+radiation|n|bức xạ|Too much radiation is harmful.|Quá nhiều bức xạ là có hại.
+randomize|v|ngẫu nhiên hóa|Participants were randomized into two groups.|Người tham gia được chia ngẫu nhiên thành hai nhóm.
+randomly|adv|ngẫu nhiên|People were randomly selected.|Mọi người được chọn ngẫu nhiên.
+rational|adj|hợp lý, có lý trí|We need a rational discussion.|Chúng ta cần một cuộc thảo luận lý trí.
+rationality|n|tính hợp lý|Economists assume rationality in decisions.|Các nhà kinh tế giả định con người ra quyết định hợp lý.
+reconstruct|v|tái thiết, dựng lại|The city was reconstructed after the war.|Thành phố được tái thiết sau chiến tranh.
+regime|n|chế độ (chính trị); chế độ (ăn, tập)|The old regime collapsed.|Chế độ cũ sụp đổ.
+rejection|n|sự từ chối|Fear of rejection stops many people.|Nỗi sợ bị từ chối cản bước nhiều người.
+render|v|làm cho; kết xuất|The flood rendered the road unusable.|Trận lũ khiến con đường không thể sử dụng.
+reproduction|n|sự sinh sản; bản sao|The painting is a reproduction.|Bức tranh là bản sao.
+republic|n|nước cộng hòa|Vietnam is a socialist republic.|Việt Nam là một nước cộng hòa xã hội chủ nghĩa.
+revolutionary|adj|mang tính cách mạng|The smartphone was a revolutionary invention.|Điện thoại thông minh là một phát minh mang tính cách mạng.
+rhythm|n|nhịp điệu|Music has rhythm.|Âm nhạc có nhịp điệu.
+ritual|n|nghi lễ, nghi thức|Tea drinking is a daily ritual.|Uống trà là nghi thức hằng ngày.
+scatter|v|rải rác, phân tán|The villages are scattered across the mountains.|Các ngôi làng nằm rải rác trên núi.
+sensible|adj|hợp lý, khôn ngoan|That is a sensible decision.|Đó là một quyết định hợp lý.
+sensitivity|n|sự nhạy cảm|Cultural sensitivity is important.|Sự nhạy bén về văn hóa rất quan trọng.
+simultaneously|adv|đồng thời|Two events happened simultaneously.|Hai sự việc xảy ra đồng thời.
+sin|n|tội lỗi|Lying is a sin in many religions.|Nói dối là tội lỗi trong nhiều tôn giáo.
+sophisticate|v|làm tinh vi (sophisticated: tinh vi, tinh tế)|The system uses sophisticated technology.|Hệ thống dùng công nghệ tinh vi.
+sponsorship|n|sự tài trợ|The event depends on sponsorship.|Sự kiện phụ thuộc vào tài trợ.
+statistical|adj|thuộc thống kê|There is no statistical difference.|Không có khác biệt về mặt thống kê.
+statistically|adv|về mặt thống kê|The results are statistically significant.|Kết quả có ý nghĩa thống kê.
+substitution|n|sự thay thế|The substitution of machines for workers reduced costs.|Việc thay công nhân bằng máy giúp giảm chi phí.
+subtle|adj|tinh tế, khó nhận ra|There is a subtle difference between the two.|Hai thứ có sự khác biệt tinh tế.
+sufficiently|adv|đầy đủ|The issue was not sufficiently explained.|Vấn đề chưa được giải thích đầy đủ.
+suicide|n|sự tự tử|Suicide rates among young people are a concern.|Tỷ lệ tự tử ở người trẻ là điều đáng lo ngại.
+sustainable|adj|bền vững|We need sustainable development.|Chúng ta cần phát triển bền vững.
+swell|v|sưng lên; tăng lên|My ankle swelled up.|Mắt cá chân tôi sưng lên.
+symbolic|adj|mang tính biểu tượng|The gesture was largely symbolic.|Cử chỉ đó phần lớn mang tính biểu tượng.
+technically|adv|về mặt kỹ thuật|Technically, the plan is possible.|Về mặt kỹ thuật, kế hoạch là khả thi.
+theorist|n|nhà lý thuyết|Economic theorists disagree on the cause.|Các nhà lý thuyết kinh tế bất đồng về nguyên nhân.
+thereby|adv|nhờ đó, do đó|Prices fell, thereby increasing demand.|Giá giảm, nhờ đó làm tăng nhu cầu.
+transformation|n|sự chuyển đổi|The city has undergone a transformation.|Thành phố đã thay da đổi thịt.
+treaty|n|hiệp ước|The two countries signed a peace treaty.|Hai nước đã ký hiệp ước hòa bình.
+tribe|n|bộ lạc|The tribe lives in the forest.|Bộ lạc sống trong rừng.
+ultimate|adj|cuối cùng, tối thượng|Our ultimate goal is zero waste.|Mục tiêu cuối cùng của chúng tôi là không rác thải.
+unity|n|sự thống nhất|National unity is important.|Sự đoàn kết dân tộc rất quan trọng.
+vague|adj|mơ hồ|His answer was vague.|Câu trả lời của anh ấy mơ hồ.
+validity|n|tính hợp lệ, giá trị|Some experts question the validity of the test.|Một số chuyên gia nghi ngờ giá trị của bài kiểm tra.
+virtue|n|đức tính|Patience is a virtue.|Kiên nhẫn là một đức tính tốt.
+weave|v|dệt|They weave silk by hand.|Họ dệt lụa bằng tay.

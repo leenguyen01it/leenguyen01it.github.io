@@ -1,0 +1,238 @@
+abdominal|adj|thuộc bụng|He had abdominal pain.|Anh ấy bị đau bụng.
+aggregate|adj, n|tổng hợp, gộp|Aggregate demand fell last year.|Tổng cầu đã giảm năm ngoái.
+algorithm|n|thuật toán|Search engines use complex algorithms.|Công cụ tìm kiếm dùng các thuật toán phức tạp.
+altitude|n|độ cao (so với mặt biển)|The plane flew at a high altitude.|Máy bay bay ở độ cao lớn.
+analogy|n|sự so sánh tương đồng|He used an analogy to explain the idea.|Anh ấy dùng một phép so sánh để giải thích ý tưởng.
+antibiotic|n|thuốc kháng sinh|Antibiotics do not work against viruses.|Kháng sinh không có tác dụng với virus.
+antibody|n|kháng thể|The body produces antibodies to fight infection.|Cơ thể tạo ra kháng thể để chống nhiễm trùng.
+applause|n|tràng pháo tay|The speech received loud applause.|Bài phát biểu nhận được tràng vỗ tay lớn.
+arbitrary|adj|tùy tiện|The decision seemed arbitrary.|Quyết định có vẻ tùy tiện.
+axis|n|trục|The x-axis shows the years.|Trục x thể hiện các năm.
+bracket|n|ngoặc; nhóm (thu nhập, tuổi)|People in the 18–25 age bracket use social media most.|Nhóm tuổi 18–25 dùng mạng xã hội nhiều nhất.
+coefficient|n|hệ số|The correlation coefficient was 0.8.|Hệ số tương quan là 0,8.
+composite|adj, n|tổng hợp; vật liệu composite|The score is a composite of three tests.|Điểm là tổng hợp của ba bài kiểm tra.
+cone|n|hình nón|Ice cream comes in a cone.|Kem được đựng trong ốc quế.
+converge|v|hội tụ|The two roads converge near the bridge.|Hai con đường gặp nhau gần cây cầu.
+convergence|n|sự hội tụ|There is a convergence of interests.|Có sự gặp gỡ về lợi ích.
+cue|n|tín hiệu, gợi ý|Body language gives us cues about feelings.|Ngôn ngữ cơ thể cho ta tín hiệu về cảm xúc.
+cylinder|n|hình trụ|The tank is shaped like a cylinder.|Bồn chứa có hình trụ.
+degrade|v|xuống cấp; phân hủy|Plastic takes centuries to degrade.|Nhựa mất hàng thế kỷ để phân hủy.
+delta|n|đồng bằng châu thổ|The Mekong Delta grows a lot of rice.|Đồng bằng sông Cửu Long trồng nhiều lúa.
+deviation|n|sự sai lệch|Any deviation from the plan must be reported.|Mọi sai lệch so với kế hoạch đều phải báo cáo.
+differential|adj, n|khác biệt; chênh lệch|There is a wage differential between men and women.|Có sự chênh lệch lương giữa nam và nữ.
+diffusion|n|sự khuếch tán, lan tỏa|The diffusion of technology is fast.|Công nghệ lan tỏa nhanh.
+dilute|v|pha loãng|Dilute the juice with water.|Pha loãng nước ép với nước.
+dominance|n|sự thống trị|The company lost its market dominance.|Công ty mất vị thế thống trị thị trường.
+dye|n, v|thuốc nhuộm; nhuộm|She dyed her hair red.|Cô ấy nhuộm tóc đỏ.
+ecology|n|sinh thái học|The dam changed the ecology of the river.|Con đập đã làm thay đổi hệ sinh thái của dòng sông.
+elastic|adj|đàn hồi|Skin becomes less elastic with age.|Da kém đàn hồi theo tuổi tác.
+elasticity|n|độ co giãn|The price elasticity of rice is low.|Độ co giãn theo giá của gạo thấp.
+enzyme|n|en-zim|Enzymes help digest food.|En-zim giúp tiêu hóa thức ăn.
+epidemic|n|dịch bệnh|Obesity has become an epidemic.|Béo phì đã trở thành một nạn dịch.
+equilibrium|n|trạng thái cân bằng|The market reached equilibrium.|Thị trường đạt trạng thái cân bằng.
+fungus|n|nấm|Fungus grows in damp places.|Nấm mọc ở nơi ẩm ướt.
+hawk|n|chim ưng|A hawk flew over the field.|Một con chim ưng bay qua cánh đồng.
+incumbent|n, adj|người đương nhiệm|The incumbent president won again.|Tổng thống đương nhiệm lại đắc cử.
+inferior|adj|kém hơn|The product is inferior in quality.|Sản phẩm có chất lượng kém hơn.
+intermediate|adj|trung cấp|She is at an intermediate level of English.|Cô ấy ở trình độ tiếng Anh trung cấp.
+ion|n|i-on|Salt water contains sodium ions.|Nước muối chứa các ion natri.
+kidney|n|thận|The kidneys clean the blood.|Thận lọc máu.
+lateral|adj|bên, ngang|Lateral thinking helps solve problems.|Tư duy đa chiều giúp giải quyết vấn đề.
+maternal|adj|thuộc người mẹ|Maternal health has improved.|Sức khỏe bà mẹ đã được cải thiện.
+membrane|n|màng|The cell is surrounded by a membrane.|Tế bào được bao quanh bởi một lớp màng.
+motif|n|mô-típ, họa tiết|The lotus is a common motif in Vietnamese art.|Hoa sen là họa tiết phổ biến trong nghệ thuật Việt.
+multinational|adj, n|đa quốc gia|She works for a multinational company.|Cô ấy làm cho một công ty đa quốc gia.
+mutation|n|đột biến|The virus has a new mutation.|Virus có một đột biến mới.
+niche|n|thị trường ngách; vị trí thích hợp|The company found a niche in the market.|Công ty đã tìm được một thị trường ngách.
+nitrogen|n|ni-tơ|Air is mostly nitrogen.|Không khí chủ yếu là ni-tơ.
+node|n|nút (mạng)|Each node in the network is a computer.|Mỗi nút trong mạng là một máy tính.
+nominal|adj|danh nghĩa; nhỏ|They charge a nominal fee.|Họ thu một khoản phí nhỏ.
+nucleus|n|hạt nhân; nhân tế bào|The nucleus controls the cell.|Nhân điều khiển tế bào.
+numerical|adj|thuộc số|The data is in numerical order.|Dữ liệu được sắp theo thứ tự số.
+nutrient|n|chất dinh dưỡng|Plants take nutrients from the soil.|Cây lấy chất dinh dưỡng từ đất.
+offspring|n|con cái|Parents protect their offspring.|Cha mẹ bảo vệ con cái.
+onset|n|sự khởi đầu (thường là điều xấu)|Exercise can delay the onset of disease.|Tập thể dục có thể làm chậm sự khởi phát bệnh.
+optimal|adj|tối ưu|Find the optimal solution.|Tìm giải pháp tối ưu.
+orient|v|định hướng|The course is oriented toward beginners.|Khóa học hướng tới người mới bắt đầu.
+par|n|mức ngang bằng (on par with)|Our salaries are on par with other firms.|Lương của chúng tôi ngang với các công ty khác.
+paradigm|n|mô hình, hệ hình|The internet created a new paradigm for business.|Internet tạo ra một mô hình kinh doanh mới.
+pest|n|sâu bọ gây hại|Pests destroyed the crops.|Sâu bọ đã phá hoại mùa màng.
+pesticide|n|thuốc trừ sâu|Farmers use too many pesticides.|Nông dân dùng quá nhiều thuốc trừ sâu.
+plantation|n|đồn điền|There are many coffee plantations in the Central Highlands.|Tây Nguyên có nhiều đồn điền cà phê.
+pragmatic|adj|thực tế, thực dụng|We need a pragmatic solution.|Chúng ta cần một giải pháp thực tế.
+precipitate|v|đẩy nhanh, gây ra|The crisis precipitated a fall in prices.|Cuộc khủng hoảng làm giá giảm nhanh.
+precipitation|n|lượng mưa (khí tượng)|Annual precipitation is high in the south.|Lượng mưa hằng năm ở miền Nam cao.
+qualitative|adj|định tính|The study uses qualitative methods.|Nghiên cứu dùng phương pháp định tính.
+quantum|adj, n|lượng tử|Quantum computers are still experimental.|Máy tính lượng tử vẫn đang thử nghiệm.
+radar|n|ra-đa|The plane disappeared from the radar.|Máy bay biến mất khỏi màn hình ra-đa.
+replicate|v|sao chép, lặp lại (thí nghiệm)|Other scientists could not replicate the results.|Các nhà khoa học khác không lặp lại được kết quả.
+replication|n|sự lặp lại|Replication is important in science.|Việc lặp lại thí nghiệm rất quan trọng trong khoa học.
+reservoir|n|hồ chứa nước|The city gets water from a reservoir.|Thành phố lấy nước từ một hồ chứa.
+scripture|n|kinh sách|The monk read the scriptures.|Nhà sư đọc kinh.
+sediment|n|trầm tích, cặn|The river carries sediment to the sea.|Con sông mang phù sa ra biển.
+semantic|adj|thuộc ngữ nghĩa|There is a semantic difference between the two words.|Hai từ có khác biệt về nghĩa.
+singular|n, adj|số ít|"Child" is singular.|"Child" là số ít.
+slab|n|tấm (đá, bê tông)|The floor is made of concrete slabs.|Sàn được làm bằng những tấm bê tông.
+slash|v, n|cắt giảm mạnh; dấu gạch chéo|The company slashed prices.|Công ty giảm giá mạnh.
+sniff|v|hít, ngửi|The dog sniffed the bag.|Con chó ngửi chiếc túi.
+socialize|v|giao lưu|Children need time to socialize.|Trẻ em cần thời gian giao lưu.
+static|adj|tĩnh, không thay đổi|Prices have remained static.|Giá cả không thay đổi.
+surgical|adj|thuộc phẫu thuật|Wear a surgical mask.|Đeo khẩu trang y tế.
+susceptible|adj|dễ bị ảnh hưởng|Children are more susceptible to infection.|Trẻ em dễ bị nhiễm bệnh hơn.
+swap|v, n|trao đổi, hoán đổi|Can we swap seats?|Mình đổi chỗ được không?
+synthetic|adj|tổng hợp, nhân tạo|This shirt is made of synthetic fiber.|Áo này làm bằng sợi tổng hợp.
+temporal|adj|thuộc thời gian|The study looks at temporal changes.|Nghiên cứu xem xét các thay đổi theo thời gian.
+thermal|adj|thuộc nhiệt|This is a thermal power plant.|Đây là một nhà máy nhiệt điện.
+tolerance|n|sự khoan dung; sức chịu đựng|Tolerance is important in a diverse society.|Lòng khoan dung rất quan trọng trong một xã hội đa dạng.
+tract|n|vùng; đường (tiêu hóa, hô hấp)|Food passes through the digestive tract.|Thức ăn đi qua đường tiêu hóa.
+trivial|adj|tầm thường, vặt vãnh|Don't worry about trivial things.|Đừng lo về những chuyện vặt vãnh.
+turbulent|adj|hỗn loạn; nhiễu động|It was a turbulent period in history.|Đó là một giai đoạn đầy biến động trong lịch sử.
+undergraduate|n, adj|sinh viên đại học (chưa tốt nghiệp)|She is an undergraduate student.|Cô ấy là sinh viên đại học.
+unintelligible|adj|không thể hiểu được|His handwriting is unintelligible.|Chữ viết tay của anh ấy không đọc nổi.
+urine|n|nước tiểu|The doctor tested his urine.|Bác sĩ xét nghiệm nước tiểu của anh ấy.
+valve|n|van|Turn off the gas valve.|Khóa van ga lại.
+vegetation|n|thảm thực vật|The island is covered with thick vegetation.|Hòn đảo được bao phủ bởi thảm thực vật dày.
+velocity|n|vận tốc|Measure the velocity of the water.|Đo vận tốc dòng nước.
+vocabulary|n|từ vựng|Reading helps build vocabulary.|Đọc sách giúp tăng vốn từ vựng.
+wheat|n|lúa mì|Bread is made from wheat.|Bánh mì được làm từ lúa mì.
+whereby|adv|theo đó, nhờ đó|They set up a system whereby users can vote online.|Họ lập ra một hệ thống theo đó người dùng có thể bỏ phiếu trực tuyến.
+antiquity|n|thời cổ đại; cổ vật|The temple dates from antiquity.|Ngôi đền có từ thời cổ đại.
+binary|adj|nhị phân|Computers use binary code.|Máy tính dùng mã nhị phân.
+chess|n|cờ vua|Do you play chess?|Bạn có chơi cờ vua không?
+chromosome|n|nhiễm sắc thể|Humans have 46 chromosomes.|Con người có 46 nhiễm sắc thể.
+contour|n|đường viền; đường đồng mức|The map shows contour lines.|Bản đồ thể hiện các đường đồng mức.
+coronary|adj|thuộc động mạch vành|He died of coronary heart disease.|Ông ấy mất vì bệnh mạch vành.
+corpus|n|kho ngữ liệu|The word list is based on a large corpus.|Danh sách từ dựa trên một kho ngữ liệu lớn.
+deceive|v|lừa dối|Don't let advertising deceive you.|Đừng để quảng cáo lừa bạn.
+deflection|n|sự lệch hướng|The deflection of light was measured.|Độ lệch của ánh sáng đã được đo.
+denote|v|biểu thị|The red color denotes danger.|Màu đỏ biểu thị sự nguy hiểm.
+dialect|n|phương ngữ|People in Hue speak a different dialect.|Người Huế nói một phương ngữ khác.
+discrete|adj|riêng biệt, rời rạc|The course has three discrete parts.|Khóa học có ba phần riêng biệt.
+encode|v|mã hóa|The data is encoded before sending.|Dữ liệu được mã hóa trước khi gửi.
+epidemiology|n|dịch tễ học|She works in epidemiology.|Cô ấy làm trong ngành dịch tễ học.
+facet|n|khía cạnh|Every facet of life has changed.|Mọi khía cạnh của cuộc sống đã thay đổi.
+fin|n|vây cá|Sharks have large fins.|Cá mập có vây lớn.
+finite|adj|có hạn|Oil is a finite resource.|Dầu mỏ là tài nguyên có hạn.
+flux|n|sự thay đổi liên tục|The industry is in a state of flux.|Ngành này đang thay đổi liên tục.
+friction|n|ma sát; xích mích|There was friction between the two teams.|Có xích mích giữa hai nhóm.
+hepatitis|n|bệnh viêm gan|Hepatitis B can be prevented by vaccination.|Viêm gan B có thể phòng bằng vắc-xin.
+invert|v|đảo ngược|Invert the glass to dry it.|Úp ngược cốc cho khô.
+irrigation|n|sự tưới tiêu|Rice needs good irrigation.|Lúa cần được tưới tiêu tốt.
+locus|n|vị trí, trung tâm|The city became the locus of trade.|Thành phố trở thành trung tâm thương mại.
+mercury|n|thủy ngân|Some fish contain mercury.|Một số loài cá chứa thủy ngân.
+metabolism|n|sự trao đổi chất|Exercise speeds up metabolism.|Tập thể dục giúp tăng trao đổi chất.
+mole|n|nốt ruồi; chuột chũi; mol|She has a mole on her cheek.|Cô ấy có một nốt ruồi trên má.
+neuron|n|tế bào thần kinh|The brain has billions of neurons.|Não có hàng tỷ tế bào thần kinh.
+notation|n|ký hiệu|Learn the musical notation.|Học ký hiệu âm nhạc.
+novice|n|người mới vào nghề|The course is designed for novices.|Khóa học dành cho người mới.
+onwards|adv|trở đi|From 2030 onwards, the law will change.|Từ năm 2030 trở đi, luật sẽ thay đổi.
+oscillation|n|sự dao động|The oscillation of prices worries investors.|Sự dao động của giá khiến nhà đầu tư lo lắng.
+partition|n, v|vách ngăn; sự chia cắt|A partition divides the office.|Một vách ngăn chia đôi văn phòng.
+physiological|adj|thuộc sinh lý|Stress has physiological effects.|Căng thẳng gây ra các tác động sinh lý.
+quiz|n|bài kiểm tra ngắn|We have a vocabulary quiz every Friday.|Thứ Sáu nào chúng tôi cũng có bài kiểm tra từ vựng.
+radius|n|bán kính|Find all shops within a 5 km radius.|Tìm mọi cửa hàng trong bán kính 5 km.
+receptor|n|thụ thể|The drug blocks pain receptors.|Thuốc chặn các thụ thể đau.
+repertoire|n|vốn tiết mục; vốn kỹ năng|Expand your repertoire of phrases.|Hãy mở rộng vốn mẫu câu của bạn.
+respiratory|adj|thuộc hô hấp|Air pollution causes respiratory diseases.|Ô nhiễm không khí gây bệnh hô hấp.
+scroll|v, n|cuộn (màn hình); cuộn giấy|Scroll down to read more.|Cuộn xuống để đọc thêm.
+secrete|v|tiết ra|The glands secrete hormones.|Các tuyến tiết ra hoóc-môn.
+sensory|adj|thuộc giác quan|Babies learn through sensory experience.|Em bé học qua trải nghiệm giác quan.
+solvent|n, adj|dung môi; có khả năng thanh toán|Water is a common solvent.|Nước là một dung môi phổ biến.
+sperm|n|tinh trùng|Sperm counts are falling in some countries.|Số lượng tinh trùng đang giảm ở một số nước.
+syllable|n|âm tiết|"Water" has two syllables.|"Water" có hai âm tiết.
+terminology|n|thuật ngữ|Medical terminology is hard to learn.|Thuật ngữ y khoa khó học.
+transcribe|v|chép lại (từ âm thanh)|Transcribe the interview.|Chép lại nội dung cuộc phỏng vấn.
+vector|n|véc-tơ; vật trung gian truyền bệnh|Mosquitoes are vectors of dengue.|Muỗi là vật trung gian truyền bệnh sốt xuất huyết.
+yeast|n|men (nở)|Bread needs yeast.|Làm bánh mì cần men.
+amino|adj|a-min (amino acid: axit amin)|Proteins are made of amino acids.|Protein được tạo từ các axit amin.
+artifact|n|hiện vật|The museum displays ancient artifacts.|Bảo tàng trưng bày hiện vật cổ.
+bilingual|adj|song ngữ|She grew up bilingual.|Cô ấy lớn lên trong môi trường song ngữ.
+chemotherapy|n|hóa trị|He is having chemotherapy.|Ông ấy đang hóa trị.
+confound|v|làm bối rối; gây nhiễu (biến)|The results confounded the experts.|Kết quả khiến các chuyên gia bối rối.
+dissection|n|sự mổ xẻ|Students learn anatomy through dissection.|Sinh viên học giải phẫu qua mổ xẻ.
+dissertation|n|luận án|He is writing his dissertation.|Anh ấy đang viết luận án.
+entrant|n|người mới tham gia|New entrants to the job market need skills.|Người mới vào thị trường lao động cần kỹ năng.
+fetal|adj|thuộc bào thai|Smoking affects fetal development.|Hút thuốc ảnh hưởng đến sự phát triển của thai nhi.
+gradient|n|độ dốc|The road has a steep gradient.|Con đường có độ dốc lớn.
+grammatical|adj|thuộc ngữ pháp|Check your essay for grammatical errors.|Kiểm tra lỗi ngữ pháp trong bài luận.
+infinity|n|vô cực|The road seemed to stretch to infinity.|Con đường như kéo dài đến vô tận.
+innate|adj|bẩm sinh|Is language ability innate?|Khả năng ngôn ngữ có phải bẩm sinh không?
+longitudinal|adj|theo chiều dọc; dài hạn (nghiên cứu)|It was a longitudinal study over 20 years.|Đó là một nghiên cứu theo dõi dài hạn trong 20 năm.
+marrow|n|tủy|He needs a bone marrow transplant.|Ông ấy cần ghép tủy xương.
+millimeter|n|mi-li-mét|The rain fell at 50 millimeters an hour.|Mưa rơi 50 mi-li-mét mỗi giờ.
+morphological|adj|thuộc hình thái|There are morphological differences between the species.|Các loài có khác biệt về hình thái.
+morphology|n|hình thái học|Morphology studies the structure of words.|Hình thái học nghiên cứu cấu tạo từ.
+neural|adj|thuộc thần kinh|A neural network learns from data.|Mạng nơ-ron học từ dữ liệu.
+null|adj|vô hiệu; không|The contract is null and void.|Hợp đồng vô hiệu.
+optimum|adj, n|tối ưu|The optimum temperature is 25 degrees.|Nhiệt độ tối ưu là 25 độ.
+phenomenal|adj|phi thường|The app had phenomenal success.|Ứng dụng thành công phi thường.
+phosphate|n|phốt-phát|Phosphates are used in fertilizers.|Phốt-phát được dùng trong phân bón.
+potassium|n|kali|Bananas are rich in potassium.|Chuối giàu kali.
+primer|n|lớp sơn lót; sách vỡ lòng|Apply a primer before painting.|Quét lớp sơn lót trước khi sơn.
+proton|n|prô-tôn|A proton has a positive charge.|Prô-tôn mang điện tích dương.
+soluble|adj|hòa tan được|Sugar is soluble in water.|Đường tan được trong nước.
+substrate|n|chất nền|The plants grow on a soil substrate.|Cây mọc trên chất nền là đất.
+syllabus|n|đề cương môn học|Check the course syllabus.|Xem đề cương khóa học.
+trajectory|n|quỹ đạo; quá trình phát triển|Her career is on an upward trajectory.|Sự nghiệp của cô ấy đang đi lên.
+transparency|n|tính minh bạch|The public demands more transparency.|Công chúng đòi hỏi sự minh bạch hơn.
+vowel|n|nguyên âm|English has many vowel sounds.|Tiếng Anh có nhiều nguyên âm.
+watershed|n|bước ngoặt; lưu vực|The invention was a watershed in history.|Phát minh đó là một bước ngoặt trong lịch sử.
+algebra|n|đại số|She is good at algebra.|Cô ấy giỏi đại số.
+amplitude|n|biên độ|The amplitude of the wave increased.|Biên độ sóng tăng lên.
+biodiversity|n|đa dạng sinh học|Deforestation reduces biodiversity.|Phá rừng làm giảm đa dạng sinh học.
+chloride|n|clorua|Sodium chloride is common salt.|Natri clorua là muối ăn.
+circa|prep|khoảng (năm)|The temple was built circa 1050.|Ngôi chùa được xây khoảng năm 1050.
+consonant|n|phụ âm|"B" is a consonant.|"B" là một phụ âm.
+cortex|n|vỏ (não)|The cortex controls thinking.|Vỏ não điều khiển tư duy.
+inversion|n|sự đảo ngược; đảo ngữ|"Never have I seen…" is an example of inversion.|"Never have I seen…" là một ví dụ về đảo ngữ.
+lexical|adj|thuộc từ vựng|IELTS tests your lexical resource.|IELTS kiểm tra vốn từ vựng của bạn.
+multi|prefix|đa, nhiều (multi-)|It is a multi-purpose tool.|Đó là một dụng cụ đa năng.
+phonological|adj|thuộc âm vị học|Children develop phonological awareness early.|Trẻ em phát triển nhận thức âm vị từ sớm.
+postgraduate|n, adj|sau đại học|She is doing a postgraduate course.|Cô ấy đang học sau đại học.
+sneeze|v, n|hắt hơi|Cover your mouth when you sneeze.|Che miệng khi hắt hơi.
+syntactic|adj|thuộc cú pháp|The sentence has a syntactic error.|Câu có lỗi cú pháp.
+syntax|n|cú pháp|English syntax is different from Vietnamese.|Cú pháp tiếng Anh khác tiếng Việt.
+theorem|n|định lý|Learn Pythagoras' theorem.|Học định lý Pythagoras.
+aerosol|n|bình xịt; sol khí|Aerosols can harm the ozone layer.|Bình xịt có thể làm hại tầng ôzôn.
+axiom|n|tiên đề|It is an axiom that people want to be happy.|Ai cũng muốn hạnh phúc, đó là điều hiển nhiên.
+calculus|n|giải tích|Engineers study calculus.|Kỹ sư học giải tích.
+capillary|n|mao mạch|Capillaries carry blood to cells.|Mao mạch đưa máu đến tế bào.
+comma|n|dấu phẩy|Put a comma after "however".|Đặt dấu phẩy sau "however".
+congruent|adj|đồng dạng; phù hợp|The two triangles are congruent.|Hai tam giác bằng nhau.
+denominator|n|mẫu số|The common denominator is 12.|Mẫu số chung là 12.
+equivalence|n|sự tương đương|There is no exact equivalence between the two words.|Hai từ không tương đương hoàn toàn.
+exponential|adj|theo hàm mũ, tăng vọt|The internet saw exponential growth.|Internet tăng trưởng theo cấp số nhân.
+helix|n|đường xoắn ốc|DNA has a double helix shape.|ADN có hình xoắn kép.
+herbicide|n|thuốc diệt cỏ|Herbicides can pollute water.|Thuốc diệt cỏ có thể làm ô nhiễm nguồn nước.
+semi|prefix|bán, một nửa (semi-)|He lives in a semi-detached house.|Anh ấy sống trong một căn nhà liền kề.
+splice|v|nối (dây, phim, gen)|They spliced the two cables together.|Họ nối hai sợi cáp lại.
+connotation|n|nghĩa hàm ẩn|"Cheap" has a negative connotation.|"Cheap" mang nghĩa hàm ý tiêu cực.
+descriptor|n|tiêu chí mô tả|Read the IELTS band descriptors.|Đọc các tiêu chí mô tả band điểm IELTS.
+oxidize|v|ôxy hóa|Iron oxidizes and forms rust.|Sắt bị ôxy hóa và tạo thành gỉ.
+parenthesis|n|dấu ngoặc đơn|Put the date in parentheses.|Đặt ngày tháng trong ngoặc đơn.
+trans|prefix|xuyên, chuyển (trans-)|It was a transatlantic flight.|Đó là một chuyến bay xuyên Đại Tây Dương.
+volition|n|ý chí, sự tự nguyện|He left of his own volition.|Anh ấy tự nguyện ra đi.
+factorial|n|giai thừa|Five factorial is 120.|Năm giai thừa bằng 120.
+solute|n|chất tan|Salt is the solute in salt water.|Muối là chất tan trong nước muối.
+mid|prefix, adj|giữa (mid-)|Prices rose in mid-2025.|Giá tăng vào giữa năm 2025.
+artwork|n|tác phẩm nghệ thuật|The artwork is displayed in the lobby.|Tác phẩm nghệ thuật được trưng bày ở sảnh.
+breakdown|n|sự hỏng hóc; sự phân tích chi tiết; suy sụp|Here is a breakdown of the costs.|Đây là bảng phân tích chi tiết các khoản chi phí.
+classroom|n|lớp học|Technology is changing the classroom.|Công nghệ đang thay đổi lớp học.
+footnote|n|chú thích cuối trang|See the footnote for the source.|Xem chú thích cuối trang để biết nguồn.
+halfway|adv, adj|nửa đường|We are halfway through the project.|Chúng ta đã đi được nửa chặng dự án.
+handout|n|tài liệu phát tay; khoản cho không|Read the handout before class.|Đọc tài liệu phát trước buổi học.
+pathway|n|con đường, lối|There are many pathways to success.|Có nhiều con đường dẫn đến thành công.
+uplift|n, v|sự nâng cao, cải thiện|The news gave an uplift to the market.|Tin tức đã giúp thị trường khởi sắc.
+wavelength|n|bước sóng|Blue light has a short wavelength.|Ánh sáng xanh có bước sóng ngắn.
+widespread|adj|lan rộng, phổ biến|Smartphone use is widespread.|Việc dùng điện thoại thông minh rất phổ biến.
+anti|prefix|chống (anti-)|They ran an anti-smoking campaign.|Họ thực hiện một chiến dịch chống hút thuốc.
+ex|prefix, n|cựu (ex-); người yêu cũ|He met his ex-wife at the party.|Anh ấy gặp vợ cũ ở bữa tiệc.
+micro|prefix|vi mô, rất nhỏ (micro-)|Microplastics are found in the ocean.|Vi nhựa được tìm thấy trong đại dương.
+neo|prefix|tân, mới (neo-)|The building is neoclassical.|Tòa nhà theo phong cách tân cổ điển.
+non|prefix|không (non-)|This is a non-profit organization.|Đây là một tổ chức phi lợi nhuận.
+pi|n|số pi (π)|Pi is about 3.14.|Số pi xấp xỉ 3,14.
+pre|prefix|trước (pre-)|Pre-school education is important.|Giáo dục mầm non rất quan trọng.
+sub|prefix|dưới, phụ (sub-)|Divide the topic into subtopics.|Chia chủ đề thành các chủ đề nhỏ.
+super|prefix, adj|siêu (super-)|Supermarkets have replaced many small shops.|Siêu thị đã thay thế nhiều cửa hàng nhỏ.
+identical|adj|giống hệt|The twins are identical.|Cặp song sinh giống hệt nhau.
+descendent|n|con cháu, hậu duệ (thường viết descendant)|He is a descendent of the king.|Ông ấy là hậu duệ của nhà vua.

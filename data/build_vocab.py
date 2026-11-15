@@ -23,6 +23,9 @@ P = Pron(sys.argv[1], manual={
     'uptime': '/ˈʌpˌtaɪm/', 'idempotent': '/ˌaɪdəmˈpoʊtənt/', 'frontend': '/ˈfrʌntˌɛnd/', 'webhook': '/ˈwɛbˌhʊk/',
     'microservice': '/ˈmaɪkroʊˌsɝːvɪs/', 'serialization': '/ˌsɪriələˈzeɪʃən/', 'overfitting': '/ˌoʊvɚˈfɪtɪŋ/',
     'multimodal': '/ˌmʌltiˈmoʊdəl/',
+    'multi': '/ˈmʌlti/', 'semi': '/ˈsɛmi/', 'trans': '/trænz/', 'mid': '/mɪd/', 'anti': '/ˈæntaɪ/', 'ex': '/ɛks/',
+    'micro': '/ˈmaɪkroʊ/', 'neo': '/ˈniːoʊ/', 'non': '/nɑːn/', 'pi': '/paɪ/', 'pre': '/priː/', 'sub': '/sʌb/',
+    'super': '/ˈsuːpɚ/', 'descendent': '/dɪˈsɛndənt/', 'postgraduate': '/ˌpoʊstˈɡrædʒuət/', 'factorial': '/fækˈtɔːriəl/',
     'json': '/ˈdʒeɪsən/', 'readme': '/ˈriːdmiː/', 'rag': '/ræɡ/', 'lgtm': '/ˌɛl ˌdʒiː ˌtiː ˈɛm/',
 })
 TPL = open(os.path.join(HERE, 'vocab_template.html'), encoding='utf-8').read()
@@ -134,3 +137,28 @@ write('Tieng-Anh-cho-ky-su-phan-mem-AI.html', {
     '💡 <b>Cách dùng:</b> các tab 1–8 là thuật ngữ, chú ý nghĩa riêng trong ngành (ví dụ <i>issue</i> là “đầu việc, lỗi” chứ không phải “số báo”). Các tab 💬 là mẫu câu dùng khi viết email, họp, review code, báo cáo tiến độ, thảo luận kỹ thuật và phỏng vấn. Nên đọc to các mẫu câu cho quen miệng.<br>'
     + VOICE_NOTE + ' Thuật ngữ AI thay đổi nhanh: nội dung phản ánh tháng 11/2026.<br>'
     f'📚 <b>Nguồn:</b> danh sách và nội dung soạn riêng (11/2026), phát hành theo {BYSA}; phiên âm chuyển từ {SRC_CMU}.')
+
+# ---------------- NAWL (only words not already in NGSL/TSL) ----------------
+D = os.path.join(HERE, 'nawl')
+order = [l.strip() for l in open(D + '/order_new_words.txt') if l.strip()]
+order = ['descendent' if w == 'DESCENDENT' else w for w in order]
+pos_of = {w: i for i, w in enumerate(order)}
+grp = lambda w: 1 if pos_of[w] < pos_of['acute'] else (2 if pos_of[w] < pos_of['abdominal'] else 3)
+data = [word_entry(grp(w), w, pos, vi, ex, exvi) for _, (w, pos, vi, ex, exvi) in read_rows(D + '/n*.txt')[0]]
+assert len(data) == len(order)
+levels = [{'k': 0, 'n': 'Tất cả', 'c': '#1f2433'},
+          {'k': 1, 'n': 'Nhóm 1', 'r': 'thường gặp nhất', 'c': COLORS[0]},
+          {'k': 2, 'n': 'Nhóm 2', 'r': 'thường gặp', 'c': COLORS[1]},
+          {'k': 3, 'n': 'Nhóm 3', 'r': 'chuyên ngành', 'c': COLORS[2]}]
+write('Tu-vung-hoc-thuat-IELTS-NAWL.html', {
+    'levels': levels, 'key': 'nawl-thuoc', 'unit': 'từ', 'h1print': 'Từ vựng học thuật cho IELTS (NAWL)',
+    'cover': [f'{len(data)} từ học thuật (NAWL 1.2) · đã bỏ các từ trùng với NGSL và TOEIC',
+              'Học sau NGSL. Nhóm 1–2 là trọng tâm cho IELTS Reading và Writing; nhóm 3 là từ chuyên ngành, chủ yếu cần để đọc hiểu. Tích ô ☐ bằng bút khi đã thuộc.'],
+    'src': 'Danh sách từ: New Academic Word List 1.2 (Browne, Culligan &amp; Phillips), CC BY-SA 4.0 · Phiên âm: CMU Pronouncing Dictionary<br>Nghĩa và ví dụ: soạn 11/2026, CC BY-SA 4.0'},
+    data, 'Từ vựng học thuật IELTS', '🎓 Từ vựng học thuật cho IELTS (NAWL)',
+    f'{len(data)} từ học thuật thường gặp trong sách báo, bài nghiên cứu · Tích ô “Đã thuộc” để theo dõi tiến độ',
+    '💡 <b>Cách học:</b> học sau NGSL. NAWL gốc có 957 từ; khoảng 230 từ đã có trong bộ TOEIC và NGSL nên được bỏ ra ở đây. '
+    '<b>Nhóm 1–2</b> nên học kỹ, dùng được cả khi viết. <b>Nhóm 3</b> là từ chuyên ngành (sinh học, ngôn ngữ học, toán…), chỉ cần nhận ra nghĩa khi đọc. '
+    'Câu ví dụ được viết theo văn phong học thuật giống bài đọc IELTS.<br>'
+    + VOICE_NOTE + '<br>'
+    f'📚 <b>Nguồn:</b> <a href="https://www.newgeneralservicelist.com/new-academic-word-list">New Academic Word List 1.2</a> của Browne, C., Culligan, B. và Phillips, J. (giấy phép {BYSA}); phiên âm chuyển từ {SRC_CMU}. Nghĩa tiếng Việt và câu ví dụ soạn riêng (11/2026), phát hành theo CC BY-SA 4.0.')
