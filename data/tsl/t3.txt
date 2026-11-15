@@ -1,0 +1,501 @@
+accent|n|giọng (vùng miền); trọng âm|She has a Northern accent.|Cô ấy nói giọng Bắc.
+advisory|adj, n|tư vấn; khuyến cáo|There's a travel advisory for the area.|Có khuyến cáo du lịch cho khu vực đó.
+asleep|adj|đang ngủ|The baby is asleep.|Em bé đang ngủ.
+authentic|adj|chính hiệu, đích thực|This is authentic Vietnamese food.|Đây là món Việt chính hiệu.
+bakery|n|tiệm bánh|There's a bakery on the corner.|Có một tiệm bánh ở góc phố.
+carton|n|hộp các-tông|Buy a carton of milk.|Mua một hộp sữa.
+compartment|n|ngăn; khoang|Put your bag in the overhead compartment.|Để túi vào ngăn hành lý phía trên.
+compatible|adj|tương thích|This charger is compatible with my phone.|Sạc này tương thích với điện thoại của tôi.
+consumption|n|sự tiêu thụ|Energy consumption is rising.|Mức tiêu thụ năng lượng đang tăng.
+conveniently|adv|thuận tiện|The hotel is conveniently located.|Khách sạn có vị trí thuận tiện.
+cosmetic|n, adj|mỹ phẩm; bề ngoài|She sells cosmetics.|Cô ấy bán mỹ phẩm.
+courtesy|n|sự lịch sự; (courtesy of) nhờ|Please show courtesy to others.|Hãy lịch sự với người khác.
+creativity|n|sự sáng tạo|The job needs creativity.|Công việc này cần sự sáng tạo.
+disagreement|n|sự bất đồng|We had a small disagreement.|Chúng tôi có chút bất đồng.
+disappointment|n|sự thất vọng|The film was a disappointment.|Bộ phim gây thất vọng.
+dissatisfy|v|làm không hài lòng (dissatisfied: không hài lòng)|Many customers were dissatisfied.|Nhiều khách hàng không hài lòng.
+enjoyable|adj|thú vị, vui|We had an enjoyable evening.|Chúng tôi đã có một buổi tối vui vẻ.
+faculty|n|đội ngũ giảng viên; khoa|She joined the faculty last year.|Cô ấy vào đội ngũ giảng viên năm ngoái.
+favorable|adj|thuận lợi; tích cực|We received favorable reviews.|Chúng tôi nhận được đánh giá tích cực.
+foreman|n|đốc công, tổ trưởng|Ask the foreman.|Hỏi tổ trưởng.
+forum|n|diễn đàn|Post your question on the forum.|Đăng câu hỏi lên diễn đàn.
+founder|n|người sáng lập|She is the founder of the company.|Bà ấy là người sáng lập công ty.
+fundraise|v|gây quỹ|We fundraise for the hospital every year.|Năm nào chúng tôi cũng gây quỹ cho bệnh viện.
+graphics|n|đồ họa|The game has great graphics.|Trò chơi có đồ họa tuyệt vời.
+handy|adj|tiện dụng|This tool is very handy.|Dụng cụ này rất tiện.
+hazardous|adj|nguy hiểm|Hazardous waste must be handled carefully.|Chất thải nguy hại phải được xử lý cẩn thận.
+healthcare|n|chăm sóc sức khỏe|Healthcare costs are high.|Chi phí y tế cao.
+humidity|n|độ ẩm|The humidity is very high today.|Hôm nay độ ẩm rất cao.
+influential|adj|có ảnh hưởng|He is an influential leader.|Ông ấy là một nhà lãnh đạo có ảnh hưởng.
+nationwide|adj, adv|toàn quốc|We have stores nationwide.|Chúng tôi có cửa hàng trên toàn quốc.
+pad|n|tập giấy; miếng đệm|Write it on the note pad.|Ghi nó vào tập giấy nhớ.
+paraphrase|v|diễn đạt lại|Paraphrase the sentence in your own words.|Diễn đạt lại câu bằng lời của bạn.
+placement|n|sự sắp xếp, bố trí (việc làm, thực tập)|She got a work placement in a bank.|Cô ấy được sắp xếp thực tập ở ngân hàng.
+postal|adj|thuộc bưu điện|What's your postal code?|Mã bưu chính của bạn là gì?
+publicity|n|sự quảng bá, công chúng biết đến|The event got a lot of publicity.|Sự kiện được nhiều người biết đến.
+renter|n|người thuê|Renters must pay a deposit.|Người thuê phải đặt cọc.
+repairperson|n|thợ sửa chữa|The repairperson fixed the air conditioner.|Thợ sửa chữa đã sửa điều hòa.
+repeatedly|adv|nhiều lần|I called him repeatedly.|Tôi đã gọi anh ấy nhiều lần.
+restroom|n|nhà vệ sinh (nơi công cộng)|Where is the restroom?|Nhà vệ sinh ở đâu?
+silently|adv|im lặng|They worked silently.|Họ làm việc trong im lặng.
+spa|n|spa, khu chăm sóc sắc đẹp|The hotel has a spa.|Khách sạn có spa.
+spreadsheet|n|bảng tính|I'll put the data in a spreadsheet.|Tôi sẽ đưa dữ liệu vào bảng tính.
+stapler|n|cái dập ghim|Can I borrow your stapler?|Tôi mượn cái dập ghim được không?
+streamline|v|tinh giản, hợp lý hóa|We streamlined the process.|Chúng tôi đã tinh giản quy trình.
+substantially|adv|đáng kể|Costs fell substantially.|Chi phí giảm đáng kể.
+teller|n|giao dịch viên ngân hàng|The teller counted the money.|Giao dịch viên đếm tiền.
+tidy|adj, v|gọn gàng; dọn dẹp|Keep your desk tidy.|Giữ bàn làm việc gọn gàng.
+toll|n|phí cầu đường|We paid a toll on the highway.|Chúng tôi trả phí cao tốc.
+toner|n|mực (máy in laser)|The printer needs toner.|Máy in cần thay mực.
+urgently|adv|khẩn cấp|We urgently need help.|Chúng tôi cần giúp đỡ khẩn cấp.
+walkway|n|lối đi bộ|Keep the walkway clear.|Giữ lối đi thông thoáng.
+absorb|v|hấp thụ|Plants absorb water.|Cây hấp thụ nước.
+administer|v|quản lý; cho dùng (thuốc)|She administers the program.|Cô ấy quản lý chương trình.
+ample|adj|dư dả|There's ample parking.|Có nhiều chỗ đỗ xe.
+antique|n, adj|đồ cổ|This table is an antique.|Cái bàn này là đồ cổ.
+bean|n|hạt đậu|Coffee beans from Dak Lak.|Hạt cà phê từ Đắk Lắk.
+browse|v|xem lướt|I'm just browsing.|Tôi chỉ xem qua thôi.
+bye|int|tạm biệt|Bye, see you tomorrow!|Tạm biệt, mai gặp nhé!
+careless|adj|bất cẩn|It was a careless mistake.|Đó là một lỗi bất cẩn.
+collector|n|người sưu tầm; người thu|He is an art collector.|Ông ấy là nhà sưu tầm nghệ thuật.
+conform|v|tuân theo|Products must conform to safety standards.|Sản phẩm phải đạt tiêu chuẩn an toàn.
+congestion|n|sự tắc nghẽn|Traffic congestion is bad in the city.|Tình trạng tắc đường trong thành phố rất tệ.
+contradiction|n|sự mâu thuẫn|There's a contradiction in his story.|Câu chuyện của anh ta có mâu thuẫn.
+contrary|n, adj|trái ngược (on the contrary)|On the contrary, I enjoyed it.|Ngược lại, tôi rất thích.
+diploma|n|bằng cấp, văn bằng|She has a diploma in nursing.|Cô ấy có bằng điều dưỡng.
+distributor|n|nhà phân phối|We are looking for a distributor.|Chúng tôi đang tìm nhà phân phối.
+dive|v, n|lặn; lao xuống|We went diving in Nha Trang.|Chúng tôi đi lặn ở Nha Trang.
+energetic|adj|tràn đầy năng lượng|She is very energetic.|Cô ấy rất năng nổ.
+environmentally|adv|về mặt môi trường|We use environmentally friendly packaging.|Chúng tôi dùng bao bì thân thiện môi trường.
+escalator|n|thang cuốn|Take the escalator.|Đi thang cuốn.
+exotic|adj|kỳ lạ, ngoại lai|They sell exotic fruits.|Họ bán trái cây lạ.
+fabric|n|vải|This fabric is soft.|Loại vải này mềm.
+generalization|n|sự khái quát hóa, vơ đũa cả nắm|That's a generalization.|Đó là vơ đũa cả nắm.
+guidance|n|sự hướng dẫn|Thank you for your guidance.|Cảm ơn sự hướng dẫn của bạn.
+gum|n|kẹo cao su|No chewing gum in class.|Không nhai kẹo cao su trong lớp.
+hesitant|adj|ngập ngừng, do dự|He was hesitant to speak.|Anh ấy ngập ngừng không dám nói.
+indicator|n|chỉ số, dấu hiệu|Sales are a key indicator.|Doanh số là một chỉ số quan trọng.
+individually|adv|riêng từng cái|Each item is wrapped individually.|Mỗi món được gói riêng.
+junior|adj, n|cấp dưới; ít thâm niên|He is a junior developer.|Anh ấy là lập trình viên junior.
+lifestyle|n|lối sống|She has a healthy lifestyle.|Cô ấy có lối sống lành mạnh.
+likewise|adv|tương tự|Nice to meet you. – Likewise.|Rất vui được gặp bạn. – Tôi cũng vậy.
+morale|n|tinh thần (tập thể)|Team morale is high.|Tinh thần cả nhóm đang tốt.
+orchestra|n|dàn nhạc|She plays in an orchestra.|Cô ấy chơi trong một dàn nhạc.
+organizational|adj|thuộc tổ chức|She has good organizational skills.|Cô ấy có kỹ năng tổ chức tốt.
+outlook|n|triển vọng; quan điểm|The economic outlook is good.|Triển vọng kinh tế tốt.
+physics|n|vật lý|He studied physics.|Anh ấy học vật lý.
+pole|n|cái cột; cực|The flag is on a pole.|Lá cờ treo trên cột.
+puzzle|n, v|câu đố; làm bối rối|I like crossword puzzles.|Tôi thích giải ô chữ.
+reflexive|adj|phản thân|"Myself" is a reflexive pronoun.|"Myself" là đại từ phản thân.
+snowy|adj|có tuyết|It was a snowy day.|Đó là một ngày có tuyết.
+steak|n|bít tết|I'll have the steak.|Cho tôi món bít tết.
+sticker|n|nhãn dán|Put a sticker on the box.|Dán nhãn lên hộp.
+telecommunication|n|viễn thông|He works in telecommunications.|Anh ấy làm ngành viễn thông.
+timely|adj|kịp thời|Thank you for your timely reply.|Cảm ơn bạn đã trả lời kịp thời.
+uncomfortable|adj|không thoải mái|These shoes are uncomfortable.|Đôi giày này đi không thoải mái.
+amenity|n|tiện nghi|The hotel has many amenities.|Khách sạn có nhiều tiện nghi.
+approximate|adj|xấp xỉ|What's the approximate cost?|Chi phí ước chừng bao nhiêu?
+await|v|chờ đợi|We await your reply.|Chúng tôi chờ phản hồi của bạn.
+barbecue|n|tiệc nướng|We had a barbecue on Saturday.|Thứ Bảy chúng tôi đã tổ chức tiệc nướng.
+beginner|n|người mới bắt đầu|This course is for beginners.|Khóa học này dành cho người mới bắt đầu.
+biology|n|sinh học|She teaches biology.|Cô ấy dạy sinh học.
+blanket|n|chăn|Can I have an extra blanket?|Cho tôi thêm một cái chăn được không?
+chairperson|n|chủ tọa, chủ tịch|The chairperson opened the meeting.|Chủ tọa khai mạc cuộc họp.
+charitable|adj|từ thiện|It's a charitable organization.|Đó là một tổ chức từ thiện.
+checkup|n|kiểm tra sức khỏe|I have a medical checkup today.|Hôm nay tôi đi khám sức khỏe.
+cooler|n|thùng giữ lạnh|Put the drinks in the cooler.|Cho đồ uống vào thùng giữ lạnh.
+crane|n|cần cẩu; con sếu|A crane lifted the steel.|Cần cẩu nâng thép lên.
+dealership|n|đại lý (ô tô)|I bought the car at a dealership.|Tôi mua xe ở đại lý.
+dependable|adj|đáng tin cậy|She is a dependable worker.|Cô ấy là nhân viên đáng tin cậy.
+disconnect|v|ngắt kết nối|The call was disconnected.|Cuộc gọi bị ngắt.
+dispose|v|vứt bỏ (dispose of)|Dispose of batteries properly.|Vứt bỏ pin đúng cách.
+disrupt|v|làm gián đoạn|The strike disrupted flights.|Cuộc đình công làm gián đoạn các chuyến bay.
+dynamic|adj|năng động|We are a young, dynamic team.|Chúng tôi là một đội ngũ trẻ, năng động.
+enthusiastically|adv|nhiệt tình|They welcomed us enthusiastically.|Họ chào đón chúng tôi nhiệt tình.
+freelance|adj, v|tự do (làm việc)|He is a freelance designer.|Anh ấy là nhà thiết kế tự do.
+grill|n, v|vỉ nướng; nướng|Grill the fish for ten minutes.|Nướng cá trong mười phút.
+habitual|adj|thường xuyên, theo thói quen|He is a habitual late-comer.|Anh ta là người thường xuyên đến muộn.
+internationally|adv|trên phạm vi quốc tế|The brand is known internationally.|Thương hiệu được biết đến trên toàn thế giới.
+invaluable|adj|vô giá|Your help was invaluable.|Sự giúp đỡ của bạn thật vô giá.
+messenger|n|người đưa tin; ứng dụng nhắn tin|Send it by messenger.|Gửi nó qua người đưa thư.
+paperback|n|sách bìa mềm|The paperback is cheaper.|Bản bìa mềm rẻ hơn.
+rebate|n|khoản tiền được hoàn lại|You'll get a 10% rebate.|Bạn sẽ được hoàn lại 10%.
+recur|v|tái diễn|If the problem recurs, call us.|Nếu sự cố tái diễn, hãy gọi cho chúng tôi.
+reproduce|v|tái tạo; sao chép; sinh sản|Can you reproduce the bug?|Bạn có tái hiện được lỗi không?
+spray|v, n|xịt, phun; bình xịt|Spray water on the plants.|Phun nước lên cây.
+staple|n, v|ghim bấm; dập ghim; thứ thiết yếu|Staple the pages together.|Dập ghim các trang lại.
+strategic|adj|chiến lược|It was a strategic decision.|Đó là một quyết định chiến lược.
+stripe|n|sọc|He wore a shirt with blue stripes.|Anh ấy mặc áo sọc xanh.
+teen|n|thanh thiếu niên|The app is popular with teens.|Ứng dụng này được tuổi teen ưa chuộng.
+tempt|v|cám dỗ|Don't tempt me.|Đừng cám dỗ tôi.
+timer|n|đồng hồ hẹn giờ|Set a timer for 25 minutes.|Đặt hẹn giờ 25 phút.
+unload|v|dỡ hàng|Unload the truck.|Dỡ hàng khỏi xe tải.
+unusually|adv|bất thường|It's unusually hot today.|Hôm nay nóng bất thường.
+vacate|v|rời khỏi, bỏ trống|Please vacate the room by noon.|Vui lòng trả phòng trước 12 giờ trưa.
+whale|n|cá voi|We saw a whale.|Chúng tôi đã nhìn thấy cá voi.
+wisely|adv|khôn ngoan|Spend your money wisely.|Hãy tiêu tiền khôn ngoan.
+amateur|n, adj|nghiệp dư|He's an amateur photographer.|Anh ấy là nhiếp ảnh gia nghiệp dư.
+ambassador|n|đại sứ|The ambassador visited the factory.|Ngài đại sứ đã thăm nhà máy.
+anew|adv|lại, lần nữa|Let's start anew.|Mình làm lại từ đầu nhé.
+architectural|adj|thuộc kiến trúc|It's an architectural wonder.|Đó là một kỳ quan kiến trúc.
+attain|v|đạt được|She attained her goal.|Cô ấy đã đạt được mục tiêu.
+balloon|n|bóng bay|We decorated with balloons.|Chúng tôi trang trí bằng bóng bay.
+blueprint|n|bản thiết kế|Look at the blueprint.|Xem bản thiết kế đi.
+bug|n|lỗi (phần mềm); con bọ|We found a bug in the code.|Chúng tôi tìm thấy lỗi trong code.
+cautious|adj|thận trọng|Be cautious with strangers.|Hãy thận trọng với người lạ.
+circuit|n|mạch điện; vòng|There's a short circuit.|Bị chập mạch.
+clap|v|vỗ tay|Everyone clapped.|Mọi người vỗ tay.
+commerce|n|thương mại|E-commerce is growing fast.|Thương mại điện tử đang tăng trưởng nhanh.
+convey|v|truyền đạt|It's hard to convey my feelings.|Thật khó truyền đạt cảm xúc của tôi.
+cord|n|dây (điện)|The power cord is too short.|Dây nguồn quá ngắn.
+counselor|n|người tư vấn|Talk to a career counselor.|Nói chuyện với chuyên viên tư vấn nghề nghiệp.
+debit|n|ghi nợ (debit card: thẻ ghi nợ)|Pay with your debit card.|Thanh toán bằng thẻ ghi nợ.
+delicate|adj|tinh tế, mỏng manh; tế nhị|This is a delicate matter.|Đây là chuyện tế nhị.
+dependence|n|sự phụ thuộc|Reduce your dependence on coffee.|Giảm phụ thuộc vào cà phê.
+distraction|n|điều gây xao nhãng|Phones are a big distraction.|Điện thoại là thứ gây xao nhãng lớn.
+downsize|v|cắt giảm quy mô|The company is downsizing.|Công ty đang cắt giảm nhân sự.
+elephant|n|con voi|We saw elephants in Dak Lak.|Chúng tôi đã thấy voi ở Đắk Lắk.
+enthusiasm|n|sự nhiệt tình|She works with enthusiasm.|Cô ấy làm việc nhiệt tình.
+enthusiast|n|người say mê|He is a car enthusiast.|Anh ấy là người mê xe.
+evident|adj|rõ ràng|It was evident he was tired.|Rõ ràng là anh ấy mệt.
+flexibility|n|sự linh hoạt|The job offers flexibility.|Công việc có sự linh hoạt.
+flextime|n|giờ làm linh hoạt|Our company offers flextime.|Công ty chúng tôi cho giờ làm linh hoạt.
+fortunately|adv|may mắn thay|Fortunately, no one was hurt.|May mắn là không ai bị thương.
+freighter|n|tàu chở hàng|The freighter arrived at the port.|Tàu chở hàng đã cập cảng.
+generator|n|máy phát điện|Turn on the generator.|Bật máy phát điện lên.
+hallway|n|hành lang|Wait in the hallway.|Đợi ở hành lang.
+hamburger|n|bánh hamburger|I'll have a hamburger.|Cho tôi một chiếc hamburger.
+hazard|n|mối nguy hiểm|Wet floors are a hazard.|Sàn ướt rất nguy hiểm.
+homeowner|n|chủ nhà|Homeowners pay property tax.|Chủ nhà phải đóng thuế nhà đất.
+imperative|adj|cấp bách, bắt buộc|It is imperative that we finish today.|Chúng ta bắt buộc phải xong hôm nay.
+inflate|v|bơm phồng; thổi phồng|Inflate the tires.|Bơm lốp xe.
+insert|v|chèn vào, đưa vào|Insert your card.|Đưa thẻ vào.
+lecturer|n|giảng viên|She is a university lecturer.|Cô ấy là giảng viên đại học.
+meaningful|adj|có ý nghĩa|It was a meaningful gift.|Đó là một món quà ý nghĩa.
+memorize|v|học thuộc|Memorize these words.|Học thuộc những từ này.
+merchant|n|thương nhân|Merchants sell goods at the market.|Các thương nhân bán hàng ở chợ.
+modification|n|sự sửa đổi|We made some modifications.|Chúng tôi đã sửa đổi một số chỗ.
+occupant|n|người cư ngụ, người ngồi trong|The car had two occupants.|Trong xe có hai người.
+overcharge|v|tính giá quá cao|The taxi driver overcharged us.|Tài xế taxi chặt chém chúng tôi.
+oversee|v|giám sát|She oversees the project.|Cô ấy giám sát dự án.
+petition|n|đơn kiến nghị|They signed a petition.|Họ đã ký đơn kiến nghị.
+pillow|n|cái gối|I need another pillow.|Tôi cần thêm một cái gối.
+popcorn|n|bỏng ngô|Let's get popcorn.|Mua bỏng ngô đi.
+pottery|n|đồ gốm|Bat Trang is famous for pottery.|Bát Tràng nổi tiếng về đồ gốm.
+professionally|adv|một cách chuyên nghiệp|Dress professionally.|Ăn mặc chuyên nghiệp.
+publicize|v|quảng bá|We publicized the event online.|Chúng tôi quảng bá sự kiện trên mạng.
+ray|n|tia|Sun rays can damage your skin.|Tia nắng có thể làm hại da.
+redecorate|v|trang trí lại|We redecorated the lobby.|Chúng tôi trang trí lại sảnh.
+refinery|n|nhà máy lọc dầu|Dung Quat has an oil refinery.|Dung Quất có nhà máy lọc dầu.
+refresh|v|làm mới; tải lại|Refresh the page.|Tải lại trang.
+refundable|adj|có thể hoàn tiền|The ticket is not refundable.|Vé không được hoàn tiền.
+reimbursement|n|khoản hoàn trả|Submit your receipts for reimbursement.|Nộp hóa đơn để được hoàn tiền.
+reliability|n|độ tin cậy|We need to improve reliability.|Chúng ta cần cải thiện độ ổn định.
+reluctant|adj|miễn cưỡng|He was reluctant to help.|Anh ấy miễn cưỡng giúp đỡ.
+sewer|n|cống thoát nước|The sewer is blocked.|Cống bị tắc.
+skate|v|trượt băng; trượt patin|Can you skate?|Bạn biết trượt patin không?
+skateboard|n|ván trượt|He rides a skateboard.|Cậu ấy chơi ván trượt.
+sleepy|adj|buồn ngủ|I feel sleepy after lunch.|Ăn trưa xong tôi buồn ngủ.
+tailor|n, v|thợ may; điều chỉnh cho phù hợp|We tailor our services to you.|Chúng tôi điều chỉnh dịch vụ phù hợp với bạn.
+termination|n|sự chấm dứt|Termination of the contract needs notice.|Chấm dứt hợp đồng cần báo trước.
+theft|n|vụ trộm|Report the theft to the police.|Báo vụ trộm cho cảnh sát.
+thunderstorm|n|giông bão|There was a thunderstorm last night.|Tối qua có giông.
+transmission|n|sự truyền; hộp số|There's a problem with the transmission.|Hộp số có vấn đề.
+transmit|v|truyền|The data is transmitted securely.|Dữ liệu được truyền an toàn.
+unused|adj|chưa dùng|Return unused items.|Trả lại hàng chưa dùng.
+waive|v|miễn (phí)|We will waive the fee.|Chúng tôi sẽ miễn phí cho bạn.
+yen|n|đồng yên (Nhật)|It costs 1,000 yen.|Nó giá 1.000 yên.
+activate|v|kích hoạt|Activate your account.|Kích hoạt tài khoản của bạn.
+additionally|adv|ngoài ra|Additionally, we offer free delivery.|Ngoài ra, chúng tôi miễn phí giao hàng.
+affirmative|adj|khẳng định|He gave an affirmative answer.|Anh ấy trả lời đồng ý.
+baker|n|thợ làm bánh|The baker starts work at 4 a.m.|Thợ làm bánh bắt đầu làm việc lúc 4 giờ sáng.
+brainstorm|v|động não, cùng nghĩ ý tưởng|Let's brainstorm some ideas.|Hãy cùng nghĩ một vài ý tưởng.
+cage|n|cái lồng|The bird is in a cage.|Con chim ở trong lồng.
+cinema|n|rạp chiếu phim|Let's go to the cinema.|Đi xem phim đi.
+collaboration|n|sự hợp tác|Thanks for the collaboration.|Cảm ơn sự hợp tác.
+condominium|n|căn hộ chung cư|They bought a condominium downtown.|Họ đã mua một căn hộ ở trung tâm.
+consecutive|adj|liên tiếp|It rained for three consecutive days.|Trời mưa ba ngày liên tiếp.
+cordless|adj|không dây|It's a cordless phone.|Đó là điện thoại không dây.
+deluxe|adj|cao cấp, sang trọng|We booked a deluxe room.|Chúng tôi đặt phòng deluxe.
+desirable|adj|đáng mong muốn|Experience is desirable but not required.|Có kinh nghiệm là lợi thế nhưng không bắt buộc.
+discrepancy|n|sự chênh lệch, không khớp|There's a discrepancy in the numbers.|Các con số không khớp nhau.
+dispatch|v, n|gửi đi|The order was dispatched today.|Đơn hàng đã được gửi đi hôm nay.
+drawback|n|nhược điểm|The main drawback is the price.|Nhược điểm chính là giá.
+dull|adj|buồn tẻ; xỉn màu|The meeting was dull.|Cuộc họp thật buồn tẻ.
+economically|adv|về mặt kinh tế; tiết kiệm|The country is growing economically.|Đất nước đang phát triển về kinh tế.
+evenly|adv|đều|Spread the paint evenly.|Quét sơn đều tay.
+excellence|n|sự xuất sắc|We aim for excellence.|Chúng tôi hướng tới sự xuất sắc.
+exclusively|adv|độc quyền, chỉ riêng|This is available exclusively online.|Sản phẩm chỉ bán trực tuyến.
+farewell|n|lời tạm biệt; tiệc chia tay|We had a farewell party for Linh.|Chúng tôi tổ chức tiệc chia tay Linh.
+fatigue|n|sự mệt mỏi|Fatigue can cause accidents.|Mệt mỏi có thể gây tai nạn.
+fiscal|adj|thuộc tài chính (năm tài chính)|The fiscal year ends in December.|Năm tài chính kết thúc vào tháng Mười hai.
+fleet|n|đội (xe, tàu)|The company has a fleet of trucks.|Công ty có một đội xe tải.
+flour|n|bột mì|Add two cups of flour.|Thêm hai cốc bột mì.
+fog|n|sương mù|Flights were delayed by fog.|Chuyến bay bị trễ vì sương mù.
+formally|adv|chính thức; trang trọng|The store formally opens today.|Cửa hàng chính thức khai trương hôm nay.
+gram|n|gam|Add 200 grams of sugar.|Thêm 200 gam đường.
+handbook|n|sổ tay hướng dẫn|Read the employee handbook.|Đọc sổ tay nhân viên.
+headphone|n|tai nghe (headphones)|Use headphones in the office.|Dùng tai nghe trong văn phòng.
+heater|n|máy sưởi|Turn on the heater.|Bật máy sưởi lên.
+helmet|n|mũ bảo hiểm|Always wear a helmet.|Luôn đội mũ bảo hiểm.
+hiker|n|người đi bộ đường dài|Hikers love this trail.|Dân đi bộ đường dài thích con đường mòn này.
+homeless|adj|vô gia cư|They help homeless people.|Họ giúp đỡ người vô gia cư.
+lighter|n|bật lửa|Do you have a lighter?|Bạn có bật lửa không?
+loudly|adv|to, ầm ĩ|Don't talk loudly in the library.|Đừng nói to trong thư viện.
+loyalty|n|lòng trung thành|Join our loyalty program.|Tham gia chương trình khách hàng thân thiết.
+microwave|n, v|lò vi sóng; quay lò vi sóng|Heat it in the microwave.|Hâm nóng bằng lò vi sóng.
+misidentify|v|nhận dạng sai|The witness misidentified the man.|Nhân chứng nhận nhầm người.
+neat|adj|gọn gàng|Her desk is always neat.|Bàn của cô ấy luôn gọn gàng.
+nomination|n|sự đề cử|She received a nomination for the award.|Cô ấy được đề cử giải thưởng.
+officially|adv|chính thức|The road officially opens tomorrow.|Con đường chính thức thông xe vào ngày mai.
+outfit|n|bộ trang phục|I like your outfit.|Tôi thích bộ đồ của bạn.
+pastry|n|bánh ngọt|The bakery sells fresh pastries.|Tiệm bánh bán bánh ngọt tươi.
+personalize|v|cá nhân hóa|Personalize your profile.|Cá nhân hóa trang hồ sơ của bạn.
+poorly|adv|kém, tồi|The event was poorly organized.|Sự kiện được tổ chức kém.
+prestigious|adj|uy tín, danh giá|It's a prestigious university.|Đó là một trường đại học danh giá.
+purser|n|tiếp viên trưởng; người giữ quỹ trên tàu|The purser welcomed the passengers.|Tiếp viên trưởng chào đón hành khách.
+reassure|v|trấn an|The doctor reassured me.|Bác sĩ đã trấn an tôi.
+resume|v|tiếp tục lại|The meeting will resume after lunch.|Cuộc họp sẽ tiếp tục sau bữa trưa.
+reunion|n|cuộc họp mặt|We had a class reunion.|Chúng tôi đã họp lớp.
+revolutionize|v|cách mạng hóa|AI will revolutionize many industries.|AI sẽ thay đổi nhiều ngành một cách căn bản.
+seafood|n|hải sản|Do you like seafood?|Bạn có thích hải sản không?
+signify|v|biểu thị|What does this symbol signify?|Ký hiệu này có nghĩa là gì?
+slot|n|khe; khung giờ|Is there a free slot on Monday?|Thứ Hai còn khung giờ trống không?
+steer|v|lái, điều khiển|He steered the boat.|Anh ấy lái thuyền.
+sue|v|kiện|They sued the company.|Họ đã kiện công ty.
+superb|adj|tuyệt hảo|The food was superb.|Đồ ăn tuyệt hảo.
+traditionally|adv|theo truyền thống|Traditionally, we eat banh chung at Tet.|Theo truyền thống, chúng tôi ăn bánh chưng dịp Tết.
+tremendous|adj|to lớn, khủng khiếp|You did a tremendous job.|Bạn đã làm rất tuyệt vời.
+underway|adj|đang tiến hành|Work is underway.|Công việc đang được tiến hành.
+unpleasant|adj|khó chịu|There's an unpleasant smell.|Có mùi khó chịu.
+violin|n|đàn vi-ô-lông|She plays the violin.|Cô ấy chơi vi-ô-lông.
+ward|n|khu (bệnh viện); phường|He is in the children's ward.|Cậu bé nằm ở khoa nhi.
+worthwhile|adj|đáng giá, đáng làm|The training was worthwhile.|Buổi đào tạo rất đáng giá.
+adapter|n|bộ chuyển đổi|I need a power adapter.|Tôi cần một bộ chuyển đổi nguồn.
+advisable|adj|nên, khôn ngoan|It's advisable to book early.|Nên đặt sớm.
+archive|n, v|kho lưu trữ; lưu trữ|Archive old emails.|Lưu trữ các email cũ.
+artistic|adj|có tính nghệ thuật|She is very artistic.|Cô ấy rất có khiếu nghệ thuật.
+assurance|n|sự cam đoan; bảo hiểm|We need assurance that it's safe.|Chúng tôi cần được đảm bảo là nó an toàn.
+athletic|adj|khỏe mạnh, thể thao|He is very athletic.|Anh ấy rất khỏe khoắn.
+attire|n|trang phục|Business attire is required.|Yêu cầu trang phục công sở.
+auditor|n|kiểm toán viên|The auditors will arrive on Monday.|Kiểm toán viên sẽ đến vào thứ Hai.
+bankruptcy|n|sự phá sản|The firm filed for bankruptcy.|Công ty đã nộp đơn phá sản.
+bulk|n|số lượng lớn|We buy paper in bulk.|Chúng tôi mua giấy số lượng lớn.
+butter|n|bơ|Spread butter on the bread.|Phết bơ lên bánh mì.
+centimeter|n|xăng-ti-mét|It's ten centimeters long.|Nó dài mười xăng-ti-mét.
+circulate|v|lưu hành; luân chuyển|Please circulate this memo.|Vui lòng chuyển thông báo này cho mọi người.
+comb|n, v|cái lược; chải|Comb your hair.|Chải tóc đi.
+comfortably|adv|thoải mái|The car seats five comfortably.|Xe chở năm người thoải mái.
+compliance|n|sự tuân thủ|She works in compliance.|Cô ấy làm bộ phận tuân thủ.
+contraction|n|sự co lại; dạng rút gọn|"Don't" is a contraction.|"Don't" là dạng rút gọn.
+cookbook|n|sách nấu ăn|I bought a Vietnamese cookbook.|Tôi đã mua một cuốn sách nấu món Việt.
+cushion|n|cái đệm, gối tựa|Sit on the cushion.|Ngồi lên đệm.
+dose|n|liều lượng|Take one dose every six hours.|Uống một liều mỗi sáu tiếng.
+drum|n|cái trống|He plays the drums.|Anh ấy chơi trống.
+embed|v|nhúng, gắn vào|Embed the video in the page.|Nhúng video vào trang.
+evacuate|v|sơ tán|Evacuate the building now.|Sơ tán khỏi tòa nhà ngay.
+expedite|v|đẩy nhanh|Can you expedite the order?|Bạn đẩy nhanh đơn hàng được không?
+extinguisher|n|bình chữa cháy|Where is the fire extinguisher?|Bình chữa cháy ở đâu?
+familiarity|n|sự quen thuộc|Familiarity with Excel is required.|Yêu cầu sử dụng thành thạo Excel.
+flaw|n|thiếu sót, khuyết điểm|There's a flaw in the design.|Thiết kế có một lỗi.
+fluctuate|v|dao động|Prices fluctuate daily.|Giá cả dao động hằng ngày.
+fluent|adj|lưu loát|She is fluent in English.|Cô ấy nói tiếng Anh lưu loát.
+honestly|adv|thành thật|Honestly, I don't know.|Thật lòng tôi không biết.
+housekeep|v|làm việc nhà, dọn phòng|She housekeeps for a hotel.|Cô ấy làm buồng phòng cho một khách sạn.
+hurricane|n|bão lớn|The hurricane hit the coast.|Cơn bão đổ bộ vào bờ biển.
+hygiene|n|vệ sinh|Good hygiene prevents disease.|Giữ vệ sinh tốt giúp phòng bệnh.
+integral|adj|không thể thiếu|Testing is an integral part of the process.|Kiểm thử là phần không thể thiếu của quy trình.
+interactive|adj|tương tác|It's an interactive website.|Đó là một trang web tương tác.
+interfere|v|can thiệp; gây cản trở|Don't let work interfere with your health.|Đừng để công việc ảnh hưởng đến sức khỏe.
+kilogram|n|ki-lô-gam|It weighs two kilograms.|Nó nặng hai ki-lô-gam.
+layoff|n|sự sa thải hàng loạt|There were layoffs last year.|Năm ngoái có đợt cắt giảm nhân sự.
+lightweight|adj|nhẹ|This laptop is lightweight.|Chiếc laptop này nhẹ.
+merit|n|giá trị, ưu điểm|The idea has some merit.|Ý tưởng này có điểm hay.
+necklace|n|vòng cổ|She wore a gold necklace.|Cô ấy đeo một chiếc vòng cổ vàng.
+needy|adj|nghèo khó, túng thiếu|We donate to needy families.|Chúng tôi quyên góp cho các gia đình khó khăn.
+overpay|v|trả quá nhiều|I think we overpaid.|Tôi nghĩ chúng ta đã trả quá nhiều.
+pamphlet|n|tờ rơi, sách mỏng|Take a pamphlet.|Lấy một tờ rơi đi.
+partial|adj|một phần|We received a partial payment.|Chúng tôi đã nhận một phần tiền thanh toán.
+penalize|v|phạt|Late payments are penalized.|Thanh toán trễ sẽ bị phạt.
+pollute|v|gây ô nhiễm|Factories pollute the river.|Các nhà máy làm ô nhiễm dòng sông.
+prescribe|v|kê đơn|The doctor prescribed some medicine.|Bác sĩ đã kê một ít thuốc.
+probable|adj|có thể xảy ra|Rain is probable tonight.|Tối nay có khả năng mưa.
+prominent|adj|nổi bật, nổi tiếng|He is a prominent lawyer.|Ông ấy là một luật sư nổi tiếng.
+rainfall|n|lượng mưa|Rainfall was high this year.|Năm nay lượng mưa lớn.
+relocation|n|sự di dời|The company pays relocation costs.|Công ty trả chi phí chuyển chỗ ở.
+residence|n|nơi ở|What is your place of residence?|Nơi ở của bạn là đâu?
+retrieve|v|lấy lại|I retrieved the deleted file.|Tôi đã lấy lại tệp đã xóa.
+rider|n|người lái (xe máy, ngựa)|Riders must wear helmets.|Người đi xe phải đội mũ bảo hiểm.
+rubber|n|cao su|The tires are made of rubber.|Lốp xe làm bằng cao su.
+rug|n|tấm thảm nhỏ|There's a rug in front of the sofa.|Có một tấm thảm trước ghế sô-pha.
+salespeople|n|nhân viên bán hàng (số nhiều)|Our salespeople will contact you.|Nhân viên bán hàng của chúng tôi sẽ liên hệ với bạn.
+sharply|adv|mạnh, đột ngột|Prices rose sharply.|Giá tăng mạnh.
+similarity|n|sự giống nhau|There are similarities between the two plans.|Hai kế hoạch có điểm giống nhau.
+someday|adv|một ngày nào đó|Someday I'll visit Japan.|Một ngày nào đó tôi sẽ đến Nhật.
+spectator|n|khán giả (thể thao)|Thousands of spectators came.|Hàng nghìn khán giả đã đến.
+stereo|n|dàn âm thanh|Turn down the stereo.|Vặn nhỏ dàn loa đi.
+storeroom|n|phòng kho|Put the boxes in the storeroom.|Để các hộp vào phòng kho.
+subsidize|v|trợ cấp|The company subsidizes lunch.|Công ty trợ cấp bữa trưa.
+suspicious|adj|đáng ngờ; nghi ngờ|Report suspicious emails.|Báo cáo các email đáng ngờ.
+tasty|adj|ngon|This soup is tasty.|Món súp này ngon.
+terrific|adj|tuyệt vời|You did a terrific job.|Bạn làm tuyệt lắm.
+underground|adj, adv|dưới lòng đất|There's an underground parking lot.|Có bãi đỗ xe ngầm.
+unpaid|adj|chưa thanh toán; không lương|I took unpaid leave.|Tôi đã nghỉ không lương.
+volleyball|n|bóng chuyền|We play volleyball on the beach.|Chúng tôi chơi bóng chuyền trên bãi biển.
+wheelchair|n|xe lăn|The building has wheelchair access.|Tòa nhà có lối đi cho xe lăn.
+whoever|pron|bất cứ ai|Whoever finishes first can leave.|Ai xong trước thì được về.
+wool|n|len|This sweater is made of wool.|Áo len này làm bằng len lông cừu.
+wrinkle|n|nếp nhăn|Iron out the wrinkles.|Là phẳng các nếp nhăn.
+accuracy|n|độ chính xác|Check the accuracy of the data.|Kiểm tra độ chính xác của dữ liệu.
+anyhow|adv|dù sao đi nữa|Anyhow, let's get started.|Dù sao thì mình bắt đầu thôi.
+appetizer|n|món khai vị|Let's order an appetizer.|Gọi món khai vị đi.
+arc|n|cung, đường vòng cung|The ball flew in an arc.|Quả bóng bay theo đường vòng cung.
+audition|n|buổi thử giọng, thử vai|She has an audition tomorrow.|Mai cô ấy có buổi thử vai.
+backpack|n|ba lô|Put it in your backpack.|Cho nó vào ba lô của bạn.
+ballroom|n|phòng khiêu vũ, sảnh tiệc|The dinner is in the ballroom.|Bữa tối diễn ra ở sảnh tiệc.
+beneficial|adj|có lợi|Exercise is beneficial to health.|Tập thể dục có lợi cho sức khỏe.
+biography|n|tiểu sử|I read his biography.|Tôi đã đọc tiểu sử của ông ấy.
+bound|adj|chắc chắn; đi tới (bound for)|This train is bound for Hanoi.|Chuyến tàu này đi Hà Nội.
+broom|n|cái chổi|Sweep the floor with a broom.|Quét nhà bằng chổi.
+cheeseburger|n|bánh hamburger kẹp phô mai|I'll have a cheeseburger.|Cho tôi một bánh cheeseburger.
+chilly|adj|se lạnh|It's chilly this morning.|Sáng nay trời se lạnh.
+circus|n|rạp xiếc|We took the kids to the circus.|Chúng tôi đưa bọn trẻ đi xem xiếc.
+compliment|n, v|lời khen; khen|Thanks for the compliment.|Cảm ơn lời khen.
+consignment|n|lô hàng gửi|The consignment arrived damaged.|Lô hàng đến nơi bị hư hỏng.
+continental|adj|thuộc lục địa (continental breakfast: bữa sáng kiểu Âu)|A continental breakfast is included.|Có kèm bữa sáng kiểu Âu.
+copyright|n|bản quyền|The book is protected by copyright.|Cuốn sách được bảo hộ bản quyền.
+countryside|n|vùng nông thôn|I love the countryside.|Tôi yêu vùng quê.
+demolish|v|phá hủy (tòa nhà)|They demolished the old market.|Họ đã phá dỡ khu chợ cũ.
+departmental|adj|thuộc phòng ban|We have a departmental meeting.|Chúng tôi có cuộc họp phòng.
+desperate|adj|tuyệt vọng; rất cần|We are desperate for staff.|Chúng tôi đang rất cần người.
+devastate|v|tàn phá; làm suy sụp|The storm devastated the town.|Cơn bão đã tàn phá thị trấn.
+diagnostic|adj|chẩn đoán|Run a diagnostic test.|Chạy kiểm tra chẩn đoán.
+diagram|n|sơ đồ|Look at the diagram.|Nhìn vào sơ đồ.
+diamond|n|kim cương|She has a diamond ring.|Cô ấy có một chiếc nhẫn kim cương.
+disable|v|vô hiệu hóa, tắt|Disable the alarm.|Tắt chuông báo động.
+disgust|n, v|sự ghê tởm; làm ghê tởm|The smell disgusted me.|Mùi đó làm tôi ghê tởm.
+donut|n|bánh vòng|I bought donuts for the team.|Tôi mua bánh donut cho cả nhóm.
+doorman|n|người gác cửa|The doorman opened the door.|Người gác cửa mở cửa.
+electronically|adv|bằng điện tử|Submit the form electronically.|Nộp mẫu đơn qua mạng.
+elevate|v|nâng lên|Elevate your leg.|Kê chân lên cao.
+engagement|n|sự đính hôn; cuộc hẹn; sự tương tác|They announced their engagement.|Họ đã công bố đính hôn.
+enrollment|n|sự ghi danh|Enrollment is open until May.|Thời gian đăng ký học kéo dài đến tháng Năm.
+euro|n|đồng euro|It costs 20 euros.|Nó giá 20 euro.
+forbid|v|cấm|Smoking is forbidden.|Cấm hút thuốc.
+fork|n|cái nĩa|Can I have a fork?|Cho tôi xin cái nĩa.
+foster|v|thúc đẩy; nuôi dưỡng|We foster teamwork.|Chúng tôi thúc đẩy tinh thần làm việc nhóm.
+getaway|n|chuyến đi nghỉ ngắn|We planned a weekend getaway.|Chúng tôi lên kế hoạch đi nghỉ cuối tuần.
+gossip|n, v|chuyện ngồi lê đôi mách|Don't listen to office gossip.|Đừng nghe chuyện ngồi lê ở văn phòng.
+hacker|n|tin tặc|Hackers stole the data.|Tin tặc đã đánh cắp dữ liệu.
+hardworking|adj|chăm chỉ|She is very hardworking.|Cô ấy rất chăm chỉ.
+impatient|adj|thiếu kiên nhẫn|Don't be impatient.|Đừng nóng vội.
+indirect|adj|gián tiếp|It's an indirect flight.|Đó là chuyến bay có điểm dừng.
+interpreter|n|phiên dịch viên|We need an interpreter.|Chúng tôi cần một phiên dịch viên.
+intersection|n|ngã tư|Turn left at the intersection.|Rẽ trái ở ngã tư.
+irrelevant|adj|không liên quan|That's irrelevant.|Điều đó không liên quan.
+jeans|n|quần bò, quần jean|I wear jeans on Fridays.|Thứ Sáu tôi mặc quần jean.
+journalism|n|nghề báo|She studied journalism.|Cô ấy học báo chí.
+letterhead|n|giấy tiêu đề (có logo công ty)|Print it on company letterhead.|In trên giấy tiêu đề công ty.
+lifeguard|n|nhân viên cứu hộ (bể bơi, bãi biển)|Swim where the lifeguard can see you.|Bơi ở chỗ nhân viên cứu hộ nhìn thấy.
+modem|n|modem|Restart the modem.|Khởi động lại modem.
+monument|n|đài tưởng niệm|We visited the monument.|Chúng tôi đã thăm đài tưởng niệm.
+mosquito|n|con muỗi|There are many mosquitoes here.|Ở đây có nhiều muỗi.
+obligate|v|bắt buộc (be obligated to)|You are not obligated to buy.|Bạn không bắt buộc phải mua.
+oblige|v|bắt buộc; giúp đỡ|I'd be obliged if you could help.|Tôi rất biết ơn nếu bạn giúp.
+occurrence|n|sự việc xảy ra|Power cuts are a common occurrence here.|Mất điện là chuyện thường xảy ra ở đây.
+operational|adj|đang hoạt động; thuộc vận hành|The new system is operational.|Hệ thống mới đã đi vào hoạt động.
+outage|n|sự cố mất (điện, dịch vụ)|There was a power outage.|Đã có sự cố mất điện.
+overcrowd|v|làm quá tải (overcrowded: quá đông)|The bus was overcrowded.|Xe buýt quá đông người.
+paralegal|n|trợ lý luật sư|She works as a paralegal.|Cô ấy làm trợ lý luật sư.
+partially|adv|một phần|The road is partially closed.|Con đường bị đóng một phần.
+pepper|n|hạt tiêu; ớt chuông|Add salt and pepper.|Thêm muối và tiêu.
+permanently|adv|vĩnh viễn|The shop is permanently closed.|Cửa hàng đóng cửa vĩnh viễn.
+plow|n, v|cái cày; cày|The farmer plowed the field.|Người nông dân cày ruộng.
+query|n, v|câu hỏi; truy vấn|I have a query about my bill.|Tôi có thắc mắc về hóa đơn.
+railway|n|đường sắt|The railway station is near.|Ga đường sắt ở gần đây.
+raincoat|n|áo mưa|Bring a raincoat.|Mang áo mưa đi.
+reconsider|v|xem xét lại|Please reconsider your decision.|Vui lòng cân nhắc lại quyết định.
+redesign|v, n|thiết kế lại|We redesigned the website.|Chúng tôi đã thiết kế lại trang web.
+rehearsal|n|buổi diễn tập|The rehearsal is at 3 p.m.|Buổi tổng duyệt lúc 3 giờ chiều.
+relaxation|n|sự thư giãn|Yoga is good for relaxation.|Yoga tốt cho việc thư giãn.
+repetition|n|sự lặp lại|Learning needs repetition.|Học cần sự lặp lại.
+retreat|n, v|kỳ nghỉ dưỡng tập thể; rút lui|The team went on a company retreat.|Cả nhóm đi nghỉ dưỡng cùng công ty.
+salon|n|tiệm làm tóc, thẩm mỹ|She works at a hair salon.|Cô ấy làm ở một tiệm làm tóc.
+satellite|n|vệ tinh|We have satellite TV.|Chúng tôi có truyền hình vệ tinh.
+scenery|n|phong cảnh|The scenery in Ha Giang is beautiful.|Phong cảnh Hà Giang rất đẹp.
+serial|adj|nối tiếp (serial number: số sê-ri)|What's the serial number?|Số sê-ri là gì?
+sew|v|may, khâu|She sews her own clothes.|Cô ấy tự may quần áo.
+sketch|n, v|bản phác thảo; phác họa|Make a quick sketch.|Phác thảo nhanh một bản.
+smartphone|n|điện thoại thông minh|Almost everyone has a smartphone.|Hầu như ai cũng có điện thoại thông minh.
+soar|v|tăng vọt; bay lên|Prices soared.|Giá tăng vọt.
+stimulus|n|sự kích thích|The economy needs a stimulus.|Nền kinh tế cần được kích thích.
+stockbroker|n|người môi giới chứng khoán|He is a stockbroker.|Anh ấy là môi giới chứng khoán.
+tablecloth|n|khăn trải bàn|Put a tablecloth on the table.|Trải khăn lên bàn.
+thirsty|adj|khát|I'm thirsty.|Tôi khát.
+thrill|n, v|sự hồi hộp, phấn khích|It was a thrill to meet him.|Thật phấn khích khi được gặp anh ấy.
+tile|n|gạch lát|The floor has white tiles.|Sàn lát gạch trắng.
+toiletry|n|đồ dùng vệ sinh cá nhân|Pack your toiletries.|Mang theo đồ dùng cá nhân.
+trademark|n|nhãn hiệu đã đăng ký|The logo is a registered trademark.|Logo là nhãn hiệu đã đăng ký.
+tropical|adj|nhiệt đới|Vietnam has a tropical climate.|Việt Nam có khí hậu nhiệt đới.
+tuna|n|cá ngừ|I'll have a tuna sandwich.|Cho tôi bánh mì kẹp cá ngừ.
+unemployed|adj|thất nghiệp|He has been unemployed for a year.|Anh ấy thất nghiệp đã một năm.
+validate|v|xác thực, xác nhận hợp lệ|Validate your parking ticket.|Xác nhận vé đỗ xe.
+vanilla|n|vani|I'd like vanilla ice cream.|Cho tôi kem vani.
+willingness|n|sự sẵn lòng|We value your willingness to learn.|Chúng tôi đánh giá cao tinh thần sẵn sàng học hỏi của bạn.
+wristwatch|n|đồng hồ đeo tay|He wears a wristwatch.|Anh ấy đeo đồng hồ.
+abide|v|tuân thủ (abide by)|You must abide by the rules.|Bạn phải tuân thủ các quy định.
+actively|adv|tích cực|She actively participates in meetings.|Cô ấy tích cực tham gia các cuộc họp.
+allergy|n|dị ứng|I have a peanut allergy.|Tôi bị dị ứng đậu phộng.
+apprehensive|adj|lo sợ, e ngại|I was apprehensive about the interview.|Tôi đã lo lắng về buổi phỏng vấn.
+automotive|adj|thuộc ô tô|He works in the automotive industry.|Anh ấy làm trong ngành ô tô.
+bacteria|n|vi khuẩn|Wash your hands to kill bacteria.|Rửa tay để diệt vi khuẩn.
+broaden|v|mở rộng|Travel broadens the mind.|Đi du lịch giúp mở mang đầu óc.
+bulb|n|bóng đèn|Change the light bulb.|Thay bóng đèn.
+by-law|n|điều lệ, quy chế|Read the company by-laws.|Đọc điều lệ công ty.
+cheer|v|cổ vũ (cheer up: vui lên)|Cheer up!|Vui lên nào!
+complication|n|biến chứng; sự phức tạp|There were no complications.|Không có biến chứng gì.
+considerate|adj|chu đáo, biết nghĩ cho người khác|It was considerate of you to call.|Bạn thật chu đáo khi gọi điện.
+daytime|n|ban ngày|The store is open in the daytime.|Cửa hàng mở cửa ban ngày.
+decoration|n|đồ trang trí|We put up Tet decorations.|Chúng tôi treo đồ trang trí Tết.
+discard|v|vứt bỏ|Discard old documents safely.|Hủy tài liệu cũ một cách an toàn.
+drastically|adv|mạnh mẽ, quyết liệt|Costs were cut drastically.|Chi phí bị cắt giảm mạnh.
+erase|v|xóa|Erase the board.|Xóa bảng đi.
+explorer|n|nhà thám hiểm|He is a famous explorer.|Ông ấy là nhà thám hiểm nổi tiếng.
+factual|adj|dựa trên sự thật|Give me factual information.|Cho tôi thông tin dựa trên sự thật.
+fixture|n|đồ cố định (trong nhà); lịch thi đấu|The rent includes fixtures.|Tiền thuê bao gồm các đồ cố định.
+footwear|n|giày dép|We sell footwear.|Chúng tôi bán giày dép.
+genre|n|thể loại|What genre of music do you like?|Bạn thích thể loại nhạc nào?
+gymnasium|n|nhà thi đấu, phòng tập|The event is in the school gymnasium.|Sự kiện diễn ra ở nhà thi đấu của trường.
+hereby|adv|bằng văn bản này|I hereby resign.|Bằng văn bản này, tôi xin từ chức.
+hesitation|n|sự do dự|She accepted without hesitation.|Cô ấy nhận lời không do dự.
+homemade|adj|tự làm ở nhà|This is homemade bread.|Đây là bánh mì nhà làm.
+hospitality|n|lòng hiếu khách; ngành khách sạn, nhà hàng|Thank you for your hospitality.|Cảm ơn lòng hiếu khách của bạn.
+incoming|adj|đến (cuộc gọi, thư)|I have an incoming call.|Tôi có cuộc gọi đến.
+induction|n|sự giới thiệu cho nhân viên mới|New staff have a one-day induction.|Nhân viên mới có một ngày hội nhập.
+inspiration|n|nguồn cảm hứng|She is my inspiration.|Cô ấy là nguồn cảm hứng của tôi.
+intently|adv|chăm chú|He listened intently.|Anh ấy lắng nghe chăm chú.
+mower|n|máy cắt cỏ|The mower is broken.|Máy cắt cỏ bị hỏng.
+nutrition|n|dinh dưỡng|Good nutrition is important.|Dinh dưỡng tốt rất quan trọng.
+restatement|n|sự nói lại, diễn đạt lại|The answer is a restatement of the question.|Câu trả lời chỉ là nhắc lại câu hỏi.
+sedan|n|xe sedan (xe con 4 cửa)|He drives a black sedan.|Anh ấy lái một chiếc sedan màu đen.
+sunscreen|n|kem chống nắng|Wear sunscreen at the beach.|Bôi kem chống nắng khi đi biển.
+wellness|n|sức khỏe toàn diện|The company has a wellness program.|Công ty có chương trình chăm sóc sức khỏe.
+workbook|n|sách bài tập|Do the exercises in your workbook.|Làm bài tập trong sách bài tập.
+bookcase|n|giá sách|The bookcase is full.|Giá sách đầy rồi.
+cleanliness|n|sự sạch sẽ|The hotel is known for its cleanliness.|Khách sạn nổi tiếng sạch sẽ.
+contestant|n|thí sinh|There are ten contestants.|Có mười thí sinh.
+ethics|n|đạo đức|We follow a code of ethics.|Chúng tôi tuân theo bộ quy tắc đạo đức.
+healthful|adj|tốt cho sức khỏe|Eat healthful foods.|Ăn những món tốt cho sức khỏe.
+inefficient|adj|không hiệu quả|The old system is inefficient.|Hệ thống cũ không hiệu quả.
+liter|n|lít|Drink two liters of water a day.|Uống hai lít nước mỗi ngày.
+recession|n|suy thoái kinh tế|The country is in recession.|Đất nước đang suy thoái.
+timeline|n|tiến độ, mốc thời gian|What's the timeline for the project?|Tiến độ của dự án thế nào?
+unreliable|adj|không đáng tin cậy|The bus service is unreliable.|Dịch vụ xe buýt không đáng tin cậy.
+acclaim|n, v|sự hoan nghênh; ca ngợi|The film won critical acclaim.|Bộ phim được giới phê bình ca ngợi.
+chronic|adj|mãn tính|He has chronic back pain.|Ông ấy bị đau lưng mãn tính.
+deteriorate|v|xấu đi|His health deteriorated.|Sức khỏe của ông ấy xấu đi.
+resemble|v|giống|She resembles her mother.|Cô ấy giống mẹ.
+unauthorized|adj|trái phép, chưa được cho phép|No unauthorized access.|Cấm truy cập trái phép.
+violate|v|vi phạm|Don't violate the rules.|Đừng vi phạm quy định.
+unplug|v|rút phích cắm|Unplug the computer before cleaning.|Rút phích máy tính trước khi lau.
+videoconference|n|hội nghị truyền hình|We have a videoconference with Tokyo.|Chúng tôi có cuộc họp trực tuyến với Tokyo.

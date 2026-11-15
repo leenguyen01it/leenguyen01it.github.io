@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Từ vựng tiếng Anh NGSL</title>
+<title>__TITLE__</title>
 <style>
 :root{
   --bg:#f4f6fb;--card:#fff;--ink:#1f2433;--muted:#667085;--line:#e4e7ef;
@@ -40,6 +40,7 @@ tr.done td{background:#eef8ee!important}
 tr.done .w{color:#15803d}
 .stt{color:var(--muted);width:46px;font-size:13px}
 .w{font-size:20px;font-weight:700;white-space:nowrap}
+.w.ph{font-size:16px;font-weight:600;white-space:normal;min-width:260px}
 .het{cursor:help;font-size:14px;margin-left:2px}
 .ipa{color:var(--accent);font-family:"Segoe UI","Noto Sans","Lucida Sans Unicode","DejaVu Sans",sans-serif;font-size:14px}
 .pos{display:inline-block;font-size:11px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 5px;margin-right:6px;vertical-align:1px;white-space:nowrap}
@@ -62,7 +63,7 @@ input.chk{width:20px;height:20px;accent-color:#16a34a;cursor:pointer}
   #tb tr:nth-child(even){background:#f8f9fd} #tb tr.done{background:#eef8ee}
   #tb td{display:block;padding:0;border:0;background:none!important}
   #tb td.stt{display:none} #tb td.w{grid-area:w;white-space:normal;overflow-wrap:anywhere;font-size:17px} #tb td.ipa{grid-area:ipa;font-size:13px}
-  #tb td.vi{grid-area:vi} #tb td:last-child{grid-area:chk;align-self:center;justify-self:end}
+  #tb td.vi{grid-area:vi} #tb tr.ph{grid-template-columns:minmax(0,1fr) 30px;grid-template-areas:"w chk" "vi chk"} #tb tr.ph td.ipa{display:none} #tb td.w.ph{min-width:0;font-size:15px} #tb td:last-child{grid-area:chk;align-self:center;justify-self:end}
   .top{width:40px;height:40px;right:12px;bottom:12px;opacity:.85}}
 @page{size:A4;margin:14mm 12mm 16mm 18mm;@bottom-center{content:counter(page);font-size:9pt;color:#667085}}
 @media print{
@@ -88,14 +89,15 @@ input.chk{width:20px;height:20px;accent-color:#16a34a;cursor:pointer}
   .pt .p{width:27mm;font-size:8.2pt;color:#1d4ed8;line-height:1.2}
   .pt .v{font-weight:600}.pt .e{color:#444;font-size:8.5pt}.pt .e b{font-weight:500;color:#000}
   .pt .pos{font-size:7.5pt;padding:0 3px;margin-right:4px}
+  .pt .w.ph{width:auto;font-size:10pt;font-weight:600}
   .pt .b{width:7mm} .pt .b i{display:inline-block;width:3.4mm;height:3.4mm;border:.35mm solid #555;border-radius:.6mm;margin-top:.5mm}
 }
 </style>
 </head>
 <body>
 <header>
-  <h1>📘 Từ vựng tiếng Anh thiết yếu</h1>
-  <p>2.809 từ NGSL 1.2 xếp theo tần suất + 52 từ bổ sung · Tích ô “Đã thuộc” để theo dõi tiến độ (lưu trên trình duyệt này)</p>
+  <h1>__H1__</h1>
+  <p>__SUB__</p>
 </header>
 <main>
 <div class="card">
@@ -114,23 +116,23 @@ input.chk{width:20px;height:20px;accent-color:#16a34a;cursor:pointer}
     <tbody id="tb"></tbody>
   </table>
   <div class="empty" id="empty" hidden>Không có từ nào khớp.</div>
-  <p class="note">💡 <b>Cách học:</b> mỗi ngày 15–20 từ, học theo thứ tự nhóm vì nhóm 1 là những từ xuất hiện nhiều nhất. Bật “Che nghĩa” để tự kiểm tra, bấm vào chỗ bị che để xem đáp án.<br>
-  🔊 <b>Nút nghe</b> dùng giọng đọc có sẵn trong máy, không cần mạng nếu máy đã tải giọng tiếng Anh. Chất lượng giọng tùy thiết bị, nên <b>phiên âm mới là chuẩn để dựa vào</b>. Từ có dấu ⚠ đọc được nhiều kiểu tùy nghĩa (ví dụ <i>read</i>), nút nghe chỉ đọc một kiểu.<br>
-  📚 <b>Nguồn:</b> danh sách từ <a href="https://www.newgeneralservicelist.com/">New General Service List 1.2</a> của Browne, C., Culligan, B. và Phillips, J. (giấy phép <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>); phiên âm chuyển từ <a href="https://github.com/cmusphinx/cmudict">CMU Pronouncing Dictionary</a>. Nghĩa tiếng Việt và câu ví dụ soạn riêng (11/2026), phát hành theo CC BY-SA 4.0; nghĩa chỉ ghi các nghĩa thường gặp. Khi in (Ctrl+P), trang tự chuyển sang bản in đủ các nhóm, có ô để tích bằng bút.</p>
+  <p class="note">__NOTE__</p>
 </div>
 </main>
 <button class="top" onclick="scrollTo({top:0})" title="Lên đầu trang">↑</button>
 <div id="printall"></div>
 <script>
 const DATA=__DATA__;
-const LV=[{k:0,n:'Tất cả',c:'#1f2433'},{k:1,n:'Nhóm 1',r:'1–500',c:'#2563eb'},{k:2,n:'Nhóm 2',r:'501–1000',c:'#0d9488'},{k:3,n:'Nhóm 3',r:'1001–1500',c:'#7c3aed'},{k:4,n:'Nhóm 4',r:'1501–2000',c:'#d97706'},{k:5,n:'Nhóm 5',r:'2001–2500',c:'#db2777'},{k:6,n:'Nhóm 6',r:'2501–2809',c:'#475569'},{k:7,n:'Bổ sung',r:'thứ, tháng, số',c:'#16a34a'}];
-const KEY='ngsl-thuoc';
+const CFG=__CONFIG__;
+const LV=CFG.levels;
+const KEY=CFG.key;
 let done={};try{done=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
 let cur=1,order=null;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const strip=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').toLowerCase();
 DATA.forEach((d,i)=>{d.id=d.lv+'-'+d.w;d.n=i;d.key=strip(d.w+'|'+d.vi)+'|'+d.vi.toLowerCase()});
+const byK=Object.fromEntries(LV.map(l=>[l.k,l]));
 const tabs=document.getElementById('tabs');
 function drawTabs(){tabs.innerHTML='';LV.forEach(l=>{const list=l.k?DATA.filter(d=>d.lv===l.k):DATA;const b=document.createElement('button');b.className='tab'+(l.k===cur?' on':'');b.style.setProperty('--c',l.c);b.title=l.r||'';b.innerHTML=`${l.n} <small>(${list.length})</small>`;b.onclick=()=>{cur=l.k;order=null;document.documentElement.style.setProperty('--accent',l.c);drawTabs();render()};tabs.appendChild(b)})}
 
@@ -152,14 +154,14 @@ if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=pickVoice}
 pickVoice();setTimeout(pickVoice,800);
 function speak(t){try{if(!VOICE)pickVoice();if(!VOICE)return;const u=new SpeechSynthesisUtterance(t);u.voice=VOICE;u.lang=VOICE.lang;u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 
-function progress(){const list=cur?DATA.filter(d=>d.lv===cur):DATA;const n=list.filter(d=>done[d.id]).length;document.getElementById('barfill').style.width=(100*n/list.length)+'%';document.getElementById('progtxt').textContent=`${n} / ${list.length} từ (${Math.round(100*n/list.length)}%)`}
+function progress(){const list=cur?DATA.filter(d=>d.lv===cur):DATA;const n=list.filter(d=>done[d.id]).length;document.getElementById('barfill').style.width=(100*n/list.length)+'%';document.getElementById('progtxt').textContent=`${n} / ${list.length} ${CFG.unit} (${Math.round(100*n/list.length)}%)`}
 function render(){
   const raw=document.getElementById('q').value.trim();const q=strip(raw);const qr=raw.toLowerCase();
   const onlyNew=document.getElementById('onlyNew').checked;
   let list=cur?DATA.filter(d=>d.lv===cur):DATA.slice();
   if(order)list=order.map(i=>DATA[i]).filter(d=>!cur||d.lv===cur);
   list=list.filter(d=>(!q||d.key.includes(q)||d.key.includes(qr))&&(!onlyNew||!done[d.id]));
-  const rows=list.map((d,i)=>{const c=LV[d.lv].c;return `<tr class="${done[d.id]?'done':''}" data-id="${esc(d.id)}"><td class="stt">${i+1}</td><td class="w">${esc(d.w)}<button class="spk" data-t="${esc(d.w)}" title="Nghe">🔊</button>${d.het?'<span class="het" title="Từ này đọc khác nhau tùy nghĩa/từ loại – nút nghe chỉ đọc một cách, hãy xem phiên âm">⚠</span>':''}${cur?'':`<span class="lv" style="background:${c}">${d.lv===7?'+':d.lv}</span>`}</td><td class="ipa"><span>${esc(d.ipa)}</span></td><td class="vi"><span class="pos">${esc(d.pos)}</span><span class="m">${esc(d.vi)}</span><div class="ex"><b>${esc(d.ex)}</b> <button class="spk" data-t="${esc(d.ex)}" title="Nghe câu">🔊</button><br><i>${esc(d.exvi)}</i></div></td><td><input type="checkbox" class="chk" aria-label="Đã thuộc" ${done[d.id]?'checked':''}></td></tr>`});
+  const rows=list.map((d,i)=>{const L=byK[d.lv],c=L.c,badge=cur?'':`<span class="lv" style="background:${c}">${L.b||d.lv}</span>`;if(d.ph)return `<tr class="${done[d.id]?'done':''} ph" data-id="${esc(d.id)}"><td class="stt">${i+1}</td><td class="w ph">${esc(d.w)}<button class="spk" data-t="${esc(d.w)}" title="Nghe">🔊</button>${badge}</td><td class="ipa"></td><td class="vi"><span class="m">${esc(d.vi)}</span><div class="ex"><i>💬 ${esc(d.note)}</i></div></td><td><input type="checkbox" class="chk" aria-label="Đã thuộc" ${done[d.id]?'checked':''}></td></tr>`;return `<tr class="${done[d.id]?'done':''}" data-id="${esc(d.id)}"><td class="stt">${i+1}</td><td class="w">${esc(d.w)}<button class="spk" data-t="${esc(d.w)}" title="Nghe">🔊</button>${d.het?'<span class="het" title="Từ này đọc khác nhau tùy nghĩa/từ loại – nút nghe chỉ đọc một cách, hãy xem phiên âm">⚠</span>':''}${badge}</td><td class="ipa"><span>${esc(d.ipa)}</span></td><td class="vi"><span class="pos">${esc(d.pos)}</span><span class="m">${esc(d.vi)}</span><div class="ex"><b>${esc(d.ex)}</b> <button class="spk" data-t="${esc(d.ex)}" title="Nghe câu">🔊</button><br><i>${esc(d.exvi)}</i></div></td><td><input type="checkbox" class="chk" aria-label="Đã thuộc" ${done[d.id]?'checked':''}></td></tr>`});
   document.getElementById('tb').innerHTML=rows.join('');document.getElementById('empty').hidden=list.length>0;progress();
 }
 document.getElementById('tb').addEventListener('click',e=>{
@@ -178,10 +180,11 @@ drawTabs();render();
 /* ---- bản in: đủ mọi nhóm, có ô tích bằng bút ---- */
 (function buildPrint(){
   const L=LV.slice(1);const cnt=L.map(l=>DATA.filter(d=>d.lv===l.k).length);
-  let h=`<div class="p-cover"><h1>Từ vựng tiếng Anh thiết yếu</h1><p>${DATA.length.toLocaleString('vi-VN')} từ · phiên âm giọng Mỹ · nghĩa tiếng Việt · câu ví dụ</p><p>Học theo thứ tự nhóm: nhóm 1 là những từ gặp nhiều nhất. Tích ô ☐ bằng bút khi đã thuộc.</p><table>${L.map((l,i)=>`<tr><td><b style="color:${l.c}">${l.n}</b></td><td>${l.r}</td><td>${cnt[i]} từ</td></tr>`).join('')}</table><p class="src">Danh sách từ: New General Service List 1.2 (Browne, Culligan &amp; Phillips), CC BY-SA 4.0 · Phiên âm: CMU Pronouncing Dictionary<br>Nghĩa và ví dụ: soạn 11/2026, CC BY-SA 4.0 · ⚠ = từ đọc khác nhau tùy nghĩa</p></div>`;
+  let h=`<div class="p-cover"><h1>${CFG.h1print}</h1>${CFG.cover.map(x=>`<p>${x}</p>`).join('')}<table>${L.map((l,i)=>`<tr><td><b style="color:${l.c}">${l.n}</b></td><td>${l.r||''}</td><td>${cnt[i]} ${CFG.unit}</td></tr>`).join('')}</table><p class="src">${CFG.src}</p></div>`;
   L.forEach((l,i)=>{
-    const rows=DATA.filter(d=>d.lv===l.k).map((d,j)=>`<tr><td class="n">${j+1}</td><td class="w">${esc(d.w)}${d.het?' ⚠':''}</td><td class="p">${esc(d.ipa)}</td><td><span class="pos">${esc(d.pos)}</span><span class="v">${esc(d.vi)}</span><span class="e"> · <b>${esc(d.ex)}</b> ${esc(d.exvi)}</span></td><td class="b"><i></i></td></tr>`).join('');
-    h+=`<section class="plv"><h2 style="background:${l.c}">${l.n} · ${l.r} · ${cnt[i]} từ</h2><table class="pt"><thead><tr style="background:${l.c}"><th>#</th><th>Từ</th><th>Phiên âm</th><th>Nghĩa và ví dụ</th><th>✓</th></tr></thead><tbody>${rows}</tbody></table></section>`;
+    const items=DATA.filter(d=>d.lv===l.k),ph=items.every(d=>d.ph);
+    const rows=items.map((d,j)=>ph?`<tr><td class="n">${j+1}</td><td class="w ph">${esc(d.w)}</td><td><span class="v">${esc(d.vi)}</span><span class="e"> · ${esc(d.note)}</span></td><td class="b"><i></i></td></tr>`:`<tr><td class="n">${j+1}</td><td class="w">${esc(d.w)}${d.het?' ⚠':''}</td><td class="p">${esc(d.ipa)}</td><td><span class="pos">${esc(d.pos)}</span><span class="v">${esc(d.vi)}</span><span class="e"> · <b>${esc(d.ex)}</b> ${esc(d.exvi)}</span></td><td class="b"><i></i></td></tr>`).join('');
+    h+=`<section class="plv"><h2 style="background:${l.c}">${l.n}${l.r?' · '+l.r:''} · ${cnt[i]} ${CFG.unit}</h2><table class="pt"><thead><tr style="background:${l.c}"><th>#</th>${ph?'<th>Mẫu câu</th><th>Nghĩa · khi nào dùng</th>':'<th>Từ</th><th>Phiên âm</th><th>Nghĩa và ví dụ</th>'}<th>✓</th></tr></thead><tbody>${rows}</tbody></table></section>`;
   });
   document.getElementById('printall').innerHTML=h;
 })();

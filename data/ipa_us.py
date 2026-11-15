@@ -1,22 +1,5 @@
-"""Build the English vocab page.
-
-Usage: python3 data/ngsl/build_data.py data/ngsl <cmudict.dict> Tu-vung-tieng-Anh-NGSL.html
-cmudict.dict: https://raw.githubusercontent.com/cmusphinx/cmudict/master/cmudict.dict
-Inputs: NGSL_12_stats.csv, SUP_lemmatized.csv and b*.txt (word|pos|vi|example|example_vi).
-"""
-import csv, glob, json, re, sys
-
-D, CMU, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
-
-# --- CMU dict ---
-cmu = {}
-for line in open(CMU, encoding='utf-8'):
-    line = line.split('#')[0].strip()
-    if not line:
-        continue
-    head, *ph = line.split()
-    m = re.match(r'^(.+?)(?:\((\d+)\))?$', head)
-    cmu.setdefault(m.group(1), []).append(ph)
+"""US IPA from the CMU Pronouncing Dictionary, with fixes for learners."""
+import re
 
 V = {'AA': 'ɑː', 'AE': 'æ', 'AH': 'ʌ', 'AO': 'ɔː', 'AW': 'aʊ', 'AY': 'aɪ', 'EH': 'ɛ', 'ER': 'ɝː',
      'EY': 'eɪ', 'IH': 'ɪ', 'IY': 'iː', 'OW': 'oʊ', 'OY': 'ɔɪ', 'UH': 'ʊ', 'UW': 'uː'}
@@ -119,55 +102,52 @@ FUNC = {
  'you': '/juː/ · yếu /jə/', 'be': '/biː/', 'was': '/wʌz/ · yếu /wəz/', 'were': '/wɝː/ · yếu /wɚ/',
  'an': '/æn/ · yếu /ən/', 'he': '/hiː/', 'she': '/ʃiː/', 'we': '/wiː/', 'me': '/miː/',
 }
-MANUAL = {'quadrillion': '/kwɑːˈdrɪljən/', 'quintillion': '/kwɪnˈtɪljən/'}
-ngsl = [r['Lemma'] for r in csv.DictReader(open(D + '/NGSL_12_stats.csv'))]
-ngsl = [w.lower() if w in ('TRUE', 'FALSE') else w for w in ngsl]
-rank = {w: i + 1 for i, w in enumerate(ngsl)}
 
-rows = []
-for f in sorted(glob.glob(D + '/b*.txt')):
-    for l in open(f, encoding='utf-8'):
-        l = l.rstrip('\n')
-        if l.strip():
-            rows.append(l.split('|'))
+LETTERS = {'A': 'eɪ', 'B': 'biː', 'C': 'siː', 'D': 'diː', 'E': 'iː', 'F': 'ɛf', 'G': 'dʒiː', 'H': 'eɪtʃ',
+           'I': 'aɪ', 'J': 'dʒeɪ', 'K': 'keɪ', 'L': 'ɛl', 'M': 'ɛm', 'N': 'ɛn', 'O': 'oʊ', 'P': 'piː',
+           'Q': 'kjuː', 'R': 'ɑːr', 'S': 'ɛs', 'T': 'tiː', 'U': 'juː', 'V': 'viː', 'W': 'ˈdʌbəljuː',
+           'X': 'ɛks', 'Y': 'waɪ', 'Z': 'ziː'}
 
-data, missing = [], []
-for w, pos, vi, ex, exvi in rows:
-    r = rank.get(w)
-    lv = 7 if r is None else min((r - 1) // 500 + 1, 6)
-    key = w.lower()
-    vars_ = cmu.get(key)
-    if not vars_ and key in MANUAL:
-        data.append({'lv': lv, 'w': w, 'pos': pos, 'vi': vi, 'ex': ex, 'exvi': exvi, 'ipa': MANUAL[key]})
-        continue
-    if not vars_:
-        missing.append(w)
-        continue
-    entry = {'lv': lv, 'w': w, 'pos': pos, 'vi': vi, 'ex': ex, 'exvi': exvi}
-    if key in HET:
-        spec = HET[key]
-        if len(spec) == 1:
-            entry['ipa'] = '/' + ipa(vars_[spec[0][0] - 1]) + '/'
-        else:
-            entry['ipa'] = ' · '.join(f"/{ipa(vars_[i - 1])}/ ({lab})" for i, lab in spec)
-            entry['het'] = 1
-    else:
-        entry['ipa'] = FUNC.get(key) or '/' + ipa(vars_[0]) + '/'
-    data.append(entry)
 
-js = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
-if OUT.endswith('.html'):
-    import os
-    tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'template.html'), encoding='utf-8').read()
-    assert tpl.count('__DATA__') == 1
-    open(OUT, 'w', encoding='utf-8').write(tpl.replace('__DATA__', js.replace('</', '<\\/')))
-else:
-    open(OUT, 'w', encoding='utf-8').write(js)
-from collections import Counter
-print('entries', len(data), 'missing pron', missing)
-print(sorted(Counter(d['lv'] for d in data).items()), 'heteronyms', sum(1 for d in data if d.get('het')))
-for w in ['a', 'of', 'to', 'can', 'at', 'from', 'that', 'quadrillion', 'the', 'and', 'information', 'government', 'read', 'record', 'university', 'interesting', 'comfortable', 'strength', 'I', 'May', 'thousand', 'extraordinary', 'photograph', 'available']:
-    for d in data:
-        if d['w'] == w:
-            print(f"  {w:14} {d['ipa']}")
-            break
+class Pron:
+    def __init__(self, cmu_path, manual=None):
+        self.cmu = {}
+        for line in open(cmu_path, encoding='utf-8'):
+            line = line.split('#')[0].strip()
+            if not line:
+                continue
+            head, *ph = line.split()
+            m = re.match(r'^(.+?)(?:\((\d+)\))?$', head)
+            self.cmu.setdefault(m.group(1), []).append(ph)
+        self.manual = manual or {}
+
+    def word(self, w):
+        """IPA (without slashes) of one plain word, or None."""
+        k = w.lower()
+        if k in self.manual:
+            return self.manual[k].strip('/')
+        v = self.cmu.get(k)
+        return ipa(v[0]) if v else None
+
+    def entry(self, w):
+        """Return (ipa_display, is_heteronym) for a headword; ipa_display '' if unknown."""
+        k = w.lower()
+        if k in self.manual:
+            return self.manual[k], False
+        if re.fullmatch(r'[A-Z]{2,}(/[A-Z]{2,})?', w):          # acronym: API, CI/CD
+            ls = [LETTERS[c] for c in w if c != '/']
+            return '/ˌ' + ' ˌ'.join(ls[:-1]) + ' ˈ' + ls[-1] + '/', False
+        vars_ = self.cmu.get(k)
+        if vars_ and k in HET:
+            spec = HET[k]
+            if len(spec) == 1:
+                return '/' + ipa(vars_[spec[0][0] - 1]) + '/', False
+            return ' · '.join(f"/{ipa(vars_[i - 1])}/ ({lab})" for i, lab in spec), True
+        if vars_:
+            return FUNC.get(k) or '/' + ipa(vars_[0]) + '/', False
+        parts = re.split(r'[ \-]', w)
+        if len(parts) > 1:
+            ps = [self.word(p) for p in parts]
+            if all(ps):
+                return '/' + ' '.join(ps) + '/', False
+        return '', False

@@ -1,0 +1,267 @@
+## 1|Quy trình làm phần mềm
+agile|adj|linh hoạt (phương pháp Agile)|Our team follows an agile process.|Nhóm chúng tôi làm theo quy trình Agile.
+sprint|n|sprint (chu kỳ làm việc 1–2 tuần)|We plan the next sprint on Monday.|Thứ Hai chúng tôi lên kế hoạch sprint tiếp theo.
+backlog|n|danh sách việc tồn đọng|Add this task to the backlog.|Thêm việc này vào backlog.
+standup|n|họp nhanh hằng ngày|The daily standup is at 9:30.|Họp standup hằng ngày lúc 9 giờ 30.
+ticket|n|phiếu công việc (trên Jira…)|I created a ticket for this bug.|Tôi đã tạo ticket cho lỗi này.
+issue|n|đầu việc, lỗi được ghi nhận (không phải "số báo")|Please open an issue on GitHub.|Vui lòng tạo issue trên GitHub.
+requirement|n|yêu cầu (của sản phẩm)|The requirements changed again.|Yêu cầu lại thay đổi rồi.
+specification|n|đặc tả|Read the API specification first.|Đọc đặc tả API trước.
+estimate|v, n|ước lượng (công sức)|How long will this take? Can you estimate it?|Việc này mất bao lâu? Bạn ước lượng được không?
+story point|n|điểm độ khó (ước lượng trong Agile)|This task is worth three story points.|Việc này được tính ba điểm.
+user story|n|câu chuyện người dùng (mô tả tính năng)|Write a user story for the login page.|Viết user story cho trang đăng nhập.
+milestone|n|cột mốc|We reached the first milestone.|Chúng tôi đã đạt cột mốc đầu tiên.
+roadmap|n|lộ trình sản phẩm|This feature is on the roadmap for Q3.|Tính năng này nằm trong lộ trình quý 3.
+stakeholder|n|các bên liên quan|We need approval from all stakeholders.|Chúng ta cần sự đồng ý của tất cả các bên liên quan.
+scope|n|phạm vi (công việc)|That's out of scope for this sprint.|Việc đó nằm ngoài phạm vi sprint này.
+prioritize|v|ưu tiên|We need to prioritize the bugs.|Chúng ta cần sắp xếp thứ tự ưu tiên các lỗi.
+blocker|n|vấn đề gây tắc nghẽn|Do you have any blockers?|Bạn có đang bị vướng gì không?
+retrospective|n|buổi họp nhìn lại (cuối sprint)|We discussed it in the retrospective.|Chúng tôi đã bàn chuyện đó trong buổi retro.
+deliverable|n|sản phẩm bàn giao|What are the deliverables for this phase?|Giai đoạn này phải bàn giao những gì?
+handover|n|sự bàn giao|I'll do a handover before my vacation.|Tôi sẽ bàn giao trước khi nghỉ phép.
+workaround|n|cách xử lý tạm thời|There's no fix yet, but here's a workaround.|Chưa có bản sửa, nhưng đây là cách xử lý tạm.
+trade-off|n|sự đánh đổi|There's a trade-off between speed and cost.|Có sự đánh đổi giữa tốc độ và chi phí.
+proof of concept|n|bản thử nghiệm khái niệm (PoC)|We built a proof of concept in two days.|Chúng tôi làm bản PoC trong hai ngày.
+prototype|n|bản mẫu|Let's build a quick prototype.|Hãy làm nhanh một bản mẫu.
+MVP|n|sản phẩm khả dụng tối thiểu|We launched the MVP last month.|Chúng tôi ra mắt MVP vào tháng trước.
+feature|n|tính năng|This feature is still in beta.|Tính năng này vẫn đang thử nghiệm.
+release|n, v|bản phát hành; phát hành|The next release is on Friday.|Bản phát hành tiếp theo vào thứ Sáu.
+technical debt|n|nợ kỹ thuật|We need time to pay down technical debt.|Chúng ta cần thời gian để trả nợ kỹ thuật.
+refactor|v|tái cấu trúc mã|I refactored the payment module.|Tôi đã tái cấu trúc module thanh toán.
+legacy|adj|cũ, kế thừa (hệ thống)|We still maintain a legacy system.|Chúng tôi vẫn duy trì một hệ thống cũ.
+stack|n|bộ công nghệ (tech stack)|What's your tech stack?|Bạn dùng bộ công nghệ nào?
+framework|n|bộ khung phát triển|We use a Python web framework.|Chúng tôi dùng một framework web Python.
+library|n|thư viện (mã)|Don't add a new library for this.|Đừng thêm thư viện mới chỉ cho việc này.
+dependency|n|phụ thuộc (gói phần mềm)|Update the dependencies regularly.|Cập nhật các gói phụ thuộc thường xuyên.
+version|n|phiên bản|Which Python version are you using?|Bạn đang dùng Python phiên bản nào?
+backward compatible|adj|tương thích ngược|The new API is backward compatible.|API mới tương thích ngược.
+deprecate|v|đánh dấu sắp ngừng hỗ trợ|This function is deprecated.|Hàm này sắp bị loại bỏ.
+## 2|Viết code
+variable|n|biến|Give the variable a clear name.|Đặt tên biến rõ ràng.
+function|n|hàm|This function returns a list.|Hàm này trả về một danh sách.
+argument|n|đối số (truyền vào hàm)|The function takes two arguments.|Hàm nhận hai đối số.
+parameter|n|tham số|The timeout parameter is optional.|Tham số timeout là tùy chọn.
+return|v|trả về|The function returns None on error.|Hàm trả về None khi có lỗi.
+loop|n|vòng lặp|Avoid a loop inside a loop here.|Tránh vòng lặp lồng nhau ở đây.
+condition|n|điều kiện|Add a condition to check for empty input.|Thêm điều kiện kiểm tra đầu vào rỗng.
+class|n|lớp (OOP)|Create a class for the user.|Tạo một lớp cho người dùng.
+object|n|đối tượng|Each object has its own data.|Mỗi đối tượng có dữ liệu riêng.
+instance|n|thể hiện (của lớp)|Create an instance of the client.|Tạo một thể hiện của client.
+method|n|phương thức|Call the save method.|Gọi phương thức save.
+attribute|n|thuộc tính|The user object has a name attribute.|Đối tượng user có thuộc tính name.
+interface|n|giao diện (lập trình)|Define a clear interface between the modules.|Định nghĩa giao diện rõ ràng giữa các module.
+module|n|mô-đun|Import the module at the top of the file.|Import module ở đầu tệp.
+package|n|gói|Install the package with pip.|Cài gói bằng pip.
+string|n|chuỗi|Convert the number to a string.|Chuyển số thành chuỗi.
+integer|n|số nguyên|The ID must be an integer.|ID phải là số nguyên.
+boolean|n|kiểu đúng/sai|This flag is a boolean.|Cờ này là kiểu boolean.
+array|n|mảng|Store the values in an array.|Lưu các giá trị trong một mảng.
+dictionary|n|từ điển (kiểu dữ liệu key–value)|Return the result as a dictionary.|Trả kết quả dưới dạng dictionary.
+null|n|giá trị rỗng|The field can't be null.|Trường này không được rỗng.
+type hint|n|gợi ý kiểu dữ liệu|Add type hints to your functions.|Thêm type hint cho các hàm.
+syntax|n|cú pháp|There's a syntax error on line 12.|Có lỗi cú pháp ở dòng 12.
+compile|v|biên dịch|The code doesn't compile.|Code không biên dịch được.
+runtime|n|thời gian chạy; môi trường chạy|The error only happens at runtime.|Lỗi chỉ xảy ra khi chạy.
+exception|n|ngoại lệ|Catch the exception and log it.|Bắt ngoại lệ và ghi log.
+callback|n|hàm gọi lại|Pass a callback to handle the result.|Truyền một callback để xử lý kết quả.
+asynchronous|adj|bất đồng bộ|Make the API call asynchronous.|Chuyển lời gọi API sang bất đồng bộ.
+thread|n|luồng|The task runs in a separate thread.|Tác vụ chạy trong một luồng riêng.
+concurrency|n|tính đồng thời|Concurrency bugs are hard to find.|Lỗi đồng thời rất khó tìm.
+recursion|n|đệ quy|This function uses recursion.|Hàm này dùng đệ quy.
+algorithm|n|thuật toán|We need a faster algorithm.|Chúng ta cần thuật toán nhanh hơn.
+complexity|n|độ phức tạp|The time complexity is O(n).|Độ phức tạp thời gian là O(n).
+hardcode|v|gán cứng (giá trị trong code)|Don't hardcode the password.|Đừng gán cứng mật khẩu trong code.
+config|n|cấu hình|Move the URL to the config file.|Chuyển URL vào tệp cấu hình.
+environment variable|n|biến môi trường|Store the API key in an environment variable.|Lưu API key trong biến môi trường.
+boilerplate|n|đoạn mã khuôn mẫu|The framework removes a lot of boilerplate.|Framework giúp bỏ nhiều mã khuôn mẫu.
+snippet|n|đoạn mã ngắn|Can you share a code snippet?|Bạn chia sẻ một đoạn code được không?
+readable|adj|dễ đọc|Keep the code simple and readable.|Giữ code đơn giản, dễ đọc.
+naming convention|n|quy ước đặt tên|Follow the team's naming conventions.|Tuân theo quy ước đặt tên của nhóm.
+linter|n|công cụ kiểm tra phong cách code|The linter found three warnings.|Linter phát hiện ba cảnh báo.
+## 3|Git và làm việc nhóm
+repository|n|kho mã (repo)|Clone the repository first.|Clone repo về trước.
+clone|v|sao chép repo về máy|Clone the project from GitHub.|Clone dự án từ GitHub.
+commit|n, v|bản ghi thay đổi; commit|Write a clear commit message.|Viết commit message rõ ràng.
+branch|n|nhánh|Create a new branch for the feature.|Tạo một nhánh mới cho tính năng.
+merge|v|gộp (nhánh)|Merge your branch into main.|Gộp nhánh của bạn vào main.
+pull request|n|yêu cầu gộp code (PR)|I opened a pull request for review.|Tôi đã mở PR để được review.
+code review|n|việc xem xét code|Every change needs a code review.|Mọi thay đổi đều cần được review.
+reviewer|n|người review|I added you as a reviewer.|Tôi đã thêm bạn làm người review.
+approve|v|chấp thuận (PR)|Two people approved the PR.|Hai người đã duyệt PR.
+merge conflict|n|xung đột khi gộp|I need to resolve a merge conflict.|Tôi cần giải quyết xung đột khi gộp.
+rebase|v|đặt lại gốc nhánh (git rebase)|Rebase your branch on main.|Rebase nhánh của bạn lên main.
+push|v|đẩy code lên server|Don't push directly to main.|Đừng push thẳng lên main.
+pull|v|kéo code mới về|Pull the latest changes first.|Pull thay đổi mới nhất về trước.
+fork|n, v|bản sao repo; tạo bản sao|Fork the repo and send a PR.|Fork repo rồi gửi PR.
+diff|n|phần khác biệt (giữa hai phiên bản)|The diff is too large to review.|Phần thay đổi quá lớn để review.
+revert|v|hoàn tác (thay đổi)|Revert the last commit.|Hoàn tác commit cuối.
+tag|n|thẻ (đánh dấu phiên bản)|Tag the release as v2.1.|Gắn thẻ bản phát hành là v2.1.
+upstream|n, adj|nguồn gốc (repo gốc)|The bug is fixed upstream.|Lỗi đã được sửa ở repo gốc.
+maintainer|n|người duy trì (dự án)|Ask the maintainer to review it.|Nhờ người duy trì dự án review.
+open source|adj, n|mã nguồn mở|We use many open source libraries.|Chúng tôi dùng nhiều thư viện mã nguồn mở.
+license|n|giấy phép|Check the license before using the code.|Kiểm tra giấy phép trước khi dùng code.
+README|n|tệp hướng dẫn đầu dự án|The setup steps are in the README.|Các bước cài đặt có trong README.
+nitpick|n|góp ý chi tiết nhỏ (nit)|Just a nitpick: rename this variable.|Góp ý nhỏ thôi: đổi tên biến này.
+LGTM|abbr|"trông ổn đấy" (duyệt PR)|LGTM, ship it!|Ổn rồi, cho lên thôi!
+pair programming|n|lập trình cặp|We did pair programming all afternoon.|Cả chiều chúng tôi lập trình cặp.
+onboarding|n|quá trình hội nhập (người mới)|Onboarding takes about two weeks.|Quá trình hội nhập mất khoảng hai tuần.
+## 4|Kiểm thử và gỡ lỗi
+bug|n|lỗi phần mềm|I found a bug in the login page.|Tôi tìm thấy lỗi ở trang đăng nhập.
+debug|v|gỡ lỗi|I spent all morning debugging.|Tôi mất cả buổi sáng để gỡ lỗi.
+reproduce|v|tái hiện (lỗi)|I can't reproduce the bug.|Tôi không tái hiện được lỗi.
+root cause|n|nguyên nhân gốc|We found the root cause.|Chúng tôi đã tìm ra nguyên nhân gốc.
+stack trace|n|vết ngăn xếp (thông tin lỗi)|Please send me the full stack trace.|Gửi tôi toàn bộ stack trace nhé.
+log|n, v|nhật ký hệ thống; ghi log|Check the logs for errors.|Kiểm tra log xem có lỗi không.
+breakpoint|n|điểm dừng (khi debug)|Set a breakpoint on line 40.|Đặt breakpoint ở dòng 40.
+crash|v, n|sập; sự cố sập|The app crashes on startup.|Ứng dụng bị sập khi khởi động.
+hang|v|treo (không phản hồi)|The page hangs when I click save.|Trang bị treo khi tôi bấm lưu.
+regression|n|lỗi tái phát (tính năng cũ bị hỏng)|This change caused a regression.|Thay đổi này gây lỗi ở tính năng cũ.
+edge case|n|trường hợp biên|Did you test the edge cases?|Bạn đã test các trường hợp biên chưa?
+unit test|n|kiểm thử đơn vị|Add unit tests for the new function.|Thêm unit test cho hàm mới.
+integration test|n|kiểm thử tích hợp|The integration tests take ten minutes.|Kiểm thử tích hợp mất mười phút.
+test case|n|ca kiểm thử|Write a test case for empty input.|Viết test case cho đầu vào rỗng.
+test coverage|n|độ bao phủ kiểm thử|Test coverage is 80%.|Độ bao phủ test là 80%.
+mock|n, v|giả lập (đối tượng)|Mock the API call in the test.|Giả lập lời gọi API trong test.
+flaky|adj|chập chờn (test lúc đạt lúc không)|This test is flaky.|Test này lúc chạy được lúc không.
+fixture|n|dữ liệu dựng sẵn cho test|Create a fixture for the database.|Tạo fixture cho cơ sở dữ liệu.
+assertion|n|câu lệnh kiểm tra (assert)|The assertion failed.|Câu kiểm tra assert đã thất bại.
+pass|v|đạt (test)|All tests pass.|Tất cả test đều đạt.
+fail|v|thất bại (test)|Two tests failed on CI.|Hai test bị lỗi trên CI.
+QA|n|kiểm định chất lượng|QA found three bugs.|Nhóm QA tìm ra ba lỗi.
+hotfix|n|bản vá khẩn|We deployed a hotfix last night.|Tối qua chúng tôi đã triển khai bản vá khẩn.
+patch|n, v|bản vá; vá|Apply the security patch.|Cài bản vá bảo mật.
+memory leak|n|rò rỉ bộ nhớ|There's a memory leak in the service.|Dịch vụ bị rò rỉ bộ nhớ.
+bottleneck|n|nút thắt cổ chai|The database is the bottleneck.|Cơ sở dữ liệu là nút thắt cổ chai.
+performance|n|hiệu năng|We improved performance by 30%.|Chúng tôi đã cải thiện hiệu năng 30%.
+benchmark|n, v|phép đo chuẩn; đo hiệu năng|Run the benchmark before and after.|Chạy benchmark trước và sau khi sửa.
+edge|n|biên, rìa (edge computing…)|Some code runs at the edge.|Một số code chạy ở biên mạng.
+## 5|Triển khai và vận hành
+deploy|v|triển khai (đưa lên máy chủ)|We deploy every Thursday.|Thứ Năm nào chúng tôi cũng triển khai.
+deployment|n|đợt triển khai|The deployment failed.|Đợt triển khai đã thất bại.
+production|n|môi trường thật (prod)|Don't test in production.|Đừng test trên môi trường thật.
+staging|n|môi trường thử trước khi lên thật|Test it on staging first.|Test trên staging trước.
+environment|n|môi trường (dev, staging, prod)|We have three environments.|Chúng tôi có ba môi trường.
+rollback|n, v|quay lui phiên bản|Roll back to the previous version.|Quay lui về phiên bản trước.
+CI/CD|n|tích hợp và triển khai liên tục|The CI/CD pipeline runs on every push.|Pipeline CI/CD chạy mỗi lần push.
+pipeline|n|chuỗi xử lý tự động|The pipeline is broken.|Pipeline đang bị lỗi.
+build|n, v|bản dựng; dựng|The build failed again.|Bản build lại lỗi rồi.
+container|n|vùng chứa (Docker)|The app runs in a container.|Ứng dụng chạy trong container.
+image|n|ảnh (Docker image)|Build a new Docker image.|Dựng một Docker image mới.
+cluster|n|cụm máy chủ|We added two nodes to the cluster.|Chúng tôi thêm hai node vào cụm.
+server|n|máy chủ|The server is down.|Máy chủ bị sập.
+cloud|n|đám mây (điện toán đám mây)|We moved everything to the cloud.|Chúng tôi chuyển mọi thứ lên đám mây.
+instance|n|máy ảo (trên cloud)|Start a new instance.|Khởi tạo một máy ảo mới.
+scale|v|mở rộng quy mô|The service scales automatically.|Dịch vụ tự động mở rộng.
+scalable|adj|có khả năng mở rộng|We need a scalable design.|Chúng ta cần thiết kế có khả năng mở rộng.
+load balancer|n|bộ cân bằng tải|The load balancer spreads the traffic.|Bộ cân bằng tải phân phối lưu lượng.
+latency|n|độ trễ|Latency went up to 500 ms.|Độ trễ tăng lên 500 ms.
+throughput|n|thông lượng|We doubled the throughput.|Chúng tôi đã tăng gấp đôi thông lượng.
+uptime|n|thời gian hoạt động liên tục|Our uptime is 99.9%.|Thời gian hoạt động của chúng tôi đạt 99,9%.
+downtime|n|thời gian ngừng hoạt động|There will be 10 minutes of downtime.|Sẽ có 10 phút ngừng hoạt động.
+outage|n|sự cố ngừng dịch vụ|We had a major outage yesterday.|Hôm qua chúng tôi gặp sự cố lớn.
+incident|n|sự cố|Write an incident report.|Viết báo cáo sự cố.
+postmortem|n|báo cáo phân tích sau sự cố|We'll share the postmortem tomorrow.|Mai chúng tôi sẽ chia sẻ báo cáo sau sự cố.
+on-call|adj|trực (sự cố)|I'm on call this weekend.|Cuối tuần này tôi trực.
+monitoring|n|giám sát hệ thống|Set up monitoring for the new service.|Thiết lập giám sát cho dịch vụ mới.
+alert|n|cảnh báo|I got an alert at 3 a.m.|Tôi nhận cảnh báo lúc 3 giờ sáng.
+dashboard|n|bảng điều khiển, bảng số liệu|Check the dashboard for errors.|Xem bảng số liệu để tìm lỗi.
+metric|n|chỉ số đo lường|Which metrics should we track?|Chúng ta nên theo dõi những chỉ số nào?
+threshold|n|ngưỡng|Alert when CPU goes above the threshold.|Cảnh báo khi CPU vượt ngưỡng.
+cache|n, v|bộ nhớ đệm; lưu đệm|Cache the results for one hour.|Lưu đệm kết quả trong một giờ.
+queue|n|hàng đợi|Jobs wait in the queue.|Các tác vụ chờ trong hàng đợi.
+cron job|n|tác vụ chạy định kỳ|A cron job runs the backup every night.|Một tác vụ định kỳ chạy sao lưu mỗi đêm.
+backup|n|bản sao lưu|Do we have a backup?|Chúng ta có bản sao lưu không?
+migration|n|sự di chuyển (dữ liệu, hệ thống)|The database migration took two hours.|Việc di chuyển cơ sở dữ liệu mất hai tiếng.
+infrastructure|n|hạ tầng|He manages our cloud infrastructure.|Anh ấy quản lý hạ tầng đám mây của chúng tôi.
+provision|v|cấp phát (tài nguyên)|Provision two new servers.|Cấp phát hai máy chủ mới.
+idempotent|adj|lũy đẳng (chạy nhiều lần vẫn cùng kết quả)|The script must be idempotent.|Script phải lũy đẳng.
+## 6|Dữ liệu, API và web
+database|n|cơ sở dữ liệu|The data is stored in a database.|Dữ liệu được lưu trong cơ sở dữ liệu.
+query|n, v|truy vấn|This query is too slow.|Câu truy vấn này quá chậm.
+schema|n|lược đồ (cấu trúc dữ liệu)|We changed the database schema.|Chúng tôi đã đổi lược đồ cơ sở dữ liệu.
+table|n|bảng|Add a column to the users table.|Thêm một cột vào bảng users.
+index|n|chỉ mục|Add an index to speed up the query.|Thêm chỉ mục để tăng tốc truy vấn.
+record|n|bản ghi|The table has a million records.|Bảng có một triệu bản ghi.
+transaction|n|giao dịch (cơ sở dữ liệu)|Wrap the updates in a transaction.|Gói các lệnh cập nhật trong một giao dịch.
+API|n|giao diện lập trình ứng dụng|We call a weather API.|Chúng tôi gọi một API thời tiết.
+endpoint|n|điểm cuối (đường dẫn API)|Add a new endpoint for orders.|Thêm endpoint mới cho đơn hàng.
+request|n|yêu cầu (gửi đến server)|The request timed out.|Yêu cầu bị quá thời gian chờ.
+response|n|phản hồi (từ server)|The response is in JSON.|Phản hồi ở định dạng JSON.
+payload|n|dữ liệu gửi kèm|The payload is too large.|Dữ liệu gửi kèm quá lớn.
+status code|n|mã trạng thái (HTTP)|The server returned status code 500.|Máy chủ trả về mã trạng thái 500.
+header|n|phần đầu (HTTP header)|Add the API key to the header.|Thêm API key vào header.
+timeout|n|hết thời gian chờ|Set a timeout of 30 seconds.|Đặt thời gian chờ 30 giây.
+retry|v, n|thử lại|Retry the request three times.|Thử gửi lại yêu cầu ba lần.
+rate limit|n|giới hạn tần suất gọi|We hit the API rate limit.|Chúng tôi chạm giới hạn tần suất gọi API.
+authentication|n|xác thực (bạn là ai)|The API uses token authentication.|API dùng xác thực bằng token.
+authorization|n|phân quyền (bạn được làm gì)|Authorization failed: you don't have access.|Phân quyền thất bại: bạn không có quyền truy cập.
+token|n|mã thông báo (xác thực)|The access token expired.|Token truy cập đã hết hạn.
+JSON|n|định dạng dữ liệu JSON|Return the data as JSON.|Trả dữ liệu dạng JSON.
+frontend|n|phần giao diện người dùng|She works on the frontend.|Cô ấy làm phần giao diện.
+backend|n|phần xử lý phía máy chủ|The backend is written in Python.|Phần backend viết bằng Python.
+full-stack|adj|làm cả frontend và backend|He is a full-stack developer.|Anh ấy là lập trình viên full-stack.
+client|n|phía máy khách|The client sends a request to the server.|Máy khách gửi yêu cầu tới máy chủ.
+browser|n|trình duyệt|It doesn't work in this browser.|Nó không chạy trên trình duyệt này.
+URL|n|đường dẫn web|Send me the URL.|Gửi tôi đường dẫn nhé.
+webhook|n|cơ chế gọi ngược qua HTTP|Set up a webhook for new payments.|Thiết lập webhook cho các giao dịch mới.
+microservice|n|dịch vụ nhỏ (kiến trúc vi dịch vụ)|We split the app into microservices.|Chúng tôi tách ứng dụng thành các microservice.
+pagination|n|sự phân trang|The API supports pagination.|API hỗ trợ phân trang.
+serialization|n|tuần tự hóa (chuyển dữ liệu sang dạng lưu/gửi)|Serialization takes too long.|Việc tuần tự hóa mất quá lâu.
+validation|n|kiểm tra tính hợp lệ|Add input validation.|Thêm bước kiểm tra dữ liệu đầu vào.
+data pipeline|n|luồng xử lý dữ liệu|The data pipeline runs every hour.|Luồng xử lý dữ liệu chạy mỗi giờ.
+## 7|AI, ML và LLM
+artificial intelligence|n|trí tuệ nhân tạo (AI)|Artificial intelligence is changing software.|Trí tuệ nhân tạo đang thay đổi ngành phần mềm.
+machine learning|n|học máy|We use machine learning to detect fraud.|Chúng tôi dùng học máy để phát hiện gian lận.
+model|n|mô hình|Which model are you using?|Bạn đang dùng mô hình nào?
+large language model|n|mô hình ngôn ngữ lớn (LLM)|A large language model writes the summary.|Một mô hình ngôn ngữ lớn viết phần tóm tắt.
+dataset|n|tập dữ liệu|We need a bigger dataset.|Chúng ta cần tập dữ liệu lớn hơn.
+training|n|huấn luyện (mô hình)|Training takes three days on GPUs.|Việc huấn luyện mất ba ngày trên GPU.
+inference|n|suy luận (chạy mô hình để ra kết quả)|Inference costs are high.|Chi phí chạy mô hình cao.
+fine-tune|v|tinh chỉnh (mô hình)|We fine-tuned the model on our data.|Chúng tôi đã tinh chỉnh mô hình trên dữ liệu của mình.
+prompt|n|câu lệnh cho mô hình|Write a clear prompt.|Viết câu lệnh rõ ràng.
+token|n|token (đơn vị văn bản của LLM)|The prompt uses 2,000 tokens.|Câu lệnh dùng 2.000 token.
+context window|n|cửa sổ ngữ cảnh|The document doesn't fit in the context window.|Tài liệu không vừa cửa sổ ngữ cảnh.
+embedding|n|vector nhúng (biểu diễn ý nghĩa)|We store embeddings in a vector database.|Chúng tôi lưu các vector nhúng trong cơ sở dữ liệu vector.
+vector database|n|cơ sở dữ liệu vector|Search for similar texts in the vector database.|Tìm văn bản tương tự trong cơ sở dữ liệu vector.
+retrieval|n|truy xuất (thông tin)|Retrieval quality affects the answer.|Chất lượng truy xuất ảnh hưởng đến câu trả lời.
+RAG|n|sinh câu trả lời dựa trên truy xuất|We built a RAG system for our documents.|Chúng tôi xây hệ thống RAG cho tài liệu nội bộ.
+chunk|n, v|đoạn nhỏ; chia đoạn|Split the document into chunks.|Chia tài liệu thành các đoạn nhỏ.
+hallucination|n|ảo giác (mô hình bịa thông tin)|The model's answer was a hallucination.|Câu trả lời của mô hình là bịa.
+agent|n|tác tử AI (tự gọi công cụ để làm việc)|The agent can search the web and write files.|Tác tử có thể tìm kiếm web và ghi tệp.
+tool calling|n|gọi công cụ (từ mô hình)|The model uses tool calling to check the weather.|Mô hình gọi công cụ để xem thời tiết.
+temperature|n|nhiệt độ (mức ngẫu nhiên khi sinh)|Set the temperature to zero.|Đặt nhiệt độ bằng không.
+structured output|n|đầu ra có cấu trúc|Ask for structured output in JSON.|Yêu cầu đầu ra có cấu trúc dạng JSON.
+evaluation|n|đánh giá (evals)|Run the evaluation before release.|Chạy đánh giá trước khi phát hành.
+ground truth|n|đáp án chuẩn|Compare the answers with the ground truth.|So sánh câu trả lời với đáp án chuẩn.
+accuracy|n|độ chính xác|The accuracy is 92%.|Độ chính xác là 92%.
+precision|n|độ chính xác dương (precision)|We need high precision.|Chúng ta cần precision cao.
+recall|n|độ phủ (recall)|Recall dropped after the change.|Recall giảm sau thay đổi.
+overfitting|n|quá khớp|The model is overfitting the training data.|Mô hình đang quá khớp với dữ liệu huấn luyện.
+label|n, v|nhãn; gán nhãn|We labeled 10,000 images.|Chúng tôi đã gán nhãn 10.000 ảnh.
+feature|n|đặc trưng (trong ML)|Age is an important feature.|Tuổi là một đặc trưng quan trọng.
+neural network|n|mạng nơ-ron|A neural network has many layers.|Mạng nơ-ron có nhiều lớp.
+weights|n|trọng số (mô hình)|The model weights are open.|Trọng số mô hình được công khai.
+open-weight|adj|công khai trọng số (mô hình mở)|We run an open-weight model locally.|Chúng tôi chạy một mô hình mở trên máy.
+GPU|n|bộ xử lý đồ họa|Training needs a lot of GPUs.|Huấn luyện cần rất nhiều GPU.
+multimodal|adj|đa phương thức (văn bản, hình ảnh…)|It's a multimodal model.|Đó là một mô hình đa phương thức.
+guardrail|n|hàng rào an toàn (cho AI)|Add guardrails to block harmful output.|Thêm lớp chặn để ngăn đầu ra có hại.
+prompt injection|n|tấn công chèn lệnh vào prompt|Prompt injection is a real risk for agents.|Chèn lệnh vào prompt là rủi ro thật với các tác tử.
+## 8|Bảo mật
+security|n|bảo mật|Security is everyone's job.|Bảo mật là việc của tất cả mọi người.
+vulnerability|n|lỗ hổng bảo mật|We found a vulnerability in the login form.|Chúng tôi tìm thấy một lỗ hổng ở form đăng nhập.
+encryption|n|mã hóa|All data uses encryption at rest.|Toàn bộ dữ liệu được mã hóa khi lưu trữ.
+encrypt|v|mã hóa|Encrypt the backup files.|Mã hóa các tệp sao lưu.
+hash|n, v|giá trị băm; băm|Store passwords as hashes.|Lưu mật khẩu dưới dạng băm.
+credential|n|thông tin đăng nhập|Never commit credentials to Git.|Không bao giờ commit thông tin đăng nhập lên Git.
+secret|n|bí mật (khóa, mật khẩu trong hệ thống)|Keep secrets in a vault.|Giữ các khóa bí mật trong kho an toàn.
+permission|n|quyền|You don't have permission to edit this file.|Bạn không có quyền sửa tệp này.
+access control|n|kiểm soát truy cập|Review the access control rules.|Rà soát các quy tắc kiểm soát truy cập.
+two-factor authentication|n|xác thực hai lớp|Turn on two-factor authentication.|Bật xác thực hai lớp.
+phishing|n|lừa đảo qua email/web|Don't click links in phishing emails.|Đừng bấm link trong email lừa đảo.
+malware|n|phần mềm độc hại|The laptop was infected with malware.|Laptop bị nhiễm phần mềm độc hại.
+firewall|n|tường lửa|The firewall blocks the port.|Tường lửa chặn cổng này.
+breach|n|vụ rò rỉ, xâm nhập|There was a data breach last year.|Năm ngoái đã xảy ra một vụ rò rỉ dữ liệu.
+exploit|n, v|mã khai thác; khai thác (lỗ hổng)|Attackers exploited an old bug.|Kẻ tấn công đã khai thác một lỗi cũ.
+sanitize|v|làm sạch (dữ liệu đầu vào)|Sanitize user input.|Làm sạch dữ liệu người dùng nhập vào.
+audit log|n|nhật ký kiểm tra|Every change is in the audit log.|Mọi thay đổi đều nằm trong nhật ký kiểm tra.
+least privilege|n|nguyên tắc quyền tối thiểu|Follow the principle of least privilege.|Tuân theo nguyên tắc quyền tối thiểu.

@@ -1,0 +1,97 @@
+## 9|Viết email
+I hope this email finds you well.|Hy vọng anh/chị vẫn khỏe.|Câu mở đầu lịch sự, dùng với người ít quen.
+I'm writing to ask about the project timeline.|Tôi viết thư này để hỏi về tiến độ dự án.|Nêu mục đích ngay câu đầu.
+Just a quick follow-up on my last email.|Tôi xin nhắc lại email trước của tôi.|Nhắc khéo khi chưa được trả lời.
+Please find the report attached.|Báo cáo được đính kèm theo thư này.|Khi gửi tệp đính kèm.
+Could you please confirm by Friday?|Anh/chị vui lòng xác nhận trước thứ Sáu được không?|Đặt hạn chót một cách lịch sự.
+Let me know if you have any questions.|Nếu có câu hỏi gì, anh/chị cứ báo tôi.|Câu kết phổ biến.
+Thanks in advance for your help.|Cảm ơn trước sự giúp đỡ của anh/chị.|Khi nhờ việc.
+Sorry for the late reply.|Xin lỗi vì trả lời muộn.|Mở đầu khi hồi âm chậm.
+As discussed in the meeting, we will release on Monday.|Như đã thống nhất trong cuộc họp, chúng ta sẽ phát hành vào thứ Hai.|Nhắc lại kết luận cuộc họp.
+I'm looping in Minh, who owns the payment service.|Tôi thêm anh Minh vào thư, anh ấy phụ trách dịch vụ thanh toán.|Khi thêm người vào email (CC).
+Moving Lan to BCC.|Chuyển chị Lan sang BCC.|Khi bớt người khỏi chuỗi thư.
+Could you clarify what you mean by "urgent"?|Anh/chị làm rõ "khẩn cấp" ở đây nghĩa là thế nào được không?|Hỏi lại khi chưa rõ yêu cầu.
+I'll get back to you by end of day.|Tôi sẽ phản hồi anh/chị trước cuối ngày.|Hứa hẹn thời gian trả lời (EOD).
+I'm out of office until Monday, with limited access to email.|Tôi nghỉ đến thứ Hai, ít khi kiểm tra email.|Thư trả lời tự động khi nghỉ.
+Best regards,|Trân trọng,|Câu ký cuối thư phổ biến.
+## 10|Họp và standup
+Yesterday I worked on the login bug. Today I'll write the tests.|Hôm qua tôi xử lý lỗi đăng nhập. Hôm nay tôi sẽ viết test.|Mẫu báo cáo standup: hôm qua – hôm nay.
+I'm blocked on the API key. Can someone help?|Tôi đang bị vướng vì chưa có API key. Ai giúp tôi được không?|Báo vướng mắc trong standup.
+No blockers on my side.|Phía tôi không có vướng mắc gì.|Khi mọi việc suôn sẻ.
+Can you hear me okay?|Mọi người nghe tôi rõ không?|Đầu cuộc họp online.
+Sorry, you're on mute.|Xin lỗi, anh/chị đang tắt mic.|Nhắc người khác bật mic.
+Can you share your screen?|Anh/chị chia sẻ màn hình được không?|Họp online.
+Let's get started.|Mình bắt đầu nhé.|Mở đầu cuộc họp.
+Could you repeat that, please?|Anh/chị nói lại được không?|Khi nghe không rõ.
+Sorry, could you speak a bit slower?|Xin lỗi, anh/chị nói chậm hơn một chút được không?|Rất nên dùng khi chưa quen nghe.
+Just to make sure I understand: you want the report by Friday?|Để chắc là tôi hiểu đúng: anh/chị cần báo cáo trước thứ Sáu đúng không?|Xác nhận lại để tránh hiểu nhầm.
+Let's take this offline.|Chuyện này mình bàn riêng sau nhé.|Khi chủ đề quá chi tiết so với cuộc họp.
+Let's circle back to this next week.|Tuần sau mình quay lại chuyện này nhé.|Hoãn một chủ đề.
+I have a hard stop at 3.|Tôi phải dừng đúng 3 giờ.|Báo trước giờ phải rời họp.
+Can we park this for now?|Mình tạm gác chuyện này lại được không?|Tạm gác một ý.
+What are the next steps?|Các bước tiếp theo là gì?|Chốt cuối cuộc họp.
+Who will own this task?|Ai sẽ phụ trách việc này?|Phân công.
+I'll send out the meeting notes.|Tôi sẽ gửi biên bản cuộc họp.|Sau cuộc họp.
+Let's wrap up.|Mình kết thúc ở đây nhé.|Kết thúc cuộc họp.
+## 11|Review code và PR
+Could you take a look at my PR when you have time?|Khi nào rảnh, anh/chị xem giúp PR của tôi được không?|Nhờ review lịch sự.
+This PR fixes the timeout issue in the payment service.|PR này sửa lỗi timeout ở dịch vụ thanh toán.|Câu mô tả PR.
+Nit: this variable name could be clearer.|Góp ý nhỏ: tên biến này có thể rõ hơn.|"Nit" = góp ý nhỏ, không bắt buộc sửa.
+What do you think about extracting this into a function?|Anh/chị nghĩ sao nếu tách phần này thành một hàm?|Góp ý dạng câu hỏi, nhẹ nhàng hơn ra lệnh.
+Could you add a test for this case?|Anh/chị thêm test cho trường hợp này được không?|Yêu cầu bổ sung test.
+I'm not sure this handles empty input.|Tôi không chắc đoạn này xử lý được đầu vào rỗng.|Chỉ ra rủi ro một cách mềm mỏng.
+Good catch, thanks!|Phát hiện hay đấy, cảm ơn!|Khi người khác chỉ ra lỗi đúng.
+Fixed in the latest commit.|Đã sửa trong commit mới nhất.|Trả lời comment review.
+I'd prefer to keep it as is, because it's easier to read.|Tôi muốn giữ nguyên vì nó dễ đọc hơn.|Không đồng ý góp ý, kèm lý do.
+Let's handle that in a follow-up PR.|Việc đó mình xử lý ở một PR sau nhé.|Không mở rộng phạm vi PR hiện tại.
+Looks good to me.|Tôi thấy ổn rồi.|Duyệt PR (LGTM).
+Approved with minor comments.|Đã duyệt, có vài góp ý nhỏ.|Duyệt nhưng còn góp ý nhỏ.
+This change might break the mobile app.|Thay đổi này có thể làm hỏng ứng dụng di động.|Cảnh báo ảnh hưởng.
+Can you rebase on main? There are conflicts.|Anh/chị rebase lên main được không? Đang có xung đột.|Yêu cầu cập nhật nhánh.
+## 12|Báo cáo tiến độ và xin hỗ trợ
+I'm about halfway through the task.|Tôi làm được khoảng một nửa việc rồi.|Báo tiến độ.
+It's taking longer than expected.|Việc này mất nhiều thời gian hơn dự kiến.|Báo chậm tiến độ sớm.
+I should be done by Thursday.|Chắc tôi sẽ xong trước thứ Năm.|Ước lượng thời gian hoàn thành.
+I underestimated this task.|Tôi đã ước lượng thấp việc này.|Thừa nhận ước lượng sai.
+Do you have a minute?|Anh/chị có rảnh một phút không?|Mở lời khi muốn hỏi.
+I've been stuck on this for two hours.|Tôi bị kẹt ở chỗ này hai tiếng rồi.|Nói rõ đã cố gắng trước khi nhờ.
+Here's what I've tried so far.|Đây là những gì tôi đã thử.|Nên kèm khi hỏi người khác.
+Could you point me in the right direction?|Anh/chị chỉ giúp tôi hướng đi được không?|Nhờ gợi ý, không nhờ làm hộ.
+I'm not familiar with this part of the code.|Tôi chưa quen phần code này.|Thừa nhận chưa biết.
+Who would be the best person to ask?|Ai là người phù hợp nhất để hỏi?|Tìm đúng người.
+I made a mistake. Here's how I'll fix it.|Tôi đã mắc lỗi. Đây là cách tôi sẽ sửa.|Nhận lỗi kèm giải pháp.
+The issue is fixed and deployed.|Lỗi đã được sửa và triển khai.|Báo đã xong.
+Heads up: the API will be down tonight.|Lưu ý: tối nay API sẽ ngừng hoạt động.|"Heads up" = báo trước.
+I'll be working from home tomorrow.|Mai tôi làm việc ở nhà.|Báo làm từ xa.
+I'm taking a day off on Friday.|Thứ Sáu tôi xin nghỉ một ngày.|Báo nghỉ phép.
+## 13|Thảo luận kỹ thuật
+In my opinion, we should use a queue here.|Theo tôi, ở đây nên dùng hàng đợi.|Nêu ý kiến.
+I see your point, but I'm worried about the cost.|Tôi hiểu ý anh/chị, nhưng tôi lo về chi phí.|Phản đối lịch sự.
+That makes sense.|Hợp lý đấy.|Đồng ý.
+I agree with Lan.|Tôi đồng ý với chị Lan.|Đồng ý với người khác.
+I'm not sure I agree.|Tôi không chắc là mình đồng ý.|Phản đối nhẹ nhàng.
+What's the trade-off here?|Ở đây mình đánh đổi cái gì?|Hỏi về ưu nhược điểm.
+Have we considered caching the results?|Mình đã tính đến việc lưu đệm kết quả chưa?|Gợi ý một phương án.
+What if the service goes down?|Nếu dịch vụ bị sập thì sao?|Hỏi về rủi ro.
+How does this scale to a million users?|Cách này mở rộng thế nào khi có một triệu người dùng?|Hỏi về khả năng mở rộng.
+Let me double-check and get back to you.|Để tôi kiểm tra lại rồi báo anh/chị.|Khi chưa chắc chắn.
+That's a good question. I don't know yet.|Câu hỏi hay. Tôi chưa biết.|Thành thật khi chưa biết, tốt hơn đoán bừa.
+Can you walk me through the design?|Anh/chị giải thích từng bước thiết kế cho tôi được không?|Nhờ giải thích chi tiết.
+Let me draw it on the whiteboard.|Để tôi vẽ lên bảng.|Khi giải thích kiến trúc.
+Let's go with option B.|Mình chọn phương án B nhé.|Chốt quyết định.
+## 14|Phỏng vấn xin việc
+Could you tell me a bit about yourself?|Bạn giới thiệu đôi chút về bản thân được không?|Câu hỏi mở đầu thường gặp.
+I have three years of experience as a backend developer.|Tôi có ba năm kinh nghiệm làm lập trình viên backend.|Giới thiệu kinh nghiệm.
+In my last project, I built a chatbot using an LLM.|Ở dự án gần nhất, tôi xây một chatbot dùng LLM.|Kể dự án cụ thể.
+I was responsible for the payment API.|Tôi phụ trách API thanh toán.|Nói rõ vai trò của mình.
+The biggest challenge was handling high traffic.|Thử thách lớn nhất là xử lý lưu lượng truy cập cao.|Trả lời câu hỏi về khó khăn.
+I reduced the response time by 40%.|Tôi đã giảm thời gian phản hồi 40%.|Nêu kết quả có số liệu.
+Why do you want to join our company?|Vì sao bạn muốn làm việc ở công ty chúng tôi?|Câu hỏi thường gặp.
+I'm interested in your work on AI products.|Tôi quan tâm đến các sản phẩm AI của công ty.|Trả lời "vì sao chọn công ty".
+What are your strengths and weaknesses?|Điểm mạnh và điểm yếu của bạn là gì?|Câu hỏi thường gặp.
+I'm still improving my public speaking.|Tôi vẫn đang cải thiện kỹ năng nói trước đám đông.|Nói điểm yếu kèm nỗ lực cải thiện.
+Where do you see yourself in five years?|Bạn thấy mình ở đâu sau năm năm nữa?|Câu hỏi về định hướng.
+What's your expected salary?|Mức lương mong muốn của bạn là bao nhiêu?|Câu hỏi về lương.
+Could you tell me more about the team?|Anh/chị kể thêm về nhóm được không?|Câu hỏi nên hỏi lại nhà tuyển dụng.
+What does a typical day look like in this role?|Một ngày làm việc điển hình ở vị trí này thế nào?|Câu hỏi nên hỏi lại nhà tuyển dụng.
+Thank you for your time. I look forward to hearing from you.|Cảm ơn anh/chị đã dành thời gian. Tôi mong sớm nhận được phản hồi.|Câu kết buổi phỏng vấn.
