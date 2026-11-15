@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đề luyện IELTS Academic</title>
+<style>
+:root{
+  --ink:#1f2328; --muted:#5b6470; --line:#e3e6ea; --paper:#ffffff; --bg:#f6f7f9;
+  --teal:#0f766e; --red:#c0392b; --green:#2e7d32; --purple:#6d28d9; --yellow:#a16207;
+  --mark:#fff1a8; --tip-bg:#f5f3ff; --tip-line:#8b5cf6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 "Inter","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
+header.page{background:linear-gradient(135deg,#0f766e 0%,#6d28d9 100%);color:#fff;padding:48px 24px 40px}
+header.page .inner{max-width:900px;margin:0 auto}
+header.page h1{margin:0 0 8px;font-size:2.1rem;line-height:1.25}
+header.page p{margin:0;opacity:.85}
+main{max-width:900px;margin:-24px auto 64px;background:var(--paper);border-radius:14px;
+  box-shadow:0 6px 24px rgba(15,23,42,.08);padding:32px 40px}
+h2{font-size:1.55rem;margin:2.6em 0 .7em;padding:.35em 0 .35em .7em;border-left:5px solid currentColor;
+  scroll-margin-top:16px}
+h2:first-child{margin-top:0}
+h2:has(.c-teal){border-color:var(--teal)} h2:has(.c-red){border-color:var(--red)}
+h2:has(.c-green){border-color:var(--green)} h2:has(.c-purple){border-color:var(--purple)}
+h2:has(.c-yellow){border-color:var(--yellow)}
+h3{font-size:1.2rem;margin:1.8em 0 .5em;scroll-margin-top:16px}
+p{margin:.6em 0}
+a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
+ul,ol{padding-left:1.4em} li>p{margin:.2em 0}
+.c-teal{color:var(--teal)} .c-red{color:var(--red)} .c-green{color:var(--green)}
+.c-purple{color:var(--purple)} .c-yellow{color:var(--yellow)}
+mark{background:var(--mark);color:inherit;padding:0 .15em;border-radius:3px}
+u{text-decoration-thickness:2px;text-underline-offset:3px}
+s{color:#8a919a}
+blockquote.tip{margin:1em 0;padding:.75em 1em;background:var(--tip-bg);border-left:4px solid var(--tip-line);
+  border-radius:0 8px 8px 0}
+blockquote.tip p{margin:.2em 0}
+.table-wrap{overflow-x:auto;margin:1em 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:.55em .8em;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{background:#f1f3f5;font-weight:600}
+tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td:not([style]){background:#fafbfc}
+td p,th p{margin:0}
+figure.diagram{margin:1.4em 0;text-align:center}
+figure.diagram img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px}
+figure.diagram figcaption{color:var(--muted);font-size:.85rem;margin-top:.4em}
+time{color:inherit}
+.to-top{position:fixed;right:20px;bottom:20px;background:#6d28d9;color:#fff;width:44px;height:44px;
+  border-radius:50%;display:grid;place-items:center;font-size:20px;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.to-top:hover{text-decoration:none;opacity:.9}
+@media (max-width:640px){main{padding:20px 16px;margin-top:-16px;border-radius:0}
+  header.page h1{font-size:1.6rem}}
+@page{size:A4;margin:16mm 14mm 18mm 20mm;@bottom-center{content:counter(page);font-size:9pt;color:#5b6470}}
+@media print{body{background:#fff;font-size:10.5pt;line-height:1.5} header.page{background:none;color:var(--ink);padding:0 0 12px}
+  header.page h1{font-size:22pt}
+  main{box-shadow:none;margin:0;padding:0;max-width:none;border-radius:0} .to-top{display:none}
+  h2{font-size:15pt} h3{font-size:12pt}
+  h2,h3{break-after:avoid} table,figure,blockquote{break-inside:avoid} tr{break-inside:avoid}
+  .table-wrap{overflow:visible} table{font-size:9.5pt}
+  figure.diagram img{max-height:230mm;object-fit:contain}
+  h2#mục-lục+p{display:none}
+  main a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#5b6470;word-break:break-all}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+.passage{background:#fbfaf7;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+.passage h4{text-align:center;font-size:1.15rem;margin:.2em 0 .6em}
+.passage p{text-align:justify}
+.qbox{border-left:4px solid var(--teal);padding:4px 0 4px 14px;margin:14px 0}
+.qbox ol{padding-left:2.4em}.qbox ol li{margin:.45em 0}
+.inst{color:var(--muted);font-style:italic}
+.tfng,.wordbox,.headings,.summary,.notes,.flow{background:#f1f5f9;border-radius:8px;padding:10px 14px}
+.flow{text-align:center;line-height:1.9}
+.chart{margin:12px 0;text-align:center}.chart svg{width:100%;max-width:600px;height:auto}
+.ptitle{font-weight:600;margin:.2em 0 .6em}.pnote{color:var(--muted);font-size:.9rem}
+.process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;text-align:left}
+.step{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;font-size:.92rem;position:relative}
+.step b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;margin-right:6px;font-size:.85rem}
+@media (max-width:640px){.process{grid-template-columns:repeat(2,minmax(0,1fr))}}
+table.key td:first-child{width:3em;text-align:center} table.key td:nth-child(2){white-space:nowrap}
+.sheet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+.sheet div{border-bottom:1px solid #999;padding:7px 0 3px;font-size:.95rem}
+@media print{
+  h2[id^="de-"],h2#dap-an,h2#phieu{break-before:page}
+  h3[id$="-writing"]{break-before:page}
+  .passage{background:#fff;border:none;padding:0}
+  .passage p{font-size:10pt;line-height:1.45}
+  .qbox{border-left:none;padding-left:0}
+  .step{break-inside:avoid}
+  .sheet div{padding:9px 0 2px}
+}
+</style>
+</head>
+<body id="top">
+<header class="page"><div class="inner"><h1>4 đề luyện IELTS Academic: Reading &amp; Writing</h1><p>Soạn theo đúng định dạng đề thi · Có đáp án và giải thích · Cập nhật 11/2026</p></div></header>
+<main>
+<h2 id="mục-lục">Mục lục</h2>
+<p>Bấm vào tên mỗi phần để nhảy tới phần đó.</p>
+<ul><li><p><a href="#cach-dung">Cách dùng bộ đề</a></p></li>
+<li><p><a href="#de-1">Đề 1</a> · <a href="#de-2">Đề 2</a> · <a href="#de-3">Đề 3</a> · <a href="#de-4">Đề 4</a></p></li>
+<li><p><a href="#dap-an">Đáp án và giải thích</a></p></li>
+<li><p><a href="#phieu">Phiếu trả lời Reading (photo nhiều bản)</a></p></li></ul>
+<h2 id="cach-dung">Cách dùng bộ đề</h2>
+<ul><li><p><strong>Reading:</strong> bấm giờ đúng <strong>60 phút</strong> cho cả 3 bài, viết đáp án vào phiếu trả lời ở cuối tài liệu. Không xem đáp án trước khi làm xong.</p></li>
+<li><p><strong>Chấm điểm:</strong> mỗi câu đúng 1 điểm. Quy đổi xấp xỉ: khoảng 23/40 ≈ band 6.0, khoảng 27/40 ≈ 6.5, khoảng 30/40 ≈ 7.0.</p></li>
+<li><p><strong>Sau khi chấm:</strong> đọc phần giải thích của <em>mọi</em> câu sai, tìm lại câu đó trong bài đọc, và ghi các cặp paraphrase vào sổ.</p></li>
+<li><p><strong>Writing:</strong> Task 1 viết trong 20 phút, Task 2 trong 40 phút. Tự chấm bằng bảng trong cuốn <em>Cẩm nang IELTS</em>, rồi đối chiếu với phần gợi ý ở cuối tài liệu.</p></li></ul>
+<blockquote class="tip"><p><strong>Lưu ý:</strong> bài đọc được soạn riêng để luyện tập. Bối cảnh chung dựa trên kiến thức phổ biến, nhưng <strong>tên các nhà nghiên cứu (trừ Karl von Frisch và Richard Easterlin) và một số chi tiết là hư cấu</strong>, đừng dùng làm nguồn trích dẫn. Độ khó được ước lượng theo đề thật nhưng không được hiệu chuẩn chính thức, nên hãy dùng bộ sách Cambridge IELTS để đo điểm chính xác.</p></blockquote>
+
+<h2 id="de-1">Đề 1</h2>
+<h3 id="de-1-reading">READING PASSAGE 1</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 1–13</strong>, which are based on Reading Passage 1 below.</p>
+<div class="passage">
+<h4>The Return of the Bicycle</h4>
+<p>For much of the twentieth century, the bicycle was the most common form of transport in many Asian cities. In the 1980s, the streets of Beijing and Hanoi were filled with millions of cyclists travelling to work, to school and to market. As incomes rose, however, bicycles were replaced first by motorbikes and then by cars, and in many places cycling came to be seen as a sign of poverty rather than a sensible choice.</p>
+<p>In Europe, a similar decline had taken place earlier. After the Second World War, cities such as Amsterdam and Copenhagen were redesigned around the private car. Wide roads were built through historic neighbourhoods, and the number of cyclists fell year after year. By the early 1970s, the human cost of this change had become impossible to ignore. In the Netherlands alone, more than 3,000 people were killed on the roads in 1971, around 400 of them children. Public protests, led by a movement whose name translates as 'Stop the Child Murder', put pressure on the government to make streets safer. The oil crisis of 1973, which made fuel expensive almost overnight, strengthened the argument for cycling.</p>
+<p>The result was a long period of investment. Today, Dutch cities have thousands of kilometres of cycle paths that are physically separated from motor traffic, and in Amsterdam, a greater share of journeys in the city centre is made by bicycle than by car. Cycling there is not seen as a sport or a hobby, but simply as the most practical way to get around.</p>
+<p>The recent return of the bicycle in other parts of the world has been driven by different concerns. Air pollution, traffic congestion and rising rates of obesity have encouraged city governments to look again at two wheels. One of the most visible results has been the spread of public bike-sharing schemes. The scheme launched in Paris in 2007 was not the first of its kind, but its size – thousands of bicycles available at hundreds of stations – showed that bike-sharing could work in a major city.</p>
+<p>A decade later, a new model appeared in China. Using smartphone apps, riders could unlock a bicycle and leave it anywhere when they had finished, without returning it to a station. Investors poured money into these 'dockless' companies, which competed by flooding cities with far more bicycles than people could use. Within a few years, many of the companies had collapsed, leaving huge piles of abandoned bicycles at the edges of cities.</p>
+<p>Perhaps the most important change, however, has been the electric bicycle. A small motor that assists the rider makes hills and long distances much easier to manage, and allows people to arrive at work without being exhausted. Electric bicycles have proved especially popular with older riders, many of whom had given up cycling altogether.</p>
+<p>Critics argue that cycling only suits cities that are flat and have a mild climate. In hot and humid cities, they say, few people will want to ride to work. Supporters respond that electric assistance reduces the effort required, that shade trees planted along roads can make a large difference to comfort, and that employers can provide showers for staff. They point out that some of the world's busiest cycling cities have cold, wet winters.</p>
+<p>The biggest barrier, though, is not the weather but safety. Surveys in many countries have found that fear of traffic is the main reason people give for not cycling. Researchers have also found that painted lanes on busy roads do little to change this. Physically separated lanes, on the other hand, attract many more new cyclists, particularly women and older people.</p>
+<p>It is unlikely that the bicycle will replace the car completely. But in an age of crowded cities and rising concern about health and the environment, it is no longer seen as a symbol of the past. In many places, it is increasingly seen as part of the future.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 1–7</strong></p>
+<p>Do the following statements agree with the information given in Reading Passage 1? Write</p>
+<p class="tfng"><strong>TRUE</strong> if the statement agrees with the information<br><strong>FALSE</strong> if the statement contradicts the information<br><strong>NOT GIVEN</strong> if there is no information on this</p>
+<ol start="1">
+<li>Rising incomes contributed to a decline in cycling in some Asian cities.</li>
+<li>In 1971, more than 3,000 people died on the roads in the Netherlands.</li>
+<li>The 'Stop the Child Murder' movement was started by a group of teachers.</li>
+<li>The oil crisis of 1973 caused fuel prices to rise gradually over several years.</li>
+<li>The bike-sharing scheme in Paris was the first of its kind in the world.</li>
+<li>Dockless bike-sharing companies provided more bicycles than were needed.</li>
+<li>Electric bicycles cost more to repair than ordinary bicycles.</li>
+</ol>
+<p><strong>Questions 8–13</strong></p>
+<p>Complete the sentences below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+<ol start="8">
+<li>Electric bicycles make it easier for riders to deal with ………… and long distances.</li>
+<li>Some critics argue that cycling is only suitable for cities that are flat and have a ………… climate.</li>
+<li>Supporters say that ………… along roads can make cycling more comfortable in hot cities.</li>
+<li>According to surveys, fear of ………… is the main reason people give for not cycling.</li>
+<li>Physically ………… lanes attract more women and older people than painted lanes.</li>
+<li>The writer believes that the bicycle will probably not ………… the car completely.</li>
+</ol>
+</div>
+
+<h3>READING PASSAGE 2</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 14–26</strong>, which are based on Reading Passage 2 below.</p>
+<div class="passage">
+<h4>Sleep and Memory</h4>
+<p><b>A</b> Humans spend roughly a third of their lives asleep. For centuries, sleep was regarded as a passive state, a time when the brain simply switched off to rest. Over the past hundred years, however, researchers have discovered that the sleeping brain is remarkably busy, and that much of this activity appears to be connected with memory.</p>
+<p><b>B</b> One of the earliest studies of the subject was published in 1924. Two American psychologists asked participants to learn lists of nonsense syllables, and then tested them after periods of either sleep or ordinary waking activity. Those who had slept remembered considerably more. At the time, the researchers concluded that sleep did not actively improve memory. Instead, they argued, it simply protected newly learned information from interference by the many other experiences of waking life.</p>
+<p><b>C</b> Later research revealed that sleep is not a single state. A typical night consists of several cycles, each lasting around 90 minutes. Within each cycle, the sleeper passes through lighter stages into deep, slow-wave sleep, and then into rapid eye movement (REM) sleep, the stage most closely associated with vivid dreams. Deep sleep dominates the early part of the night, while REM sleep becomes longer towards the morning.</p>
+<p><b>D</b> A breakthrough came from studies of rats. Scientists recorded the activity of individual brain cells while the animals learned to find their way through a maze. When the rats later fell asleep, the same cells fired again in the same order, as if the animals were running through the maze in their minds. This 'replay' happened much faster than the original experience, and it suggested that the sleeping brain was rehearsing what it had learned during the day.</p>
+<p><b>E</b> It now appears that different types of memory depend on different stages of sleep. Memory for facts, such as names, dates and vocabulary, seems to benefit most from deep sleep. Skills, such as playing a musical instrument or typing, appear to be strengthened mainly during the later stages of the night. In one experiment, participants who practised a finger-tapping sequence in the evening performed it faster and more accurately the next morning, without any further practice.</p>
+<p><b>F</b> These findings have practical consequences. Students who stay awake all night before an examination may remember less, not more, because they lose the stage of sleep in which new facts are strengthened. Short daytime naps can also help. In a study led by Dr Hana Okafor, office workers who took a 60-minute nap after a training session recalled significantly more of the material that afternoon than colleagues who had stayed awake.</p>
+<p><b>G</b> Many questions remain unanswered. Scientists still disagree about whether sleep actively strengthens memories or mainly prevents them from fading, and little is known about why sleep becomes lighter and more broken in old age. Meanwhile, a growing industry sells devices and apps that claim to improve sleep and memory. Researchers warn that few of these products have been properly tested, and that consumers should treat their claims with caution.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 14–20</strong></p>
+<p>Reading Passage 2 has seven paragraphs, <strong>A–G</strong>. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, <strong>i–x</strong>.</p>
+<div class="headings"><p><strong>List of Headings</strong></p>
+<p>i &nbsp; An early experiment and how it was explained<br>ii &nbsp; How the brain revisits recent experiences<br>iii &nbsp; The economic cost of poor sleep<br>iv &nbsp; A changing view of what happens during sleep<br>v &nbsp; Different kinds of learning, different stages of sleep<br>vi &nbsp; Advice that follows from the research<br>vii &nbsp; The structure of a night's sleep<br>viii &nbsp; Open questions and a warning<br>ix &nbsp; Why animals sleep less than humans<br>x &nbsp; The link between dreams and creativity</p></div>
+<ol start="14"><li>Paragraph A</li><li>Paragraph B</li><li>Paragraph C</li><li>Paragraph D</li><li>Paragraph E</li><li>Paragraph F</li><li>Paragraph G</li></ol>
+<p><strong>Questions 21–23</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="21">
+<li>The researchers in 1924 believed that sleep helped memory by
+<br>A &nbsp; making new memories stronger.
+<br>B &nbsp; preventing other experiences from disturbing new information.
+<br>C &nbsp; allowing the brain to rest completely.
+<br>D &nbsp; increasing the time available for learning.</li>
+<li>In the studies of rats, the brain activity recorded during sleep
+<br>A &nbsp; was completely random.
+<br>B &nbsp; was slower than the activity during learning.
+<br>C &nbsp; followed the same pattern as the activity during learning.
+<br>D &nbsp; only occurred during REM sleep.</li>
+<li>What is the researchers' attitude towards sleep devices and apps?
+<br>A &nbsp; They believe the products are dangerous.
+<br>B &nbsp; They think most products have been well tested.
+<br>C &nbsp; They recommend them for older people.
+<br>D &nbsp; They advise people to be careful about the claims made.</li>
+</ol>
+<p><strong>Questions 24–26</strong></p>
+<p>Complete the summary using the list of words, <strong>A–F</strong>, below.</p>
+<p class="summary">Research suggests that memory for facts is mainly strengthened during <strong>24</strong> ………… sleep, whereas skills benefit more from the <strong>25</strong> ………… stages of the night. For this reason, staying awake all night before an exam is likely to be <strong>26</strong> ………… .</p>
+<p class="wordbox">A &nbsp;deep &nbsp;&nbsp; B &nbsp;later &nbsp;&nbsp; C &nbsp;harmful &nbsp;&nbsp; D &nbsp;useful &nbsp;&nbsp; E &nbsp;light &nbsp;&nbsp; F &nbsp;early</p>
+</div>
+
+<h3>READING PASSAGE 3</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 27–40</strong>, which are based on Reading Passage 3 below.</p>
+<div class="passage">
+<h4>The Economics of Open-Source Software</h4>
+<p>Much of the digital world runs on software that nobody pays for. The operating systems on most web servers, the programming languages used by millions of developers and many of the tools that keep the internet working are 'open source': their code is published freely, and anyone may use, study or change it. To economists, this has long been a puzzle. Why would highly skilled people spend their time producing something valuable and then give it away?</p>
+<p>One explanation focuses on careers. Professor Mark Delaney argues that contributions to well-known projects work as a kind of public advertisement. Unlike a CV, which an employer must take on trust, code that has been reviewed and accepted by other experts provides visible evidence of ability. Delaney's research suggests that developers with a strong record of open-source contributions receive more job offers and, on average, higher salaries.</p>
+<p>Dr Sofia Reyes accepts that career benefits matter, but believes they are only part of the story. In her interviews with hundreds of contributors, the most common reason given was simply that programmers enjoy solving problems. Many projects, she found, began because a developer needed a tool that did not exist and decided to build it. Having done so, sharing it cost almost nothing, and other people's improvements made it better.</p>
+<p>The picture of the lone volunteer, however, is increasingly out of date. A large proportion of the code in major projects is now written by people who are paid by their employers to do so. Dr Kenji Morita has studied why companies, many of them direct competitors, cooperate in this way. He found that firms contribute partly to share the cost of maintaining software that they all depend on, but above all to influence how it develops. A company that helps to shape a widely used technical standard is in a stronger position than one that must simply accept decisions made by others.</p>
+<p>Not all projects benefit from this kind of support. Dr Amara Osei has drawn attention to what she calls the 'maintenance gap'. Some pieces of software are used by thousands of organisations but are looked after by one or two unpaid volunteers. When those individuals become exhausted or lose interest, the consequences can be serious. In 2014, a major security flaw was discovered in a widely used encryption library that had been maintained for years by a very small team with almost no funding. The problem affected a large part of the internet.</p>
+<p>Measuring the value of open-source software is also difficult. Because it is free, it does not appear in the figures that governments use to calculate economic output. Professor Lena Fischer has attempted to estimate what it would cost companies to rewrite the open-source software they use if it suddenly disappeared. Her estimate runs into trillions of dollars, a figure that, she argues, shows how much standard economic statistics fail to capture.</p>
+<p>Various ways of funding open-source work have been tried, from individual donations to foundations supported by large technology companies. In my view, governments should go further and treat the most critical projects as public infrastructure, in the same way as roads or bridges. However, money alone will not solve the problem. Many projects succeed because of a culture of openness, generosity and shared standards, and badly designed funding could damage that culture as easily as it supports it. The challenge is to provide stability without turning a community into a bureaucracy.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 27–31</strong></p>
+<p>Look at the following statements and the list of researchers below. Match each statement with the correct researcher, <strong>A–E</strong>. You may use any letter more than once.</p>
+<ol start="27">
+<li>Free software creates value that standard economic figures do not show.</li>
+<li>Developers often create software to solve problems they themselves have.</li>
+<li>Contributing code can improve a programmer's employment prospects.</li>
+<li>Important software may depend on a dangerously small number of people.</li>
+<li>Companies want to have a say in the direction of shared technology.</li>
+</ol>
+<p class="wordbox"><strong>List of Researchers</strong><br>A &nbsp;Mark Delaney &nbsp;&nbsp; B &nbsp;Sofia Reyes &nbsp;&nbsp; C &nbsp;Kenji Morita &nbsp;&nbsp; D &nbsp;Amara Osei &nbsp;&nbsp; E &nbsp;Lena Fischer</p>
+<p><strong>Questions 32–36</strong></p>
+<p>Do the following statements agree with the claims of the writer in Reading Passage 3? Write</p>
+<p class="tfng"><strong>YES</strong> if the statement agrees with the claims of the writer<br><strong>NO</strong> if the statement contradicts the claims of the writer<br><strong>NOT GIVEN</strong> if it is impossible to say what the writer thinks about this</p>
+<ol start="32">
+<li>A large part of the digital world depends on open-source software.</li>
+<li>Volunteer programmers write lower-quality code than paid programmers.</li>
+<li>Governments should regard some open-source projects as public infrastructure.</li>
+<li>Providing more money will, on its own, solve the problems of open-source projects.</li>
+<li>Open-source software will eventually replace commercial software completely.</li>
+</ol>
+<p><strong>Questions 37–40</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="37">
+<li>The security problem discovered in 2014 is mentioned to show that
+<br>A &nbsp; open-source software is less secure than commercial software.
+<br>B &nbsp; widely used software may be maintained by very few people.
+<br>C &nbsp; companies should not use open-source encryption.
+<br>D &nbsp; governments failed to respond quickly enough.</li>
+<li>According to Kenji Morita, the main reason companies contribute to open-source projects is to
+<br>A &nbsp; reduce their tax payments.
+<br>B &nbsp; recruit skilled developers.
+<br>C &nbsp; influence how the technology develops.
+<br>D &nbsp; improve their public image.</li>
+<li>Mark Delaney compares open-source contributions to
+<br>A &nbsp; a form of advertising.
+<br>B &nbsp; a university qualification.
+<br>C &nbsp; a hobby.
+<br>D &nbsp; a type of charity.</li>
+<li>Which of the following is the best title for Reading Passage 3?
+<br>A &nbsp; How to start an open-source project
+<br>B &nbsp; Why programmers give away their work, and who pays for it
+<br>C &nbsp; The history of the internet
+<br>D &nbsp; Why companies should stop using free software</li>
+</ol>
+</div>
+
+<h3 id="de-1-writing">WRITING TASK 1</h3>
+<p class="inst">You should spend about 20 minutes on this task.</p>
+<div class="qbox">
+<p>The line graph below shows the average number of hours per day that people in four age groups spent online in one country between 2010 and 2025.</p>
+<p>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+<p><em>Write at least 150 words.</em></p>
+<figure class="chart"><svg viewBox="0 0 600 330" role="img" aria-label="Line graph of average hours online per day by age group, 2010 to 2025" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Arial, sans-serif"><text x="270.0" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#1f2328">Average hours online per day, by age group</text><line x1="70" y1="300.0" x2="470" y2="300.0" stroke="#d9dde3"/><text x="62" y="304.0" text-anchor="end" font-size="12" fill="#5b6470">0</text><line x1="70" y1="262.85714285714283" x2="470" y2="262.85714285714283" stroke="#d9dde3"/><text x="62" y="266.85714285714283" text-anchor="end" font-size="12" fill="#5b6470">1</text><line x1="70" y1="225.71428571428572" x2="470" y2="225.71428571428572" stroke="#d9dde3"/><text x="62" y="229.71428571428572" text-anchor="end" font-size="12" fill="#5b6470">2</text><line x1="70" y1="188.57142857142856" x2="470" y2="188.57142857142856" stroke="#d9dde3"/><text x="62" y="192.57142857142856" text-anchor="end" font-size="12" fill="#5b6470">3</text><line x1="70" y1="151.42857142857142" x2="470" y2="151.42857142857142" stroke="#d9dde3"/><text x="62" y="155.42857142857142" text-anchor="end" font-size="12" fill="#5b6470">4</text><line x1="70" y1="114.28571428571428" x2="470" y2="114.28571428571428" stroke="#d9dde3"/><text x="62" y="118.28571428571428" text-anchor="end" font-size="12" fill="#5b6470">5</text><line x1="70" y1="77.14285714285714" x2="470" y2="77.14285714285714" stroke="#d9dde3"/><text x="62" y="81.14285714285714" text-anchor="end" font-size="12" fill="#5b6470">6</text><line x1="70" y1="40.0" x2="470" y2="40.0" stroke="#d9dde3"/><text x="62" y="44.0" text-anchor="end" font-size="12" fill="#5b6470">7</text><text x="70.0" y="320" text-anchor="middle" font-size="12" fill="#5b6470">2010</text><text x="203.33333333333334" y="320" text-anchor="middle" font-size="12" fill="#5b6470">2015</text><text x="336.6666666666667" y="320" text-anchor="middle" font-size="12" fill="#5b6470">2020</text><text x="470.0" y="320" text-anchor="middle" font-size="12" fill="#5b6470">2025</text><text x="20" y="170.0" transform="rotate(-90 20 170.0)" text-anchor="middle" font-size="12" fill="#5b6470">hours per day</text><polyline points="70.0,188.57142857142856 203.33333333333334,132.85714285714286 336.6666666666667,77.14285714285714 470.0,58.571428571428584" fill="none" stroke="#2563eb" stroke-width="2.5"/><circle cx="70.0" cy="188.57142857142856" r="3.5" fill="#2563eb"/><circle cx="203.33333333333334" cy="132.85714285714286" r="3.5" fill="#2563eb"/><circle cx="336.6666666666667" cy="77.14285714285714" r="3.5" fill="#2563eb"/><circle cx="470.0" cy="58.571428571428584" r="3.5" fill="#2563eb"/><rect x="495" y="70" width="14" height="14" fill="#2563eb"/><text x="515" y="82" font-size="13" fill="#1f2328">16–24</text><polyline points="70.0,207.14285714285714 203.33333333333334,170.0 336.6666666666667,132.85714285714286 470.0,114.28571428571428" fill="none" stroke="#0d9488" stroke-width="2.5"/><circle cx="70.0" cy="207.14285714285714" r="3.5" fill="#0d9488"/><circle cx="203.33333333333334" cy="170.0" r="3.5" fill="#0d9488"/><circle cx="336.6666666666667" cy="132.85714285714286" r="3.5" fill="#0d9488"/><circle cx="470.0" cy="114.28571428571428" r="3.5" fill="#0d9488"/><rect x="495" y="98" width="14" height="14" fill="#0d9488"/><text x="515" y="110" font-size="13" fill="#1f2328">25–44</text><polyline points="70.0,244.28571428571428 203.33333333333334,225.71428571428572 336.6666666666667,188.57142857142856 470.0,170.0" fill="none" stroke="#d97706" stroke-width="2.5"/><circle cx="70.0" cy="244.28571428571428" r="3.5" fill="#d97706"/><circle cx="203.33333333333334" cy="225.71428571428572" r="3.5" fill="#d97706"/><circle cx="336.6666666666667" cy="188.57142857142856" r="3.5" fill="#d97706"/><circle cx="470.0" cy="170.0" r="3.5" fill="#d97706"/><rect x="495" y="126" width="14" height="14" fill="#d97706"/><text x="515" y="138" font-size="13" fill="#1f2328">45–64</text><polyline points="70.0,281.42857142857144 203.33333333333334,270.2857142857143 336.6666666666667,244.28571428571428 470.0,207.14285714285714" fill="none" stroke="#db2777" stroke-width="2.5"/><circle cx="70.0" cy="281.42857142857144" r="3.5" fill="#db2777"/><circle cx="203.33333333333334" cy="270.2857142857143" r="3.5" fill="#db2777"/><circle cx="336.6666666666667" cy="244.28571428571428" r="3.5" fill="#db2777"/><circle cx="470.0" cy="207.14285714285714" r="3.5" fill="#db2777"/><rect x="495" y="154" width="14" height="14" fill="#db2777"/><text x="515" y="166" font-size="13" fill="#1f2328">65+</text><text x="495" y="58" font-size="12" fill="#5b6470">Age group</text></svg></figure>
+</div>
+<h3>WRITING TASK 2</h3>
+<p class="inst">You should spend about 40 minutes on this task.</p>
+<div class="qbox">
+<p>Some people think that governments should spend more money on public transport than on building new roads.</p>
+<p>To what extent do you agree or disagree?</p>
+<p>Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+<p><em>Write at least 250 words.</em></p>
+</div>
+
+<h2 id="de-2">Đề 2</h2>
+<h3 id="de-2-reading">READING PASSAGE 1</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 1–13</strong>, which are based on Reading Passage 1 below.</p>
+<div class="passage">
+<h4>Farming Upwards</h4>
+<p>By 2050, around two thirds of the world's population is expected to live in cities. Feeding these urban populations will require large amounts of food to be grown, transported and stored, often over long distances. One proposed solution is to bring farming into the city itself – not by clearing land, but by building upwards.</p>
+<p>Vertical farms grow crops indoors, in stacked layers, often inside former warehouses or purpose-built towers. Instead of soil, most use hydroponics, a method in which plant roots sit in water containing carefully measured nutrients. Some use a related technique called aeroponics, in which the roots hang in the air and are sprayed with a fine mist. Sunlight is replaced by LED lamps, which can be tuned to the wavelengths that plants use most efficiently, and temperature and humidity are controlled by computer.</p>
+<p>Supporters point to several advantages. Because conditions are the same all year, crops can be harvested continuously rather than in one or two seasons. Leafy vegetables such as lettuce, which might take two months to mature in a field, can be ready in around 30 days. Vertical farms also use far less water: since water in a closed system is recycled, some operators claim to use up to 95% less than conventional farms. Pests are rare, so few or no pesticides are needed, and because the farms are located close to customers, food can reach supermarkets within hours of being picked.</p>
+<p>The main problem is energy. Plants need large amounts of light, and replacing the sun with electric lamps is expensive. Heating, cooling and pumping water add further costs. As a result, vertical farms have so far been profitable only for a narrow range of crops – mainly salad leaves and herbs, which grow quickly, are light, and sell for relatively high prices. Staple crops such as wheat and rice, which provide most of the calories that people eat, would be far too costly to grow in this way.</p>
+<p>The industry has also experienced financial difficulties. During the late 2010s, investors spent billions of dollars on vertical farming companies, and several firms built enormous facilities. When energy prices rose sharply in the early 2020s, a number of these companies struggled, and some closed altogether. Critics argued that the industry had grown too quickly and promised more than it could deliver.</p>
+<p>Whether vertical farming is environmentally friendly depends largely on where its electricity comes from. A farm powered by coal may produce more greenhouse gases per kilogram of lettuce than a field farm, even after the emissions from transport are included. A farm powered by solar or wind energy, on the other hand, can have a much smaller footprint. For this reason, some new farms are being built next to renewable power plants.</p>
+<p>Few experts now believe that vertical farms will replace traditional agriculture. Instead, they are likely to become one part of a wider food system, supplying fresh vegetables to cities while fields continue to produce the grains and other staples on which the world depends.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 1–6</strong></p>
+<p>Complete the notes below. Choose <strong>ONE WORD AND/OR A NUMBER</strong> from the passage for each answer.</p>
+<div class="notes"><p><strong>Vertical farming</strong></p>
+<ul><li>Most farms use hydroponics: roots are placed in <strong>1</strong> ………… containing nutrients</li>
+<li>In aeroponics, roots are sprayed with a <strong>2</strong> …………</li>
+<li>LED lamps replace <strong>3</strong> …………</li>
+<li>Lettuce can be harvested after about <strong>4</strong> ………… days</li>
+<li>Some farms say they use up to <strong>5</strong> ………… % less water</li>
+<li>The biggest problem is the cost of <strong>6</strong> …………</li></ul></div>
+<p><strong>Questions 7–13</strong></p>
+<p>Do the following statements agree with the information given in Reading Passage 1? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="7">
+<li>Vertical farms are usually built on land that was previously used for agriculture.</li>
+<li>Crops in vertical farms can only be harvested once or twice a year.</li>
+<li>Vertical farms generally need fewer pesticides than conventional farms.</li>
+<li>Rice can be grown profitably in vertical farms.</li>
+<li>Some vertical farming companies closed after energy prices increased.</li>
+<li>Most people who buy vegetables from vertical farms live in large cities in Asia.</li>
+<li>A vertical farm that uses electricity from coal may cause more emissions than a field farm.</li>
+</ol>
+</div>
+
+<h3>READING PASSAGE 2</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 14–26</strong>, which are based on Reading Passage 2 below.</p>
+<div class="passage">
+<h4>The Language of Bees</h4>
+<p><b>A</b> A honeybee colony may contain tens of thousands of individuals, yet it behaves in many ways like a single organism. To survive, it must collect enormous quantities of nectar and pollen from flowers that may be several kilometres away and that bloom for only a few days. Finding these resources, and directing thousands of workers to them, requires an efficient system of communication.</p>
+<p><b>B</b> The key to this system was discovered by the Austrian scientist Karl von Frisch, who spent decades observing bees in glass-walled hives. He noticed that a forager returning from a rich food source would perform a repeated movement on the surface of the honeycomb, which he called the 'waggle dance'. The bee runs forward in a straight line while shaking its body from side to side, then circles back and repeats the run, often dozens of times. Von Frisch's work earned him a share of the Nobel Prize in 1973.</p>
+<p><b>C</b> Von Frisch showed that the dance contains two pieces of information. The angle of the straight run, measured against the vertical direction of the comb, indicates the direction of the food relative to the sun. If the bee runs straight upwards, the food lies in the direction of the sun; if it runs 60 degrees to the right of vertical, the food lies 60 degrees to the right of the sun. The length of time the bee spends on each waggle run indicates distance: the longer the run, the further away the food.</p>
+<p><b>D</b> Not all scientists were convinced. Some argued that bees found food mainly by smell, since dancers carry the scent of the flowers they have visited. The debate continued for decades. It was finally settled with the help of new technology: researchers attached tiny radar transmitters to bees that had watched a dance and tracked their flights. The bees flew directly towards the area indicated by the dance, and then used smell to find the exact flowers once they arrived.</p>
+<p><b>E</b> The waggle dance is not the only signal bees use. A forager that has been attacked at a food source, for example, may produce a 'stop signal', butting into dancing bees to discourage them from recruiting others to a dangerous place. When a colony needs to find a new home, scouts dance to advertise possible sites, and the colony gradually reaches agreement as more and more bees join the dance for the best location – a process that some researchers compare to a democratic vote.</p>
+<p><b>F</b> Understanding bee communication has practical value. Bees pollinate a large share of the crops that humans eat, and their numbers have declined in many regions. By 'reading' the dances in a hive, researchers can learn where bees are finding food, and therefore which landscapes provide the most useful flowers. This information can help farmers and planners decide where to plant wildflowers or leave land uncultivated.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 14–19</strong></p>
+<p>Reading Passage 2 has six paragraphs, <strong>A–F</strong>. Which paragraph contains the following information? You may use any letter more than once.</p>
+<ol start="14">
+<li>a description of how bees choose a new place to live</li>
+<li>an explanation of how distance is communicated</li>
+<li>a reason why studying bee dances could help agriculture</li>
+<li>the method used to end a long scientific disagreement</li>
+<li>a description of the physical movements of the dance</li>
+<li>a signal used to warn other bees about danger</li>
+</ol>
+<p><strong>Questions 20–23</strong></p>
+<p>Complete each sentence with the correct ending, <strong>A–F</strong>, below.</p>
+<ol start="20">
+<li>The angle of the waggle run shows</li>
+<li>The duration of each waggle run shows</li>
+<li>Scent carried by the dancer helps bees</li>
+<li>Radar tracking showed that bees</li>
+</ol>
+<p class="wordbox">A &nbsp; flew straight towards the place shown by the dance.<br>B &nbsp; how far away the food is.<br>C &nbsp; how much food is available.<br>D &nbsp; the direction of the food compared with the sun.<br>E &nbsp; find the exact flowers when they arrive.<br>F &nbsp; avoided flowers that other bees had visited.</p>
+<p><strong>Questions 24–26</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="24">
+<li>What does the writer say about a bee colony in paragraph A?
+<br>A &nbsp; It usually collects food from very close to the hive.
+<br>B &nbsp; It acts in some ways as if it were one living thing.
+<br>C &nbsp; Its members rarely communicate with each other.
+<br>D &nbsp; It can survive without nectar for long periods.</li>
+<li>Why did some scientists disagree with von Frisch?
+<br>A &nbsp; They believed bees could not see the sun.
+<br>B &nbsp; They thought bees mainly used smell to find food.
+<br>C &nbsp; They had not observed bees in glass hives.
+<br>D &nbsp; They thought the dance was a form of play.</li>
+<li>The process by which a colony chooses a new home is compared to
+<br>A &nbsp; a competition.
+<br>B &nbsp; a vote.
+<br>C &nbsp; a map.
+<br>D &nbsp; a market.</li>
+</ol>
+</div>
+
+<h3>READING PASSAGE 3</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 27–40</strong>, which are based on Reading Passage 3 below.</p>
+<div class="passage">
+<h4>Why Do We Procrastinate?</h4>
+<p>Almost everyone has put off an important task in favour of something less important but more pleasant. Students delay revising for exams, employees postpone difficult reports, and many people leave their tax returns until the last possible moment. Surveys suggest that around one in five adults regard themselves as chronic procrastinators. Yet the habit is poorly understood, and the most common explanation – that procrastinators are simply lazy or bad at managing their time – is increasingly being challenged.</p>
+<p>Economists were among the first to study the problem seriously. Professor Tomas Wright describes procrastination as a conflict between our present and future selves. When we plan, we weigh costs and benefits fairly: next week, we will certainly start the report. But when next week arrives, the immediate discomfort of starting feels much larger than the distant reward of finishing. We consistently overvalue the present, and so the task is pushed back again. Wright's experiments show that people make very different choices about the same task depending on whether it is due tomorrow or in a month.</p>
+<p>Psychologists have added another layer to this explanation. Dr Clara Benning argues that procrastination is, above all, a way of managing unpleasant emotions. A task that makes us feel anxious, bored or uncertain produces a negative mood, and avoiding the task brings immediate relief. In Benning's view, the procrastinator is not choosing pleasure over work so much as escaping from a feeling. This helps to explain a puzzling fact: people often procrastinate most on the tasks that matter most to them, because these tasks carry the greatest risk of failure and therefore the strongest emotions.</p>
+<p>The emotional explanation has practical consequences. If procrastination were mainly a problem of time management, then planners, schedules and productivity apps would be the cure. Benning's research suggests that these tools help only a little. People who learn to tolerate uncomfortable feelings, and who treat themselves with understanding rather than harsh criticism after a failure, procrastinate less in the future. In one of her studies, students who forgave themselves for delaying their revision before the first exam procrastinated significantly less before the second.</p>
+<p>Other researchers have focused on the design of tasks. Large, vague goals such as 'write the thesis' are more likely to be postponed than small, concrete ones such as 'write the first paragraph of chapter two'. Breaking a task into steps reduces both the emotional discomfort and the sense that the reward is far away. Deadlines also help, though not equally. Several studies have found that deadlines set by other people are more effective than deadlines that people set for themselves, which are easily moved.</p>
+<p>It would be wrong, however, to conclude that all delay is harmful. Some writers and designers claim that leaving a task for a while allows ideas to develop, and there is limited evidence that a short delay can improve creative work. The difference, researchers suggest, lies in whether the delay is deliberate and planned or an anxious avoidance that the person later regrets.</p>
+<p>For most people, then, the solution is not to try harder to be disciplined. It is to understand why a particular task feels difficult, to make the first step as small as possible, and to respond to the inevitable lapses with patience rather than blame.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 27–31</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="27">
+<li>What does the writer say about the most common explanation of procrastination?
+<br>A &nbsp; It has been proved correct by recent research.
+<br>B &nbsp; It is increasingly being questioned.
+<br>C &nbsp; It was first suggested by economists.
+<br>D &nbsp; It applies only to students.</li>
+<li>According to Professor Wright, people procrastinate because they
+<br>A &nbsp; give too much importance to how they feel now.
+<br>B &nbsp; do not understand the benefits of finishing a task.
+<br>C &nbsp; are unable to make plans for the future.
+<br>D &nbsp; prefer tasks that are due in a month.</li>
+<li>Dr Benning believes that procrastination is mainly
+<br>A &nbsp; a sign of laziness.
+<br>B &nbsp; a way of avoiding negative feelings.
+<br>C &nbsp; a result of poor planning.
+<br>D &nbsp; a choice of pleasure over work.</li>
+<li>Why do people often delay the tasks that are most important to them?
+<br>A &nbsp; These tasks are usually the longest.
+<br>B &nbsp; These tasks have the most distant deadlines.
+<br>C &nbsp; These tasks produce the strongest emotions.
+<br>D &nbsp; These tasks are usually given by other people.</li>
+<li>What did Benning's study of students show?
+<br>A &nbsp; Students who planned their revision performed better.
+<br>B &nbsp; Self-forgiveness reduced later procrastination.
+<br>C &nbsp; Productivity apps were the most effective tool.
+<br>D &nbsp; Most students procrastinated less before the first exam.</li>
+</ol>
+<p><strong>Questions 32–36</strong></p>
+<p>Do the following statements agree with the claims of the writer in Reading Passage 3? Write <strong>YES</strong>, <strong>NO</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="32">
+<li>Around 20% of adults consider themselves regular procrastinators.</li>
+<li>Productivity apps are the most effective solution to procrastination.</li>
+<li>Deadlines set by other people tend to work better than self-imposed ones.</li>
+<li>Women procrastinate more often than men.</li>
+<li>Every kind of delay has a negative effect on a person's work.</li>
+</ol>
+<p><strong>Questions 37–40</strong></p>
+<p>Complete the summary below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+<p class="summary">Tasks that are large and <strong>37</strong> ………… are more likely to be delayed than small, concrete ones. Dividing a task into <strong>38</strong> ………… can reduce discomfort. Some evidence suggests that a short delay can help <strong>39</strong> ………… work. What matters is whether the delay is deliberate or a form of anxious <strong>40</strong> ………… .</p>
+</div>
+
+<h3 id="de-2-writing">WRITING TASK 1</h3>
+<p class="inst">You should spend about 20 minutes on this task.</p>
+<div class="qbox">
+<p>The bar chart below shows the percentage of household waste that was recycled in four cities in 2015 and 2025.</p>
+<p>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+<p><em>Write at least 150 words.</em></p>
+<figure class="chart"><svg viewBox="0 0 600 330" role="img" aria-label="Bar chart of recycling rates in four cities in 2015 and 2025" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Arial, sans-serif"><text x="265.0" y="22" text-anchor="middle" font-size="15" font-weight="600" fill="#1f2328">Percentage of household waste recycled</text><line x1="60" y1="300.0" x2="470" y2="300.0" stroke="#d9dde3"/><text x="52" y="304.0" text-anchor="end" font-size="12" fill="#5b6470">0%</text><line x1="60" y1="262.85714285714283" x2="470" y2="262.85714285714283" stroke="#d9dde3"/><text x="52" y="266.85714285714283" text-anchor="end" font-size="12" fill="#5b6470">10%</text><line x1="60" y1="225.71428571428572" x2="470" y2="225.71428571428572" stroke="#d9dde3"/><text x="52" y="229.71428571428572" text-anchor="end" font-size="12" fill="#5b6470">20%</text><line x1="60" y1="188.57142857142856" x2="470" y2="188.57142857142856" stroke="#d9dde3"/><text x="52" y="192.57142857142856" text-anchor="end" font-size="12" fill="#5b6470">30%</text><line x1="60" y1="151.42857142857142" x2="470" y2="151.42857142857142" stroke="#d9dde3"/><text x="52" y="155.42857142857142" text-anchor="end" font-size="12" fill="#5b6470">40%</text><line x1="60" y1="114.28571428571428" x2="470" y2="114.28571428571428" stroke="#d9dde3"/><text x="52" y="118.28571428571428" text-anchor="end" font-size="12" fill="#5b6470">50%</text><line x1="60" y1="77.14285714285714" x2="470" y2="77.14285714285714" stroke="#d9dde3"/><text x="52" y="81.14285714285714" text-anchor="end" font-size="12" fill="#5b6470">60%</text><line x1="60" y1="40.0" x2="470" y2="40.0" stroke="#d9dde3"/><text x="52" y="44.0" text-anchor="end" font-size="12" fill="#5b6470">70%</text><rect x="78.45" y="132.85714285714286" width="30.75" height="167.14285714285714" fill="#2563eb"/><text x="93.825" y="127.85714285714286" text-anchor="middle" font-size="11" fill="#1f2328">45</text><rect x="111.25" y="69.71428571428572" width="30.75" height="230.28571428571428" fill="#0d9488"/><text x="126.625" y="64.71428571428572" text-anchor="middle" font-size="11" fill="#1f2328">62</text><text x="111.25" y="320" text-anchor="middle" font-size="12" fill="#5b6470">City A</text><rect x="180.95" y="188.57142857142856" width="30.75" height="111.42857142857144" fill="#2563eb"/><text x="196.325" y="183.57142857142856" text-anchor="middle" font-size="11" fill="#1f2328">30</text><rect x="213.75" y="121.71428571428572" width="30.75" height="178.28571428571428" fill="#0d9488"/><text x="229.125" y="116.71428571428572" text-anchor="middle" font-size="11" fill="#1f2328">48</text><text x="213.75" y="320" text-anchor="middle" font-size="12" fill="#5b6470">City B</text><rect x="283.45" y="207.14285714285714" width="30.75" height="92.85714285714286" fill="#2563eb"/><text x="298.825" y="202.14285714285714" text-anchor="middle" font-size="11" fill="#1f2328">25</text><rect x="316.25" y="147.71428571428572" width="30.75" height="152.28571428571428" fill="#0d9488"/><text x="331.625" y="142.71428571428572" text-anchor="middle" font-size="11" fill="#1f2328">41</text><text x="316.25" y="320" text-anchor="middle" font-size="12" fill="#5b6470">City C</text><rect x="385.95" y="262.85714285714283" width="30.75" height="37.14285714285717" fill="#2563eb"/><text x="401.325" y="257.85714285714283" text-anchor="middle" font-size="11" fill="#1f2328">10</text><rect x="418.75" y="170.0" width="30.75" height="130.0" fill="#0d9488"/><text x="434.125" y="165.0" text-anchor="middle" font-size="11" fill="#1f2328">35</text><text x="418.75" y="320" text-anchor="middle" font-size="12" fill="#5b6470">City D</text><rect x="495" y="70" width="14" height="14" fill="#2563eb"/><text x="515" y="82" font-size="13" fill="#1f2328">2015</text><rect x="495" y="98" width="14" height="14" fill="#0d9488"/><text x="515" y="110" font-size="13" fill="#1f2328">2025</text></svg></figure>
+</div>
+<h3>WRITING TASK 2</h3>
+<p class="inst">You should spend about 40 minutes on this task.</p>
+<div class="qbox">
+<p>Some people believe that university education should be free for all students. Others think that students should pay for their own university education.</p>
+<p>Discuss both these views and give your own opinion.</p>
+<p>Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+<p><em>Write at least 250 words.</em></p>
+</div>
+
+<h2 id="de-3">Đề 3</h2>
+<h3 id="de-3-reading">READING PASSAGE 1</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 1–13</strong>, which are based on Reading Passage 1 below.</p>
+<div class="passage">
+<h4>The Journey of Coffee</h4>
+<p>Coffee is one of the most widely traded agricultural products in the world, and billions of cups are drunk every day. Yet for most of human history, it was unknown outside a small part of north-east Africa. The coffee plant grows wild in the forests of Ethiopia, and a popular legend tells of a goat herder named Kaldi who noticed that his goats became unusually lively after eating its red berries. There is no evidence that the story is true, but it reflects the fact that people in the region were using the plant long before it was known elsewhere.</p>
+<p>The first reliable records of coffee drinking come from Yemen, on the other side of the Red Sea, in the fifteenth century. There, members of Sufi religious communities drank it to stay awake during long night-time prayers. From Yemen, the habit spread to Mecca, Cairo and Istanbul, where the first public coffeehouses opened in the sixteenth century. These coffeehouses quickly became centres of social life, places where people met to talk, play games and listen to music. Some rulers viewed them with suspicion, believing they encouraged political criticism, and several attempts were made to close them, though none succeeded for long.</p>
+<p>Coffee reached Europe in the seventeenth century, mainly through trade with the Ottoman Empire. It was at first expensive and treated as a medicine, but coffeehouses soon appeared in Venice, London, Paris and Vienna. In England, they were nicknamed 'penny universities', because for the price of a cup, anyone could listen to – and join – conversations about business, science and politics. Several important institutions, including an insurance market that still exists today, began as meetings in London coffeehouses.</p>
+<p>For a long time, Yemen controlled the supply of coffee beans and tried to prevent fertile plants from leaving the country. In the late seventeenth century, however, Dutch traders managed to obtain plants and began growing them in their colonies, particularly on the island of Java. The French and Portuguese followed, and coffee cultivation spread to the Caribbean and South America. By the nineteenth century, Brazil had become the world's largest producer, a position it still holds.</p>
+<p>Today, two species dominate the market. Arabica, which accounts for the majority of world production, is valued for its smooth, complex flavour, but it grows best at high altitudes and is vulnerable to disease. Robusta, as its name suggests, is a tougher plant. It grows at lower altitudes, produces higher yields and contains roughly twice as much caffeine, but its flavour is stronger and more bitter. Vietnam, which became a major producer only in the 1990s, is now the world's second-largest coffee exporter and grows mainly robusta.</p>
+<p>The future of coffee is uncertain. Rising temperatures and changing rainfall patterns are expected to reduce the area suitable for growing arabica, and some studies suggest that wild coffee species are also at risk. Researchers are now searching for varieties that can tolerate heat and drought while still producing an acceptable flavour – a search that has led some of them back to the forests of Ethiopia, where the story of coffee began.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 1–5</strong></p>
+<p>Complete the table below. Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+<div class="table-wrap"><table><thead><tr><th>Period</th><th>Place</th><th>Development</th></tr></thead><tbody>
+<tr><td>15th century</td><td>Yemen</td><td>Coffee drunk by members of religious communities to stay awake during <strong>1</strong> …………</td></tr>
+<tr><td>16th century</td><td>Mecca, Cairo, Istanbul</td><td>First public <strong>2</strong> ………… open</td></tr>
+<tr><td>17th century</td><td>Europe</td><td>Coffee at first treated as a <strong>3</strong> …………</td></tr>
+<tr><td>Late 17th century</td><td>Java</td><td><strong>4</strong> ………… begin growing coffee in their colonies</td></tr>
+<tr><td>19th century</td><td><strong>5</strong> …………</td><td>Becomes the world's largest producer</td></tr>
+</tbody></table></div>
+<p><strong>Questions 6–13</strong></p>
+<p>Do the following statements agree with the information given in Reading Passage 1? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="6">
+<li>There is evidence that the story of Kaldi really happened.</li>
+<li>Some rulers tried to close coffeehouses because of political concerns.</li>
+<li>The first coffeehouse in Europe opened in Venice.</li>
+<li>Some institutions that started in London coffeehouses still exist.</li>
+<li>Yemen encouraged other countries to grow coffee.</li>
+<li>Arabica is more easily damaged by disease than robusta.</li>
+<li>Robusta contains less caffeine than arabica.</li>
+<li>Vietnam has been an important coffee producer since the nineteenth century.</li>
+</ol>
+</div>
+
+<h3>READING PASSAGE 2</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 14–26</strong>, which are based on Reading Passage 2 below.</p>
+<div class="passage">
+<h4>The Invisible Pollution</h4>
+<p><b>A</b> Plastic pollution is usually associated with images of bottles on beaches or bags caught in trees. But some of the most widespread plastic pollution cannot be seen with the naked eye. Microplastics – pieces of plastic smaller than five millimetres – have been found in almost every environment that scientists have examined, from the deepest parts of the ocean to the ice of the Arctic and the air of large cities.</p>
+<p><b>B</b> Microplastics come from two main sources. Primary microplastics are manufactured at a small size, such as the tiny beads that were once added to toothpaste and face scrubs. Several countries have now banned these beads in cosmetic products. Secondary microplastics, which are far more common, form when larger plastic items break down. Sunlight, waves and friction gradually split bottles, nets and packaging into ever smaller fragments, a process that can take decades.</p>
+<p><b>C</b> One surprising source is clothing. Many modern fabrics, such as polyester and nylon, are made from plastic, and each time they are washed they release thousands of tiny fibres. These fibres are too small to be caught by most wastewater treatment plants and pass into rivers and the sea. Car tyres are another major source: as they wear down on roads, they produce fine particles that are washed into drains by rain.</p>
+<p><b>D</b> The effects of microplastics on living things are still being studied. Laboratory experiments have shown that small marine animals sometimes eat the particles, mistaking them for food, and that this can reduce their growth. Because microplastics can absorb other pollutants, there are also concerns that they may carry harmful chemicals into the food chain. However, many experiments use concentrations far higher than those found in nature, and scientists caution that the real-world effects are not yet clear.</p>
+<p><b>E</b> Humans are also exposed. Microplastics have been detected in drinking water, salt, seafood and the air inside homes, and recent studies have found particles in human blood and lungs. What this means for human health is unknown. Some researchers argue that the lack of evidence of harm should not be mistaken for evidence of safety, and that it would be wise to reduce exposure while research continues.</p>
+<p><b>F</b> Solutions are beginning to emerge, though none is simple. Filters for washing machines can capture a large proportion of clothing fibres, and France has passed a law requiring new machines to include them. Improvements to road surfaces and tyre design may reduce particles from vehicles. Most experts agree, however, that the most effective approach is to reduce the amount of plastic that enters the environment in the first place, because once microplastics are spread across the oceans, removing them is practically impossible.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 14–19</strong></p>
+<p>Reading Passage 2 has six paragraphs, <strong>A–F</strong>. Choose the correct heading for each paragraph from the list of headings below. Write the correct number, <strong>i–ix</strong>.</p>
+<div class="headings"><p><strong>List of Headings</strong></p>
+<p>i &nbsp; Everyday products that release particles<br>ii &nbsp; Possible ways of dealing with the problem<br>iii &nbsp; A problem that is everywhere but hard to see<br>iv &nbsp; The cost of cleaning the oceans<br>v &nbsp; Uncertain effects on wildlife<br>vi &nbsp; Two ways in which microplastics are formed<br>vii &nbsp; Why plastic production keeps rising<br>viii &nbsp; Particles inside the human body<br>ix &nbsp; New types of plastic that break down safely</p></div>
+<ol start="14"><li>Paragraph A</li><li>Paragraph B</li><li>Paragraph C</li><li>Paragraph D</li><li>Paragraph E</li><li>Paragraph F</li></ol>
+<p><strong>Questions 20–23</strong></p>
+<p>Answer the questions below. Choose <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
+<ol start="20">
+<li>What is the maximum size of a microplastic?</li>
+<li>Which type of microplastics are more common?</li>
+<li>Which facilities fail to catch most clothing fibres?</li>
+<li>Which country requires new washing machines to have filters?</li>
+</ol>
+<p><strong>Questions 24–26</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="24">
+<li>Why do scientists say the results of laboratory experiments should be treated with care?
+<br>A &nbsp; The experiments used only one type of animal.
+<br>B &nbsp; The amounts of plastic used were much higher than in nature.
+<br>C &nbsp; The animals did not eat the particles.
+<br>D &nbsp; The experiments were too short.</li>
+<li>What do some researchers say about the effects on human health?
+<br>A &nbsp; Microplastics have been proved to be harmless.
+<br>B &nbsp; It is sensible to reduce exposure before more is known.
+<br>C &nbsp; Microplastics cause most lung diseases.
+<br>D &nbsp; Research on the subject should stop.</li>
+<li>According to most experts, the best solution is to
+<br>A &nbsp; remove microplastics from the oceans.
+<br>B &nbsp; ban all synthetic clothing.
+<br>C &nbsp; stop plastic from entering the environment.
+<br>D &nbsp; build more wastewater treatment plants.</li>
+</ol>
+</div>
+
+<h3>READING PASSAGE 3</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 27–40</strong>, which are based on Reading Passage 3 below.</p>
+<div class="passage">
+<h4>Can Machines Be Creative?</h4>
+<p>For most of history, creativity has been regarded as a uniquely human quality. We admire composers, painters and poets precisely because they produce something that did not exist before and that no rule could have predicted. The arrival of artificial intelligence systems that can write poems, compose music and produce convincing images in seconds has therefore raised an uncomfortable question: if a machine can do these things, is it creative?</p>
+<p>The answer depends partly on how creativity is defined. Psychologists often describe a creative product as one that is both new and valuable. By this standard, some machine outputs seem to qualify. An image generated by software may never have existed before, and people may find it beautiful or useful. Professor Daniel Harte argues that, if we judge creativity only by results, we must accept that machines can be creative, at least in a limited sense. To insist otherwise, he says, is to move the definition whenever a machine meets it.</p>
+<p>Others are unconvinced. Dr Mei Lin points out that these systems learn by analysing enormous collections of existing works produced by humans. What they produce, she argues, is a sophisticated recombination of patterns found in that material, rather than genuinely original work. Human artists also learn from others, she accepts, but they bring their own experiences, intentions and emotions to what they make. A machine, in her view, has nothing it wishes to express.</p>
+<p>This argument about intention is central to the debate. When a person writes a poem about loss, readers assume that the words reflect something the writer has felt. Many people report that their response to a work of art changes when they learn it was produced by a machine. In one experiment, participants rated the same set of paintings less highly when told they were computer-generated than when told they were made by human artists, even though the images were identical.</p>
+<p>There are also practical concerns. Many artists object that their work was used to train these systems without their permission or any payment, and several legal cases on the issue are under way. Others worry that cheap, machine-made images and music will make it harder for human creators to earn a living. On the other hand, some artists have embraced the technology as a tool, using it to generate rough ideas that they then develop themselves, in much the same way that photographers once adopted new cameras.</p>
+<p>In my view, the question 'Can machines be creative?' may be less useful than it first appears. The more important questions concern how these tools are used, who benefits from them, and how the people whose work made them possible are treated. History suggests that new technologies rarely replace human creativity; more often, they change its forms. Whether that happens this time will depend less on the machines themselves than on the choices that people and societies make about them.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 27–33</strong></p>
+<p>Do the following statements agree with the views of the writer in Reading Passage 3? Write <strong>YES</strong>, <strong>NO</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="27">
+<li>Creativity has traditionally been seen as something only humans possess.</li>
+<li>Psychologists commonly define a creative product as one that is new and valuable.</li>
+<li>Machine-generated images are usually more beautiful than those made by humans.</li>
+<li>In the experiment described, participants were shown different paintings in each condition.</li>
+<li>Some artists use AI to develop early ideas for their work.</li>
+<li>The question of whether machines can be creative is the most important issue to consider.</li>
+<li>New technologies have usually replaced human creativity in the past.</li>
+</ol>
+<p><strong>Questions 34–37</strong></p>
+<p>Complete each sentence with the correct ending, <strong>A–F</strong>, below.</p>
+<ol start="34">
+<li>Professor Harte believes that people who deny machine creativity</li>
+<li>Dr Lin argues that AI systems</li>
+<li>Many artists complain that their work</li>
+<li>Some people worry that cheap machine-made products</li>
+</ol>
+<p class="wordbox">A &nbsp; was used without permission or payment.<br>B &nbsp; keep changing the definition when machines meet it.<br>C &nbsp; recombine patterns from existing human works.<br>D &nbsp; will make it harder for artists to earn money.<br>E &nbsp; are more popular with younger audiences.<br>F &nbsp; have their own emotions and intentions.</p>
+<p><strong>Questions 38–40</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="38">
+<li>According to Dr Lin, how are human artists different from AI systems?
+<br>A &nbsp; They do not learn from other people's work.
+<br>B &nbsp; They bring their own experiences and intentions.
+<br>C &nbsp; They work more quickly.
+<br>D &nbsp; They copy existing works more closely.</li>
+<li>The writer mentions photographers in order to
+<br>A &nbsp; show that photography is an art form.
+<br>B &nbsp; compare the use of AI to the adoption of earlier technology.
+<br>C &nbsp; criticise artists who use AI.
+<br>D &nbsp; explain how AI systems are trained.</li>
+<li>What is the writer's main conclusion?
+<br>A &nbsp; Machines will soon be more creative than humans.
+<br>B &nbsp; AI art should be banned.
+<br>C &nbsp; The effects of AI on creativity depend on human choices.
+<br>D &nbsp; Human creativity will disappear.</li>
+</ol>
+</div>
+
+<h3 id="de-3-writing">WRITING TASK 1</h3>
+<p class="inst">You should spend about 20 minutes on this task.</p>
+<div class="qbox">
+<p>The pie charts below show the sources of electricity in one country in 2005 and 2025.</p>
+<p>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+<p><em>Write at least 150 words.</em></p>
+<figure class="chart"><svg viewBox="0 0 600 415" role="img" aria-label="Two pie charts of electricity sources in 2005 and 2025" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Roboto, Arial, sans-serif"><text x="150" y="56" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">2005</text><path d="M150,200 L150.0,90.0 A110,110 0 1 1 116.0,304.6 Z" fill="#2563eb" stroke="#fff" stroke-width="1.5"/><text x="223.9" y="215.7" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">55%</text><path d="M150,200 L116.0,304.6 A110,110 0 0 1 61.0,264.7 Z" fill="#0d9488" stroke="#fff" stroke-width="1.5"/><text x="106.0" y="264.5" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">10%</text><path d="M150,200 L61.0,264.7 A110,110 0 0 1 45.4,166.0 Z" fill="#d97706" stroke="#fff" stroke-width="1.5"/><text x="76.1" y="215.7" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">15%</text><path d="M150,200 L45.4,166.0 A110,110 0 0 1 116.0,95.4 Z" fill="#db2777" stroke="#fff" stroke-width="1.5"/><text x="97.1" y="151.1" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">15%</text><path d="M150,200 L116.0,95.4 A110,110 0 0 1 129.4,91.9 Z" fill="#7c3aed" stroke="#fff" stroke-width="1.5"/><text x="118.7" y="82.0" text-anchor="middle" font-size="12" font-weight="600" fill="#1f2328">2%</text><path d="M150,200 L129.4,91.9 A110,110 0 0 1 150.0,90.0 Z" fill="#475569" stroke="#fff" stroke-width="1.5"/><text x="138.1" y="78.6" text-anchor="middle" font-size="12" font-weight="600" fill="#1f2328">3%</text><text x="430" y="56" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">2025</text><path d="M430,200 L430.0,90.0 A110,110 0 0 1 519.0,264.7 Z" fill="#2563eb" stroke="#fff" stroke-width="1.5"/><text x="496.6" y="170.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">35%</text><path d="M430,200 L519.0,264.7 A110,110 0 0 1 505.3,280.2 Z" fill="#0d9488" stroke="#fff" stroke-width="1.5"/><text x="524.5" y="287.3" text-anchor="middle" font-size="12" font-weight="600" fill="#1f2328">3%</text><path d="M430,200 L505.3,280.2 A110,110 0 0 1 396.0,304.6 Z" fill="#d97706" stroke="#fff" stroke-width="1.5"/><text x="446.3" y="277.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">17%</text><path d="M430,200 L396.0,304.6 A110,110 0 0 1 325.4,234.0 Z" fill="#db2777" stroke="#fff" stroke-width="1.5"/><text x="377.1" y="256.9" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">15%</text><path d="M430,200 L325.4,234.0 A110,110 0 0 1 354.7,119.8 Z" fill="#7c3aed" stroke="#fff" stroke-width="1.5"/><text x="357.5" y="185.4" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">18%</text><path d="M430,200 L354.7,119.8 A110,110 0 0 1 430.0,90.0 Z" fill="#475569" stroke="#fff" stroke-width="1.5"/><text x="402.5" y="134.5" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">12%</text><rect x="40" y="360" width="14" height="14" fill="#2563eb"/><text x="60" y="372" font-size="13" fill="#1f2328">Coal</text><rect x="230" y="360" width="14" height="14" fill="#0d9488"/><text x="250" y="372" font-size="13" fill="#1f2328">Oil</text><rect x="420" y="360" width="14" height="14" fill="#d97706"/><text x="440" y="372" font-size="13" fill="#1f2328">Natural gas</text><rect x="40" y="384" width="14" height="14" fill="#db2777"/><text x="60" y="396" font-size="13" fill="#1f2328">Hydropower</text><rect x="230" y="384" width="14" height="14" fill="#7c3aed"/><text x="250" y="396" font-size="13" fill="#1f2328">Solar</text><rect x="420" y="384" width="14" height="14" fill="#475569"/><text x="440" y="396" font-size="13" fill="#1f2328">Wind</text></svg></figure>
+</div>
+<h3>WRITING TASK 2</h3>
+<p class="inst">You should spend about 40 minutes on this task.</p>
+<div class="qbox">
+<p>In many cities around the world, young people cannot afford to buy a home.</p>
+<p>What are the causes of this problem? What measures could be taken to solve it?</p>
+<p>Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+<p><em>Write at least 250 words.</em></p>
+</div>
+
+<h2 id="de-4">Đề 4</h2>
+<h3 id="de-4-reading">READING PASSAGE 1</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 1–13</strong>, which are based on Reading Passage 1 below.</p>
+<div class="passage">
+<h4>A Wall of Green</h4>
+<p>The Sahel is a long, narrow region that stretches across Africa just south of the Sahara Desert. For centuries, its people have farmed and herded animals on land that receives little and unpredictable rain. In recent decades, droughts, population growth and the loss of trees have caused much of this land to become less productive, a process known as land degradation. In some places, the soil has become so poor that farming is almost impossible.</p>
+<p>In 2007, the African Union launched an ambitious response: the Great Green Wall. The original idea was simple and striking – to plant a belt of trees around 15 kilometres wide and nearly 8,000 kilometres long, running from Senegal on the Atlantic coast to Djibouti on the Indian Ocean. The trees, it was hoped, would hold back the advance of the desert, protect the soil and provide food and income for local communities. The project set a target of restoring 100 million hectares of land by 2030.</p>
+<p>Progress has been slower than its supporters hoped. A report published around the middle of the project's timeline estimated that only a small fraction of the target had been achieved, and that funding had fallen far short of what was needed. In some countries, millions of trees were planted, but many of them died because they were the wrong species for the local conditions, or because nobody was responsible for watering and protecting them after planting.</p>
+<p>These difficulties led to an important change in thinking. Instead of a single continuous line of trees, the Great Green Wall is now generally understood as a mosaic of different land restoration projects, designed with local communities and suited to local conditions. Experts also realised that some of the most successful examples of restoration in the Sahel had involved little or no tree planting at all.</p>
+<p>In southern Niger, for example, farmers discovered that the roots of trees cut down years earlier were often still alive beneath their fields. By protecting the young shoots that grew from these roots and pruning them carefully, they were able to regrow trees at very low cost. This approach, known as farmer-managed natural regeneration, has spread across millions of hectares. The trees provide shade, firewood and animal feed, and their leaves improve the soil.</p>
+<p>In Burkina Faso, farmers revived a traditional technique known as zaï. During the dry season, they dig small pits in hard, crusted ground and fill them with manure or compost. When the rains arrive, the pits collect water and hold it close to the plants' roots. Seeds of crops such as millet or sorghum are then planted in the pits. The organic material attracts termites, whose tunnels help water to enter the soil more deeply. Over several years, fields that had been abandoned can become productive again.</p>
+<p>Supporters of the Great Green Wall argue that its greatest achievement may be to have drawn international attention to the problem of land degradation. Critics respond that attention is not enough, and that far more money and long-term commitment will be required if the project is to meet its goals.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 1–7</strong></p>
+<p>Do the following statements agree with the information given in Reading Passage 1? Write <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="1">
+<li>The Sahel lies to the north of the Sahara Desert.</li>
+<li>The Great Green Wall was launched by the African Union.</li>
+<li>The original plan was for a belt of trees running from west to east across Africa.</li>
+<li>The project has received more funding than it needed.</li>
+<li>Many planted trees died because no one looked after them.</li>
+<li>Farmer-managed natural regeneration requires expensive equipment.</li>
+<li>The zaï technique is a recent invention.</li>
+</ol>
+<p><strong>Questions 8–13</strong></p>
+<p>Complete the flow-chart below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
+<div class="flow"><p><strong>The zaï technique</strong></p>
+<p>In the dry season, farmers dig small <strong>8</strong> ………… in hard ground<br>↓<br>The holes are filled with manure or <strong>9</strong> …………<br>↓<br>During the rains, water is held close to the plants' <strong>10</strong> …………<br>↓<br>Seeds of crops such as millet or <strong>11</strong> ………… are planted<br>↓<br>The organic material attracts <strong>12</strong> …………, which help water go deeper<br>↓<br>After several years, <strong>13</strong> ………… fields can produce crops again</p></div>
+</div>
+
+<h3>READING PASSAGE 2</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 14–26</strong>, which are based on Reading Passage 2 below.</p>
+<div class="passage">
+<h4>Cities That Cook</h4>
+<p><b>A</b> On a summer evening, the centre of a large city can be several degrees warmer than the surrounding countryside. This phenomenon, known as the urban heat island, was first described in the nineteenth century, when an amateur scientist recorded that London was consistently warmer than nearby villages. Today, with more than half of the world's population living in cities and global temperatures rising, it has become a serious concern for public health.</p>
+<p><b>B</b> Several factors combine to create the effect. Dark surfaces such as asphalt roads and roofs absorb large amounts of solar energy during the day and release it slowly at night. Buildings block the wind and trap warm air between them. Cities also have far fewer trees and plants than rural areas, and therefore lose the cooling effect produced when water evaporates from leaves. Finally, cars, factories and air conditioners all release heat directly into the urban environment.</p>
+<p><b>C</b> The difference in temperature is usually greatest at night, not during the day. In the countryside, the ground cools quickly after sunset, but in cities the stored heat keeps temperatures high. This matters because the human body needs cool nights to recover from hot days. During heatwaves, the number of deaths in cities often rises sharply, especially among elderly people who live alone.</p>
+<p><b>D</b> Air conditioning offers relief to those who can afford it, but Dr Lucas Ferreira warns that it can also make the problem worse. Air conditioners move heat from inside buildings to the street outside, and the electricity they use is often generated by burning fossil fuels. The result, he argues, is a cycle in which hotter cities lead to more air conditioning, which in turn makes cities hotter still.</p>
+<p><b>E</b> Several cheaper solutions have been tested. Dr Priya Nair has measured the effect of painting roofs white or covering them with reflective materials. Her studies found that such 'cool roofs' can reduce the temperature inside top-floor rooms by several degrees and lower the energy needed for cooling. Professor Erik Holm has focused on trees, which provide both shade and evaporative cooling. In his research, streets with a continuous tree canopy were considerably cooler at pedestrian level than similar streets without trees, though he notes that trees need water and years of care before they are fully effective.</p>
+<p><b>F</b> Some cities are now including heat in their long-term planning. Dr Yuki Tanaka has studied cities that keep open 'wind corridors' – lines of parks, rivers and low buildings that allow cooler air to flow into the centre. She argues that such decisions must be made early, because once a district has been densely built, it is very difficult and expensive to change. In her view, protecting green space should be treated not as a luxury but as essential infrastructure.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 14–18</strong></p>
+<p>Reading Passage 2 has six paragraphs, <strong>A–F</strong>. Which paragraph contains the following information? You may use any letter more than once.</p>
+<ol start="14">
+<li>a reason why high night-time temperatures are dangerous</li>
+<li>a historical observation about one city</li>
+<li>a list of causes of the urban heat island effect</li>
+<li>a warning that a common solution may have negative effects</li>
+<li>a suggestion that planning decisions should be taken early</li>
+</ol>
+<p><strong>Questions 19–22</strong></p>
+<p>Look at the following statements and the list of researchers below. Match each statement with the correct researcher, <strong>A–D</strong>.</p>
+<ol start="19">
+<li>Green space should be regarded as a basic necessity for cities.</li>
+<li>One method of cooling may cause a cycle of increasing heat.</li>
+<li>Changing the colour of roofs can reduce indoor temperatures.</li>
+<li>One solution takes a long time to become fully effective.</li>
+</ol>
+<p class="wordbox"><strong>List of Researchers</strong><br>A &nbsp;Lucas Ferreira &nbsp;&nbsp; B &nbsp;Priya Nair &nbsp;&nbsp; C &nbsp;Erik Holm &nbsp;&nbsp; D &nbsp;Yuki Tanaka</p>
+<p><strong>Questions 23–26</strong></p>
+<p>Complete the summary using the list of words, <strong>A–H</strong>, below.</p>
+<p class="summary">Cities are warmer than the countryside partly because dark surfaces <strong>23</strong> ………… heat during the day. The temperature difference is usually largest at <strong>24</strong> ………… . Heatwaves are particularly dangerous for <strong>25</strong> ………… people who live alone. Trees help by providing shade and by cooling the air through <strong>26</strong> ………… .</p>
+<p class="wordbox">A &nbsp;reflect &nbsp;&nbsp; B &nbsp;absorb &nbsp;&nbsp; C &nbsp;night &nbsp;&nbsp; D &nbsp;midday &nbsp;&nbsp; E &nbsp;young &nbsp;&nbsp; F &nbsp;elderly &nbsp;&nbsp; G &nbsp;evaporation &nbsp;&nbsp; H &nbsp;wind</p>
+</div>
+
+<h3>READING PASSAGE 3</h3>
+<p class="inst">You should spend about 20 minutes on <strong>Questions 27–40</strong>, which are based on Reading Passage 3 below.</p>
+<div class="passage">
+<h4>Can Money Buy Happiness?</h4>
+<p>The question of whether money makes people happy is as old as money itself, but only in recent decades have researchers tried to answer it with data. In the 1970s, the economist Richard Easterlin noticed a puzzle. Within any single country, richer people tended to report being happier than poorer people. Yet as whole countries became richer over time, their average level of happiness did not seem to rise. This observation became known as the Easterlin paradox, and it has been debated ever since.</p>
+<p>One explanation is that people judge their income by comparing it with others. If everyone's income rises by the same amount, nobody feels better off relative to their neighbours, and so happiness stays the same. Another explanation is adaptation: people quickly become used to a higher standard of living, and what once felt like a luxury soon feels normal. A pay rise may produce a burst of satisfaction, but within months the effect fades.</p>
+<p>Researchers have also distinguished between two kinds of happiness. The first is life satisfaction – how people evaluate their lives when asked to think about them as a whole. The second is emotional well-being – how often people feel joy, stress or sadness in their daily lives. A widely discussed study published in 2010 suggested that, while life satisfaction continued to rise with income, emotional well-being stopped improving above a certain level. Later research, using a different method, found that emotional well-being also continued to rise with income for most people. The debate has not been fully settled, but most researchers now agree that more money is associated with greater happiness, though each additional dollar matters less the richer a person already is.</p>
+<p>Perhaps more useful than the question of how much money people have is the question of how they spend it. Several studies suggest that spending on experiences, such as travel or concerts, produces more lasting happiness than spending on material goods. Experiences are often shared with others, they become part of our personal stories, and they are less easily compared with what other people have. In one well-known experiment, participants who were given a small sum of money and told to spend it on someone else reported feeling happier at the end of the day than those told to spend it on themselves.</p>
+<p>Another line of research focuses on time. People who use money to free up time – for example, by paying for services that save them from tasks they dislike – tend to report higher well-being. Yet many people, even those who can afford it, are reluctant to spend money in this way, perhaps because they feel they ought to do such tasks themselves.</p>
+<p>In my view, these findings have a clear message for individuals and governments alike. For people living in poverty, more money makes an enormous difference, and policies that raise the incomes of the poorest are likely to do far more for overall happiness than those that make the rich richer. For those whose basic needs are already met, however, the way money is used may matter more than the amount. Relationships, health and a sense of purpose are not things that money can buy directly, but it can create the time and conditions in which they are more likely to grow.</p>
+</div>
+<div class="qbox">
+<p><strong>Questions 27–30</strong></p>
+<p>Choose the correct letter, <strong>A, B, C</strong> or <strong>D</strong>.</p>
+<ol start="27">
+<li>What was the puzzle that Richard Easterlin noticed?
+<br>A &nbsp; Poorer people were happier than richer people within the same country.
+<br>B &nbsp; Average happiness did not rise as countries became richer.
+<br>C &nbsp; Happiness could not be measured accurately.
+<br>D &nbsp; Rich countries were less happy than poor ones.</li>
+<li>According to the writer, 'adaptation' means that people
+<br>A &nbsp; compare their income with that of their neighbours.
+<br>B &nbsp; quickly get used to a better standard of living.
+<br>C &nbsp; change jobs to earn more money.
+<br>D &nbsp; spend more money on luxuries.</li>
+<li>What did later research on emotional well-being find?
+<br>A &nbsp; It stopped improving above a certain income.
+<br>B &nbsp; It was not related to income at all.
+<br>C &nbsp; It continued to rise with income for most people.
+<br>D &nbsp; It fell as people became richer.</li>
+<li>In the experiment described in the fourth paragraph, participants who spent money on others
+<br>A &nbsp; felt happier than those who spent it on themselves.
+<br>B &nbsp; received more money than the other group.
+<br>C &nbsp; spent the money on experiences.
+<br>D &nbsp; felt less happy at the end of the day.</li>
+</ol>
+<p><strong>Questions 31–35</strong></p>
+<p>Do the following statements agree with the claims of the writer in Reading Passage 3? Write <strong>YES</strong>, <strong>NO</strong> or <strong>NOT GIVEN</strong>.</p>
+<ol start="31">
+<li>The debate about income and emotional well-being has been completely resolved.</li>
+<li>Extra money has a smaller effect on happiness for people who are already rich.</li>
+<li>People in northern countries are generally happier than people in southern countries.</li>
+<li>Policies that increase the incomes of the poorest people are likely to raise overall happiness more than policies that benefit the rich.</li>
+<li>Money can directly buy good relationships and health.</li>
+</ol>
+<p><strong>Questions 36–40</strong></p>
+<p>Complete the summary using the list of words, <strong>A–I</strong>, below.</p>
+<p class="summary">Research suggests that spending money on <strong>36</strong> ………… produces longer-lasting happiness than buying material goods. One reason is that these are often <strong>37</strong> ………… with other people and are harder to compare. People who use money to save <strong>38</strong> ………… also tend to be happier, although many are <strong>39</strong> ………… to do this. For people whose basic needs are met, the way money is <strong>40</strong> ………… may be more important than how much they have.</p>
+<p class="wordbox">A &nbsp;experiences &nbsp;&nbsp; B &nbsp;possessions &nbsp;&nbsp; C &nbsp;shared &nbsp;&nbsp; D &nbsp;compared &nbsp;&nbsp; E &nbsp;time &nbsp;&nbsp; F &nbsp;energy &nbsp;&nbsp; G &nbsp;reluctant &nbsp;&nbsp; H &nbsp;eager &nbsp;&nbsp; I &nbsp;used</p>
+</div>
+
+<h3 id="de-4-writing">WRITING TASK 1</h3>
+<p class="inst">You should spend about 20 minutes on this task.</p>
+<div class="qbox">
+<p>The diagram below shows how recycled paper is produced.</p>
+<p>Summarise the information by selecting and reporting the main features, and make comparisons where relevant.</p>
+<p><em>Write at least 150 words.</em></p>
+<figure class="chart"><p class="ptitle">The production of recycled paper</p><div class="process"><div class="step"><b>1</b><span>Used paper is collected from homes and offices</span></div><div class="step"><b>2</b><span>Paper is sorted by type</span></div><div class="step"><b>3</b><span>Paper is mixed with water and chemicals to make pulp</span></div><div class="step"><b>4</b><span>Pulp is screened to remove plastic and metal</span></div><div class="step"><b>5</b><span>Ink is removed (de-inking)</span></div><div class="step"><b>6</b><span>Pulp is pressed and dried by heated rollers</span></div><div class="step"><b>7</b><span>Paper is wound onto large reels</span></div><div class="step"><b>8</b><span>Reels are delivered to manufacturers</span></div></div><p class="pnote">Stages 2–7 take place at the recycling plant.</p></figure>
+</div>
+<h3>WRITING TASK 2</h3>
+<p class="inst">You should spend about 40 minutes on this task.</p>
+<div class="qbox">
+<p>Nowadays, more and more people are choosing to work as freelancers rather than for a single employer.</p>
+<p>Why is this happening? Is it a positive or negative development?</p>
+<p>Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+<p><em>Write at least 250 words.</em></p>
+</div>
+
+<h2 id="dap-an">Đáp án và giải thích</h2>
+<h3 id="dap-an-1">Đáp án Đề 1</h3>
+<div class="table-wrap"><table class="key"><thead><tr><th>Câu</th><th>Đáp án</th><th>Giải thích (vị trí và paraphrase)</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>TRUE</strong></td><td>Đoạn 1: "As incomes rose, however, bicycles were replaced…" → thu nhập tăng làm đạp xe giảm.</td></tr>
+<tr><td>2</td><td><strong>TRUE</strong></td><td>Đoạn 2: "more than 3,000 people were killed on the roads in 1971". <em>killed</em> = <em>died</em>.</td></tr>
+<tr><td>3</td><td><strong>NOT GIVEN</strong></td><td>Bài chỉ nói phong trào dẫn đầu các cuộc biểu tình, không nói ai lập ra.</td></tr>
+<tr><td>4</td><td><strong>FALSE</strong></td><td>"made fuel expensive <strong>almost overnight</strong>" (gần như chỉ sau một đêm) ngược với "gradually over several years".</td></tr>
+<tr><td>5</td><td><strong>FALSE</strong></td><td>"The scheme launched in Paris… <strong>was not the first of its kind</strong>".</td></tr>
+<tr><td>6</td><td><strong>TRUE</strong></td><td>"flooding cities with <strong>far more bicycles than people could use</strong>".</td></tr>
+<tr><td>7</td><td><strong>NOT GIVEN</strong></td><td>Bài không nhắc đến chi phí sửa chữa xe đạp điện.</td></tr>
+<tr><td>8</td><td><strong>hills</strong></td><td>"makes <strong>hills</strong> and long distances much easier to manage". <em>deal with</em> = <em>manage</em>.</td></tr>
+<tr><td>9</td><td><strong>mild</strong></td><td>"cities that are flat and have a <strong>mild</strong> climate".</td></tr>
+<tr><td>10</td><td><strong>shade trees</strong></td><td>"<strong>shade trees</strong> planted along roads can make a large difference to comfort".</td></tr>
+<tr><td>11</td><td><strong>traffic</strong></td><td>"fear of <strong>traffic</strong> is the main reason people give for not cycling".</td></tr>
+<tr><td>12</td><td><strong>separated</strong></td><td>"Physically <strong>separated</strong> lanes… attract many more new cyclists, particularly women and older people".</td></tr>
+<tr><td>13</td><td><strong>replace</strong></td><td>Đoạn cuối: "It is unlikely that the bicycle will <strong>replace</strong> the car completely".</td></tr>
+<tr><td>14</td><td><strong>iv</strong></td><td>Đoạn A: từ quan niệm "passive state" chuyển sang "remarkably busy" → quan niệm thay đổi.</td></tr>
+<tr><td>15</td><td><strong>i</strong></td><td>Đoạn B: thí nghiệm năm 1924 và cách các nhà nghiên cứu giải thích kết quả.</td></tr>
+<tr><td>16</td><td><strong>vii</strong></td><td>Đoạn C: các chu kỳ 90 phút, các giai đoạn ngủ → cấu trúc một đêm ngủ.</td></tr>
+<tr><td>17</td><td><strong>ii</strong></td><td>Đoạn D: "replay", não "rehearsing what it had learned" → xem lại trải nghiệm gần đây.</td></tr>
+<tr><td>18</td><td><strong>v</strong></td><td>Đoạn E: trí nhớ về sự kiện cần deep sleep, kỹ năng cần các giai đoạn sau.</td></tr>
+<tr><td>19</td><td><strong>vi</strong></td><td>Đoạn F: "practical consequences": lời khuyên cho học sinh, ngủ trưa.</td></tr>
+<tr><td>20</td><td><strong>viii</strong></td><td>Đoạn G: "Many questions remain unanswered" và cảnh báo về thiết bị.</td></tr>
+<tr><td>21</td><td><strong>B</strong></td><td>"it simply protected newly learned information from <strong>interference</strong>". Đáp án A sai vì họ nói sleep "did not actively improve memory".</td></tr>
+<tr><td>22</td><td><strong>C</strong></td><td>"the same cells fired again <strong>in the same order</strong>". B sai vì replay "much <strong>faster</strong>".</td></tr>
+<tr><td>23</td><td><strong>D</strong></td><td>"consumers should treat their claims with <strong>caution</strong>". A quá mạnh: bài không nói sản phẩm nguy hiểm.</td></tr>
+<tr><td>24</td><td><strong>A</strong> (deep)</td><td>"Memory for facts… seems to benefit most from <strong>deep</strong> sleep".</td></tr>
+<tr><td>25</td><td><strong>B</strong> (later)</td><td>"Skills… strengthened mainly during the <strong>later</strong> stages of the night".</td></tr>
+<tr><td>26</td><td><strong>C</strong> (harmful)</td><td>"may remember less, not more" → thức trắng đêm là có hại.</td></tr>
+<tr><td>27</td><td><strong>E</strong></td><td>Fischer: "how much standard economic statistics <strong>fail to capture</strong>".</td></tr>
+<tr><td>28</td><td><strong>B</strong></td><td>Reyes: "a developer needed a tool that did not exist and decided to build it".</td></tr>
+<tr><td>29</td><td><strong>A</strong></td><td>Delaney: "receive more job offers and… higher salaries".</td></tr>
+<tr><td>30</td><td><strong>D</strong></td><td>Osei: "looked after by one or two unpaid volunteers".</td></tr>
+<tr><td>31</td><td><strong>C</strong></td><td>Morita: "above all to <strong>influence how it develops</strong>". <em>have a say</em> = có tiếng nói.</td></tr>
+<tr><td>32</td><td><strong>YES</strong></td><td>Câu mở đầu: "Much of the digital world runs on software that nobody pays for".</td></tr>
+<tr><td>33</td><td><strong>NOT GIVEN</strong></td><td>Tác giả không so sánh chất lượng code giữa tình nguyện viên và người được trả lương.</td></tr>
+<tr><td>34</td><td><strong>YES</strong></td><td>"In my view, governments should… treat the most critical projects as public infrastructure".</td></tr>
+<tr><td>35</td><td><strong>NO</strong></td><td>"However, <strong>money alone will not solve</strong> the problem".</td></tr>
+<tr><td>36</td><td><strong>NOT GIVEN</strong></td><td>Tác giả không dự đoán điều này.</td></tr>
+<tr><td>37</td><td><strong>B</strong></td><td>Ví dụ năm 2014 minh họa cho "maintenance gap": phần mềm phổ biến do "a very small team" duy trì.</td></tr>
+<tr><td>38</td><td><strong>C</strong></td><td>"partly to share the cost… but <strong>above all</strong> to influence how it develops". "above all" = lý do chính.</td></tr>
+<tr><td>39</td><td><strong>A</strong></td><td>"contributions… work as a kind of <strong>public advertisement</strong>".</td></tr>
+<tr><td>40</td><td><strong>B</strong></td><td>Bài bàn lý do người ta cho code miễn phí (Delaney, Reyes, Morita) và ai gánh chi phí (Osei, Fischer, ý kiến tác giả).</td></tr>
+</tbody></table></div>
+<blockquote class="tip"><p><strong>Nhắc lại:</strong> với câu điền từ, luôn đếm số từ trước khi viết đáp án, và chép đúng chính tả từ trong bài.</p></blockquote>
+<h4>Gợi ý Writing Đề 1</h4>
+<p><strong>Task 1 – Overview gợi ý:</strong> Overall, time spent online increased in all four age groups over the period, and the youngest group spent the most time online throughout. The gap between the youngest and oldest groups remained large, although the over-65s saw the fastest relative growth after 2015.</p>
+<p><strong>Body 1:</strong> nhóm 16–24 (3 → 6.5 giờ, tăng hơn gấp đôi, chững lại sau 2020) và nhóm 25–44 (2.5 → 5 giờ, gấp đôi). <strong>Body 2:</strong> nhóm 45–64 (1.5 → 3.5 giờ) và nhóm 65+ (0.5 → 2.5 giờ, gấp năm lần, tăng mạnh nhất từ 2020).</p>
+<p><strong>Task 2 – Dàn ý gợi ý (đồng ý phần lớn):</strong> Mở bài: nêu quan điểm "largely agree". Thân bài 1: giao thông công cộng chở được nhiều người hơn trên cùng diện tích đường, giảm tắc nghẽn và ô nhiễm (ví dụ: một tuyến metro thay cho hàng nghìn xe máy). Thân bài 2: đường mới thường thu hút thêm xe (induced demand) nên tắc lại sau vài năm; tuy vậy vùng nông thôn vẫn cần đường để kết nối (nhượng bộ). Kết bài: ưu tiên giao thông công cộng ở đô thị, vẫn đầu tư đường ở nơi cần thiết.</p>
+
+<h3 id="dap-an-2">Đáp án Đề 2</h3>
+<div class="table-wrap"><table class="key"><thead><tr><th>Câu</th><th>Đáp án</th><th>Giải thích (vị trí và paraphrase)</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>water</strong></td><td>"plant roots sit in <strong>water</strong> containing carefully measured nutrients".</td></tr>
+<tr><td>2</td><td><strong>mist</strong></td><td>"sprayed with a fine <strong>mist</strong>".</td></tr>
+<tr><td>3</td><td><strong>sunlight</strong></td><td>"<strong>Sunlight</strong> is replaced by LED lamps".</td></tr>
+<tr><td>4</td><td><strong>30</strong></td><td>"can be ready in around <strong>30</strong> days".</td></tr>
+<tr><td>5</td><td><strong>95</strong></td><td>"use up to <strong>95</strong>% less than conventional farms".</td></tr>
+<tr><td>6</td><td><strong>energy</strong></td><td>"The main problem is <strong>energy</strong>".</td></tr>
+<tr><td>7</td><td><strong>FALSE</strong></td><td>"not by clearing land, but by building upwards… inside former warehouses or purpose-built towers".</td></tr>
+<tr><td>8</td><td><strong>FALSE</strong></td><td>"harvested continuously <strong>rather than</strong> in one or two seasons".</td></tr>
+<tr><td>9</td><td><strong>TRUE</strong></td><td>"Pests are rare, so <strong>few or no pesticides</strong> are needed".</td></tr>
+<tr><td>10</td><td><strong>FALSE</strong></td><td>"Staple crops such as wheat and <strong>rice</strong>… would be far too costly".</td></tr>
+<tr><td>11</td><td><strong>TRUE</strong></td><td>"When energy prices rose sharply… some <strong>closed altogether</strong>".</td></tr>
+<tr><td>12</td><td><strong>NOT GIVEN</strong></td><td>Bài không nói khách hàng sống ở đâu.</td></tr>
+<tr><td>13</td><td><strong>TRUE</strong></td><td>"A farm powered by coal <strong>may produce more greenhouse gases</strong>… than a field farm".</td></tr>
+<tr><td>14</td><td><strong>E</strong></td><td>"When a colony needs to find a new home, scouts dance…".</td></tr>
+<tr><td>15</td><td><strong>C</strong></td><td>"The length of time… indicates <strong>distance</strong>".</td></tr>
+<tr><td>16</td><td><strong>F</strong></td><td>Giúp nông dân quyết định trồng hoa ở đâu.</td></tr>
+<tr><td>17</td><td><strong>D</strong></td><td>"The debate… was finally settled with the help of… radar transmitters".</td></tr>
+<tr><td>18</td><td><strong>B</strong></td><td>"runs forward in a straight line while shaking its body from side to side…".</td></tr>
+<tr><td>19</td><td><strong>E</strong></td><td>"'stop signal'… to a dangerous place". Chữ E được dùng hai lần (câu 14 và 19).</td></tr>
+<tr><td>20</td><td><strong>D</strong></td><td>"The angle… indicates the direction of the food relative to the sun".</td></tr>
+<tr><td>21</td><td><strong>B</strong></td><td>"The length of time… indicates distance". <em>duration</em> = <em>length of time</em>.</td></tr>
+<tr><td>22</td><td><strong>E</strong></td><td>"then used smell to find the exact flowers once they arrived".</td></tr>
+<tr><td>23</td><td><strong>A</strong></td><td>"The bees flew directly towards the area indicated by the dance".</td></tr>
+<tr><td>24</td><td><strong>B</strong></td><td>"it behaves in many ways like <strong>a single organism</strong>". A sai: hoa có thể ở "several kilometres away".</td></tr>
+<tr><td>25</td><td><strong>B</strong></td><td>"Some argued that bees found food mainly by smell".</td></tr>
+<tr><td>26</td><td><strong>B</strong></td><td>"compare to a democratic <strong>vote</strong>".</td></tr>
+<tr><td>27</td><td><strong>B</strong></td><td>"is increasingly being <strong>challenged</strong>". <em>questioned</em> = <em>challenged</em>.</td></tr>
+<tr><td>28</td><td><strong>A</strong></td><td>"We consistently <strong>overvalue the present</strong>": cảm giác khó chịu hiện tại được coi trọng quá mức.</td></tr>
+<tr><td>29</td><td><strong>B</strong></td><td>"procrastination is, above all, a way of managing unpleasant emotions". D sai: "not choosing pleasure over work so much as escaping from a feeling".</td></tr>
+<tr><td>30</td><td><strong>C</strong></td><td>"these tasks carry… <strong>the strongest emotions</strong>".</td></tr>
+<tr><td>31</td><td><strong>B</strong></td><td>"students who forgave themselves… procrastinated significantly less before the second".</td></tr>
+<tr><td>32</td><td><strong>YES</strong></td><td>"around <strong>one in five</strong> adults regard themselves as chronic procrastinators". 1/5 = 20%.</td></tr>
+<tr><td>33</td><td><strong>NO</strong></td><td>"these tools help <strong>only a little</strong>".</td></tr>
+<tr><td>34</td><td><strong>YES</strong></td><td>"deadlines set by other people are more effective than deadlines that people set for themselves".</td></tr>
+<tr><td>35</td><td><strong>NOT GIVEN</strong></td><td>Bài không so sánh nam và nữ.</td></tr>
+<tr><td>36</td><td><strong>NO</strong></td><td>"It would be wrong… to conclude that <strong>all delay is harmful</strong>".</td></tr>
+<tr><td>37</td><td><strong>vague</strong></td><td>"Large, <strong>vague</strong> goals… are more likely to be postponed".</td></tr>
+<tr><td>38</td><td><strong>steps</strong></td><td>"Breaking a task into <strong>steps</strong>". <em>Dividing</em> = <em>Breaking</em>.</td></tr>
+<tr><td>39</td><td><strong>creative</strong></td><td>"a short delay can improve <strong>creative</strong> work".</td></tr>
+<tr><td>40</td><td><strong>avoidance</strong></td><td>"an anxious <strong>avoidance</strong> that the person later regrets".</td></tr>
+</tbody></table></div>
+<h4>Gợi ý Writing Đề 2</h4>
+<p><strong>Task 1 – Overview gợi ý:</strong> Overall, the recycling rate increased in all four cities between 2015 and 2025. City A recycled the highest proportion of its waste in both years, while City D had the lowest rate but saw the largest increase.</p>
+<p><strong>Body 1:</strong> năm 2015 (A cao nhất, D thấp nhất, B và C ở giữa). <strong>Body 2:</strong> năm 2025, so sánh mức tăng của từng thành phố (D tăng hơn gấp ba, từ 10% lên 35%, khoảng cách với A thu hẹp).</p>
+<p><strong>Task 2 – Dàn ý gợi ý (dạng Discussion):</strong> Mở bài: nêu hai quan điểm + ý kiến của bạn (ví dụ: miễn phí cho sinh viên có hoàn cảnh khó khăn và ngành xã hội cần). Thân bài 1: lợi ích của giáo dục miễn phí (cơ hội công bằng, xã hội có lợi từ lực lượng lao động có trình độ). Thân bài 2: lý lẽ phía ngược lại (người học hưởng lợi cá nhân như lương cao hơn; ngân sách có hạn nên ưu tiên giáo dục phổ thông). Kết bài: nhắc lại ý kiến, ví dụ học phí kết hợp học bổng và cho vay sinh viên.</p>
+
+<h3 id="dap-an-3">Đáp án Đề 3</h3>
+<div class="table-wrap"><table class="key"><thead><tr><th>Câu</th><th>Đáp án</th><th>Giải thích (vị trí và paraphrase)</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>night-time prayers</strong></td><td>"drank it to stay awake during long <strong>night-time prayers</strong>". Từ có gạch nối tính là 1 từ.</td></tr>
+<tr><td>2</td><td><strong>coffeehouses</strong></td><td>"the first public <strong>coffeehouses</strong> opened in the sixteenth century".</td></tr>
+<tr><td>3</td><td><strong>medicine</strong></td><td>"It was at first expensive and treated as a <strong>medicine</strong>".</td></tr>
+<tr><td>4</td><td><strong>Dutch traders</strong></td><td>"<strong>Dutch traders</strong> managed to obtain plants and began growing them in their colonies".</td></tr>
+<tr><td>5</td><td><strong>Brazil</strong></td><td>"By the nineteenth century, <strong>Brazil</strong> had become the world's largest producer".</td></tr>
+<tr><td>6</td><td><strong>FALSE</strong></td><td>"<strong>There is no evidence</strong> that the story is true".</td></tr>
+<tr><td>7</td><td><strong>TRUE</strong></td><td>"Some rulers viewed them with suspicion, believing they encouraged political criticism, and several attempts were made to close them".</td></tr>
+<tr><td>8</td><td><strong>NOT GIVEN</strong></td><td>Bài liệt kê Venice, London, Paris, Vienna nhưng không nói thành phố nào có quán đầu tiên.</td></tr>
+<tr><td>9</td><td><strong>TRUE</strong></td><td>"an insurance market that <strong>still exists today</strong>, began as meetings in London coffeehouses".</td></tr>
+<tr><td>10</td><td><strong>FALSE</strong></td><td>Yemen "tried to <strong>prevent</strong> fertile plants from leaving the country".</td></tr>
+<tr><td>11</td><td><strong>TRUE</strong></td><td>Arabica "is <strong>vulnerable to disease</strong>", robusta "is a tougher plant".</td></tr>
+<tr><td>12</td><td><strong>FALSE</strong></td><td>Robusta "contains roughly <strong>twice as much</strong> caffeine".</td></tr>
+<tr><td>13</td><td><strong>FALSE</strong></td><td>"Vietnam, which became a major producer <strong>only in the 1990s</strong>".</td></tr>
+<tr><td>14</td><td><strong>iii</strong></td><td>Đoạn A: "cannot be seen with the naked eye… found in almost every environment".</td></tr>
+<tr><td>15</td><td><strong>vi</strong></td><td>Đoạn B: "Microplastics come from two main sources": primary và secondary.</td></tr>
+<tr><td>16</td><td><strong>i</strong></td><td>Đoạn C: quần áo và lốp xe là những sản phẩm hằng ngày thải ra hạt nhựa.</td></tr>
+<tr><td>17</td><td><strong>v</strong></td><td>Đoạn D: tác động lên sinh vật biển "not yet clear".</td></tr>
+<tr><td>18</td><td><strong>viii</strong></td><td>Đoạn E: hạt nhựa trong máu và phổi người.</td></tr>
+<tr><td>19</td><td><strong>ii</strong></td><td>Đoạn F: "Solutions are beginning to emerge".</td></tr>
+<tr><td>20</td><td><strong>five millimetres</strong> / <strong>5 millimetres</strong></td><td>"pieces of plastic smaller than <strong>five millimetres</strong>".</td></tr>
+<tr><td>21</td><td><strong>secondary microplastics</strong></td><td>"Secondary microplastics, which are <strong>far more common</strong>".</td></tr>
+<tr><td>22</td><td><strong>wastewater treatment plants</strong></td><td>"too small to be caught by most <strong>wastewater treatment plants</strong>" (đúng 3 từ).</td></tr>
+<tr><td>23</td><td><strong>France</strong></td><td>"France has passed a law requiring new machines to include them".</td></tr>
+<tr><td>24</td><td><strong>B</strong></td><td>"many experiments use concentrations <strong>far higher than those found in nature</strong>".</td></tr>
+<tr><td>25</td><td><strong>B</strong></td><td>"it would be wise to <strong>reduce exposure</strong> while research continues".</td></tr>
+<tr><td>26</td><td><strong>C</strong></td><td>"the most effective approach is to reduce the amount of plastic that enters the environment in the first place". A sai: "removing them is practically impossible".</td></tr>
+<tr><td>27</td><td><strong>YES</strong></td><td>"creativity has been regarded as a <strong>uniquely human</strong> quality".</td></tr>
+<tr><td>28</td><td><strong>YES</strong></td><td>"Psychologists <strong>often describe</strong> a creative product as one that is both new and valuable". <em>commonly define</em> = <em>often describe</em>.</td></tr>
+<tr><td>29</td><td><strong>NOT GIVEN</strong></td><td>Bài chỉ nói người xem "may find it beautiful", không so sánh với tranh của người.</td></tr>
+<tr><td>30</td><td><strong>NO</strong></td><td>"even though the images were <strong>identical</strong>".</td></tr>
+<tr><td>31</td><td><strong>YES</strong></td><td>"using it to generate <strong>rough ideas</strong> that they then develop themselves".</td></tr>
+<tr><td>32</td><td><strong>NO</strong></td><td>"the question… <strong>may be less useful</strong> than it first appears. The more important questions concern…".</td></tr>
+<tr><td>33</td><td><strong>NO</strong></td><td>"new technologies <strong>rarely</strong> replace human creativity".</td></tr>
+<tr><td>34</td><td><strong>B</strong></td><td>Harte: "To insist otherwise… is to <strong>move the definition</strong> whenever a machine meets it".</td></tr>
+<tr><td>35</td><td><strong>C</strong></td><td>Lin: "a sophisticated <strong>recombination of patterns</strong>".</td></tr>
+<tr><td>36</td><td><strong>A</strong></td><td>"their work was used to train these systems <strong>without their permission or any payment</strong>".</td></tr>
+<tr><td>37</td><td><strong>D</strong></td><td>"will make it harder for human creators to <strong>earn a living</strong>".</td></tr>
+<tr><td>38</td><td><strong>B</strong></td><td>"they bring their own <strong>experiences, intentions and emotions</strong>". A sai: Lin thừa nhận "Human artists also learn from others".</td></tr>
+<tr><td>39</td><td><strong>B</strong></td><td>"in much the same way that photographers once adopted new cameras": so sánh với việc đón nhận công nghệ trước đây.</td></tr>
+<tr><td>40</td><td><strong>C</strong></td><td>"will depend less on the machines themselves than on <strong>the choices that people and societies make</strong>".</td></tr>
+</tbody></table></div>
+<h4>Gợi ý Writing Đề 3</h4>
+<p><strong>Task 1 – Overview gợi ý:</strong> Overall, coal remained the largest single source of electricity in both years, but its share fell considerably, while renewable sources, particularly solar and wind, grew substantially.</p>
+<p><strong>Body 1:</strong> các nguồn giảm (than, dầu). <strong>Body 2:</strong> các nguồn tăng (mặt trời, gió) và các nguồn gần như không đổi (thủy điện, khí). Dùng "accounted for", "made up", "a quarter", "just over half".</p>
+<p><strong>Task 2 – Dàn ý gợi ý (Cause / Solution):</strong> Mở bài: nêu vấn đề và sẽ bàn nguyên nhân, giải pháp. Thân bài 1 – Nguyên nhân: giá nhà tăng nhanh hơn thu nhập; đầu cơ bất động sản; nguồn cung nhà ở giá rẻ ít; dân di cư lên thành phố. Thân bài 2 – Giải pháp, mỗi giải pháp khớp một nguyên nhân: xây nhà ở xã hội và cho thuê giá hợp lý; đánh thuế cao nhà bỏ trống, nhà đầu cơ; phát triển giao thông công cộng để người trẻ sống ở ngoại ô giá rẻ hơn. Kết bài: tóm tắt.</p>
+
+<h3 id="dap-an-4">Đáp án Đề 4</h3>
+<div class="table-wrap"><table class="key"><thead><tr><th>Câu</th><th>Đáp án</th><th>Giải thích (vị trí và paraphrase)</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>FALSE</strong></td><td>"stretches across Africa just <strong>south</strong> of the Sahara Desert".</td></tr>
+<tr><td>2</td><td><strong>TRUE</strong></td><td>"In 2007, the African Union launched… the Great Green Wall".</td></tr>
+<tr><td>3</td><td><strong>TRUE</strong></td><td>"running from Senegal on the Atlantic coast to Djibouti on the Indian Ocean": từ tây sang đông.</td></tr>
+<tr><td>4</td><td><strong>FALSE</strong></td><td>"funding had <strong>fallen far short</strong> of what was needed".</td></tr>
+<tr><td>5</td><td><strong>TRUE</strong></td><td>"many of them died… because <strong>nobody was responsible</strong> for watering and protecting them".</td></tr>
+<tr><td>6</td><td><strong>FALSE</strong></td><td>"regrow trees at <strong>very low cost</strong>".</td></tr>
+<tr><td>7</td><td><strong>FALSE</strong></td><td>zaï là "a <strong>traditional</strong> technique" mà nông dân "<strong>revived</strong>" (khôi phục lại) → không phải phát minh mới.</td></tr>
+<tr><td>8</td><td><strong>pits</strong></td><td>"they dig small <strong>pits</strong> in hard, crusted ground".</td></tr>
+<tr><td>9</td><td><strong>compost</strong></td><td>"fill them with manure or <strong>compost</strong>".</td></tr>
+<tr><td>10</td><td><strong>roots</strong></td><td>"hold it close to the plants' <strong>roots</strong>".</td></tr>
+<tr><td>11</td><td><strong>sorghum</strong></td><td>"crops such as millet or <strong>sorghum</strong>".</td></tr>
+<tr><td>12</td><td><strong>termites</strong></td><td>"The organic material attracts <strong>termites</strong>".</td></tr>
+<tr><td>13</td><td><strong>abandoned</strong></td><td>"fields that had been <strong>abandoned</strong> can become productive again".</td></tr>
+<tr><td>14</td><td><strong>C</strong></td><td>"the human body needs cool nights to recover from hot days".</td></tr>
+<tr><td>15</td><td><strong>A</strong></td><td>"London was consistently warmer than nearby villages" (thế kỷ 19).</td></tr>
+<tr><td>16</td><td><strong>B</strong></td><td>"Several factors combine to create the effect": bề mặt tối, nhà cao, ít cây, nhiệt thải.</td></tr>
+<tr><td>17</td><td><strong>D</strong></td><td>Điều hòa "can also make the problem worse".</td></tr>
+<tr><td>18</td><td><strong>F</strong></td><td>"such decisions must be made early".</td></tr>
+<tr><td>19</td><td><strong>D</strong></td><td>Tanaka: "protecting green space should be treated… as <strong>essential infrastructure</strong>".</td></tr>
+<tr><td>20</td><td><strong>A</strong></td><td>Ferreira: "a cycle in which hotter cities lead to more air conditioning…".</td></tr>
+<tr><td>21</td><td><strong>B</strong></td><td>Nair: "painting roofs white… can reduce the temperature inside top-floor rooms".</td></tr>
+<tr><td>22</td><td><strong>C</strong></td><td>Holm: "trees need water and <strong>years of care</strong> before they are fully effective".</td></tr>
+<tr><td>23</td><td><strong>B</strong> (absorb)</td><td>"Dark surfaces… <strong>absorb</strong> large amounts of solar energy".</td></tr>
+<tr><td>24</td><td><strong>C</strong> (night)</td><td>"The difference in temperature is usually greatest at <strong>night</strong>".</td></tr>
+<tr><td>25</td><td><strong>F</strong> (elderly)</td><td>"especially among <strong>elderly</strong> people who live alone".</td></tr>
+<tr><td>26</td><td><strong>G</strong> (evaporation)</td><td>Cây "provide both shade and <strong>evaporative</strong> cooling"; đoạn B: "the cooling effect produced when water evaporates from leaves".</td></tr>
+<tr><td>27</td><td><strong>B</strong></td><td>"as whole countries became richer over time, their average level of happiness did not seem to rise". A sai: trong một nước, người giàu hạnh phúc hơn.</td></tr>
+<tr><td>28</td><td><strong>B</strong></td><td>"people quickly become used to a higher standard of living". A là giải thích kia (so sánh).</td></tr>
+<tr><td>29</td><td><strong>C</strong></td><td>"Later research… found that emotional well-being also continued to rise with income for most people". A là kết quả của nghiên cứu năm 2010.</td></tr>
+<tr><td>30</td><td><strong>A</strong></td><td>"reported feeling happier at the end of the day than those told to spend it on themselves".</td></tr>
+<tr><td>31</td><td><strong>NO</strong></td><td>"The debate <strong>has not been fully settled</strong>".</td></tr>
+<tr><td>32</td><td><strong>YES</strong></td><td>"each additional dollar matters less the richer a person already is".</td></tr>
+<tr><td>33</td><td><strong>NOT GIVEN</strong></td><td>Bài không so sánh các vùng địa lý.</td></tr>
+<tr><td>34</td><td><strong>YES</strong></td><td>"policies that raise the incomes of the poorest are likely to do far more for overall happiness than those that make the rich richer".</td></tr>
+<tr><td>35</td><td><strong>NO</strong></td><td>"Relationships, health and a sense of purpose are <strong>not things that money can buy directly</strong>".</td></tr>
+<tr><td>36</td><td><strong>A</strong> (experiences)</td><td>"spending on <strong>experiences</strong>… produces more lasting happiness than spending on material goods".</td></tr>
+<tr><td>37</td><td><strong>C</strong> (shared)</td><td>"Experiences are often <strong>shared</strong> with others".</td></tr>
+<tr><td>38</td><td><strong>E</strong> (time)</td><td>"People who use money to free up <strong>time</strong>".</td></tr>
+<tr><td>39</td><td><strong>G</strong> (reluctant)</td><td>"many people… are <strong>reluctant</strong> to spend money in this way".</td></tr>
+<tr><td>40</td><td><strong>I</strong> (used)</td><td>"the way money is <strong>used</strong> may matter more than the amount".</td></tr>
+</tbody></table></div>
+<h4>Gợi ý Writing Đề 4</h4>
+<p><strong>Task 1 – Overview gợi ý:</strong> Overall, the process consists of eight stages, beginning with the collection of used paper and ending with the delivery of new paper products. Most of the stages take place at the recycling plant.</p>
+<p><strong>Body 1:</strong> các bước 1–4 (thu gom → phân loại → nghiền với nước thành bột giấy → lọc tạp chất). <strong>Body 2:</strong> các bước 5–8 (khử mực → ép và sấy khô → cuộn thành cuộn giấy lớn → giao đi). Nhớ dùng <strong>câu bị động</strong>: <em>is collected, is sorted, is mixed with water, is pressed and dried</em>, và từ chỉ trình tự: <em>first, next, after that, once…, finally</em>.</p>
+<p><strong>Task 2 – Dàn ý gợi ý (đề hai câu hỏi):</strong> Mở bài: nêu xu hướng, trả lời ngắn cả hai câu hỏi (vì công nghệ cho phép làm từ xa; nhìn chung là tích cực nhưng có rủi ro). Thân bài 1 – Lý do: nền tảng việc làm trực tuyến, internet; muốn tự chủ thời gian; công ty muốn thuê theo dự án để giảm chi phí. Thân bài 2 – Đánh giá: tích cực (linh hoạt, thu nhập từ nhiều khách hàng); tiêu cực (thu nhập không ổn định, không có bảo hiểm, lương hưu) → kết luận tích cực nếu có chính sách bảo vệ người làm tự do. Kết bài: nhắc lại.</p>
+
+<h2 id="phieu">Phiếu trả lời Reading</h2><p>Họ tên: ……………………………… &nbsp; Đề số: ……… &nbsp; Ngày: ……………… &nbsp; Điểm: ……… / 40</p><div class="sheet"><div>1. </div><div>21. </div><div>2. </div><div>22. </div><div>3. </div><div>23. </div><div>4. </div><div>24. </div><div>5. </div><div>25. </div><div>6. </div><div>26. </div><div>7. </div><div>27. </div><div>8. </div><div>28. </div><div>9. </div><div>29. </div><div>10. </div><div>30. </div><div>11. </div><div>31. </div><div>12. </div><div>32. </div><div>13. </div><div>33. </div><div>14. </div><div>34. </div><div>15. </div><div>35. </div><div>16. </div><div>36. </div><div>17. </div><div>37. </div><div>18. </div><div>38. </div><div>19. </div><div>39. </div><div>20. </div><div>40. </div></div>
+</main>
+<a class="to-top" href="#top" title="Lên đầu trang">↑</a>
+</body>
+</html>
