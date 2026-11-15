@@ -1,0 +1,141 @@
+### 1|我的家|Nhà của tôi
+我叫小明，今年二十岁。|Wǒ jiào Xiǎomíng, jīnnián èrshí suì.|Tôi tên là Tiểu Minh, năm nay hai mươi tuổi.
+我家有四口人：爸爸、妈妈、姐姐和我。|Wǒ jiā yǒu sì kǒu rén: bàba, māma, jiějie hé wǒ.|Nhà tôi có bốn người: bố, mẹ, chị gái và tôi.
+爸爸是医生，妈妈是老师。|Bàba shì yīshēng, māma shì lǎoshī.|Bố là bác sĩ, mẹ là giáo viên.
+姐姐在医院工作。|Jiějie zài yīyuàn gōngzuò.|Chị gái làm việc ở bệnh viện.
+我是学生，我喜欢学习汉语。|Wǒ shì xuésheng, wǒ xǐhuan xuéxí Hànyǔ.|Tôi là sinh viên, tôi thích học tiếng Hán.
+Q|小明今年二十岁。|Tiểu Minh năm nay hai mươi tuổi.|对
+Q|小明的妈妈是医生。|Mẹ của Tiểu Minh là bác sĩ.|错
+Q|姐姐在学校工作。|Chị gái làm việc ở trường học.|错
+### 1|今天星期六|Hôm nay thứ Bảy
+今天是星期六，天气很好。|Jīntiān shì xīngqīliù, tiānqì hěn hǎo.|Hôm nay là thứ Bảy, thời tiết rất đẹp.
+上午我和朋友去买东西。|Shàngwǔ wǒ hé péngyou qù mǎi dōngxi.|Buổi sáng tôi cùng bạn đi mua đồ.
+我买了一本书，朋友买了一个杯子。|Wǒ mǎi le yì běn shū, péngyou mǎi le yí ge bēizi.|Tôi mua một quyển sách, bạn mua một cái cốc.
+中午我们一起吃米饭和菜。|Zhōngwǔ wǒmen yìqǐ chī mǐfàn hé cài.|Buổi trưa chúng tôi cùng ăn cơm và thức ăn.
+下午我回家看书。|Xiàwǔ wǒ huí jiā kàn shū.|Buổi chiều tôi về nhà đọc sách.
+Q|今天天气不好。|Hôm nay thời tiết không đẹp.|错
+Q|朋友买了一个杯子。|Bạn mua một cái cốc.|对
+Q|下午我去看电影。|Buổi chiều tôi đi xem phim.|错
+### 1|我的朋友|Bạn của tôi
+我有一个中国朋友，他叫大明。|Wǒ yǒu yí ge Zhōngguó péngyou, tā jiào Dàmíng.|Tôi có một người bạn Trung Quốc, anh ấy tên là Đại Minh.
+他会说汉语，也会写很多汉字。|Tā huì shuō Hànyǔ, yě huì xiě hěn duō Hànzì.|Anh ấy biết nói tiếng Hán, cũng biết viết nhiều chữ Hán.
+他很喜欢喝茶，不喜欢喝牛奶。|Tā hěn xǐhuan hē chá, bù xǐhuan hē niúnǎi.|Anh ấy rất thích uống trà, không thích uống sữa.
+早上七点，他坐出租车去学校。|Zǎoshang qī diǎn, tā zuò chūzūchē qù xuéxiào.|Bảy giờ sáng, anh ấy đi taxi đến trường.
+Q|大明不会写汉字。|Đại Minh không biết viết chữ Hán.|错
+Q|大明喜欢喝茶。|Đại Minh thích uống trà.|对
+Q|他八点去学校。|Anh ấy đi học lúc tám giờ.|错
+### 2|去医院|Đi bệnh viện
+昨天晚上我觉得身体不舒服。|Zuótiān wǎnshang wǒ juéde shēntǐ bù shūfu.|Tối qua tôi thấy người không khỏe.
+今天早上我没去上课，妈妈和我一起去医院。|Jīntiān zǎoshang wǒ méi qù shàngkè, māma hé wǒ yìqǐ qù yīyuàn.|Sáng nay tôi không đi học, mẹ cùng tôi đi bệnh viện.
+医生说我没有大问题，要多喝水，多休息。|Yīshēng shuō wǒ méiyǒu dà wèntí, yào duō hē shuǐ, duō xiūxi.|Bác sĩ nói tôi không có vấn đề gì lớn, phải uống nhiều nước, nghỉ ngơi nhiều.
+他还给了我一些药，告诉我每天吃三次。|Tā hái gěi le wǒ yìxiē yào, gàosu wǒ měitiān chī sān cì.|Ông ấy còn cho tôi ít thuốc, dặn tôi mỗi ngày uống ba lần.
+现在我觉得好多了，明天可以去学校了。|Xiànzài wǒ juéde hǎo duō le, míngtiān kěyǐ qù xuéxiào le.|Bây giờ tôi thấy đỡ nhiều rồi, ngày mai có thể đi học được rồi.
+Q|我今天早上去上课了。|Sáng nay tôi đã đi học.|错
+Q|医生让我多休息。|Bác sĩ bảo tôi nghỉ ngơi nhiều.|对
+Q|药要每天吃两次。|Thuốc phải uống mỗi ngày hai lần.|错
+### 2|新房间|Căn phòng mới
+上个月我们住进了一个新房子。|Shàng ge yuè wǒmen zhù jìn le yí ge xīn fángzi.|Tháng trước chúng tôi dọn vào một căn nhà mới.
+我的房间比以前的大，也比以前的好看。|Wǒ de fángjiān bǐ yǐqián de dà, yě bǐ yǐqián de hǎokàn.|Phòng của tôi to hơn phòng trước, cũng đẹp hơn phòng trước.
+房间里有床、桌子和两个椅子。|Fángjiān li yǒu chuáng, zhuōzi hé liǎng ge yǐzi.|Trong phòng có giường, bàn và hai cái ghế.
+桌子上有很多书，我最喜欢在那儿看书。|Zhuōzi shang yǒu hěn duō shū, wǒ zuì xǐhuan zài nàr kàn shū.|Trên bàn có rất nhiều sách, tôi thích nhất là đọc sách ở đó.
+从我家到公司只要走十分钟，非常近。|Cóng wǒ jiā dào gōngsī zhǐ yào zǒu shí fēnzhōng, fēicháng jìn.|Từ nhà tôi đến công ty chỉ cần đi bộ mười phút, rất gần.
+Q|新房间比以前的小。|Phòng mới nhỏ hơn phòng trước.|错
+Q|房间里有两个椅子。|Trong phòng có hai cái ghế.|对
+Q|从家到公司要坐一个小时的车。|Từ nhà đến công ty phải đi xe một tiếng.|错
+### 2|准备考试|Chuẩn bị thi
+下个星期我们有一个很大的考试。|Xià ge xīngqī wǒmen yǒu yí ge hěn dà de kǎoshì.|Tuần sau chúng tôi có một kỳ thi lớn.
+这几天，我每天晚上都在学校学习到十点。|Zhè jǐ tiān, wǒ měitiān wǎnshang dōu zài xuéxiào xuéxí dào shí diǎn.|Mấy ngày nay, tối nào tôi cũng học ở trường đến mười giờ.
+有的问题我不懂，就去问老师。|Yǒude wèntí wǒ bù dǒng, jiù qù wèn lǎoshī.|Có câu hỏi tôi không hiểu thì đi hỏi thầy cô.
+老师说，考试以前不要太累，要早点儿睡觉。|Lǎoshī shuō, kǎoshì yǐqián bú yào tài lèi, yào zǎo diǎnr shuìjiào.|Thầy nói, trước khi thi đừng làm quá sức, phải ngủ sớm một chút.
+我希望这次能考得好。|Wǒ xīwàng zhè cì néng kǎo de hǎo.|Tôi hy vọng lần này có thể thi tốt.
+Q|考试在下个星期。|Kỳ thi vào tuần sau.|对
+Q|我每天在学校学习到十一点。|Mỗi ngày tôi học ở trường đến mười một giờ.|错
+Q|老师让我们早点儿睡觉。|Thầy bảo chúng tôi ngủ sớm một chút.|对
+### 3|骑自行车上班|Đạp xe đi làm
+以前我每天坐公共汽车上班，路上要花一个多小时。|Yǐqián wǒ měitiān zuò gōnggòng qìchē shàngbān, lù shang yào huā yí ge duō xiǎoshí.|Trước đây ngày nào tôi cũng đi xe buýt đi làm, trên đường mất hơn một tiếng.
+因为车上人太多，我常常觉得很累。|Yīnwèi chē shang rén tài duō, wǒ chángcháng juéde hěn lèi.|Vì trên xe quá đông người, tôi thường thấy rất mệt.
+去年春天，我决定骑自行车上班。|Qùnián chūntiān, wǒ juédìng qí zìxíngchē shàngbān.|Mùa xuân năm ngoái, tôi quyết định đạp xe đi làm.
+开始的时候有点儿难，但是一个月以后我就习惯了。|Kāishǐ de shíhou yǒudiǎnr nán, dànshì yí ge yuè yǐhòu wǒ jiù xíguàn le.|Lúc đầu hơi khó, nhưng một tháng sau tôi đã quen.
+现在骑车只要四十分钟，比坐车还快。|Xiànzài qí chē zhǐ yào sìshí fēnzhōng, bǐ zuò chē hái kuài.|Bây giờ đạp xe chỉ mất bốn mươi phút, còn nhanh hơn đi xe buýt.
+而且我的身体也比以前健康多了。|Érqiě wǒ de shēntǐ yě bǐ yǐqián jiànkāng duō le.|Hơn nữa sức khỏe của tôi cũng tốt hơn trước nhiều.
+Q|以前坐公共汽车上班要一个多小时。|Trước đây đi xe buýt đi làm mất hơn một tiếng.|对
+Q|开始骑车的时候一点儿也不难。|Lúc mới đạp xe không khó chút nào.|错
+Q|现在骑车比坐车慢。|Bây giờ đạp xe chậm hơn đi xe buýt.|错
+### 3|周末的计划|Kế hoạch cuối tuần
+这个周末是我妈妈的生日，我想送她一个特别的礼物。|Zhège zhōumò shì wǒ māma de shēngrì, wǒ xiǎng sòng tā yí ge tèbié de lǐwù.|Cuối tuần này là sinh nhật mẹ tôi, tôi muốn tặng mẹ một món quà đặc biệt.
+我打算自己做一个蛋糕，虽然我以前从来没做过。|Wǒ dǎsuàn zìjǐ zuò yí ge dàngāo, suīrán wǒ yǐqián cónglái méi zuò guo.|Tôi định tự làm một cái bánh ngọt, mặc dù trước đây tôi chưa bao giờ làm.
+我在网上找到了一个简单的方法，还去超市买了鸡蛋和牛奶。|Wǒ zài wǎng shang zhǎo dào le yí ge jiǎndān de fāngfǎ, hái qù chāoshì mǎi le jīdàn hé niúnǎi.|Tôi tìm được một cách đơn giản trên mạng, còn đi siêu thị mua trứng và sữa.
+哥哥说他会帮我，可是他工作太忙，可能来不了。|Gēge shuō tā huì bāng wǒ, kěshì tā gōngzuò tài máng, kěnéng lái bu liǎo.|Anh trai nói sẽ giúp tôi, nhưng anh ấy bận việc quá, có thể không đến được.
+蛋糕做得好不好不重要，我相信妈妈一定会很高兴。|Dàngāo zuò de hǎo bu hǎo bú zhòngyào, wǒ xiāngxìn māma yídìng huì hěn gāoxìng.|Bánh làm ngon hay không không quan trọng, tôi tin mẹ nhất định sẽ rất vui.
+Q|我以前做过很多次蛋糕。|Trước đây tôi đã làm bánh nhiều lần.|错
+Q|我在超市买了鸡蛋和牛奶。|Tôi mua trứng và sữa ở siêu thị.|对
+Q|哥哥一定会来帮我。|Anh trai nhất định sẽ đến giúp tôi.|错
+### 3|学习汉语的方法|Phương pháp học tiếng Hán
+很多人觉得汉语很难，特别是汉字。|Hěn duō rén juéde Hànyǔ hěn nán, tèbié shì Hànzì.|Nhiều người thấy tiếng Hán rất khó, đặc biệt là chữ Hán.
+我觉得，每天学一点儿，比一次学很多更有用。|Wǒ juéde, měitiān xué yìdiǎnr, bǐ yí cì xué hěn duō gèng yǒuyòng.|Tôi thấy mỗi ngày học một chút có ích hơn học nhiều một lần.
+我每天早上记十个新词，晚上再复习一遍。|Wǒ měitiān zǎoshang jì shí ge xīn cí, wǎnshang zài fùxí yí biàn.|Mỗi sáng tôi nhớ mười từ mới, buổi tối ôn lại một lượt.
+除了这个，我还常常听中文歌，看中国电影。|Chúle zhège, wǒ hái chángcháng tīng Zhōngwén gē, kàn Zhōngguó diànyǐng.|Ngoài việc đó, tôi còn thường nghe nhạc tiếng Trung, xem phim Trung Quốc.
+这样不但能提高听力，而且能了解中国文化。|Zhèyàng búdàn néng tígāo tīnglì, érqiě néng liǎojiě Zhōngguó wénhuà.|Như vậy không những nâng cao khả năng nghe, mà còn hiểu được văn hóa Trung Quốc.
+Q|作者觉得一次学很多更有用。|Tác giả thấy học nhiều một lần có ích hơn.|错
+Q|作者每天早上记十个新词。|Tác giả mỗi sáng nhớ mười từ mới.|对
+Q|看中国电影可以了解中国文化。|Xem phim Trung Quốc có thể hiểu văn hóa Trung Quốc.|对
+### 4|网上购物|Mua sắm trực tuyến
+最近几年，网上购物在中国越来越普遍。|Zuìjìn jǐ nián, wǎngshàng gòuwù zài Zhōngguó yuèláiyuè pǔbiàn.|Mấy năm gần đây, mua sắm trực tuyến ngày càng phổ biến ở Trung Quốc.
+人们只要拿出手机，就可以买到从衣服到水果的各种东西，而且常常比商店里便宜。|Rénmen zhǐyào ná chū shǒujī, jiù kěyǐ mǎi dào cóng yīfu dào shuǐguǒ de gè zhǒng dōngxi, érqiě chángcháng bǐ shāngdiàn li piányi.|Người ta chỉ cần lấy điện thoại ra là có thể mua đủ thứ từ quần áo đến hoa quả, mà thường rẻ hơn trong cửa hàng.
+另外，快递速度也很快，在大城市，很多东西当天就能送到。|Lìngwài, kuàidì sùdù yě hěn kuài, zài dà chéngshì, hěn duō dōngxi dàngtiān jiù néng sòng dào.|Ngoài ra, chuyển phát cũng rất nhanh, ở thành phố lớn nhiều thứ giao ngay trong ngày.
+不过，网上购物也有一些问题。|Búguò, wǎngshàng gòuwù yě yǒu yìxiē wèntí.|Tuy nhiên, mua sắm trực tuyến cũng có một số vấn đề.
+有时候收到的东西和照片上的不一样，换货也比较麻烦。|Yǒu shíhou shōu dào de dōngxi hé zhàopiàn shang de bù yíyàng, huànhuò yě bǐjiào máfan.|Có khi đồ nhận được không giống trong ảnh, đổi hàng cũng khá phiền phức.
+所以，买东西以前最好先看看别人的评价。|Suǒyǐ, mǎi dōngxi yǐqián zuìhǎo xiān kànkan biérén de píngjià.|Vì vậy, trước khi mua tốt nhất nên xem đánh giá của người khác.
+Q|网上的东西一定比商店里便宜。|Đồ trên mạng nhất định rẻ hơn trong cửa hàng.|错
+Q|在大城市，有的东西当天就能送到。|Ở thành phố lớn, có thứ được giao ngay trong ngày.|对
+Q|作者建议买东西以前先看别人的评价。|Tác giả khuyên trước khi mua nên xem đánh giá của người khác.|对
+### 4|一次面试|Một buổi phỏng vấn
+上个月，我参加了一家公司的面试。|Shàng ge yuè, wǒ cānjiā le yì jiā gōngsī de miànshì.|Tháng trước, tôi tham gia buổi phỏng vấn của một công ty.
+面试以前，我认真地准备了很长时间，还请朋友帮我练习回答问题。|Miànshì yǐqián, wǒ rènzhēn de zhǔnbèi le hěn cháng shíjiān, hái qǐng péngyou bāng wǒ liànxí huídá wèntí.|Trước buổi phỏng vấn, tôi đã chuẩn bị kỹ trong thời gian dài, còn nhờ bạn giúp tập trả lời câu hỏi.
+可是那天早上，路上突然堵车，我差点儿迟到。|Kěshì nà tiān zǎoshang, lù shang tūrán dǔchē, wǒ chàdiǎnr chídào.|Nhưng sáng hôm đó, đường bỗng nhiên tắc, tôi suýt nữa đến muộn.
+进门的时候，我非常紧张，连自我介绍都说错了。|Jìn mén de shíhou, wǒ fēicháng jǐnzhāng, lián zìwǒ jièshào dōu shuō cuò le.|Lúc vào cửa, tôi rất căng thẳng, đến cả phần tự giới thiệu cũng nói sai.
+幸好经理很友好，他笑着让我别着急，慢慢说。|Xìnghǎo jīnglǐ hěn yǒuhǎo, tā xiào zhe ràng wǒ bié zháojí, mànmàn shuō.|May mà giám đốc rất thân thiện, ông ấy cười bảo tôi đừng vội, cứ nói từ từ.
+后来我越说越轻松，回答得也越来越好。|Hòulái wǒ yuè shuō yuè qīngsōng, huídá de yě yuèláiyuè hǎo.|Sau đó tôi càng nói càng thoải mái, trả lời cũng ngày càng tốt.
+一个星期以后，我收到了公司的通知：我得到了这份工作。|Yí ge xīngqī yǐhòu, wǒ shōu dào le gōngsī de tōngzhī: wǒ dédào le zhè fèn gōngzuò.|Một tuần sau, tôi nhận được thông báo của công ty: tôi đã nhận được công việc này.
+Q|面试那天我迟到了。|Hôm phỏng vấn tôi đến muộn.|错
+Q|经理让我慢慢说。|Giám đốc bảo tôi nói từ từ.|对
+Q|我没有得到这份工作。|Tôi không nhận được công việc này.|错
+### 4|保护环境从小事做起|Bảo vệ môi trường bắt đầu từ việc nhỏ
+很多人认为，保护环境是国家和大公司的事情，和自己没有什么关系。|Hěn duō rén rènwéi, bǎohù huánjìng shì guójiā hé dà gōngsī de shìqing, hé zìjǐ méiyǒu shénme guānxi.|Nhiều người cho rằng bảo vệ môi trường là việc của nhà nước và công ty lớn, chẳng liên quan gì đến mình.
+其实，每个人都可以从生活中的小事做起。|Qíshí, měi ge rén dōu kěyǐ cóng shēnghuó zhōng de xiǎoshì zuò qǐ.|Thực ra, mỗi người đều có thể bắt đầu từ những việc nhỏ trong cuộc sống.
+比如，去超市的时候自己带购物袋，少用塑料袋；离开房间的时候随手关灯；能走路或者骑车的时候，就尽量不开车。|Bǐrú, qù chāoshì de shíhou zìjǐ dài gòuwùdài, shǎo yòng sùliàodài; líkāi fángjiān de shíhou suíshǒu guān dēng; néng zǒulù huòzhě qí chē de shíhou, jiù jǐnliàng bù kāichē.|Ví dụ, khi đi siêu thị tự mang túi, dùng ít túi ni lông; khi rời phòng thì tiện tay tắt đèn; khi có thể đi bộ hoặc đạp xe thì cố gắng không lái xe.
+这些事情看起来很简单，但是如果每个人都坚持去做，效果就会非常大。|Zhèxiē shìqing kàn qǐlai hěn jiǎndān, dànshì rúguǒ měi ge rén dōu jiānchí qù zuò, xiàoguǒ jiù huì fēicháng dà.|Những việc này trông có vẻ đơn giản, nhưng nếu mỗi người đều kiên trì làm thì hiệu quả sẽ rất lớn.
+Q|作者认为保护环境只是国家的事情。|Tác giả cho rằng bảo vệ môi trường chỉ là việc của nhà nước.|错
+Q|离开房间的时候应该关灯。|Khi rời phòng nên tắt đèn.|对
+Q|作者认为这些小事没有什么效果。|Tác giả cho rằng những việc nhỏ này không có hiệu quả gì.|错
+### 5|手机改变了我们的生活|Điện thoại đã thay đổi cuộc sống của chúng ta
+二十年前，手机主要是用来打电话和发短信的。今天，它几乎成了我们生活中离不开的工具。|-|Hai mươi năm trước, điện thoại chủ yếu dùng để gọi và nhắn tin. Ngày nay, nó gần như trở thành công cụ không thể thiếu trong cuộc sống.
+我们用手机付款、看新闻、学习外语、和远方的家人视频聊天，甚至用它来管理自己的健康。|-|Chúng ta dùng điện thoại để thanh toán, đọc tin, học ngoại ngữ, gọi video với người thân ở xa, thậm chí dùng nó để quản lý sức khỏe.
+然而，手机在给我们带来方便的同时，也带来了一些问题。|-|Tuy nhiên, điện thoại vừa mang lại tiện lợi, vừa mang đến một số vấn đề.
+不少人一有空就低头看手机，和身边的人交流反而越来越少。|-|Không ít người hễ rảnh là cúi đầu xem điện thoại, giao tiếp với người bên cạnh lại ngày càng ít.
+有调查显示，睡觉前长时间看手机，还会影响睡眠质量。|-|Có khảo sát cho thấy, xem điện thoại lâu trước khi ngủ còn ảnh hưởng đến chất lượng giấc ngủ.
+因此，专家建议，我们应该合理安排使用手机的时间，比如吃饭的时候把手机放在一边，睡前一个小时不再看屏幕。|-|Vì vậy, chuyên gia khuyên chúng ta nên sắp xếp thời gian dùng điện thoại hợp lý, ví dụ khi ăn cơm để điện thoại sang một bên, một tiếng trước khi ngủ không nhìn màn hình nữa.
+Q|二十年前，手机主要用来做什么？ A 付款 B 打电话和发短信 C 看新闻 D 学外语|Hai mươi năm trước, điện thoại chủ yếu dùng để làm gì?|B
+Q|根据调查，睡前看手机会怎么样？ A 让人更快睡着 B 影响睡眠质量 C 提高学习效果 D 没有影响|Theo khảo sát, xem điện thoại trước khi ngủ thì sao?|B
+Q|专家建议怎么做？ A 不用手机 B 吃饭时看手机 C 合理安排使用手机的时间 D 只用手机工作|Chuyên gia khuyên làm gì?|C
+### 5|一位老师的坚持|Sự kiên trì của một thầy giáo
+张老师在一个很远的山村小学工作了三十年。|-|Thầy Trương làm việc ở một trường tiểu học thôn núi xa xôi suốt ba mươi năm.
+刚来的时候，学校只有一间旧教室，学生们没有课本，冬天也没有暖气。|-|Lúc mới đến, trường chỉ có một phòng học cũ, học sinh không có sách giáo khoa, mùa đông cũng không có sưởi.
+很多年轻老师来了不久就离开了，但张老师一直留了下来。|-|Nhiều giáo viên trẻ đến chưa bao lâu đã rời đi, nhưng thầy Trương vẫn luôn ở lại.
+他说："这些孩子需要知识，如果我也走了，他们怎么办？"|-|Thầy nói: "Những đứa trẻ này cần kiến thức, nếu tôi cũng đi thì chúng biết làm sao?"
+为了让学生们有书读，他把自己的工资拿出来买书，还经常走几个小时的山路去学生家里了解情况。|-|Để học sinh có sách đọc, thầy lấy lương của mình ra mua sách, còn thường đi mấy tiếng đường núi đến nhà học sinh tìm hiểu tình hình.
+如今，他教过的学生中，有的成了医生，有的成了工程师，还有几个回到村里当了老师。|-|Ngày nay, trong số học sinh thầy từng dạy, có người thành bác sĩ, có người thành kỹ sư, còn vài người quay về làng làm giáo viên.
+Q|张老师在山村小学工作了多长时间？ A 三年 B 十年 C 二十年 D 三十年|Thầy Trương làm việc ở trường tiểu học thôn núi bao lâu?|D
+Q|很多年轻老师为什么离开？ 根据课文，下面哪个说法正确？ A 课文没有说明原因 B 他们工资太高 C 学生太多 D 学校太新|Nhiều giáo viên trẻ vì sao rời đi? Theo bài, câu nào đúng?|A
+Q|张老师用自己的工资做了什么？ A 修教室 B 买书 C 买暖气 D 坐车|Thầy Trương dùng lương của mình làm gì?|B
+### 5|城市里的"共享"|"Chia sẻ" trong thành phố
+近几年，"共享经济"在中国的城市里发展得非常迅速。|-|Mấy năm gần đây, "kinh tế chia sẻ" phát triển rất nhanh ở các thành phố Trung Quốc.
+共享单车就是一个典型的例子：用户用手机扫一下码，就能骑走一辆自行车，到了目的地以后随便停在路边就可以了。|-|Xe đạp chia sẻ là một ví dụ điển hình: người dùng dùng điện thoại quét mã là có thể đạp đi một chiếc xe, đến nơi thì cứ để bên đường là được.
+这种方式既方便又便宜，受到了很多上班族和学生的欢迎。|-|Cách này vừa tiện lại rẻ, được nhiều người đi làm và học sinh hoan nghênh.
+但是，问题也随之出现。|-|Nhưng vấn đề cũng theo đó xuất hiện.
+由于一些公司投放的车辆太多，不少城市的人行道被自行车占满，有的车坏了也没有人管。|-|Do một số công ty thả quá nhiều xe, vỉa hè ở không ít thành phố bị xe đạp chiếm kín, có xe hỏng cũng không ai quản.
+后来，政府开始限制车辆的数量，并要求公司负责管理和维修。|-|Sau đó, chính phủ bắt đầu hạn chế số lượng xe và yêu cầu công ty chịu trách nhiệm quản lý, sửa chữa.
+这说明，一种新的服务要想长期发展，不仅需要好的想法，还需要合理的管理。|-|Điều này cho thấy, một dịch vụ mới muốn phát triển lâu dài thì không chỉ cần ý tưởng hay mà còn cần quản lý hợp lý.
+Q|使用共享单车需要做什么？ A 买一辆车 B 用手机扫码 C 去公司登记 D 每天还车|Dùng xe đạp chia sẻ cần làm gì?|B
+Q|共享单车带来了什么问题？ A 价格太贵 B 人行道被车占满 C 骑车的人太少 D 车太新|Xe đạp chia sẻ mang lại vấn đề gì?|B
+Q|这篇文章主要想说明什么？ A 共享单车很便宜 B 新服务需要好想法和合理管理 C 政府不喜欢共享单车 D 学生喜欢骑车|Bài văn này chủ yếu muốn nói điều gì?|B
