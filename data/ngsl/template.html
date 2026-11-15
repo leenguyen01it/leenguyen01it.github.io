@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Từ vựng tiếng Anh NGSL</title>
+<style>
+:root{
+  --bg:#f4f6fb;--card:#fff;--ink:#1f2433;--muted:#667085;--line:#e4e7ef;
+  --b1:#2563eb;--b2:#0d9488;--b3:#7c3aed;--b4:#d97706;--b5:#db2777;--b6:#475569;--b7:#16a34a;
+  --accent:var(--b1);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(135deg,#1d4ed8,#0d9488);color:#fff;padding:28px 20px 70px;text-align:center}
+header h1{margin:0 0 6px;font-size:28px}
+header p{margin:0;opacity:.92}
+main{max-width:1000px;margin:-50px auto 40px;padding:0 14px}
+.card{background:var(--card);border-radius:16px;box-shadow:0 6px 24px rgba(30,50,120,.10);padding:18px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tab{border:2px solid var(--c);color:var(--c);background:#fff;border-radius:999px;padding:7px 14px;font-weight:700;cursor:pointer;font-size:14px}
+.tab.on{background:var(--c);color:#fff}
+.tab small{font-weight:500;opacity:.85}
+.prog{display:flex;align-items:center;gap:12px;margin:6px 0 14px}
+.bar{flex:1;height:12px;background:#eee;border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.prog b{min-width:150px;text-align:right;font-size:14px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.tools input[type=search]{flex:1;min-width:200px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px}
+.tools label{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:5px;cursor:pointer;user-select:none}
+.btn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14px}
+.btn:hover{border-color:var(--accent)}
+.voice{font-size:13px;color:var(--muted);margin:-4px 0 12px}
+.voice.warn{color:#b45309;background:#fff7e0;border-left:4px solid #d4a017;padding:8px 12px;border-radius:0 8px 8px 0}
+table{width:100%;border-collapse:collapse}
+th{position:sticky;top:0;background:var(--accent);color:#fff;text-align:left;padding:9px 10px;font-size:14px;z-index:1}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:nth-child(even) td{background:#f8f9fd}
+tr.done td{background:#eef8ee!important}
+tr.done .w{color:#15803d}
+.stt{color:var(--muted);width:46px;font-size:13px}
+.w{font-size:20px;font-weight:700;white-space:nowrap}
+.het{cursor:help;font-size:14px;margin-left:2px}
+.ipa{color:var(--accent);font-family:"Segoe UI","Noto Sans","Lucida Sans Unicode","DejaVu Sans",sans-serif;font-size:14px}
+.pos{display:inline-block;font-size:11px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 5px;margin-right:6px;vertical-align:1px;white-space:nowrap}
+.lv{font-size:11px;color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle;font-weight:600}
+.spk{border:none;background:none;cursor:pointer;font-size:17px;padding:0 4px;opacity:.6}
+.spk:hover{opacity:1}
+input.chk{width:20px;height:20px;accent-color:#16a34a;cursor:pointer}
+.hide-ipa .ipa span,.hide-vi .vi span.m{filter:blur(6px);cursor:pointer;transition:filter .2s}
+.hide-ipa .ipa span.show,.hide-vi .vi span.m.show{filter:none}
+.ex{margin-top:4px;font-size:13px;color:#555}.ex b{font-weight:500;color:var(--ink);font-size:14px}.ex i{color:var(--muted)}
+.hide-vi .ex i{filter:blur(5px)}
+.empty{text-align:center;color:var(--muted);padding:30px}
+.note{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.55}
+.top{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+#printall{display:none}
+@media (max-width:600px){.w{font-size:18px}.prog b{min-width:110px}td,th{padding:7px 6px}
+  main{padding:0 10px}.card{padding:12px}
+  table thead{display:none}
+  #tb tr{display:grid;grid-template-columns:112px minmax(0,1fr) 30px;grid-template-areas:"w vi chk" "ipa vi chk";column-gap:10px;padding:10px 4px;border-bottom:1px solid var(--line)}
+  #tb tr:nth-child(even){background:#f8f9fd} #tb tr.done{background:#eef8ee}
+  #tb td{display:block;padding:0;border:0;background:none!important}
+  #tb td.stt{display:none} #tb td.w{grid-area:w;white-space:normal;overflow-wrap:anywhere;font-size:17px} #tb td.ipa{grid-area:ipa;font-size:13px}
+  #tb td.vi{grid-area:vi} #tb td:last-child{grid-area:chk;align-self:center;justify-self:end}
+  .top{width:40px;height:40px;right:12px;bottom:12px;opacity:.85}}
+@page{size:A4;margin:14mm 12mm 16mm 18mm;@bottom-center{content:counter(page);font-size:9pt;color:#667085}}
+@media print{
+  body{background:#fff} body>header,body>main,.top{display:none!important}
+  #printall{display:block;font-size:9.2pt;line-height:1.25;color:#000}
+  #printall *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .p-cover{text-align:center;padding-top:60mm;break-after:page}
+  .p-cover h1{font-size:28pt;margin:0 0 6mm;color:#1d4ed8}
+  .p-cover p{font-size:11.5pt;margin:2.5mm 0;color:#333}
+  .p-cover table{margin:10mm auto 0;width:auto;font-size:11pt}
+  .p-cover td{padding:2mm 6mm;border-bottom:1px solid #ccc;background:none!important}
+  .p-cover .src{margin-top:18mm;font-size:8.5pt;color:#666;line-height:1.5}
+  .plv{break-before:page} .plv:first-of-type{break-before:auto}
+  .plv h2{font-size:15pt;margin:0 0 3mm;padding:2mm 4mm;color:#fff;border-radius:2mm}
+  table.pt{width:100%;border-collapse:collapse}
+  table.pt thead{display:table-header-group}
+  table.pt th{position:static;color:#fff;font-size:9pt;padding:1.5mm 2mm}
+  table.pt td{padding:.7mm 1.6mm;border-bottom:.3mm solid #ccc;vertical-align:top;background:none!important}
+  table.pt tr{break-inside:avoid}
+  table.pt tbody tr:nth-child(even) td{background:#f6f7fb!important}
+  .pt .n{width:10mm;color:#777;font-size:8pt}
+  .pt .w{width:26mm;font-size:11pt;font-weight:700;white-space:normal;line-height:1.15}
+  .pt .p{width:27mm;font-size:8.2pt;color:#1d4ed8;line-height:1.2}
+  .pt .v{font-weight:600}.pt .e{color:#444;font-size:8.5pt}.pt .e b{font-weight:500;color:#000}
+  .pt .pos{font-size:7.5pt;padding:0 3px;margin-right:4px}
+  .pt .b{width:7mm} .pt .b i{display:inline-block;width:3.4mm;height:3.4mm;border:.35mm solid #555;border-radius:.6mm;margin-top:.5mm}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 Từ vựng tiếng Anh thiết yếu</h1>
+  <p>2.809 từ NGSL 1.2 xếp theo tần suất + 52 từ bổ sung · Tích ô “Đã thuộc” để theo dõi tiến độ (lưu trên trình duyệt này)</p>
+</header>
+<main>
+<div class="card">
+  <div class="tabs" id="tabs"></div>
+  <div class="prog"><div class="bar"><i id="barfill"></i></div><b id="progtxt"></b></div>
+  <div class="tools">
+    <input type="search" id="q" placeholder="🔍 Tìm từ tiếng Anh hoặc nghĩa tiếng Việt (không dấu cũng được)…">
+    <label><input type="checkbox" id="onlyNew"> Chỉ từ chưa thuộc</label>
+    <label><input type="checkbox" id="hideIpa"> Che phiên âm</label>
+    <label><input type="checkbox" id="hideVi"> Che nghĩa</label>
+    <button class="btn" id="shuffle">🔀 Trộn</button>
+  </div>
+  <div class="voice" id="voice"></div>
+  <table>
+    <thead><tr><th>STT</th><th>Từ</th><th>Phiên âm (Mỹ)</th><th>Nghĩa</th><th>Đã thuộc</th></tr></thead>
+    <tbody id="tb"></tbody>
+  </table>
+  <div class="empty" id="empty" hidden>Không có từ nào khớp.</div>
+  <p class="note">💡 <b>Cách học:</b> mỗi ngày 15–20 từ, học theo thứ tự nhóm vì nhóm 1 là những từ xuất hiện nhiều nhất. Bật “Che nghĩa” để tự kiểm tra, bấm vào chỗ bị che để xem đáp án.<br>
+  🔊 <b>Nút nghe</b> dùng giọng đọc có sẵn trong máy, không cần mạng nếu máy đã tải giọng tiếng Anh. Chất lượng giọng tùy thiết bị, nên <b>phiên âm mới là chuẩn để dựa vào</b>. Từ có dấu ⚠ đọc được nhiều kiểu tùy nghĩa (ví dụ <i>read</i>), nút nghe chỉ đọc một kiểu.<br>
+  📚 <b>Nguồn:</b> danh sách từ <a href="https://www.newgeneralservicelist.com/">New General Service List 1.2</a> của Browne, C., Culligan, B. và Phillips, J. (giấy phép <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>); phiên âm chuyển từ <a href="https://github.com/cmusphinx/cmudict">CMU Pronouncing Dictionary</a>. Nghĩa tiếng Việt và câu ví dụ soạn riêng (11/2026), phát hành theo CC BY-SA 4.0; nghĩa chỉ ghi các nghĩa thường gặp. Khi in (Ctrl+P), trang tự chuyển sang bản in đủ các nhóm, có ô để tích bằng bút.</p>
+</div>
+</main>
+<button class="top" onclick="scrollTo({top:0})" title="Lên đầu trang">↑</button>
+<div id="printall"></div>
+<script>
+const DATA=__DATA__;
+const LV=[{k:0,n:'Tất cả',c:'#1f2433'},{k:1,n:'Nhóm 1',r:'1–500',c:'#2563eb'},{k:2,n:'Nhóm 2',r:'501–1000',c:'#0d9488'},{k:3,n:'Nhóm 3',r:'1001–1500',c:'#7c3aed'},{k:4,n:'Nhóm 4',r:'1501–2000',c:'#d97706'},{k:5,n:'Nhóm 5',r:'2001–2500',c:'#db2777'},{k:6,n:'Nhóm 6',r:'2501–2809',c:'#475569'},{k:7,n:'Bổ sung',r:'thứ, tháng, số',c:'#16a34a'}];
+const KEY='ngsl-thuoc';
+let done={};try{done=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
+let cur=1,order=null;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const strip=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').toLowerCase();
+DATA.forEach((d,i)=>{d.id=d.lv+'-'+d.w;d.n=i;d.key=strip(d.w+'|'+d.vi)+'|'+d.vi.toLowerCase()});
+const tabs=document.getElementById('tabs');
+function drawTabs(){tabs.innerHTML='';LV.forEach(l=>{const list=l.k?DATA.filter(d=>d.lv===l.k):DATA;const b=document.createElement('button');b.className='tab'+(l.k===cur?' on':'');b.style.setProperty('--c',l.c);b.title=l.r||'';b.innerHTML=`${l.n} <small>(${list.length})</small>`;b.onclick=()=>{cur=l.k;order=null;document.documentElement.style.setProperty('--accent',l.c);drawTabs();render()};tabs.appendChild(b)})}
+
+/* ---- giọng đọc: chọn giọng tiếng Anh tốt nhất có trong máy ---- */
+let VOICE=null;
+const GOOD=/(Google US English|Samantha|Ava|Allison|Natural|Neural|Premium|Enhanced|Aria|Jenny|Guy|Online)/i;
+function pickVoice(){
+  const box=document.getElementById('voice');
+  if(!('speechSynthesis' in window)){box.className='voice warn';box.textContent='⚠ Trình duyệt này không hỗ trợ đọc thành tiếng. Hãy dựa vào phiên âm.';return}
+  const vs=speechSynthesis.getVoices();if(!vs.length)return;
+  const en=vs.filter(v=>/^en[-_]/i.test(v.lang));
+  const us=en.filter(v=>/^en[-_]US/i.test(v.lang));
+  const loc=v=>v.localService;
+  VOICE=us.find(v=>loc(v)&&GOOD.test(v.name))||us.find(loc)||en.find(v=>loc(v)&&GOOD.test(v.name))||en.find(loc)||us.find(v=>GOOD.test(v.name))||us[0]||en[0]||null;
+  if(VOICE){box.className='voice';box.textContent=`🔊 Giọng đọc: ${VOICE.name}${VOICE.localService?'':' (cần mạng)'}`}
+  else{box.className='voice warn';box.innerHTML='⚠ Máy chưa có giọng đọc tiếng Anh nên nút 🔊 sẽ không đọc đúng. Android: Cài đặt → Chuyển văn bản thành giọng nói → tải giọng Tiếng Anh (Mỹ). iPhone: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói → English.'}
+}
+if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=pickVoice}
+pickVoice();setTimeout(pickVoice,800);
+function speak(t){try{if(!VOICE)pickVoice();if(!VOICE)return;const u=new SpeechSynthesisUtterance(t);u.voice=VOICE;u.lang=VOICE.lang;u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+
+function progress(){const list=cur?DATA.filter(d=>d.lv===cur):DATA;const n=list.filter(d=>done[d.id]).length;document.getElementById('barfill').style.width=(100*n/list.length)+'%';document.getElementById('progtxt').textContent=`${n} / ${list.length} từ (${Math.round(100*n/list.length)}%)`}
+function render(){
+  const raw=document.getElementById('q').value.trim();const q=strip(raw);const qr=raw.toLowerCase();
+  const onlyNew=document.getElementById('onlyNew').checked;
+  let list=cur?DATA.filter(d=>d.lv===cur):DATA.slice();
+  if(order)list=order.map(i=>DATA[i]).filter(d=>!cur||d.lv===cur);
+  list=list.filter(d=>(!q||d.key.includes(q)||d.key.includes(qr))&&(!onlyNew||!done[d.id]));
+  const rows=list.map((d,i)=>{const c=LV[d.lv].c;return `<tr class="${done[d.id]?'done':''}" data-id="${esc(d.id)}"><td class="stt">${i+1}</td><td class="w">${esc(d.w)}<button class="spk" data-t="${esc(d.w)}" title="Nghe">🔊</button>${d.het?'<span class="het" title="Từ này đọc khác nhau tùy nghĩa/từ loại – nút nghe chỉ đọc một cách, hãy xem phiên âm">⚠</span>':''}${cur?'':`<span class="lv" style="background:${c}">${d.lv===7?'+':d.lv}</span>`}</td><td class="ipa"><span>${esc(d.ipa)}</span></td><td class="vi"><span class="pos">${esc(d.pos)}</span><span class="m">${esc(d.vi)}</span><div class="ex"><b>${esc(d.ex)}</b> <button class="spk" data-t="${esc(d.ex)}" title="Nghe câu">🔊</button><br><i>${esc(d.exvi)}</i></div></td><td><input type="checkbox" class="chk" aria-label="Đã thuộc" ${done[d.id]?'checked':''}></td></tr>`});
+  document.getElementById('tb').innerHTML=rows.join('');document.getElementById('empty').hidden=list.length>0;progress();
+}
+document.getElementById('tb').addEventListener('click',e=>{
+  const t=e.target;
+  if(t.classList.contains('spk'))return speak(t.dataset.t);
+  if(t.tagName==='SPAN'&&(t.parentElement.matches('.ipa')||t.classList.contains('m')))return t.classList.toggle('show');
+  if(t.classList.contains('chk')){const tr=t.closest('tr');const id=tr.dataset.id;if(t.checked)done[id]=1;else delete done[id];save();tr.classList.toggle('done',t.checked);progress();}
+});
+document.getElementById('q').addEventListener('input',render);
+document.getElementById('onlyNew').addEventListener('change',render);
+document.getElementById('hideIpa').addEventListener('change',e=>document.body.classList.toggle('hide-ipa',e.target.checked));
+document.getElementById('hideVi').addEventListener('change',e=>document.body.classList.toggle('hide-vi',e.target.checked));
+document.getElementById('shuffle').onclick=()=>{const idx=DATA.map(d=>d.n);for(let i=idx.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}order=idx;render()};
+drawTabs();render();
+
+/* ---- bản in: đủ mọi nhóm, có ô tích bằng bút ---- */
+(function buildPrint(){
+  const L=LV.slice(1);const cnt=L.map(l=>DATA.filter(d=>d.lv===l.k).length);
+  let h=`<div class="p-cover"><h1>Từ vựng tiếng Anh thiết yếu</h1><p>${DATA.length.toLocaleString('vi-VN')} từ · phiên âm giọng Mỹ · nghĩa tiếng Việt · câu ví dụ</p><p>Học theo thứ tự nhóm: nhóm 1 là những từ gặp nhiều nhất. Tích ô ☐ bằng bút khi đã thuộc.</p><table>${L.map((l,i)=>`<tr><td><b style="color:${l.c}">${l.n}</b></td><td>${l.r}</td><td>${cnt[i]} từ</td></tr>`).join('')}</table><p class="src">Danh sách từ: New General Service List 1.2 (Browne, Culligan &amp; Phillips), CC BY-SA 4.0 · Phiên âm: CMU Pronouncing Dictionary<br>Nghĩa và ví dụ: soạn 11/2026, CC BY-SA 4.0 · ⚠ = từ đọc khác nhau tùy nghĩa</p></div>`;
+  L.forEach((l,i)=>{
+    const rows=DATA.filter(d=>d.lv===l.k).map((d,j)=>`<tr><td class="n">${j+1}</td><td class="w">${esc(d.w)}${d.het?' ⚠':''}</td><td class="p">${esc(d.ipa)}</td><td><span class="pos">${esc(d.pos)}</span><span class="v">${esc(d.vi)}</span><span class="e"> · <b>${esc(d.ex)}</b> ${esc(d.exvi)}</span></td><td class="b"><i></i></td></tr>`).join('');
+    h+=`<section class="plv"><h2 style="background:${l.c}">${l.n} · ${l.r} · ${cnt[i]} từ</h2><table class="pt"><thead><tr style="background:${l.c}"><th>#</th><th>Từ</th><th>Phiên âm</th><th>Nghĩa và ví dụ</th><th>✓</th></tr></thead><tbody>${rows}</tbody></table></section>`;
+  });
+  document.getElementById('printall').innerHTML=h;
+})();
+</script>
+</body>
+</html>

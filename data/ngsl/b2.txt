@@ -1,0 +1,500 @@
+claim|v, n|tuyên bố, cho rằng; đòi (quyền lợi)|He claims he saw a ghost.|Anh ta khẳng định đã nhìn thấy ma.
+relationship|n|mối quan hệ|They have a good relationship.|Họ có mối quan hệ tốt.
+travel|v, n|đi du lịch, đi lại|I love to travel.|Tôi thích đi du lịch.
+enjoy|v|thích, tận hưởng|Enjoy your meal!|Chúc ngon miệng!
+death|n|cái chết|His death was a shock.|Cái chết của ông ấy là một cú sốc.
+nice|adj|đẹp, dễ chịu, tốt|What a nice day!|Hôm nay đẹp trời quá!
+amount|n|lượng, số lượng|A large amount of money was stolen.|Một khoản tiền lớn đã bị đánh cắp.
+improve|v|cải thiện|I want to improve my English.|Tôi muốn cải thiện tiếng Anh.
+picture|n|bức tranh, bức ảnh|Can I take a picture?|Tôi chụp một tấm ảnh được không?
+boy|n|cậu bé, con trai|The boy is playing with a ball.|Cậu bé đang chơi bóng.
+regard|v, n|coi như; sự quan tâm (regards: lời chúc)|I regard him as my brother.|Tôi coi anh ấy như anh trai.
+organization|n|tổ chức|She works for a health organization.|Cô ấy làm cho một tổ chức y tế.
+happy|adj|vui, hạnh phúc|I'm happy to see you.|Tôi rất vui được gặp bạn.
+couple|n|cặp đôi; một vài|They are a happy couple.|Họ là một cặp đôi hạnh phúc.
+act|v, n|hành động; diễn xuất; đạo luật|You need to act quickly.|Bạn cần hành động nhanh.
+range|n|phạm vi, loạt|We sell a wide range of products.|Chúng tôi bán nhiều loại sản phẩm.
+quality|n|chất lượng|The quality is very good.|Chất lượng rất tốt.
+project|n|dự án|We are working on a new project.|Chúng tôi đang làm một dự án mới.
+round|adj, prep, n|tròn; quanh; vòng (thi đấu)|The table is round.|Cái bàn hình tròn.
+opportunity|n|cơ hội|This is a great opportunity.|Đây là một cơ hội tuyệt vời.
+road|n|con đường|Be careful on the road.|Đi đường cẩn thận.
+accord|n|sự đồng ý; thỏa thuận (of one's own accord: tự nguyện)|He left of his own accord.|Anh ấy tự nguyện rời đi.
+list|n, v|danh sách; liệt kê|Make a shopping list.|Lập danh sách mua sắm đi.
+wish|v, n|ước; lời chúc|I wish you good luck.|Chúc bạn may mắn.
+therefore|adv|vì vậy, do đó|He was ill and therefore absent.|Anh ấy ốm, do đó vắng mặt.
+wear|v|mặc, đeo, đội|She is wearing a red dress.|Cô ấy đang mặc váy đỏ.
+fund|n, v|quỹ; tài trợ|We need funds for the project.|Chúng tôi cần kinh phí cho dự án.
+rest|n, v|sự nghỉ ngơi; phần còn lại|You need to rest.|Bạn cần nghỉ ngơi.
+kid|n|đứa trẻ|The kids are at school.|Bọn trẻ đang ở trường.
+industry|n|ngành công nghiệp|The car industry is growing.|Ngành công nghiệp ô tô đang phát triển.
+education|n|giáo dục|Education is very important.|Giáo dục rất quan trọng.
+measure|v, n|đo; biện pháp|Measure the room first.|Đo căn phòng trước đã.
+kill|v|giết|Smoking can kill you.|Hút thuốc có thể giết chết bạn.
+serve|v|phục vụ|Breakfast is served at seven.|Bữa sáng được phục vụ lúc bảy giờ.
+likely|adj|có khả năng, có thể xảy ra|It is likely to rain.|Có khả năng trời sẽ mưa.
+certainly|adv|chắc chắn|I will certainly help you.|Tôi chắc chắn sẽ giúp bạn.
+national|adj|thuộc quốc gia|Pho is a national dish.|Phở là món ăn quốc dân.
+itself|pron|chính nó|The door opened by itself.|Cánh cửa tự mở ra.
+teach|v|dạy|She teaches English.|Cô ấy dạy tiếng Anh.
+field|n|cánh đồng; lĩnh vực; sân|Cows are eating grass in the field.|Bò đang ăn cỏ trên cánh đồng.
+security|n|an ninh, sự an toàn|Security at the airport is strict.|An ninh ở sân bay rất nghiêm ngặt.
+air|n|không khí|I need some fresh air.|Tôi cần chút không khí trong lành.
+benefit|n, v|lợi ích; có lợi|Exercise has many benefits.|Tập thể dục có nhiều lợi ích.
+trade|n, v|thương mại; buôn bán, trao đổi|Trade between the two countries is growing.|Thương mại giữa hai nước đang tăng.
+risk|n, v|rủi ro; liều|Don't take risks.|Đừng mạo hiểm.
+news|n|tin tức|I have good news.|Tôi có tin vui.
+standard|n, adj|tiêu chuẩn; thông thường|The hotel has high standards.|Khách sạn có tiêu chuẩn cao.
+vote|v, n|bỏ phiếu; lá phiếu|Who did you vote for?|Bạn đã bỏ phiếu cho ai?
+percent|n|phần trăm|Fifty percent of students passed.|Năm mươi phần trăm học sinh đã đỗ.
+focus|v, n|tập trung; trọng tâm|Focus on your work.|Hãy tập trung vào công việc.
+stage|n|giai đoạn; sân khấu|The project is in its final stage.|Dự án đang ở giai đoạn cuối.
+space|n|không gian; chỗ trống; vũ trụ|There is no space for a bed.|Không có chỗ để giường.
+instead|adv|thay vào đó|Let's walk instead.|Thay vào đó mình đi bộ đi.
+realize|v|nhận ra|I didn't realize it was so late.|Tôi không nhận ra đã muộn thế.
+usually|adv|thường thường|I usually get up at six.|Tôi thường dậy lúc sáu giờ.
+data|n|dữ liệu|We need more data.|Chúng ta cần thêm dữ liệu.
+single|adj|đơn, một; độc thân|Is he single or married?|Anh ấy độc thân hay đã kết hôn?
+address|n, v|địa chỉ; giải quyết; nói với|What is your address?|Địa chỉ của bạn là gì?
+performance|n|màn trình diễn; hiệu suất|Her performance was excellent.|Màn trình diễn của cô ấy thật xuất sắc.
+chance|n|cơ hội; khả năng|Give me another chance.|Cho tôi thêm một cơ hội nữa.
+accept|v|chấp nhận|I accept your apology.|Tôi chấp nhận lời xin lỗi của bạn.
+society|n|xã hội|We live in a modern society.|Chúng ta sống trong một xã hội hiện đại.
+technology|n|công nghệ|Technology changes fast.|Công nghệ thay đổi nhanh.
+mention|v|đề cập|He didn't mention it.|Anh ấy không nhắc đến chuyện đó.
+choice|n|sự lựa chọn|You have no choice.|Bạn không có lựa chọn nào khác.
+save|v|tiết kiệm; cứu; lưu|I'm saving money for a car.|Tôi đang tiết kiệm tiền mua xe.
+common|adj|phổ biến, chung|This is a common mistake.|Đây là một lỗi phổ biến.
+culture|n|văn hóa|I love Japanese culture.|Tôi yêu văn hóa Nhật Bản.
+total|adj, n|tổng cộng|The total cost is 500 dollars.|Tổng chi phí là 500 đô la.
+demand|n, v|nhu cầu; đòi hỏi|There is high demand for nurses.|Nhu cầu y tá đang cao.
+material|n|vật liệu; tài liệu|What material is this shirt made of?|Áo này làm bằng chất liệu gì?
+limit|n, v|giới hạn; hạn chế|There is a time limit.|Có giới hạn thời gian.
+listen|v|nghe, lắng nghe|Listen to me.|Hãy nghe tôi nói.
+due|adj|đến hạn; do, bởi vì (due to)|The rent is due today.|Hôm nay đến hạn trả tiền nhà.
+wrong|adj|sai|You are wrong.|Bạn sai rồi.
+foot|n|bàn chân; đơn vị đo (feet)|My foot hurts.|Chân tôi bị đau.
+effort|n|nỗ lực|Thank you for your effort.|Cảm ơn sự nỗ lực của bạn.
+attention|n|sự chú ý|Pay attention, please.|Xin hãy chú ý.
+upon|prep|trên; ngay khi|Once upon a time…|Ngày xửa ngày xưa…
+check|v, n|kiểm tra; hóa đơn|Can I check my email?|Tôi kiểm tra email được không?
+complete|v, adj|hoàn thành; đầy đủ|Complete the form, please.|Vui lòng điền đầy đủ mẫu đơn.
+lie|v, n|nằm; nói dối; lời nói dối|Don't lie to me.|Đừng nói dối tôi.
+pick|v|nhặt; chọn; đón|I'll pick you up at six.|Tôi sẽ đón bạn lúc sáu giờ.
+reduce|v|giảm|We need to reduce costs.|Chúng ta cần giảm chi phí.
+personal|adj|cá nhân, riêng tư|That's a personal question.|Đó là câu hỏi riêng tư.
+ground|n|mặt đất|He sat on the ground.|Anh ấy ngồi trên mặt đất.
+animal|n|động vật|Dogs are friendly animals.|Chó là loài vật thân thiện.
+arrive|v|đến nơi|What time does the train arrive?|Mấy giờ tàu đến?
+patient|n, adj|bệnh nhân; kiên nhẫn|Be patient.|Hãy kiên nhẫn.
+current|adj, n|hiện tại; dòng chảy|What is your current job?|Công việc hiện tại của bạn là gì?
+century|n|thế kỷ|This temple is from the 11th century.|Ngôi chùa này có từ thế kỷ 11.
+evidence|n|bằng chứng|There is no evidence.|Không có bằng chứng.
+exist|v|tồn tại|Do ghosts exist?|Ma có tồn tại không?
+similar|adj|tương tự|Our ideas are similar.|Ý tưởng của chúng tôi tương tự nhau.
+fight|v, n|đánh nhau; chiến đấu; trận đánh|The boys had a fight.|Bọn con trai đã đánh nhau.
+leader|n|người lãnh đạo|He is a good leader.|Anh ấy là một người lãnh đạo giỏi.
+fine|adj, n|khỏe; ổn; tiền phạt|I'm fine, thank you.|Tôi khỏe, cảm ơn.
+street|n|đường phố|I live on this street.|Tôi sống trên con phố này.
+former|adj|trước đây, cũ|He is a former soldier.|Ông ấy là cựu quân nhân.
+contact|n, v|sự liên lạc; liên hệ|Please contact me by email.|Vui lòng liên hệ tôi qua email.
+particularly|adv|đặc biệt|I particularly like this song.|Tôi đặc biệt thích bài hát này.
+wife|n|vợ|His wife is a doctor.|Vợ anh ấy là bác sĩ.
+sport|n|thể thao|Football is my favorite sport.|Bóng đá là môn thể thao tôi thích nhất.
+prepare|v|chuẩn bị|I need to prepare for the exam.|Tôi cần chuẩn bị cho kỳ thi.
+discuss|v|thảo luận|Let's discuss the plan.|Hãy thảo luận về kế hoạch.
+response|n|sự phản hồi|I'm waiting for a response.|Tôi đang chờ phản hồi.
+voice|n|giọng nói|She has a beautiful voice.|Cô ấy có giọng hát hay.
+piece|n|mảnh, miếng; một (món)|Can I have a piece of cake?|Cho tôi một miếng bánh được không?
+finish|v|hoàn thành, kết thúc|Did you finish your homework?|Bạn làm xong bài tập chưa?
+suppose|v|cho rằng; giả sử|I suppose you're right.|Tôi cho là bạn đúng.
+apply|v|nộp đơn; áp dụng; bôi|I applied for a job.|Tôi đã nộp đơn xin việc.
+president|n|tổng thống; chủ tịch|He is the president of the club.|Ông ấy là chủ tịch câu lạc bộ.
+fire|n, v|lửa; đám cháy; sa thải; bắn|The house is on fire!|Ngôi nhà đang cháy!
+compare|v|so sánh|Don't compare yourself to others.|Đừng so sánh bản thân với người khác.
+court|n|tòa án; sân (tennis)|He went to court.|Anh ấy ra tòa.
+police|n|cảnh sát|Call the police!|Gọi cảnh sát đi!
+store|n, v|cửa hàng; lưu trữ|The store closes at nine.|Cửa hàng đóng cửa lúc chín giờ.
+poor|adj|nghèo; kém; tội nghiệp|They are very poor.|Họ rất nghèo.
+knowledge|n|kiến thức|Knowledge is power.|Kiến thức là sức mạnh.
+laugh|v, n|cười (thành tiếng)|Everyone laughed at the joke.|Ai cũng cười vì câu chuyện cười.
+arm|n|cánh tay|He broke his arm.|Anh ấy bị gãy tay.
+heart|n|trái tim|My heart is beating fast.|Tim tôi đang đập nhanh.
+source|n|nguồn|What is the source of this news?|Nguồn của tin này là gì?
+employee|n|nhân viên|The company has 50 employees.|Công ty có 50 nhân viên.
+manage|v|quản lý; xoay xở được|She manages a small team.|Cô ấy quản lý một nhóm nhỏ.
+simply|adv|đơn giản là; chỉ|I simply forgot.|Đơn giản là tôi quên mất.
+bank|n|ngân hàng; bờ sông|I need to go to the bank.|Tôi cần ra ngân hàng.
+firm|n, adj|công ty; chắc chắn|He works for a law firm.|Anh ấy làm cho một công ty luật.
+cell|n|tế bào; phòng giam|The body is made of cells.|Cơ thể được cấu tạo từ tế bào.
+article|n|bài báo; mạo từ|I read an interesting article.|Tôi đã đọc một bài báo thú vị.
+fast|adj, adv|nhanh|He runs very fast.|Anh ấy chạy rất nhanh.
+attack|v, n|tấn công; cơn (bệnh)|The dog attacked the cat.|Con chó tấn công con mèo.
+foreign|adj|nước ngoài|Do you speak a foreign language?|Bạn có nói được ngoại ngữ không?
+surprise|n, v|sự ngạc nhiên; làm ngạc nhiên|What a surprise!|Thật bất ngờ!
+feature|n, v|đặc điểm, tính năng; có (đặc điểm)|This phone has many features.|Điện thoại này có nhiều tính năng.
+factor|n|yếu tố|Price is an important factor.|Giá là một yếu tố quan trọng.
+pretty|adj, adv|xinh đẹp; khá|She is very pretty.|Cô ấy rất xinh.
+recently|adv|gần đây|I recently moved house.|Gần đây tôi mới chuyển nhà.
+affect|v|ảnh hưởng|Stress affects your health.|Căng thẳng ảnh hưởng đến sức khỏe.
+drop|v, n|làm rơi; giảm; giọt|I dropped my phone.|Tôi làm rơi điện thoại.
+recent|adj|gần đây|This is a recent photo.|Đây là ảnh mới chụp gần đây.
+relate|v|liên quan; kể lại|This problem relates to money.|Vấn đề này liên quan đến tiền.
+official|adj, n|chính thức; quan chức|English is the official language here.|Tiếng Anh là ngôn ngữ chính thức ở đây.
+financial|adj|thuộc tài chính|He has financial problems.|Anh ấy gặp khó khăn tài chính.
+miss|v|nhớ; lỡ; trượt|I miss my family.|Tôi nhớ gia đình.
+art|n|nghệ thuật|She studies art.|Cô ấy học nghệ thuật.
+campaign|n|chiến dịch|They started a campaign against smoking.|Họ bắt đầu một chiến dịch chống hút thuốc.
+private|adj|riêng tư, tư nhân|This is a private road.|Đây là đường tư nhân.
+pause|v, n|tạm dừng|Pause the video, please.|Tạm dừng video giúp với.
+everyone|pron|mọi người|Everyone is here.|Mọi người đều ở đây.
+forget|v|quên|Don't forget your keys.|Đừng quên chìa khóa.
+page|n|trang|Open your book to page ten.|Mở sách trang mười.
+worry|v, n|lo lắng; mối lo|Don't worry.|Đừng lo.
+summer|n|mùa hè|It's very hot in summer.|Mùa hè trời rất nóng.
+drink|v, n|uống; đồ uống|What would you like to drink?|Bạn muốn uống gì?
+opinion|n|ý kiến|In my opinion, he is right.|Theo ý tôi, anh ấy đúng.
+park|n, v|công viên; đỗ xe|Can I park here?|Tôi đỗ xe ở đây được không?
+represent|v|đại diện; tượng trưng|She represents our school.|Cô ấy đại diện cho trường chúng tôi.
+key|n, adj|chìa khóa; then chốt|I lost my key.|Tôi làm mất chìa khóa.
+inside|prep, adv|bên trong|It's warm inside.|Bên trong ấm áp.
+manager|n|người quản lý|I want to speak to the manager.|Tôi muốn nói chuyện với quản lý.
+international|adj|quốc tế|This is an international school.|Đây là một trường quốc tế.
+contain|v|chứa|This drink contains sugar.|Đồ uống này có chứa đường.
+notice|v, n|để ý, nhận thấy; thông báo|Did you notice anything strange?|Bạn có để ý điều gì lạ không?
+wonder|v, n|tự hỏi; điều kỳ diệu|I wonder where he is.|Tôi tự hỏi anh ấy đang ở đâu.
+nature|n|thiên nhiên; bản chất|I love nature.|Tôi yêu thiên nhiên.
+structure|n|cấu trúc|The structure of the sentence is wrong.|Cấu trúc câu bị sai.
+section|n|phần, mục|Read the first section.|Đọc phần đầu tiên.
+myself|pron|chính tôi, tự tôi|I made it myself.|Tôi tự làm nó.
+exactly|adv|chính xác|That's exactly right.|Hoàn toàn chính xác.
+plant|n, v|cây; nhà máy; trồng|Water the plants every day.|Tưới cây mỗi ngày.
+paint|v, n|sơn; vẽ (màu); sơn|We painted the wall white.|Chúng tôi sơn tường màu trắng.
+worker|n|công nhân, người lao động|The factory has 200 workers.|Nhà máy có 200 công nhân.
+press|v, n|ấn, nhấn; báo chí|Press the red button.|Ấn nút đỏ.
+whatever|pron|bất cứ cái gì|Eat whatever you like.|Ăn bất cứ thứ gì bạn thích.
+necessary|adj|cần thiết|Is it necessary?|Có cần thiết không?
+region|n|vùng, khu vực|This region is famous for tea.|Vùng này nổi tiếng về chè.
+growth|n|sự tăng trưởng|Economic growth is slow.|Tăng trưởng kinh tế chậm.
+evening|n|buổi tối|Good evening!|Chào buổi tối!
+influence|n, v|sự ảnh hưởng; ảnh hưởng|My father had a big influence on me.|Bố tôi có ảnh hưởng lớn đến tôi.
+respect|n, v|sự tôn trọng; tôn trọng|Respect your elders.|Hãy tôn trọng người lớn tuổi.
+various|adj|nhiều loại, khác nhau|There are various ways to do it.|Có nhiều cách để làm việc đó.
+catch|v|bắt; bắt kịp (xe)|I have to catch the bus.|Tôi phải bắt xe buýt.
+thus|adv|vì thế, như vậy|He was ill, thus he stayed home.|Anh ấy ốm, vì thế ở nhà.
+skill|n|kỹ năng|Communication is an important skill.|Giao tiếp là một kỹ năng quan trọng.
+attempt|v, n|cố gắng; sự cố gắng|He attempted to fix the car.|Anh ấy cố sửa chiếc xe.
+son|n|con trai|They have two sons.|Họ có hai con trai.
+simple|adj|đơn giản|It's very simple.|Nó rất đơn giản.
+medium|adj, n|trung bình, vừa; phương tiện|I'd like a medium coffee.|Cho tôi một cà phê cỡ vừa.
+average|adj, n|trung bình|He is of average height.|Anh ấy có chiều cao trung bình.
+stock|n|hàng tồn kho; cổ phiếu|This item is out of stock.|Mặt hàng này đã hết hàng.
+management|n|sự quản lý; ban quản lý|The management made a decision.|Ban quản lý đã đưa ra quyết định.
+character|n|nhân vật; tính cách; chữ (Hán)|She is the main character.|Cô ấy là nhân vật chính.
+bed|n|giường|It's time for bed.|Đến giờ đi ngủ rồi.
+hit|v, n|đánh, đâm; bài hát ăn khách|The car hit a tree.|Chiếc xe đâm vào cây.
+establish|v|thành lập|The school was established in 1990.|Trường được thành lập năm 1990.
+indeed|adv|thật vậy, quả thực|It was indeed a good idea.|Quả thực đó là một ý hay.
+final|adj, n|cuối cùng; trận chung kết|This is the final question.|Đây là câu hỏi cuối cùng.
+economy|n|nền kinh tế|The economy is growing.|Nền kinh tế đang tăng trưởng.
+fit|v, adj|vừa (kích cỡ); khỏe mạnh|These shoes don't fit me.|Đôi giày này không vừa với tôi.
+guy|n|anh chàng, gã|He's a nice guy.|Anh ấy là một chàng trai tốt.
+function|n, v|chức năng; hoạt động|What is the function of this button?|Nút này có chức năng gì?
+yesterday|n, adv|hôm qua|I saw him yesterday.|Tôi gặp anh ấy hôm qua.
+image|n|hình ảnh|The image is not clear.|Hình ảnh không rõ.
+size|n|kích cỡ|What size do you wear?|Bạn mặc cỡ nào?
+behavior|n|hành vi, cách cư xử|His behavior was strange.|Cách cư xử của anh ấy thật lạ.
+addition|n|sự thêm vào; phép cộng|In addition, the room is cheap.|Ngoài ra, phòng còn rẻ.
+determine|v|xác định; quyết tâm|We need to determine the cause.|Chúng ta cần xác định nguyên nhân.
+station|n|nhà ga; trạm|Where is the train station?|Ga tàu ở đâu?
+population|n|dân số|What is the population of Vietnam?|Dân số Việt Nam là bao nhiêu?
+fail|v|thất bại; trượt (kỳ thi)|He failed the driving test.|Anh ấy trượt bài thi lái xe.
+environment|n|môi trường|We must protect the environment.|Chúng ta phải bảo vệ môi trường.
+production|n|sự sản xuất|Rice production increased this year.|Sản lượng lúa năm nay tăng.
+contract|n|hợp đồng|Please sign the contract.|Vui lòng ký hợp đồng.
+player|n|người chơi, cầu thủ|He is a football player.|Anh ấy là cầu thủ bóng đá.
+comment|n, v|bình luận|Leave a comment below.|Để lại bình luận bên dưới.
+enter|v|đi vào; nhập (dữ liệu)|Enter your password.|Nhập mật khẩu của bạn.
+occur|v|xảy ra|The accident occurred at night.|Tai nạn xảy ra vào ban đêm.
+alone|adj, adv|một mình|I live alone.|Tôi sống một mình.
+significant|adj|đáng kể, quan trọng|There was a significant change.|Đã có một thay đổi đáng kể.
+drug|n|thuốc; ma túy|This drug helps with pain.|Thuốc này giúp giảm đau.
+wall|n|bức tường|There is a clock on the wall.|Có một cái đồng hồ trên tường.
+series|n|loạt; phim bộ|I'm watching a TV series.|Tôi đang xem một bộ phim truyền hình.
+direct|adj, v|trực tiếp; chỉ đạo, đạo diễn|Is there a direct flight?|Có chuyến bay thẳng không?
+success|n|sự thành công|Hard work leads to success.|Chăm chỉ dẫn đến thành công.
+tomorrow|n, adv|ngày mai|See you tomorrow.|Hẹn gặp ngày mai.
+director|n|giám đốc; đạo diễn|She is the director of the company.|Bà ấy là giám đốc công ty.
+clearly|adv|rõ ràng|Please speak clearly.|Làm ơn nói rõ ràng.
+lack|n, v|sự thiếu; thiếu|I'm tired from lack of sleep.|Tôi mệt vì thiếu ngủ.
+review|n, v|bài đánh giá; ôn lại|Let's review the lesson.|Chúng ta ôn lại bài nhé.
+depend|v|phụ thuộc|It depends on the weather.|Còn tùy vào thời tiết.
+race|n, v|cuộc đua; chủng tộc; đua|Who won the race?|Ai đã thắng cuộc đua?
+recognize|v|nhận ra|I didn't recognize you.|Tôi không nhận ra bạn.
+window|n|cửa sổ|Open the window, please.|Mở cửa sổ giúp với.
+purpose|n|mục đích|What is the purpose of your visit?|Mục đích chuyến thăm của bạn là gì?
+department|n|phòng, ban; khoa|She works in the sales department.|Cô ấy làm ở phòng kinh doanh.
+gain|v, n|đạt được; tăng (cân)|I gained three kilos.|Tôi tăng ba cân.
+tree|n|cây|There is a big tree in the garden.|Có một cái cây to trong vườn.
+college|n|trường cao đẳng, đại học|My brother is in college.|Anh tôi đang học đại học.
+argue|v|cãi nhau; lập luận|They often argue about money.|Họ hay cãi nhau về tiền.
+board|n, v|tấm bảng; ban (giám đốc); lên (tàu, xe)|Write it on the board.|Viết nó lên bảng.
+holiday|n|kỳ nghỉ; ngày lễ|We went to Da Nang for the holiday.|Chúng tôi đi Đà Nẵng nghỉ lễ.
+mark|n, v|điểm số; dấu; đánh dấu|I got a good mark in math.|Tôi được điểm cao môn toán.
+church|n|nhà thờ|They go to church on Sundays.|Họ đi nhà thờ vào Chủ nhật.
+machine|n|máy móc|The machine is broken.|Cái máy bị hỏng.
+achieve|v|đạt được|She achieved her goal.|Cô ấy đã đạt được mục tiêu.
+item|n|món đồ, mục|How many items are in the box?|Trong hộp có bao nhiêu món đồ?
+prove|v|chứng minh|Can you prove it?|Bạn có chứng minh được không?
+cent|n|xu (1/100 đô la)|It costs fifty cents.|Nó giá năm mươi xu.
+season|n|mùa|Summer is my favorite season.|Mùa hè là mùa tôi thích nhất.
+floor|n|sàn nhà; tầng|My office is on the third floor.|Văn phòng tôi ở tầng ba.
+stuff|n|đồ đạc, thứ|Put your stuff in the car.|Để đồ của bạn vào xe.
+wide|adj|rộng|The river is very wide.|Con sông rất rộng.
+anyone|pron|bất kỳ ai|Is anyone here?|Có ai ở đây không?
+method|n|phương pháp|This is a good teaching method.|Đây là một phương pháp dạy tốt.
+analysis|n|sự phân tích|We need a detailed analysis.|Chúng ta cần một phân tích chi tiết.
+election|n|cuộc bầu cử|The election is next month.|Cuộc bầu cử diễn ra vào tháng sau.
+military|adj, n|thuộc quân đội; quân đội|He did military service for two years.|Anh ấy đã đi nghĩa vụ quân sự hai năm.
+hotel|n|khách sạn|We stayed at a nice hotel.|Chúng tôi ở một khách sạn đẹp.
+club|n|câu lạc bộ|I joined the English club.|Tôi đã tham gia câu lạc bộ tiếng Anh.
+below|prep, adv|bên dưới|Write your name below.|Viết tên bạn ở bên dưới.
+movie|n|bộ phim|Let's go to the movies.|Mình đi xem phim đi.
+doctor|n|bác sĩ|You should see a doctor.|Bạn nên đi khám bác sĩ.
+discussion|n|cuộc thảo luận|We had a long discussion.|Chúng tôi đã thảo luận rất lâu.
+sorry|adj|xin lỗi; tiếc|I'm sorry I'm late.|Xin lỗi tôi đến muộn.
+challenge|n, v|thử thách; thách thức|Learning English is a challenge.|Học tiếng Anh là một thử thách.
+nation|n|quốc gia, dân tộc|The whole nation celebrated.|Cả nước đã ăn mừng.
+nearly|adv|gần như, suýt|I nearly missed the bus.|Tôi suýt lỡ xe buýt.
+statement|n|lời tuyên bố; bản sao kê|The police took his statement.|Cảnh sát đã lấy lời khai của anh ấy.
+link|n, v|đường liên kết; liên kết|Click the link below.|Bấm vào đường link bên dưới.
+despite|prep|mặc dù|Despite the rain, we went out.|Mặc dù trời mưa, chúng tôi vẫn ra ngoài.
+introduce|v|giới thiệu|Let me introduce myself.|Cho phép tôi tự giới thiệu.
+advantage|n|lợi thế, ưu điểm|Being tall is an advantage.|Cao là một lợi thế.
+ready|adj|sẵn sàng|Are you ready?|Bạn sẵn sàng chưa?
+marry|v|kết hôn|He wants to marry her.|Anh ấy muốn cưới cô ấy.
+strike|v, n|đánh; đình công|The workers are on strike.|Công nhân đang đình công.
+mile|n|dặm (khoảng 1,6 km)|I walked two miles.|Tôi đã đi bộ hai dặm.
+seek|v|tìm kiếm|He is seeking a new job.|Anh ấy đang tìm việc mới.
+ability|n|khả năng|She has the ability to lead.|Cô ấy có khả năng lãnh đạo.
+unit|n|đơn vị; bài (trong sách)|Open your book to Unit 5.|Mở sách bài 5.
+card|n|thẻ; thiệp|Can I pay by card?|Tôi trả bằng thẻ được không?
+hospital|n|bệnh viện|She is in the hospital.|Cô ấy đang nằm viện.
+quickly|adv|nhanh chóng|Come quickly!|Đến nhanh lên!
+interview|n, v|cuộc phỏng vấn; phỏng vấn|I have a job interview tomorrow.|Mai tôi có buổi phỏng vấn xin việc.
+agreement|n|sự đồng ý; thỏa thuận|We reached an agreement.|Chúng tôi đã đạt được thỏa thuận.
+release|v, n|thả ra; phát hành|The film will be released next month.|Bộ phim sẽ ra mắt vào tháng sau.
+tax|n|thuế|We pay tax every year.|Chúng tôi đóng thuế hằng năm.
+solution|n|giải pháp|We need a solution.|Chúng ta cần một giải pháp.
+capital|n|thủ đô; vốn; chữ in hoa|Hanoi is the capital of Vietnam.|Hà Nội là thủ đô của Việt Nam.
+popular|adj|phổ biến, được ưa chuộng|This song is very popular.|Bài hát này rất được yêu thích.
+specific|adj|cụ thể|Can you be more specific?|Bạn có thể nói cụ thể hơn không?
+beautiful|adj|đẹp|What a beautiful view!|Cảnh đẹp quá!
+fear|n, v|nỗi sợ; sợ|He has a fear of dogs.|Anh ấy sợ chó.
+aim|n, v|mục tiêu; nhắm tới|Our aim is to help people.|Mục tiêu của chúng tôi là giúp đỡ mọi người.
+television|n|ti vi, truyền hình|I don't watch much television.|Tôi không xem ti vi nhiều.
+serious|adj|nghiêm túc; nghiêm trọng|Are you serious?|Bạn nói thật à?
+target|n|mục tiêu; bia (để bắn)|We met our sales target.|Chúng tôi đã đạt chỉ tiêu bán hàng.
+degree|n|độ; bằng cấp|It's 30 degrees today.|Hôm nay 30 độ.
+pull|v|kéo|Pull the door to open it.|Kéo cửa để mở.
+red|adj|màu đỏ|She likes red roses.|Cô ấy thích hoa hồng đỏ.
+husband|n|chồng|Her husband is a soldier.|Chồng cô ấy là quân nhân.
+access|n, v|quyền truy cập; tiếp cận|Do you have internet access?|Bạn có truy cập mạng được không?
+movement|n|sự chuyển động; phong trào|Don't make any sudden movements.|Đừng cử động đột ngột.
+treat|v, n|đối xử; chữa trị; khao|He treats his dog well.|Anh ấy đối xử tốt với con chó.
+identify|v|nhận dạng, xác định|Can you identify the man?|Bạn có nhận dạng được người đàn ông đó không?
+loss|n|sự mất mát; thua lỗ|The company made a loss.|Công ty bị thua lỗ.
+shall|aux|sẽ; nhé (đề nghị)|Shall we go?|Chúng ta đi nhé?
+modern|adj|hiện đại|It's a modern building.|Đó là một tòa nhà hiện đại.
+pressure|n|áp lực; áp suất|I work under a lot of pressure.|Tôi làm việc dưới nhiều áp lực.
+bus|n|xe buýt|I take the bus to school.|Tôi đi học bằng xe buýt.
+treatment|n|sự điều trị; sự đối xử|He needs medical treatment.|Anh ấy cần được điều trị y tế.
+conference|n|hội nghị|She is at a conference in Singapore.|Cô ấy đang dự hội nghị ở Singapore.
+yourself|pron|chính bạn, tự bạn|Take care of yourself.|Hãy giữ gìn sức khỏe.
+supply|n, v|nguồn cung; cung cấp|We have a supply of food for a week.|Chúng tôi có đủ đồ ăn cho một tuần.
+village|n|làng|I grew up in a village.|Tôi lớn lên ở một ngôi làng.
+worth|adj|đáng giá|This film is worth watching.|Bộ phim này đáng xem.
+natural|adj|tự nhiên|This juice is 100% natural.|Nước ép này 100% tự nhiên.
+express|v, adj|bày tỏ; nhanh, tốc hành|It's hard to express my feelings.|Thật khó bày tỏ cảm xúc của tôi.
+indicate|v|chỉ ra, cho thấy|The results indicate a problem.|Kết quả cho thấy có vấn đề.
+attend|v|tham dự, đi học|I attended the meeting.|Tôi đã dự cuộc họp.
+brother|n|anh/em trai|My brother is older than me.|Anh trai tôi lớn tuổi hơn tôi.
+investment|n|sự đầu tư|Education is a good investment.|Giáo dục là một khoản đầu tư tốt.
+score|n, v|điểm số; ghi bàn|What's the score?|Tỷ số bao nhiêu rồi?
+organize|v|tổ chức, sắp xếp|She organized the party.|Cô ấy đã tổ chức bữa tiệc.
+trip|n|chuyến đi|We went on a trip to Sapa.|Chúng tôi đã có chuyến đi Sa Pa.
+beyond|prep|vượt quá; ở bên kia|The village is beyond the hill.|Ngôi làng ở bên kia ngọn đồi.
+sleep|v, n|ngủ; giấc ngủ|I sleep eight hours a night.|Tôi ngủ tám tiếng mỗi đêm.
+fish|n, v|cá; câu cá|We had fish for dinner.|Bữa tối chúng tôi ăn cá.
+promise|v, n|hứa; lời hứa|I promise I'll come.|Tôi hứa sẽ đến.
+potential|adj, n|tiềm năng|She has great potential.|Cô ấy có tiềm năng lớn.
+energy|n|năng lượng|I have no energy today.|Hôm nay tôi chẳng còn sức.
+trouble|n|rắc rối|I'm in trouble.|Tôi gặp rắc rối rồi.
+relation|n|mối quan hệ; họ hàng|Relations between the two countries are good.|Quan hệ giữa hai nước rất tốt.
+touch|v, n|chạm; liên lạc (keep in touch)|Don't touch the paint.|Đừng chạm vào sơn.
+file|n, v|tập tin; hồ sơ; nộp|Save the file on your computer.|Lưu tập tin vào máy tính.
+middle|n, adj|giữa|He sat in the middle.|Anh ấy ngồi ở giữa.
+bar|n|quán bar; thanh|Let's meet at the bar.|Gặp nhau ở quán bar nhé.
+suffer|v|chịu đựng; bị (bệnh)|She suffers from headaches.|Cô ấy hay bị đau đầu.
+strategy|n|chiến lược|We need a new strategy.|Chúng ta cần một chiến lược mới.
+deep|adj|sâu|The lake is very deep.|Hồ rất sâu.
+except|prep|ngoại trừ|Everyone came except Tom.|Mọi người đều đến trừ Tom.
+clean|adj, v|sạch; lau dọn|Clean your room.|Dọn phòng của con đi.
+tend|v|có xu hướng|I tend to eat too much.|Tôi có xu hướng ăn quá nhiều.
+advance|n, v|sự tiến bộ; tiến lên (in advance: trước)|Please book in advance.|Vui lòng đặt trước.
+fill|v|làm đầy, điền|Fill the bottle with water.|Đổ đầy nước vào chai.
+star|n|ngôi sao|Look at the stars!|Nhìn các ngôi sao kìa!
+network|n|mạng lưới|The phone network is down.|Mạng điện thoại bị sập.
+generally|adv|nói chung, thường|I generally go to bed at eleven.|Tôi thường đi ngủ lúc mười một giờ.
+operation|n|ca phẫu thuật; hoạt động|He had an operation on his knee.|Anh ấy đã phẫu thuật đầu gối.
+match|n, v|trận đấu; que diêm; hợp với|The shoes match your dress.|Đôi giày hợp với váy của bạn.
+avoid|v|tránh|Avoid eating too much sugar.|Tránh ăn quá nhiều đường.
+seat|n|chỗ ngồi|Is this seat free?|Ghế này có ai ngồi chưa?
+throw|v|ném|Throw me the ball.|Ném bóng cho tôi.
+task|n|nhiệm vụ|I have many tasks today.|Hôm nay tôi có nhiều nhiệm vụ.
+normal|adj|bình thường|Everything is back to normal.|Mọi thứ đã trở lại bình thường.
+goal|n|mục tiêu; bàn thắng|My goal is to speak English well.|Mục tiêu của tôi là nói tiếng Anh tốt.
+associate|v, n|liên tưởng, gắn với; cộng sự|I associate summer with the beach.|Tôi liên tưởng mùa hè với bãi biển.
+blue|adj|màu xanh dương|The sky is blue.|Bầu trời màu xanh.
+positive|adj|tích cực; dương tính|Try to stay positive.|Hãy cố gắng sống tích cực.
+option|n|lựa chọn|We have two options.|Chúng ta có hai lựa chọn.
+box|n|cái hộp|Put the books in the box.|Cho sách vào hộp.
+huge|adj|khổng lồ, rất lớn|Their house is huge.|Nhà họ rất to.
+message|n|tin nhắn|I sent you a message.|Tôi đã nhắn tin cho bạn.
+instance|n|ví dụ, trường hợp (for instance)|For instance, you can take the bus.|Ví dụ, bạn có thể đi xe buýt.
+style|n|phong cách, kiểu|I like her style.|Tôi thích phong cách của cô ấy.
+refer|v|nhắc đến; tham khảo|Please refer to page 10.|Vui lòng tham khảo trang 10.
+cold|adj, n|lạnh; cảm lạnh|I have a cold.|Tôi bị cảm lạnh.
+push|v|đẩy|Push the door.|Đẩy cửa.
+quarter|n|một phần tư; 15 phút; quý|It's a quarter past seven.|Bây giờ là bảy giờ mười lăm.
+assume|v|cho rằng, giả định|I assume you're hungry.|Tôi đoán là bạn đói.
+baby|n|em bé|The baby is sleeping.|Em bé đang ngủ.
+successful|adj|thành công|She is a successful businesswoman.|Cô ấy là một nữ doanh nhân thành đạt.
+sing|v|hát|She sings beautifully.|Cô ấy hát rất hay.
+doubt|n, v|sự nghi ngờ; nghi ngờ|I doubt he will come.|Tôi không chắc anh ấy sẽ đến.
+competition|n|cuộc thi; sự cạnh tranh|She won the singing competition.|Cô ấy đã thắng cuộc thi hát.
+theory|n|lý thuyết|In theory, it should work.|Về lý thuyết thì nó phải chạy được.
+propose|v|đề xuất; cầu hôn|He proposed to her last night.|Tối qua anh ấy đã cầu hôn cô ấy.
+reference|n|sự tham khảo; thư giới thiệu|Keep this book for reference.|Giữ cuốn sách này để tham khảo.
+argument|n|cuộc cãi vã; lập luận|They had an argument.|Họ đã cãi nhau.
+adult|n|người lớn|Tickets for adults cost ten dollars.|Vé người lớn giá mười đô.
+fly|v, n|bay; con ruồi|Birds can fly.|Chim biết bay.
+document|n|tài liệu, giấy tờ|Please bring your documents.|Vui lòng mang theo giấy tờ.
+pattern|n|mẫu, hoa văn; quy luật|I like the pattern on this shirt.|Tôi thích họa tiết trên áo này.
+application|n|đơn xin; ứng dụng|I sent my job application.|Tôi đã gửi đơn xin việc.
+hot|adj|nóng; cay|It's very hot today.|Hôm nay trời rất nóng.
+obviously|adv|rõ ràng là|Obviously, he was angry.|Rõ ràng là anh ấy đã tức giận.
+unclear|adj|không rõ ràng|The instructions are unclear.|Hướng dẫn không rõ ràng.
+bill|n|hóa đơn; dự luật|Can I have the bill, please?|Cho tôi xin hóa đơn.
+search|v, n|tìm kiếm|I searched everywhere.|Tôi đã tìm khắp nơi.
+separate|adj, v|riêng biệt; tách ra|Keep them in separate boxes.|Để chúng vào các hộp riêng.
+central|adj|trung tâm|The hotel is in a central location.|Khách sạn ở vị trí trung tâm.
+career|n|sự nghiệp|She has a successful career.|Cô ấy có một sự nghiệp thành công.
+anyway|adv|dù sao đi nữa|Anyway, let's go.|Dù sao thì mình đi thôi.
+speech|n|bài phát biểu; lời nói|He gave a speech at the wedding.|Anh ấy phát biểu trong đám cưới.
+dog|n|con chó|I have a dog.|Tôi có một con chó.
+officer|n|sĩ quan; nhân viên (cảnh sát)|He is a police officer.|Anh ấy là cảnh sát.
+throughout|prep|khắp; suốt|It rained throughout the day.|Trời mưa suốt cả ngày.
+oil|n|dầu|Cook it in a little oil.|Nấu nó với một chút dầu.
+dress|n, v|váy đầm; mặc quần áo|She wore a long dress.|Cô ấy mặc một chiếc váy dài.
+profit|n|lợi nhuận|The company made a big profit.|Công ty thu lợi nhuận lớn.
+guess|v, n|đoán|Guess what happened!|Đoán xem chuyện gì đã xảy ra!
+fun|n, adj|niềm vui; vui|We had a lot of fun.|Chúng tôi đã rất vui.
+protect|v|bảo vệ|Wear a hat to protect your head.|Đội mũ để bảo vệ đầu.
+resource|n|tài nguyên, nguồn lực|Water is a natural resource.|Nước là tài nguyên thiên nhiên.
+science|n|khoa học|I'm interested in science.|Tôi quan tâm đến khoa học.
+disease|n|bệnh tật|Heart disease is common.|Bệnh tim khá phổ biến.
+balance|n, v|sự cân bằng; số dư|Check your account balance.|Kiểm tra số dư tài khoản.
+damage|n, v|thiệt hại; làm hỏng|The storm caused a lot of damage.|Cơn bão gây thiệt hại lớn.
+basis|n|nền tảng, cơ sở|I go there on a daily basis.|Tôi đến đó hằng ngày.
+author|n|tác giả|Who is the author of this book?|Ai là tác giả cuốn sách này?
+basic|adj|cơ bản|I know basic English.|Tôi biết tiếng Anh cơ bản.
+encourage|v|khuyến khích, động viên|My parents encouraged me to study.|Bố mẹ khuyến khích tôi học.
+hair|n|tóc|She has black hair.|Cô ấy có mái tóc đen.
+male|adj, n|nam, giống đực|Is the cat male or female?|Con mèo là đực hay cái?
+operate|v|vận hành; phẫu thuật|Can you operate this machine?|Bạn có biết vận hành máy này không?
+reflect|v|phản chiếu; phản ánh|The water reflects the sky.|Mặt nước phản chiếu bầu trời.
+exercise|n, v|bài tập; tập thể dục|I exercise every morning.|Sáng nào tôi cũng tập thể dục.
+useful|adj|hữu ích|This book is very useful.|Cuốn sách này rất hữu ích.
+restaurant|n|nhà hàng|Let's eat at a restaurant.|Mình đi ăn nhà hàng đi.
+income|n|thu nhập|His income is low.|Thu nhập của anh ấy thấp.
+property|n|tài sản; bất động sản|This property belongs to the city.|Tài sản này thuộc về thành phố.
+previous|adj|trước đó|My previous job was in Hanoi.|Công việc trước đây của tôi ở Hà Nội.
+dark|adj|tối; sẫm màu|It's getting dark.|Trời đang tối dần.
+imagine|v|tưởng tượng|Imagine you are rich.|Hãy tưởng tượng bạn giàu có.
+okay|adj, adv|ổn, được|Are you okay?|Bạn ổn chứ?
+earn|v|kiếm (tiền)|He earns a good salary.|Anh ấy kiếm được mức lương khá.
+daughter|n|con gái|Their daughter is five.|Con gái họ năm tuổi.
+post|n, v|bưu điện; bài đăng; gửi thư|I posted a photo online.|Tôi đã đăng một tấm ảnh lên mạng.
+newspaper|n|tờ báo|My father reads the newspaper every day.|Bố tôi đọc báo hằng ngày.
+define|v|định nghĩa|How do you define success?|Bạn định nghĩa thành công thế nào?
+conclusion|n|kết luận|What is your conclusion?|Kết luận của bạn là gì?
+clock|n|đồng hồ (treo tường)|The clock is slow.|Đồng hồ bị chậm.
+everybody|pron|mọi người|Everybody likes him.|Mọi người đều quý anh ấy.
+weekend|n|cuối tuần|What did you do at the weekend?|Cuối tuần bạn đã làm gì?
+perform|v|biểu diễn; thực hiện|The band performed well.|Ban nhạc đã biểu diễn tốt.
+professional|adj, n|chuyên nghiệp|He is a professional photographer.|Anh ấy là nhiếp ảnh gia chuyên nghiệp.
+mine|pron, n|của tôi; mỏ|This bag is mine.|Cái túi này là của tôi.
+debate|n, v|cuộc tranh luận|We had a debate about the topic.|Chúng tôi đã tranh luận về chủ đề đó.
+memory|n|trí nhớ; kỷ niệm; bộ nhớ|I have a bad memory.|Trí nhớ của tôi kém.
+green|adj|màu xanh lá|The leaves are green.|Lá cây màu xanh.
+song|n|bài hát|This is my favorite song.|Đây là bài hát tôi thích nhất.
+object|n, v|đồ vật; mục tiêu; phản đối|What is that object?|Vật đó là gì vậy?
+maintain|v|duy trì; bảo dưỡng|Maintain a healthy weight.|Duy trì cân nặng khỏe mạnh.
+credit|n|tín dụng; sự công nhận|Can I pay by credit card?|Tôi trả bằng thẻ tín dụng được không?
+ring|n, v|chiếc nhẫn; reo (chuông)|The phone is ringing.|Điện thoại đang reo.
+discover|v|khám phá, phát hiện|Who discovered America?|Ai đã phát hiện ra châu Mỹ?
+dead|adj|chết|The fish is dead.|Con cá chết rồi.
+afternoon|n|buổi chiều|See you this afternoon.|Hẹn gặp bạn chiều nay.
+prefer|v|thích hơn|I prefer tea to coffee.|Tôi thích trà hơn cà phê.
+extend|v|kéo dài, mở rộng|Can I extend my visa?|Tôi có thể gia hạn visa không?
+possibility|n|khả năng|There is a possibility of rain.|Có khả năng trời mưa.
+direction|n|hướng, phương hướng|Which direction is the station?|Nhà ga ở hướng nào?
+facility|n|cơ sở vật chất, tiện nghi|The school has good facilities.|Trường có cơ sở vật chất tốt.
+variety|n|sự đa dạng|There is a variety of food.|Có nhiều loại đồ ăn.
+daily|adj, adv|hằng ngày|Exercise is part of my daily routine.|Tập thể dục là một phần thói quen hằng ngày của tôi.
+clothes|n|quần áo|I need new clothes.|Tôi cần quần áo mới.
+screen|n|màn hình|My phone screen is broken.|Màn hình điện thoại tôi bị vỡ.
+track|n, v|đường mòn; bài hát; theo dõi|Follow the track through the forest.|Đi theo đường mòn xuyên rừng.
+dance|v, n|nhảy, khiêu vũ|Do you like to dance?|Bạn có thích nhảy không?
+completely|adv|hoàn toàn|I completely forgot.|Tôi quên mất hoàn toàn.
+female|adj, n|nữ, giống cái|Most of the nurses are female.|Hầu hết y tá là nữ.
+responsibility|n|trách nhiệm|It's your responsibility.|Đó là trách nhiệm của bạn.
+original|adj|gốc, nguyên bản; độc đáo|This is the original painting.|Đây là bức tranh gốc.
+sister|n|chị/em gái|My sister lives in Saigon.|Chị gái tôi sống ở Sài Gòn.
+rock|n|đá; nhạc rock|He sat on a big rock.|Anh ấy ngồi trên một tảng đá lớn.
+dream|n, v|giấc mơ; mơ|I had a strange dream.|Tôi đã có một giấc mơ lạ.
+nor|conj|cũng không (neither… nor)|Neither he nor I went.|Cả anh ấy và tôi đều không đi.
+university|n|trường đại học|She studies at a university in Hanoi.|Cô ấy học đại học ở Hà Nội.
+easily|adv|một cách dễ dàng|He won easily.|Anh ấy thắng dễ dàng.
+agency|n|cơ quan; đại lý|We booked through a travel agency.|Chúng tôi đặt qua một công ty du lịch.
+dollar|n|đô la|It costs ten dollars.|Nó giá mười đô la.
+garden|n|khu vườn|My mother grows vegetables in the garden.|Mẹ tôi trồng rau trong vườn.
+fix|v|sửa chữa|Can you fix my bike?|Bạn sửa xe đạp giúp tôi được không?
+ahead|adv|phía trước; trước|Go straight ahead.|Đi thẳng về phía trước.
+cross|v, n|băng qua; dấu chéo|Be careful when you cross the road.|Cẩn thận khi qua đường.
+yeah|adv|ừ, vâng (thân mật)|Yeah, I know.|Ừ, tôi biết.
+candidate|n|ứng viên|There are three candidates for the job.|Có ba ứng viên cho công việc này.
+weight|n|cân nặng|I want to lose weight.|Tôi muốn giảm cân.
+legal|adj|hợp pháp; thuộc pháp luật|Is it legal?|Việc đó có hợp pháp không?
+proposal|n|đề xuất; lời cầu hôn|They accepted our proposal.|Họ đã chấp nhận đề xuất của chúng tôi.
+version|n|phiên bản|This is the new version.|Đây là phiên bản mới.
+conversation|n|cuộc trò chuyện|We had a long conversation.|Chúng tôi đã trò chuyện rất lâu.
+somebody|pron|ai đó|Somebody called you.|Có ai đó gọi bạn.
+pound|n|bảng Anh; pao (khoảng 0,45 kg)|It costs ten pounds.|Nó giá mười bảng.
+magazine|n|tạp chí|I bought a fashion magazine.|Tôi đã mua một tạp chí thời trang.
+shape|n|hình dạng|What shape is it?|Nó có hình gì?
+sea|n|biển|We swam in the sea.|Chúng tôi đã bơi ở biển.
+immediately|adv|ngay lập tức|Call me immediately.|Gọi cho tôi ngay lập tức.
+welcome|v, adj|chào đón; được chào đón|Welcome to Vietnam!|Chào mừng đến Việt Nam!
+smile|v, n|cười, mỉm cười; nụ cười|She has a lovely smile.|Cô ấy có nụ cười đáng yêu.
+communication|n|sự giao tiếp, liên lạc|Good communication is important.|Giao tiếp tốt rất quan trọng.
+agent|n|đại lý; điệp viên|Talk to your travel agent.|Hãy nói chuyện với đại lý du lịch của bạn.
+traditional|adj|truyền thống|Ao dai is a traditional dress.|Áo dài là trang phục truyền thống.
+replace|v|thay thế|We need to replace the old TV.|Chúng ta cần thay cái TV cũ.
+judge|n, v|thẩm phán; giám khảo; đánh giá|Don't judge people by their looks.|Đừng đánh giá người khác qua vẻ bề ngoài.
+herself|pron|chính cô ấy, tự cô ấy|She cut herself.|Cô ấy tự làm mình bị đứt tay.
+suddenly|adv|đột nhiên|Suddenly, it started to rain.|Đột nhiên trời bắt đầu mưa.
+generation|n|thế hệ|The young generation loves technology.|Thế hệ trẻ yêu công nghệ.
+estimate|v, n|ước tính; bản ước tính|We estimate the cost at 1,000 dollars.|Chúng tôi ước tính chi phí khoảng 1.000 đô.
+favorite|adj, n|yêu thích nhất|What's your favorite food?|Món ăn yêu thích của bạn là gì?

@@ -47,6 +47,8 @@ input.chk{width:20px;height:20px;accent-color:var(--l3);cursor:pointer}
 .hide-py .py span.show,.hide-vi .vi span.show{filter:none}
 .ex{margin-top:4px;font-size:13px;color:#555}.ex b{font-weight:500;color:var(--ink);font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif;font-size:14px}.ex i{color:var(--muted)}
 .hide-vi .ex i{filter:blur(5px)}
+.voice{font-size:13px;color:var(--muted);margin:-4px 0 12px}
+.voice.warn{color:#b45309;background:#fff7e0;border-left:4px solid #d4a017;padding:8px 12px;border-radius:0 8px 8px 0}
 .empty{text-align:center;color:var(--muted);padding:30px}
 .note{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.5}
 .top{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:20px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2)}
@@ -103,6 +105,7 @@ input.chk{width:20px;height:20px;accent-color:var(--l3);cursor:pointer}
     <label><input type="checkbox" id="hideVi"> Che nghĩa</label>
     <button class="btn" id="shuffle">🔀 Trộn</button>
   </div>
+  <div class="voice" id="voice"></div>
   <table>
     <thead><tr><th>STT</th><th>Chữ Hán</th><th>Pinyin</th><th>Nghĩa</th><th>Đã thuộc</th></tr></thead>
     <tbody id="tb"></tbody>
@@ -124,7 +127,20 @@ const strip=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d').toLo
 DATA.forEach((d,i)=>{d.id=d.lv+'-'+d.h;d.n=i;d.key=strip(d.h+'|'+d.py+'|'+d.vi)+'|'+d.vi.toLowerCase();});
 const tabs=document.getElementById('tabs');
 function drawTabs(){tabs.innerHTML='';LV.forEach(l=>{const list=l.k?DATA.filter(d=>d.lv===l.k):DATA;const b=document.createElement('button');b.className='tab'+(l.k===cur?' on':'');b.style.setProperty('--c',l.c);b.innerHTML=`${l.n} <small>(${list.length})</small>`;b.onclick=()=>{cur=l.k;order=null;document.documentElement.style.setProperty('--accent',l.c);drawTabs();render()};tabs.appendChild(b)})}
-function speak(t){try{const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+let VOICE=null;
+function pickVoice(){
+  const box=document.getElementById('voice');if(!box)return;
+  if(!('speechSynthesis' in window)){box.className='voice warn';box.textContent='⚠ Trình duyệt này không hỗ trợ đọc thành tiếng. Hãy dựa vào pinyin.';return}
+  const vs=speechSynthesis.getVoices();if(!vs.length)return;
+  const zh=vs.filter(v=>/^(zh|cmn)/i.test(v.lang)&&!/(HK|TW|yue)/i.test(v.lang));
+  const loc=v=>v.localService;
+  VOICE=zh.find(v=>loc(v)&&/CN/i.test(v.lang))||zh.find(loc)||zh.find(v=>/CN/i.test(v.lang))||zh[0]||null;
+  if(VOICE){box.className='voice';box.textContent=`🔊 Giọng đọc: ${VOICE.name}${VOICE.localService?'':' (cần mạng)'}`}
+  else{box.className='voice warn';box.innerHTML='⚠ Máy chưa có giọng đọc tiếng Trung nên nút 🔊 sẽ không đọc đúng. Android: Cài đặt → Chuyển văn bản thành giọng nói → tải giọng Tiếng Trung (giản thể). iPhone: Cài đặt → Trợ năng → Nội dung được đọc → Giọng nói → Chinese.'}
+}
+if('speechSynthesis' in window){speechSynthesis.onvoiceschanged=pickVoice}
+setTimeout(pickVoice,0);setTimeout(pickVoice,800);
+function speak(t){try{if(!VOICE)pickVoice();if(!VOICE)return;const u=new SpeechSynthesisUtterance(t);u.voice=VOICE;u.lang=VOICE.lang;u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 function progress(){const list=cur?DATA.filter(d=>d.lv===cur):DATA;const n=list.filter(d=>done[d.id]).length;document.getElementById('barfill').style.width=(100*n/list.length)+'%';document.getElementById('progtxt').textContent=`${n} / ${list.length} từ (${Math.round(100*n/list.length)}%)`}
 function render(){
   const q=strip(document.getElementById('q').value.trim());const qr=document.getElementById('q').value.trim().toLowerCase();

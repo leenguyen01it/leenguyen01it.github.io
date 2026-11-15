@@ -1,0 +1,52 @@
+Monday|n|thứ Hai|I go back to work on Monday.|Thứ Hai tôi đi làm lại.
+Tuesday|n|thứ Ba|We have English on Tuesday.|Thứ Ba chúng tôi có tiết tiếng Anh.
+Wednesday|n|thứ Tư|The shop is closed on Wednesday.|Cửa hàng đóng cửa vào thứ Tư.
+Thursday|n|thứ Năm|See you on Thursday.|Hẹn gặp bạn thứ Năm.
+Friday|n|thứ Sáu|Friday is my favorite day.|Thứ Sáu là ngày tôi thích nhất.
+Saturday|n|thứ Bảy|We go swimming on Saturday.|Thứ Bảy chúng tôi đi bơi.
+Sunday|n|Chủ nhật|I stay home on Sunday.|Chủ nhật tôi ở nhà.
+January|n|tháng Một|My birthday is in January.|Sinh nhật tôi vào tháng Một.
+February|n|tháng Hai|Tet is often in February.|Tết thường vào tháng Hai.
+March|n|tháng Ba|Spring begins in March.|Mùa xuân bắt đầu vào tháng Ba.
+April|n|tháng Tư|It's hot in April.|Tháng Tư trời nóng.
+May|n|tháng Năm|The exam is in May.|Kỳ thi diễn ra vào tháng Năm.
+June|n|tháng Sáu|School ends in June.|Năm học kết thúc vào tháng Sáu.
+July|n|tháng Bảy|We travel in July.|Chúng tôi đi du lịch vào tháng Bảy.
+August|n|tháng Tám|It rains a lot in August.|Tháng Tám mưa nhiều.
+September|n|tháng Chín|School starts in September.|Năm học bắt đầu vào tháng Chín.
+October|n|tháng Mười|The weather is cool in October.|Tháng Mười trời mát.
+November|n|tháng Mười một|I joined the army in November.|Tôi nhập ngũ vào tháng Mười một.
+December|n|tháng Mười hai|Christmas is in December.|Giáng sinh vào tháng Mười hai.
+two|num|hai|I have two brothers.|Tôi có hai anh trai.
+three|num|ba|We stayed for three days.|Chúng tôi ở lại ba ngày.
+four|num|bốn|A car has four wheels.|Ô tô có bốn bánh.
+five|num|năm|I get up at five.|Tôi dậy lúc năm giờ.
+six|num|sáu|The class has six groups.|Lớp có sáu nhóm.
+seven|num|bảy|There are seven days in a week.|Một tuần có bảy ngày.
+eight|num|tám|I sleep eight hours a night.|Tôi ngủ tám tiếng mỗi đêm.
+nine|num|chín|The shop opens at nine.|Cửa hàng mở cửa lúc chín giờ.
+ten|num|mười|Count to ten.|Đếm đến mười.
+eleven|num|mười một|There are eleven players in a team.|Một đội có mười một cầu thủ.
+twelve|num|mười hai|A year has twelve months.|Một năm có mười hai tháng.
+thirteen|num|mười ba|She is thirteen years old.|Cô bé mười ba tuổi.
+fourteen|num|mười bốn|He is fourteen.|Cậu ấy mười bốn tuổi.
+fifteen|num|mười lăm|Wait fifteen minutes.|Đợi mười lăm phút.
+sixteen|num|mười sáu|She turned sixteen today.|Hôm nay cô ấy tròn mười sáu tuổi.
+seventeen|num|mười bảy|There are seventeen students here.|Ở đây có mười bảy học sinh.
+eighteen|num|mười tám|You must be eighteen to vote.|Bạn phải đủ mười tám tuổi mới được bầu cử.
+nineteen|num|mười chín|He joined the army at nineteen.|Anh ấy nhập ngũ năm mười chín tuổi.
+twenty|num|hai mươi|I'm twenty years old.|Tôi hai mươi tuổi.
+thirty|num|ba mươi|It's thirty degrees today.|Hôm nay ba mươi độ.
+forty|num|bốn mươi|My father is forty.|Bố tôi bốn mươi tuổi.
+fifty|num|năm mươi|It costs fifty thousand dong.|Nó giá năm mươi nghìn đồng.
+sixty|num|sáu mươi|An hour has sixty minutes.|Một giờ có sáu mươi phút.
+seventy|num|bảy mươi|My grandmother is seventy.|Bà tôi bảy mươi tuổi.
+eighty|num|tám mươi|He lived to eighty.|Ông ấy sống đến tám mươi tuổi.
+ninety|num|chín mươi|I got ninety points.|Tôi được chín mươi điểm.
+hundred|num|trăm|There are a hundred people here.|Ở đây có một trăm người.
+thousand|num|nghìn|It costs ten thousand dong.|Nó giá mười nghìn đồng.
+million|num|triệu|Hanoi has about eight million people.|Hà Nội có khoảng tám triệu dân.
+billion|num|tỷ|The world has eight billion people.|Thế giới có tám tỷ người.
+trillion|num|nghìn tỷ|The debt is one trillion dollars.|Khoản nợ là một nghìn tỷ đô.
+quadrillion|num|triệu tỷ (10^15)|A quadrillion is a huge number.|Một triệu tỷ là một con số khổng lồ.
+quintillion|num|tỷ tỷ (10^18)|A quintillion has eighteen zeros.|Một tỷ tỷ có mười tám chữ số không.
