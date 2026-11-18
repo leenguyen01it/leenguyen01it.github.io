@@ -1,0 +1,244 @@
+<h2 id="system-design">9. System design cơ bản</h2>
+<p>Với vị trí Middle, câu hỏi system design thường ở mức "thiết kế một tính năng" hoặc "hệ thống nhỏ", hoặc chỉ là "app của bạn đang chậm, bạn làm gì?". Điều người phỏng vấn muốn thấy là <strong>bạn có cách tiếp cận bài bản và biết các đánh đổi</strong>, không phải đáp án hoàn hảo.</p>
+<figure class="diagram"><svg viewBox="0 0 760 300" role="img" aria-label="Kiến trúc web app có thể scale ngang" xmlns="http://www.w3.org/2000/svg" font-family="inherit"><defs><marker id="sd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9aa0a6"/></marker></defs>
+<text x="24" y="30" font-size="15" font-weight="600" fill="#1f2328">API không giữ trạng thái nên thêm bản chạy là scale được</text>
+<g fill="none" stroke="#9aa0a6" stroke-width="1.25"><path d="M174 150H204" marker-end="url(#sd)"/><path d="M356 150H378" marker-end="url(#sd)"/><path d="M546 78H568" marker-end="url(#sd)"/><path d="M546 150H568" marker-end="url(#sd)"/><path d="M546 222H568" marker-end="url(#sd)"/><path d="M99 178V220" marker-end="url(#sd)"/></g>
+<rect x="24" y="122" width="150" height="56" rx="8" fill="#2f7ae5" fill-opacity="0.12" stroke="#2f7ae5" stroke-width="1.5"/><text x="99" y="146" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Trình duyệt</text><text x="99" y="164" text-anchor="middle" font-size="11.5" fill="#57606a">React SPA / Next.js</text>
+<rect x="24" y="222" width="150" height="56" rx="8" fill="none" stroke="#9aa0a6" stroke-width="1.25"/><text x="99" y="246" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">CDN</text><text x="99" y="264" text-anchor="middle" font-size="11.5" fill="#57606a">JS, CSS, ảnh</text>
+<text x="108" y="204" font-size="11.5" fill="#57606a">file tĩnh</text>
+<rect x="206" y="122" width="150" height="56" rx="8" fill="none" stroke="#9aa0a6" stroke-width="1.25"/><text x="281" y="146" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Nginx / LB</text><text x="281" y="164" text-anchor="middle" font-size="11.5" fill="#57606a">HTTPS, cân bằng tải</text>
+<rect x="380" y="64" width="166" height="172" rx="8" fill="#6c4fd8" fill-opacity="0.08" stroke="#6c4fd8" stroke-width="2"/><text x="463" y="88" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Node.js API</text><text x="463" y="104" text-anchor="middle" font-size="11.5" fill="#57606a">stateless, chạy N bản</text>
+<rect x="396" y="116" width="134" height="44" rx="8" fill="#fff" stroke="#9aa0a6" stroke-width="1.25"/><text x="463" y="142" text-anchor="middle" font-size="13" fill="#1f2328">API #1</text>
+<rect x="396" y="176" width="134" height="44" rx="8" fill="#fff" stroke="#9aa0a6" stroke-width="1.25"/><text x="463" y="202" text-anchor="middle" font-size="13" fill="#1f2328">API #2 …</text>
+<rect x="570" y="50" width="166" height="56" rx="8" fill="#1aa37a" fill-opacity="0.12" stroke="#1aa37a" stroke-width="1.5"/><text x="653" y="74" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">PostgreSQL</text><text x="653" y="92" text-anchor="middle" font-size="11.5" fill="#57606a">primary + replica</text>
+<rect x="570" y="122" width="166" height="56" rx="8" fill="#e8703a" fill-opacity="0.12" stroke="#e8703a" stroke-width="1.5"/><text x="653" y="146" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Redis</text><text x="653" y="164" text-anchor="middle" font-size="11.5" fill="#57606a">cache, session, rate</text>
+<rect x="570" y="194" width="166" height="56" rx="8" fill="none" stroke="#9aa0a6" stroke-width="1.25"/><text x="653" y="218" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">Hàng đợi → Worker</text><text x="653" y="236" text-anchor="middle" font-size="11.5" fill="#57606a">email, xử lý ảnh</text>
+</svg><figcaption>Kiến trúc điển hình của một web app Node.js/React có thể scale ngang</figcaption></figure>
+
+<h3>9.1. Cách trả lời một câu hỏi system design <span class="tag should">Nên biết</span></h3>
+<ol>
+<li><strong>Làm rõ yêu cầu</strong> (3–5 phút): có những chức năng nào, bao nhiêu người dùng, tỉ lệ đọc/ghi, yêu cầu về độ trễ, dữ liệu có cần nhất quán ngay không.</li>
+<li><strong>Ước lượng</strong>: request/giây, dung lượng lưu trữ. Ví dụ 1 triệu user/ngày × 10 request = 10 triệu request/ngày, tức khoảng 120 request/giây trung bình, giờ cao điểm khoảng 5 lần.</li>
+<li><strong>Thiết kế API</strong> và <strong>mô hình dữ liệu</strong> (bảng, index).</li>
+<li><strong>Vẽ kiến trúc tổng thể</strong> như hình trên.</li>
+<li><strong>Đi sâu vào điểm nghẽn:</strong> cache, index, hàng đợi, scale DB; nêu đánh đổi của từng lựa chọn.</li>
+</ol>
+
+<h3>9.2. Các khối xây dựng <span class="tag should">Nên biết</span></h3>
+<div class="tbl"><table><thead><tr><th>Khối</th><th>Giải quyết vấn đề gì</th><th>Lưu ý</th></tr></thead><tbody>
+<tr><td>Scale dọc / ngang</td><td>Dọc: thêm CPU/RAM cho máy. Ngang: thêm máy</td><td>Scale ngang yêu cầu app <strong>stateless</strong> (session, file upload để ở nơi dùng chung)</td></tr>
+<tr><td>Load balancer</td><td>Chia tải, loại bỏ instance bị lỗi</td><td>Thuật toán round robin, least connections; cần health check</td></tr>
+<tr><td>CDN</td><td>Phục vụ file tĩnh gần người dùng</td><td>Đặt hash trong tên file để cache lâu dài</td></tr>
+<tr><td>Cache (Redis)</td><td>Giảm tải DB, giảm độ trễ</td><td>Xóa cache khi dữ liệu đổi, chọn TTL phù hợp</td></tr>
+<tr><td>Read replica</td><td>Chia tải đọc của DB</td><td>Replication lag: vừa ghi xong đọc từ replica có thể chưa thấy dữ liệu</td></tr>
+<tr><td>Partitioning / sharding</td><td>Bảng hoặc DB quá lớn</td><td>Phức tạp; chỉ làm khi thực sự cần</td></tr>
+<tr><td>Hàng đợi</td><td>Xử lý bất đồng bộ, giảm tải đột biến, thử lại khi lỗi</td><td>Consumer phải idempotent</td></tr>
+<tr><td>Object storage (S3)</td><td>Lưu file, ảnh, video</td><td>Dùng presigned URL; DB chỉ lưu key của file</td></tr>
+<tr><td>Full-text search</td><td>Tìm kiếm có độ liên quan, gõ sai vẫn tìm ra</td><td>Elasticsearch/OpenSearch, Meilisearch, hoặc Postgres FTS</td></tr>
+</tbody></table></div>
+<p><strong>Định lý CAP</strong> (ở mức đủ dùng): khi mạng bị chia cắt, hệ thống phân tán phải chọn giữa <strong>nhất quán</strong> (C, ví dụ số dư ngân hàng) và <strong>sẵn sàng</strong> (A, ví dụ lượt like, feed). Nhiều hệ thống chấp nhận <em>eventual consistency</em> (dữ liệu sẽ nhất quán sau một khoảng thời gian).</p>
+
+<h3>9.3. Ba bài mẫu hay gặp <span class="tag should">Nên biết</span></h3>
+<p><strong>a) Dịch vụ rút gọn link:</strong> <code>POST /links</code> trả về mã 7 ký tự; <code>GET /:code</code> redirect 302 (hoặc 301 nếu không cần đếm click). Mã được sinh bằng cách mã hóa base62 một id tự tăng (có thể dùng bộ đếm Redis <code>INCR</code>), hoặc sinh ngẫu nhiên rồi kiểm tra trùng. Tỉ lệ đọc rất cao so với ghi, nên cache <code>code → url</code> trong Redis. Đếm click không nên ghi DB ở mỗi request: tăng bộ đếm trong Redis rồi ghi dồn định kỳ, hoặc đẩy sự kiện vào hàng đợi.</p>
+<p><strong>b) Hệ thống thông báo</strong> (email, push, in-app): API nhận sự kiện → đẩy vào hàng đợi theo từng kênh → worker gửi, có retry + backoff, và dead-letter queue cho các lần lỗi cuối cùng. Cần lưu cài đặt của user (tắt kênh nào), chống gửi trùng bằng idempotency key, giới hạn tốc độ theo nhà cung cấp. Thông báo in-app realtime thì đẩy qua WebSocket/SSE.</p>
+<p><strong>c) Flash sale / đặt vé, chống bán vượt số lượng:</strong> trừ tồn kho bằng thao tác nguyên tử (<code>DECR</code> trong Redis hoặc <code>UPDATE ... WHERE stock &gt; 0</code>), giữ chỗ có thời hạn (ví dụ 10 phút để thanh toán, hết hạn thì trả lại kho), cho người dùng xếp hàng chờ để chịu tải đột biến, rate limit theo user, và gửi kèm idempotency key khi tạo đơn.</p>
+```qa
+Q: Ứng dụng của bạn đột nhiên chậm. Bạn điều tra thế nào?
+A: (1) Xác định phạm vi: chậm toàn bộ hay một vài endpoint, bắt đầu từ lúc nào, có trùng với lần deploy nào không. (2) Xem metrics: CPU, RAM, độ trễ event loop, số kết nối DB, độ trễ p95/p99. (3) Xem APM hoặc tracing để biết thời gian tốn ở DB, API ngoài hay chính code. (4) Với DB: xem slow query log, chạy EXPLAIN, kiểm tra index, tìm N+1, xem có lock không. (5) Sửa nhanh bằng cache, index, hoặc rollback; về lâu dài thì tối ưu và thêm cảnh báo.
+Q: Muốn scale ngang API Node.js thì cần làm gì?
+A: Làm cho app stateless: session để trong Redis, file upload lên S3, không cache quan trọng trong RAM, cron job chỉ chạy ở một nơi (hoặc dùng lock), WebSocket dùng Redis adapter. Sau đó đặt load balancer phía trước và cấu hình health check.
+Q: Read replica có vấn đề gì?
+A: Replication lag: dữ liệu vừa ghi chưa kịp sang replica. Ví dụ user cập nhật hồ sơ rồi tải lại trang mà vẫn thấy dữ liệu cũ. Cách xử lý: đọc từ primary ngay sau khi ghi (read-your-writes), hoặc chỉ dùng replica cho báo cáo và những chỗ chấp nhận được dữ liệu hơi cũ.
+Q: Thiết kế chức năng đếm lượt xem bài viết cho trang có lượng truy cập lớn.
+A: Không UPDATE DB ở mỗi lượt xem. Dùng `INCR views:post:{id}` trong Redis, rồi định kỳ (ví dụ mỗi phút) worker ghi dồn vào DB. Nếu cần đếm người xem duy nhất thì dùng HyperLogLog hoặc Set. Hiển thị số đọc từ Redis. Chấp nhận việc số liệu trong DB có thể trễ một chút.
+Q: Định lý CAP nói gì? Cho ví dụ chọn C và chọn A.
+A: Khi xảy ra phân mảnh mạng (P), hệ thống phân tán chỉ đảm bảo được một trong hai: nhất quán (mọi node trả cùng dữ liệu mới nhất) hoặc sẵn sàng (luôn trả lời được). Chọn C cho thanh toán và tồn kho; chọn A cho lượt like, feed, số người đang online.
+```
+```quiz
+Q: Điều kiện tiên quyết để scale ngang một API là gì?
+- Dùng MongoDB
++ App không giữ trạng thái (session, file) trong bộ nhớ hay ổ đĩa cục bộ
+- Dùng GraphQL
+- Server phải có nhiều CPU
+E: Request có thể rơi vào bất kỳ instance nào, nên trạng thái phải nằm ở nơi dùng chung (Redis, DB, S3).
+Q: Ngay sau khi ghi vào primary, đọc từ read replica thì có thể bị gì?
+- Lỗi kết nối
++ Đọc phải dữ liệu cũ do replication lag
+- Mất dữ liệu
+- Bị deadlock
+E: Replica được đồng bộ bất đồng bộ nên có độ trễ. Những trường hợp cần read-your-writes thì đọc từ primary.
+Q: Dịch vụ rút gọn link có lượng đọc rất lớn. Tối ưu quan trọng nhất là?
+- Sharding DB ngay từ đầu
++ Cache ánh xạ code → URL trong Redis/CDN
+- Dùng GraphQL
+- Tăng số worker xử lý hàng đợi
+E: Tỉ lệ đọc/ghi rất cao và ánh xạ gần như không đổi, nên rất hợp để cache.
+Q: Ước lượng: 10 triệu request mỗi ngày thì trung bình khoảng bao nhiêu request/giây?
+- ~12
++ ~115
+- ~1.150
+- ~10.000
+E: 10.000.000 / 86.400 ≈ 115 request/giây. Giờ cao điểm thường gấp 3–5 lần mức trung bình.
+Q: Dùng thao tác nào để giữ tồn kho an toàn trong flash sale?
+- Đọc stock, kiểm tra trong code, rồi ghi stock mới
++ `DECR` nguyên tử trong Redis hoặc `UPDATE ... WHERE stock > 0`
+- Lưu stock trong localStorage
+- Cache stock trong RAM của từng instance
+E: Kiểu "đọc, kiểm tra, ghi" để hở khoảng thời gian cho race condition. Thao tác nguyên tử thì không.
+```
+
+<h2 id="microservices">10. Microservices</h2>
+<p>Microservices là cách chia hệ thống thành <strong>nhiều service nhỏ, deploy độc lập</strong>, mỗi service phụ trách một miền nghiệp vụ và <strong>sở hữu dữ liệu riêng</strong>. Mức Middle không cần từng thiết kế cả hệ thống microservices, nhưng phải hiểu <strong>khi nào nên dùng, các service giao tiếp ra sao và xử lý lỗi phân tán thế nào</strong>.</p>
+
+<h3>10.1. Monolith hay microservices? <span class="tag must">Bắt buộc</span></h3>
+<div class="tbl"><table><thead><tr><th></th><th>Monolith</th><th>Modular monolith</th><th>Microservices</th></tr></thead><tbody>
+<tr><td>Deploy</td><td>Một khối</td><td>Một khối, code chia module có ranh giới rõ</td><td>Từng service độc lập</td></tr>
+<tr><td>Dữ liệu</td><td>Một DB chung</td><td>Một DB, mỗi module sở hữu các bảng riêng</td><td>Mỗi service một DB riêng</td></tr>
+<tr><td>Ưu điểm</td><td>Đơn giản, dễ debug, dùng được transaction</td><td>Vẫn đơn giản, dễ tách ra sau này</td><td>Scale riêng từng phần, mỗi team tự chủ, lỗi được cô lập</td></tr>
+<tr><td>Nhược điểm</td><td>Lớn dần thì rối, mỗi lần deploy là deploy cả khối</td><td>Cần kỷ luật để giữ ranh giới</td><td>Phức tạp: mạng, nhất quán dữ liệu, giám sát, DevOps</td></tr>
+<tr><td>Phù hợp</td><td>Startup, team nhỏ</td><td><strong>Phần lớn dự án</strong></td><td>Nhiều team, miền nghiệp vụ rõ, nhu cầu scale khác nhau</td></tr>
+</tbody></table></div>
+<div class="callout info"><div class="ct">Câu trả lời mà người phỏng vấn muốn nghe</div>"Microservices không phải mặc định tốt hơn. Nên bắt đầu bằng monolith hoặc modular monolith, và chỉ tách một service ra khi có lý do cụ thể: cần scale riêng, có team riêng, hoặc tần suất deploy khác hẳn phần còn lại." Một hệ thống microservices mà các service dùng chung DB và gọi nhau đồng bộ dày đặc thì chỉ là một <em>distributed monolith</em>: có đủ nhược điểm của cả hai mô hình.</div>
+
+<h3>10.2. Giao tiếp giữa các service <span class="tag must">Bắt buộc</span></h3>
+<div class="tbl"><table><thead><tr><th>Kiểu</th><th>Công nghệ</th><th>Ưu điểm</th><th>Nhược điểm</th></tr></thead><tbody>
+<tr><td>Đồng bộ</td><td>REST, <strong>gRPC</strong> (HTTP/2 + Protobuf, nhanh, có kiểu chặt)</td><td>Đơn giản, có kết quả ngay</td><td>Service A phụ thuộc vào việc B có đang chạy không; lỗi lan theo chuỗi</td></tr>
+<tr><td>Bất đồng bộ</td><td>Message broker: <strong>RabbitMQ</strong>, <strong>Kafka</strong>, NATS, AWS SQS/SNS</td><td>Tách rời các service, chịu được tải đột biến, service nhận có thể tạm ngừng</td><td>Eventual consistency, khó debug hơn</td></tr>
+</tbody></table></div>
+<div class="tbl"><table><thead><tr><th></th><th>RabbitMQ</th><th>Kafka</th></tr></thead><tbody>
+<tr><td>Mô hình</td><td>Message queue: message bị xóa sau khi xử lý xong</td><td>Log phân tán: message được giữ lại theo thời gian, đọc lại được</td></tr>
+<tr><td>Định tuyến</td><td>Linh hoạt (exchange: direct, topic, fanout)</td><td>Theo topic và partition</td></tr>
+<tr><td>Thông lượng</td><td>Tốt</td><td>Rất cao</td></tr>
+<tr><td>Dùng cho</td><td>Task queue, lệnh (command), định tuyến phức tạp</td><td>Event streaming, event sourcing, analytics, nhiều consumer đọc cùng một luồng</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>API Gateway:</strong> một cổng vào duy nhất cho client, đảm nhận xác thực, rate limit, định tuyến, gom response. Ví dụ: Kong, Nginx, AWS API Gateway. <strong>BFF</strong> (Backend for Frontend) là gateway riêng cho từng loại client; GraphQL Federation là một cách làm việc này.</li>
+<li><strong>Service discovery:</strong> các service tìm thấy nhau qua DNS của Kubernetes, Consul...</li>
+<li>NestJS có sẵn module <code>@nestjs/microservices</code> hỗ trợ TCP, Redis, NATS, RabbitMQ, Kafka, gRPC.</li>
+</ul>
+
+<h3>10.3. Dữ liệu và transaction phân tán <span class="tag must">Bắt buộc</span></h3>
+<p><strong>Database per service:</strong> service khác không được đọc thẳng DB của bạn mà phải gọi qua API hoặc nhận sự kiện. Vì không còn transaction dùng chung, các thao tác trải qua nhiều service phải dùng <strong>Saga</strong>.</p>
+<p><strong>Saga đặt hàng</strong> gồm một chuỗi transaction cục bộ; nếu một bước thất bại thì chạy các <strong>bước bù trừ (compensating action)</strong> theo chiều ngược lại:</p>
+<ol>
+<li>Order service tạo đơn ở trạng thái <code>PENDING</code> và phát sự kiện <code>OrderCreated</code>.</li>
+<li>Inventory service giữ hàng và phát <code>StockReserved</code>. Nếu hết hàng thì phát <code>StockFailed</code>, và Order chuyển đơn sang <code>CANCELLED</code>.</li>
+<li>Payment service trừ tiền và phát <code>PaymentSucceeded</code>. Nếu lỗi thì phát <code>PaymentFailed</code>; Inventory <strong>trả hàng lại kho</strong> (bù trừ) và Order hủy đơn.</li>
+<li>Order chuyển đơn sang <code>CONFIRMED</code>.</li>
+</ol>
+<ul>
+<li><strong>Choreography:</strong> các service tự lắng nghe sự kiện của nhau, không có điều phối viên. Đơn giản khi ít bước, nhưng khó theo dõi khi nhiều bước. <strong>Orchestration:</strong> có một orchestrator ra lệnh cho từng bước (tự viết, hoặc dùng Temporal). Dễ hiểu luồng hơn.</li>
+<li><strong>Transactional Outbox:</strong> vấn đề là ghi DB và gửi message không thể nằm trong cùng một transaction (ghi DB xong mà gửi message lỗi thì mất sự kiện). Cách làm: ghi sự kiện vào bảng <code>outbox</code> <strong>trong cùng transaction</strong> với dữ liệu, rồi một tiến trình riêng đọc outbox và gửi lên broker.</li>
+<li><strong>At-least-once delivery:</strong> broker có thể gửi trùng message, nên consumer phải <strong>idempotent</strong> (lưu <code>messageId</code> đã xử lý, hoặc dùng upsert).</li>
+</ul>
+```ts
+// Outbox: dữ liệu và sự kiện được ghi trong CÙNG một transaction
+await prisma.$transaction(async (tx) => {
+  const order = await tx.order.create({ data: { userId, items, status: 'PENDING' } });
+  await tx.outbox.create({ data: { type: 'OrderCreated', payload: { orderId: order.id, items } } });
+});
+// Relay (worker riêng): đọc outbox chưa gửi → publish lên broker → đánh dấu đã gửi
+
+// Consumer idempotent
+async function onPaymentSucceeded(msg: { id: string; orderId: string }) {
+  const done = await prisma.processedMessage.findUnique({ where: { id: msg.id } });
+  if (done) return; // đã xử lý rồi → bỏ qua message trùng
+  await prisma.$transaction([
+    prisma.order.update({ where: { id: msg.orderId }, data: { status: 'CONFIRMED' } }),
+    prisma.processedMessage.create({ data: { id: msg.id } }),
+  ]);
+}
+```
+
+<h3>10.4. Chịu lỗi và giám sát <span class="tag should">Nên biết</span></h3>
+<ul>
+<li><strong>Timeout</strong> cho mọi lời gọi qua mạng. Không có timeout thì một service chậm sẽ kéo cả hệ thống chậm theo.</li>
+<li><strong>Retry</strong> với exponential backoff + jitter, và chỉ retry những thao tác idempotent.</li>
+<li><strong>Circuit breaker</strong> (thư viện <code>opossum</code>): khi service đích lỗi liên tục thì "ngắt mạch", trả lỗi hoặc dữ liệu dự phòng ngay thay vì tiếp tục gọi, sau một thời gian mới thử lại (trạng thái half-open).</li>
+<li><strong>Bulkhead:</strong> giới hạn tài nguyên (connection pool, số lời gọi đồng thời) cho từng phụ thuộc, để một phụ thuộc chậm không ăn hết tài nguyên của cả service.</li>
+<li><strong>Distributed tracing:</strong> mỗi request có một trace id được truyền qua mọi service (OpenTelemetry → Jaeger/Tempo). Log của mọi service đều kèm id này.</li>
+<li><strong>Triển khai:</strong> Docker + Kubernetes, mỗi service có pipeline CI/CD riêng. Ở mức nâng cao có service mesh (Istio, Linkerd) <span class="tag plus">Điểm cộng</span>.</li>
+</ul>
+```ts
+// Retry với exponential backoff + jitter
+async function retry<T>(fn: () => Promise<T>, attempts = 4, base = 200): Promise<T> {
+  for (let i = 0; ; i++) {
+    try { return await fn(); }
+    catch (e) {
+      if (i >= attempts - 1) throw e;
+      const delay = base * 2 ** i + Math.random() * base; // 200, 400, 800... + ngẫu nhiên
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
+}
+// Luôn đặt timeout cho lời gọi ra ngoài
+const res = await retry(() => fetch(`${INVENTORY_URL}/reserve`, { method: 'POST', body, signal: AbortSignal.timeout(2000) }));
+```
+```qa
+Q: Khi nào bạn chọn microservices? Khi nào không?
+A: Nên chọn khi tổ chức có nhiều team cần deploy độc lập, miền nghiệp vụ có ranh giới rõ, các phần có nhu cầu scale hoặc công nghệ khác nhau, và đã có năng lực DevOps (CI/CD, giám sát, Kubernetes). Không nên với team nhỏ, sản phẩm mới chưa rõ miền nghiệp vụ, hoặc chưa có hạ tầng; khi đó nên dùng modular monolith và tách dần.
+Q: Distributed monolith là gì?
+A: Là hệ thống được chia thành nhiều service nhưng vẫn dùng chung DB, phải deploy cùng nhau, và gọi nhau đồng bộ theo chuỗi dài. Nó có mọi độ phức tạp của microservices mà không có lợi ích nào: một service chết là cả chuỗi chết, sửa một chỗ phải deploy nhiều nơi.
+Q: Giao tiếp đồng bộ và bất đồng bộ giữa các service: khi nào dùng cái nào?
+A: Dùng đồng bộ (REST/gRPC) khi cần kết quả ngay để trả lời user, ví dụ kiểm tra giá hay xác thực. Dùng bất đồng bộ (event qua broker) khi các bên không cần chờ nhau: gửi email sau khi đặt hàng, cập nhật thống kê, đồng bộ dữ liệu sang service khác. Bất đồng bộ giúp các service tách rời và chịu lỗi tốt hơn, đổi lại là phải chấp nhận eventual consistency.
+Q: Saga pattern là gì? Choreography khác orchestration thế nào?
+A: Saga là chuỗi transaction cục bộ trải qua nhiều service; khi một bước lỗi thì chạy các bước bù trừ để hoàn tác những bước đã làm. Choreography: các service phản ứng với sự kiện của nhau, không có trung tâm. Orchestration: một orchestrator điều phối từng bước, dễ theo dõi và xử lý lỗi hơn khi luồng có nhiều bước.
+Q: Transactional Outbox giải quyết vấn đề gì?
+A: Vấn đề "dual write": ghi DB thành công nhưng gửi message lên broker thất bại, hoặc ngược lại, khiến dữ liệu không nhất quán. Outbox ghi sự kiện vào một bảng trong cùng transaction với dữ liệu, rồi một relay đọc bảng đó và publish (có thể gửi trùng, nên consumer phải idempotent).
+Q: Vì sao consumer phải idempotent?
+A: Vì hầu hết broker đảm bảo at-least-once: message có thể được gửi lại khi consumer chưa kịp ack, khi mạng lỗi hay khi có rebalance. Nếu không idempotent thì có thể trừ tiền hai lần hoặc gửi email hai lần. Cách làm: lưu id của message đã xử lý, dùng upsert, hoặc có ràng buộc unique trong DB.
+Q: Circuit breaker hoạt động thế nào?
+A: Nó có 3 trạng thái. Closed: gọi bình thường và đếm số lỗi. Open: khi lỗi vượt ngưỡng thì ngừng gọi, trả lỗi hoặc dữ liệu dự phòng ngay. Half-open: sau một thời gian thì cho vài request thử; nếu thành công thì quay về closed, nếu không thì về open. Mục đích là không làm service đang lỗi thêm quá tải và không bắt người dùng chờ timeout.
+Q: Kafka khác RabbitMQ ở điểm nào?
+A: RabbitMQ là message queue truyền thống: định tuyến linh hoạt, message bị xóa sau khi được ack, hợp cho task queue và command. Kafka là log phân tán: message được giữ theo thời gian cấu hình, nhiều consumer group đọc độc lập và đọc lại được, thông lượng rất cao, thứ tự được đảm bảo trong từng partition. Kafka hợp cho event streaming và analytics.
+```
+```quiz
+Q: Nguyên tắc dữ liệu chuẩn trong microservices là?
+- Mọi service dùng chung một DB cho dễ JOIN
++ Mỗi service sở hữu DB riêng; service khác lấy dữ liệu qua API hoặc sự kiện
+- Lưu mọi dữ liệu trong Redis
+- Không dùng DB nào cả
+E: Dùng chung DB làm các service bị ràng buộc chặt với nhau, không đổi được schema hay deploy độc lập.
+Q: Trong Saga, bước thanh toán thất bại sau khi kho đã giữ hàng. Cần làm gì?
+- Rollback transaction toàn cục
++ Chạy bước bù trừ: trả hàng lại kho và hủy đơn
+- Bỏ qua lỗi
+- Thử lại thanh toán vô hạn lần
+E: Không có transaction phân tán chung, nên phải hoàn tác bằng các thao tác ngược lại.
+Q: Pattern nào đảm bảo "ghi DB và phát sự kiện" không bị mất sự kiện?
+- Circuit breaker
++ Transactional Outbox
+- API Gateway
+- Bulkhead
+E: Sự kiện được ghi vào bảng outbox trong cùng transaction với dữ liệu, rồi relay publish sau.
+Q: Broker đảm bảo at-least-once delivery. Consumer cần có đặc điểm gì?
+- Xử lý thật nhanh
++ Idempotent
+- Chạy đơn luồng
+- Không bao giờ được lỗi
+E: Message có thể đến nhiều lần; xử lý nhiều lần phải cho cùng kết quả như xử lý một lần.
+Q: Service Inventory lỗi liên tục và mỗi lời gọi tới nó mất 30 giây timeout. Pattern nào giúp ích ngay?
+- Saga
++ Circuit breaker (kèm timeout ngắn)
+- CQRS
+- Sharding
+E: Circuit breaker ngừng gọi service đang lỗi và trả kết quả dự phòng ngay, tránh làm nghẽn cả hệ thống.
+Q: Nhu cầu: nhiều service cùng đọc một luồng sự kiện đơn hàng, đọc lại được dữ liệu cũ, thông lượng cao. Nên chọn?
+- RabbitMQ với một queue
++ Kafka
+- Redis cache
+- REST polling
+E: Kafka giữ lại message theo thời gian, nhiều consumer group đọc độc lập và có thể đọc lại từ một offset bất kỳ.
+Q: Thành phần nào là cổng vào chung, đảm nhận xác thực và rate limit cho client trước khi tới các service?
+- Service mesh
++ API Gateway
+- Message broker
+- Read replica
+E: API Gateway (hoặc BFF) đứng giữa client và các service.
+Q: Làm thế nào để lần theo một request đi qua 5 service khi debug?
+- Đọc log của từng service rồi đoán
++ Distributed tracing: truyền trace id qua mọi service (OpenTelemetry)
+- Bật console.log ở mọi chỗ
+- Gộp tất cả service lại thành một
+E: Trace id giúp xem toàn bộ đường đi và thời gian của từng bước trong một giao diện như Jaeger hay Tempo.
+```

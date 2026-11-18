@@ -1,0 +1,687 @@
+<h2 id="react">6. React</h2>
+<p>Ở mức Middle, người phỏng vấn không hỏi "useState dùng thế nào" nữa. Họ hỏi <strong>vì sao component re-render</strong>, <strong>khi nào cần useMemo</strong>, và <strong>quản lý state ở đâu</strong>.</p>
+
+<h3>6.1. Cơ chế render <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>Render phase:</strong> React gọi hàm component để tạo cây element mới, rồi so sánh với cây cũ (<em>reconciliation</em>). <strong>Commit phase:</strong> áp phần thay đổi vào DOM thật, sau đó chạy effect.</li>
+<li><strong>Component re-render khi:</strong> (1) state của nó thay đổi, (2) <strong>component cha re-render</strong> (dù props không đổi), (3) giá trị của Context mà nó dùng thay đổi. Re-render <em>không</em> có nghĩa là DOM thay đổi.</li>
+<li><strong>key</strong> giúp React biết phần tử nào là phần tử nào trong danh sách. Dùng id ổn định; dùng index làm key sẽ lỗi khi chèn, xóa hoặc sắp xếp lại (input giữ sai giá trị). Đổi key của một component thì component đó bị <strong>tạo mới hoàn toàn</strong> (đây cũng là một mẹo để reset state).</li>
+<li><strong>State là bất biến (immutable):</strong> luôn tạo object/array mới, không sửa trực tiếp. React so sánh bằng <code>Object.is</code>.</li>
+<li><strong>Batching:</strong> từ React 18, nhiều lệnh <code>setState</code> trong cùng một sự kiện (kể cả trong promise hay timeout) được gộp thành một lần render.</li>
+</ul>
+```tsx
+// SAI: sửa trực tiếp state nên React không thấy thay đổi
+todos.push(newTodo); setTodos(todos);
+// ĐÚNG
+setTodos((prev) => [...prev, newTodo]);
+setUser((prev) => ({ ...prev, address: { ...prev.address, city: 'Hà Nội' } }));
+
+// Functional update khi giá trị mới phụ thuộc giá trị cũ
+setCount(count + 1); setCount(count + 1);       // chỉ tăng 1 (cùng một giá trị count cũ)
+setCount((c) => c + 1); setCount((c) => c + 1); // tăng 2
+```
+
+<h3>6.2. Hooks <span class="tag must">Bắt buộc</span></h3>
+<div class="tbl"><table><thead><tr><th>Hook</th><th>Dùng khi</th><th>Lưu ý</th></tr></thead><tbody>
+<tr><td><code>useState</code></td><td>State cục bộ</td><td>Giá trị khởi tạo tốn công tính thì dùng lazy init: <code>useState(() =&gt; heavy())</code></td></tr>
+<tr><td><code>useReducer</code></td><td>State phức tạp, nhiều hành động</td><td>Logic tách ra hàm thuần, dễ test</td></tr>
+<tr><td><code>useEffect</code></td><td>Đồng bộ với hệ thống bên ngoài: API, subscription, DOM, timer</td><td>Chạy sau khi vẽ. Cần cleanup. Khai báo đủ dependency</td></tr>
+<tr><td><code>useLayoutEffect</code></td><td>Đo DOM trước khi trình duyệt vẽ (tránh nhấp nháy)</td><td>Chặn việc vẽ, dùng ít thôi</td></tr>
+<tr><td><code>useRef</code></td><td>Tham chiếu DOM; lưu giá trị qua các lần render mà không gây re-render</td><td>Đổi <code>ref.current</code> không gây render</td></tr>
+<tr><td><code>useMemo</code></td><td>Nhớ kết quả tính toán nặng, hoặc giữ nguyên tham chiếu object</td><td>Không phải "càng nhiều càng tốt"</td></tr>
+<tr><td><code>useCallback</code></td><td>Giữ nguyên tham chiếu hàm truyền cho con đã bọc <code>memo</code></td><td>Chỉ có tác dụng khi bên nhận cần tham chiếu ổn định</td></tr>
+<tr><td><code>useContext</code></td><td>Đọc Context</td><td>Value đổi thì mọi component dùng Context đó đều render lại</td></tr>
+</tbody></table></div>
+<p><strong>Quy tắc của hooks:</strong> chỉ gọi ở cấp cao nhất của component hoặc custom hook, không gọi trong if/vòng lặp, vì React dựa vào <strong>thứ tự gọi</strong> để ghép đúng state với hook.</p>
+<p><strong>Bạn có thể không cần useEffect</strong> (theo react.dev): dữ liệu tính được từ props/state thì tính trực tiếp khi render; logic phản hồi hành động của người dùng thì đặt trong event handler; fetch dữ liệu thì dùng TanStack Query hoặc framework.</p>
+```tsx
+// Fetch có cleanup để tránh race condition: gõ nhanh "a" → "ab", response của "a" về sau không được ghi đè
+useEffect(() => {
+  const ctrl = new AbortController();
+  fetch(`/api/search?q=${q}`, { signal: ctrl.signal })
+    .then((r) => r.json())
+    .then(setResults)
+    .catch((e) => { if (e.name !== 'AbortError') setError(e); });
+  return () => ctrl.abort(); // chạy trước lần effect tiếp theo và khi unmount
+}, [q]);
+
+// Custom hook: tái sử dụng logic có state
+function useDebounce<T>(value: T, ms = 400) {
+  const [v, setV] = useState(value);
+  useEffect(() => {
+    const t = setTimeout(() => setV(value), ms);
+    return () => clearTimeout(t);
+  }, [value, ms]);
+  return v;
+}
+```
+<div class="callout info"><div class="ct">StrictMode chạy effect 2 lần ở môi trường dev</div>Ở dev, React cố ý mount → unmount → mount lại để lộ ra những effect quên cleanup. Ở production thì effect chỉ chạy 1 lần. Đừng "sửa" bằng cách tắt StrictMode; hãy viết cleanup cho đúng.</div>
+
+
+<h4>useEffect: dependency array hoạt động thế nào</h4>
+<div class="tbl"><table><thead><tr><th>Cách viết</th><th>Effect chạy khi</th></tr></thead><tbody>
+<tr><td><code>useEffect(fn)</code></td><td>Sau <strong>mọi</strong> lần render (hiếm khi cần)</td></tr>
+<tr><td><code>useEffect(fn, [])</code></td><td>Một lần sau khi mount; cleanup khi unmount</td></tr>
+<tr><td><code>useEffect(fn, [a, b])</code></td><td>Sau lần render mà <code>a</code> hoặc <code>b</code> thay đổi (so sánh bằng <code>Object.is</code>)</td></tr>
+</tbody></table></div>
+<ul>
+<li>Phải khai báo <strong>mọi giá trị reactive</strong> (props, state, biến hay hàm khai báo trong component) mà effect dùng. Bật rule ESLint <code>react-hooks/exhaustive-deps</code>, và đừng tắt nó cho tiện.</li>
+<li><strong>Object hoặc hàm làm dependency</strong> được tạo mới ở mỗi lần render, nên effect chạy liên tục. Cách sửa: chỉ đưa vào dependency giá trị nguyên thủy (<code>user.id</code> thay vì <code>user</code>), chuyển object/hàm vào bên trong effect, hoặc memo hóa chúng.</li>
+<li><strong>Vòng lặp vô hạn</strong> kinh điển: effect gọi <code>setState</code>, mà state đó lại nằm trong dependency của chính effect.</li>
+<li>Muốn đọc giá trị mới nhất trong effect mà không khiến effect chạy lại (ví dụ đọc <code>theme</code> khi ghi log), React 19.2 có <code>useEffectEvent</code>; ở các bản cũ hơn thì dùng ref.</li>
+</ul>
+```tsx
+// SAI: options là object mới mỗi lần render → effect chạy liên tục, kết nối lại liên tục
+const options = { roomId, serverUrl };
+useEffect(() => { const c = connect(options); return () => c.close(); }, [options]);
+
+// ĐÚNG: dependency là các giá trị nguyên thủy, object được tạo bên trong effect
+useEffect(() => {
+  const c = connect({ roomId, serverUrl });
+  return () => c.close();
+}, [roomId, serverUrl]);
+
+// SAI: "derived state" bằng effect, gây thêm một lần render và dễ lệch dữ liệu
+const [fullName, setFullName] = useState('');
+useEffect(() => setFullName(`${first} ${last}`), [first, last]);
+// ĐÚNG: tính trực tiếp khi render
+const fullName2 = `${first} ${last}`;
+```
+
+<h4>useReducer cho state phức tạp</h4>
+```tsx
+type State = { items: CartItem[]; coupon?: string };
+type Action =
+  | { type: 'add'; item: CartItem }
+  | { type: 'remove'; id: string }
+  | { type: 'applyCoupon'; code: string };
+
+function cartReducer(state: State, action: Action): State {
+  switch (action.type) {
+    case 'add': return { ...state, items: [...state.items, action.item] };
+    case 'remove': return { ...state, items: state.items.filter((i) => i.id !== action.id) };
+    case 'applyCoupon': return { ...state, coupon: action.code };
+  }
+}
+const [cart, dispatch] = useReducer(cartReducer, { items: [] });
+dispatch({ type: 'add', item });   // dispatch có tham chiếu ổn định, truyền xuống con thoải mái
+```
+
+<h4>useRef: ba cách dùng</h4>
+```tsx
+// 1. Tham chiếu DOM
+const inputRef = useRef<HTMLInputElement>(null);
+useEffect(() => inputRef.current?.focus(), []);
+<input ref={inputRef} />
+
+// 2. Lưu giá trị "ngoài luồng render": id của timer, giá trị trước đó
+const timerRef = useRef<number | undefined>(undefined);
+const start = () => { timerRef.current = window.setInterval(tick, 1000); };
+const stop = () => clearInterval(timerRef.current);
+
+function usePrevious<T>(value: T) {
+  const ref = useRef<T | undefined>(undefined);
+  useEffect(() => { ref.current = value; }, [value]);
+  return ref.current;              // giá trị của lần render trước
+}
+
+// 3. React 19: ref là prop bình thường, không cần forwardRef
+function TextInput({ ref, ...props }: React.ComponentProps<'input'>) {
+  return <input ref={ref} {...props} />;
+}
+```
+
+<h4>Context đúng cách</h4>
+```tsx
+type AuthCtx = { user: User | null; login: (d: LoginDto) => Promise<void>; logout: () => void };
+const AuthContext = createContext<AuthCtx | null>(null);
+
+export function AuthProvider({ children }: { children: React.ReactNode }) {
+  const [user, setUser] = useState<User | null>(null);
+  const login = useCallback(async (d: LoginDto) => setUser(await api.login(d)), []);
+  const logout = useCallback(() => setUser(null), []);
+  const value = useMemo(() => ({ user, login, logout }), [user, login, logout]); // tránh object mới mỗi lần render
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
+
+// Custom hook: báo lỗi rõ ràng nếu bị dùng ngoài Provider
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth phải được dùng bên trong <AuthProvider>');
+  return ctx;
+}
+```
+
+<h4>Các hook ít dùng hơn nhưng hay bị hỏi</h4>
+<div class="tbl"><table><thead><tr><th>Hook</th><th>Công dụng</th></tr></thead><tbody>
+<tr><td><code>useTransition</code></td><td>Đánh dấu một cập nhật là "không gấp" (lọc danh sách lớn, chuyển tab) để ô input vẫn mượt; có cờ <code>isPending</code> để hiện trạng thái đang xử lý</td></tr>
+<tr><td><code>useDeferredValue</code></td><td>Dùng bản "trễ" của một giá trị cho phần render nặng, ví dụ kết quả tìm kiếm theo ô input</td></tr>
+<tr><td><code>useId</code></td><td>Tạo id ổn định, không bị lệch giữa server và client, dùng cho <code>label htmlFor</code> và thuộc tính aria</td></tr>
+<tr><td><code>useLayoutEffect</code></td><td>Đo kích thước hoặc vị trí DOM trước khi trình duyệt vẽ (tooltip, popover)</td></tr>
+<tr><td><code>useImperativeHandle</code></td><td>Chỉ lộ ra cho cha một vài hàm (<code>focus</code>, <code>reset</code>) thay vì cả DOM node</td></tr>
+<tr><td><code>useSyncExternalStore</code></td><td>Subscribe vào store bên ngoài React (Zustand, Redux dùng nó bên trong; trạng thái online/offline của trình duyệt)</td></tr>
+</tbody></table></div>
+```tsx
+// useTransition: input luôn mượt dù danh sách có 10.000 dòng
+const [query, setQuery] = useState('');
+const [filter, setFilter] = useState('');
+const [isPending, startTransition] = useTransition();
+<input value={query} onChange={(e) => {
+  setQuery(e.target.value);                         // gấp: cập nhật ô input ngay
+  startTransition(() => setFilter(e.target.value)); // không gấp: render lại danh sách
+}} />
+{isPending && <Spinner />}
+<HugeList filter={filter} />
+```
+
+<h4>Custom hook mẫu</h4>
+<p>Custom hook dùng chung <strong>logic</strong>, không dùng chung <strong>state</strong>: mỗi component gọi hook sẽ có state riêng. Tên phải bắt đầu bằng <code>use</code>.</p>
+```tsx
+// Đóng popup khi click ra ngoài
+function useOnClickOutside(ref: React.RefObject<HTMLElement>, handler: () => void) {
+  useEffect(() => {
+    const listener = (e: MouseEvent) => {
+      if (!ref.current || ref.current.contains(e.target as Node)) return;
+      handler();
+    };
+    document.addEventListener('mousedown', listener);
+    return () => document.removeEventListener('mousedown', listener);
+  }, [ref, handler]);
+}
+
+// Đồng bộ state với localStorage (an toàn khi trình duyệt chặn storage)
+function useLocalStorage<T>(key: string, initial: T) {
+  const [value, setValue] = useState<T>(() => {
+    try { const raw = localStorage.getItem(key); return raw ? (JSON.parse(raw) as T) : initial; }
+    catch { return initial; }
+  });
+  useEffect(() => { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} }, [key, value]);
+  return [value, setValue] as const;
+}
+```
+
+<h4>Bảng lỗi hay gặp với hooks</h4>
+<div class="tbl"><table><thead><tr><th>Triệu chứng</th><th>Nguyên nhân</th><th>Cách sửa</th></tr></thead><tbody>
+<tr><td>Effect chạy liên tục, gọi API liên tục</td><td>Dependency là object/hàm mới mỗi lần render, hoặc effect set chính state nằm trong dependency</td><td>Dùng giá trị nguyên thủy, chuyển object vào trong effect, dùng useMemo/useCallback</td></tr>
+<tr><td>Interval luôn đọc giá trị count cũ</td><td>Stale closure</td><td>Functional update <code>setCount(c =&gt; c + 1)</code> hoặc dùng ref</td></tr>
+<tr><td>"Rendered more hooks than during the previous render"</td><td>Gọi hook trong if, hoặc sau một lệnh <code>return</code> sớm</td><td>Đưa mọi hook lên đầu component</td></tr>
+<tr><td>"Too many re-renders"</td><td>Gọi <code>setState</code> ngay trong lúc render, ví dụ <code>onClick={setOpen(true)}</code></td><td>Truyền hàm: <code>onClick={() =&gt; setOpen(true)}</code></td></tr>
+<tr><td>Kết quả tìm kiếm cũ đè lên kết quả mới</td><td>Race condition khi fetch</td><td>AbortController trong cleanup, hoặc dùng TanStack Query</td></tr>
+<tr><td>Cảnh báo cập nhật state trên component đã unmount, rò rỉ bộ nhớ</td><td>Thiếu cleanup cho subscription hoặc timer</td><td>Trả về hàm cleanup</td></tr>
+</tbody></table></div>
+
+<h3>6.3. Tối ưu hiệu năng <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>Đo trước khi tối ưu:</strong> dùng React DevTools Profiler (bật "Highlight updates") để xem component nào render, render bao lâu và vì sao.</li>
+<li><code>React.memo(Component)</code> bỏ qua re-render nếu props không đổi (so sánh nông). Nó vô dụng nếu mỗi lần render cha lại truyền object hay hàm mới; khi đó cần <code>useMemo</code>/<code>useCallback</code>.</li>
+<li><strong>Đặt state gần nơi dùng nhất</strong> (state colocation). Truyền component con qua <code>children</code> để nó không re-render theo cha.</li>
+<li><strong>Context:</strong> tách thành nhiều context nhỏ, hoặc tách context chứa state và context chứa hàm dispatch, để tránh cả cây render lại.</li>
+<li><strong>Danh sách dài</strong> (hàng nghìn dòng): virtualization (TanStack Virtual, react-window).</li>
+<li><strong>Code splitting:</strong> <code>React.lazy</code> + <code>Suspense</code> để tải từng route khi cần.</li>
+<li><strong>React Compiler</strong> (bản ổn định từ cuối 2025) tự động memo hóa lúc build, nên dự án dùng nó sẽ ít phải viết <code>useMemo</code>/<code>useCallback</code> tay. Tuy vậy phỏng vấn vẫn hỏi nguyên lý.</li>
+</ul>
+```tsx
+const Row = memo(function Row({ item, onSelect }: { item: Item; onSelect: (id: string) => void }) {
+  return <li onClick={() => onSelect(item.id)}>{item.name}</li>;
+});
+
+function List({ items, filter }: Props) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const visible = useMemo(() => items.filter((i) => i.name.includes(filter)), [items, filter]);
+  const onSelect = useCallback((id: string) => setSelected(id), []); // giữ nguyên tham chiếu → Row không render lại
+  return <ul>{visible.map((i) => <Row key={i.id} item={i} onSelect={onSelect} />)}</ul>;
+}
+```
+
+<h3>6.4. Quản lý state <span class="tag must">Bắt buộc</span></h3>
+<p>Câu hỏi quan trọng nhất là <strong>đây là loại state gì</strong>, chứ không phải "dùng Redux hay không":</p>
+<div class="tbl"><table><thead><tr><th>Loại state</th><th>Ví dụ</th><th>Công cụ</th></tr></thead><tbody>
+<tr><td>Local UI</td><td>Mở/đóng modal, giá trị input</td><td><code>useState</code>, <code>useReducer</code></td></tr>
+<tr><td><strong>Server state</strong></td><td>Danh sách sản phẩm, thông tin user lấy từ API</td><td><strong>TanStack Query</strong>, SWR, RTK Query, Apollo (với GraphQL)</td></tr>
+<tr><td>Global client state</td><td>Theme, giỏ hàng chưa lưu, trạng thái đăng nhập</td><td><strong>Zustand</strong>, Redux Toolkit, Context (ít thay đổi)</td></tr>
+<tr><td>URL state</td><td>Bộ lọc, trang, tab đang chọn</td><td>Query string (React Router, <code>nuqs</code>)</td></tr>
+<tr><td>Form state</td><td>Form nhiều trường cần validate</td><td><strong>react-hook-form</strong> + zod</td></tr>
+</tbody></table></div>
+<p>Sai lầm phổ biến là chép dữ liệu từ API vào Redux rồi tự xử lý loading, cache và refetch. TanStack Query làm sẵn các việc đó: cache theo key, loại bỏ request trùng, refetch khi quay lại tab, retry, optimistic update.</p>
+```tsx
+// TanStack Query: đọc và ghi
+const { data, isPending, error } = useQuery({
+  queryKey: ['products', { page, q }],
+  queryFn: () => api.get('/products', { params: { page, q } }),
+  staleTime: 60_000,
+});
+
+const qc = useQueryClient();
+const createProduct = useMutation({
+  mutationFn: (dto: NewProduct) => api.post('/products', dto),
+  onSuccess: () => qc.invalidateQueries({ queryKey: ['products'] }), // tải lại danh sách
+});
+
+// Zustand: global state gọn nhẹ
+const useCart = create<CartState>()((set) => ({
+  items: [],
+  add: (p) => set((s) => ({ items: [...s.items, p] })),
+}));
+const count = useCart((s) => s.items.length); // chỉ re-render khi số lượng thay đổi
+```
+
+<h3>6.5. Form, routing, xử lý lỗi <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>Controlled</strong> (giá trị nằm trong state, mỗi lần gõ là một lần render) và <strong>uncontrolled</strong> (DOM giữ giá trị, đọc qua ref). react-hook-form dùng uncontrolled nên nhanh với form lớn.</li>
+<li>Dùng chung <strong>schema zod</strong> giữa frontend và backend (trong monorepo) để validate giống nhau ở cả hai đầu.</li>
+<li><strong>React Router:</strong> nested route, <code>useParams</code>, <code>useSearchParams</code>, route cần đăng nhập (protected route), loader/action (data router).</li>
+<li><strong>Error Boundary:</strong> bắt lỗi khi render của cây con và hiển thị giao diện dự phòng. Nó không bắt lỗi trong event handler hay code async (những chỗ đó phải tự <code>try/catch</code>).</li>
+</ul>
+```tsx
+const schema = z.object({ email: z.string().email('Email không hợp lệ'), password: z.string().min(8) });
+type FormData = z.infer<typeof schema>;
+
+function LoginForm() {
+  const { register, handleSubmit, formState: { errors, isSubmitting } } =
+    useForm<FormData>({ resolver: zodResolver(schema) });
+  return (
+    <form onSubmit={handleSubmit((d) => login(d))}>
+      <input {...register('email')} />
+      {errors.email && <p role="alert">{errors.email.message}</p>}
+      <input type="password" {...register('password')} />
+      <button disabled={isSubmitting}>Đăng nhập</button>
+    </form>
+  );
+}
+```
+
+<h3>6.6. React 19 <span class="tag should">Nên biết</span></h3>
+<ul>
+<li><strong>Actions:</strong> truyền hàm async vào <code>&lt;form action={fn}&gt;</code>; React tự quản lý trạng thái pending và lỗi.</li>
+<li><code>useActionState</code> lấy kết quả và trạng thái pending của action; <code>useFormStatus</code> giúp component con biết form có đang được gửi không.</li>
+<li><code>useOptimistic</code> hiển thị kết quả ngay lập tức (like, gửi tin nhắn) trước khi server trả lời, và tự hoàn tác nếu lỗi.</li>
+<li><code>use(promise)</code> / <code>use(context)</code> đọc promise (kết hợp Suspense) hoặc context; được phép gọi trong điều kiện.</li>
+<li><code>ref</code> giờ là một prop bình thường, không cần <code>forwardRef</code>. Có thể đặt <code>&lt;title&gt;</code> và <code>&lt;meta&gt;</code> ngay trong component.</li>
+</ul>
+
+<h3>6.7. Next.js (App Router) <span class="tag should">Nên biết</span></h3>
+<div class="tbl"><table><thead><tr><th>Cách render</th><th>Khi nào HTML được tạo</th><th>Dùng cho</th></tr></thead><tbody>
+<tr><td>CSR (SPA thuần)</td><td>Ở trình duyệt, sau khi tải JS</td><td>Dashboard nội bộ, không cần SEO</td></tr>
+<tr><td>SSR</td><td>Trên server, ở mỗi request</td><td>Dữ liệu theo từng user, cần SEO</td></tr>
+<tr><td>SSG</td><td>Lúc build</td><td>Blog, trang giới thiệu, tài liệu</td></tr>
+<tr><td>ISR</td><td>Lúc build, rồi tạo lại định kỳ hoặc khi có yêu cầu (revalidate)</td><td>Trang sản phẩm, tin tức</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Server Component</strong> (mặc định trong thư mục <code>app/</code>): chạy trên server, gọi DB trực tiếp được, không gửi JS của nó xuống client, nhưng <strong>không dùng được state, effect hay sự kiện</strong>.</li>
+<li><strong>Client Component</strong> (<code>'use client'</code> ở đầu file): có tương tác, chạy ở trình duyệt (và vẫn được render trước một lần trên server). Nên đặt ranh giới <code>'use client'</code> càng thấp trong cây càng tốt.</li>
+<li><strong>Server Actions</strong> (<code>'use server'</code>): hàm chạy trên server, gọi được từ form hoặc client. Nó vẫn là một endpoint công khai, nên <strong>phải tự kiểm tra auth và validate</strong> bên trong.</li>
+<li>Ngoài ra cần biết: <code>layout</code>, <code>loading</code>, <code>error</code>, route handler (<code>route.ts</code>), middleware, <code>next/image</code>, và cơ chế cache/revalidate (cách cache mặc định đã thay đổi qua các phiên bản, nên đọc docs của bản bạn đang dùng).</li>
+</ul>
+```tsx
+// app/products/[id]/page.tsx: Server Component, async, gọi DB trực tiếp
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const product = await db.product.findUnique({ where: { id } });
+  if (!product) notFound();
+  return (
+    <main>
+      <h1>{product.name}</h1>
+      <AddToCartButton productId={product.id} /> {/* Client Component, có onClick */}
+    </main>
+  );
+}
+```
+
+<h4>Quy ước file trong thư mục <code>app/</code></h4>
+<div class="tbl"><table><thead><tr><th>File / thư mục</th><th>Vai trò</th></tr></thead><tbody>
+<tr><td><code>page.tsx</code></td><td>Giao diện của một route; chỉ thư mục có file này mới truy cập được qua URL</td></tr>
+<tr><td><code>layout.tsx</code></td><td>Khung bao các trang con, <strong>giữ nguyên state khi chuyển trang</strong>; <code>app/layout.tsx</code> là root layout (bắt buộc, chứa thẻ <code>html</code> và <code>body</code>)</td></tr>
+<tr><td><code>loading.tsx</code></td><td>Giao diện chờ, tự bọc page trong Suspense nên trang được stream dần</td></tr>
+<tr><td><code>error.tsx</code></td><td>Error boundary của route (phải là Client Component), có hàm <code>reset</code> để thử lại</td></tr>
+<tr><td><code>not-found.tsx</code></td><td>Hiển thị khi gọi <code>notFound()</code></td></tr>
+<tr><td><code>route.ts</code></td><td>API endpoint (route handler): export các hàm <code>GET</code>, <code>POST</code>…</td></tr>
+<tr><td><code>[id]</code>, <code>[...slug]</code>, <code>[[...slug]]</code></td><td>Route động, catch-all, catch-all tùy chọn</td></tr>
+<tr><td><code>(group)</code></td><td>Nhóm route để dùng chung layout mà không ảnh hưởng URL, ví dụ <code>(shop)</code>, <code>(admin)</code></td></tr>
+<tr><td><code>@slot</code>, <code>(.)photo</code></td><td>Parallel routes và intercepting routes (ví dụ mở ảnh dạng modal) <span class="tag plus">Điểm cộng</span></td></tr>
+<tr><td><code>middleware.ts</code> (từ Next 16 gọi là <code>proxy.ts</code>)</td><td>Chạy trước request: chuyển hướng khi chưa đăng nhập, rewrite, đặt header</td></tr>
+</tbody></table></div>
+
+<h4>Lấy dữ liệu, streaming và cache</h4>
+<ul>
+<li>Trong Server Component, <strong>gọi DB hoặc fetch trực tiếp</strong> bằng <code>await</code>; không cần useEffect hay API trung gian.</li>
+<li>Các truy vấn độc lập nhau thì chạy song song bằng <code>Promise.all</code>. Phần nào chậm thì bọc trong <code>&lt;Suspense&gt;</code> để phần còn lại hiện trước (streaming).</li>
+<li><strong>Trang tĩnh hay động:</strong> trang tự trở thành động (render ở mỗi request) khi dùng <code>cookies()</code>, <code>headers()</code> hoặc <code>searchParams</code>. Từ Next 15, các API này và <code>params</code> đều là <strong>async</strong> (phải <code>await</code>).</li>
+<li><strong>Cache:</strong> từ Next 15, <code>fetch</code> <strong>không còn được cache mặc định</strong>. Muốn cache thì khai báo rõ: <code>fetch(url, { next: { revalidate: 60, tags: ['products'] } })</code>, hoặc <code>export const revalidate = 60</code> ở cấp route. Next 16 bổ sung directive <code>'use cache'</code> (Cache Components). Phần cache thay đổi nhiều qua từng phiên bản, nên luôn đọc docs của đúng bản bạn dùng.</li>
+<li><strong>Làm mới cache sau khi ghi:</strong> <code>revalidatePath('/products')</code> hoặc <code>revalidateTag('products')</code>.</li>
+<li><code>generateStaticParams</code> tạo sẵn trang cho các route động lúc build (SSG/ISR).</li>
+</ul>
+```tsx
+// app/products/[slug]/page.tsx
+export const revalidate = 300; // ISR: tạo lại trang tối đa mỗi 5 phút
+
+export async function generateStaticParams() {
+  const top = await db.product.findMany({ select: { slug: true }, take: 100 });
+  return top.map((p) => ({ slug: p.slug }));          // build sẵn 100 trang phổ biến
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const p = await getProduct(slug);
+  return { title: p?.name ?? 'Không tìm thấy', description: p?.summary };
+}
+
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const product = await getProduct(slug);
+  if (!product) notFound();
+  return (
+    <>
+      <ProductInfo product={product} />
+      <Suspense fallback={<ReviewsSkeleton />}>
+        <Reviews productId={product.id} />   {/* phần chậm được stream sau */}
+      </Suspense>
+    </>
+  );
+}
+```
+
+<h4>Server Actions và form</h4>
+```tsx
+// app/products/new/actions.ts
+'use server';
+import { z } from 'zod';
+import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
+
+const Schema = z.object({ name: z.string().min(2), price: z.coerce.number().positive() });
+
+export async function createProduct(prevState: { error?: string }, formData: FormData) {
+  const session = await auth();                                  // LUÔN kiểm tra quyền
+  if (session?.user.role !== 'admin') return { error: 'Không có quyền' };
+  const parsed = Schema.safeParse(Object.fromEntries(formData));  // LUÔN validate
+  if (!parsed.success) return { error: 'Dữ liệu không hợp lệ' };
+  const p = await db.product.create({ data: parsed.data });
+  revalidatePath('/products');
+  redirect(`/products/${p.slug}`);
+}
+
+// app/products/new/form.tsx
+'use client';
+import { useActionState } from 'react';
+import { createProduct } from './actions';
+
+export function NewProductForm() {
+  const [state, formAction, isPending] = useActionState(createProduct, {});
+  return (
+    <form action={formAction}>
+      <input name="name" required />
+      <input name="price" type="number" required />
+      {state.error && <p role="alert">{state.error}</p>}
+      <button disabled={isPending}>{isPending ? 'Đang lưu…' : 'Tạo sản phẩm'}</button>
+    </form>
+  );
+}
+```
+
+<h4>Route handler, middleware, những thứ khác</h4>
+```ts
+// app/api/products/route.ts: API cho mobile app hoặc webhook
+export async function GET(req: Request) {
+  const q = new URL(req.url).searchParams.get('q') ?? '';
+  return Response.json(await searchProducts(q));
+}
+
+// middleware.ts (Next 16: proxy.ts): chặn /admin khi chưa đăng nhập
+export function middleware(req: NextRequest) {
+  if (!req.cookies.get('session')) return NextResponse.redirect(new URL('/login', req.url));
+}
+export const config = { matcher: ['/admin/:path*'] };
+```
+<ul>
+<li><code>next/image</code> (tự resize, lazy load, chống CLS), <code>next/font</code> (tự host font, không gây nhảy bố cục), <code>next/link</code> (prefetch trang).</li>
+<li><strong>Xác thực:</strong> Auth.js (NextAuth), Clerk, hoặc tự làm bằng cookie session. Middleware chỉ là lớp chặn đầu tiên; vẫn phải kiểm tra quyền trong Server Component, Server Action và route handler.</li>
+<li><strong>Pages Router</strong> (thư mục <code>pages/</code>, <code>getServerSideProps</code>, <code>getStaticProps</code>) vẫn còn trong nhiều dự án cũ. Nên biết để đọc hiểu và bảo trì.</li>
+<li><strong>Deploy:</strong> Vercel (dễ nhất), hoặc tự host bằng <code>output: 'standalone'</code> trong Docker kèm <code>next start</code>.</li>
+<li><strong>Khi nào chọn Next.js thay vì React + Vite:</strong> cần SEO, trang công khai, tải lần đầu nhanh, muốn fullstack trong một dự án. Dashboard nội bộ sau đăng nhập thì SPA bằng Vite thường đơn giản hơn.</li>
+</ul>
+
+```qa
+Q: Khi nào một component re-render?
+A: Khi state của nó đổi, khi component cha re-render, hoặc khi giá trị Context mà nó dùng đổi. Props thay đổi không phải là nguyên nhân riêng biệt: props chỉ đổi khi cha render lại. Re-render là gọi lại hàm component; DOM chỉ cập nhật ở những chỗ có khác biệt.
+Q: Vì sao không nên dùng index làm key?
+A: Khi chèn, xóa hoặc sắp xếp lại danh sách, index của các phần tử thay đổi, React ghép nhầm component với dữ liệu, nên state nội bộ (giá trị input, focus) bị gắn sai dòng và hiệu năng kém hơn. Index chỉ dùng được khi danh sách tĩnh, không bao giờ đổi thứ tự.
+Q: useMemo và useCallback khác nhau thế nào? Khi nào KHÔNG nên dùng?
+A: `useMemo` nhớ giá trị trả về, `useCallback` nhớ chính hàm (tương đương `useMemo(() => fn, deps)`). Không nên dùng cho phép tính rẻ, hoặc khi bên nhận không được bọc memo và không đặt giá trị đó trong dependency, vì khi ấy chỉ tốn thêm chi phí so sánh mà không được gì. Hãy đo bằng Profiler trước.
+Q: Cleanup trong useEffect chạy khi nào? Cho ví dụ cần cleanup.
+A: Cleanup chạy trước khi effect chạy lại (khi dependency đổi) và khi component unmount. Ví dụ: clearInterval, gỡ event listener, đóng WebSocket, abort fetch để tránh race condition và tránh cập nhật state sau khi đã unmount.
+Q: "Stale closure" trong React là gì?
+A: Hàm như callback của effect hay setInterval giữ giá trị state tại thời điểm hàm được tạo, nên sau đó nó đọc phải giá trị cũ. Cách sửa: khai báo đủ dependency, dùng functional update `setX(x => ...)`, hoặc lưu giá trị mới nhất vào `useRef`.
+Q: Phân biệt server state và client state. Vì sao không nên để dữ liệu API trong Redux?
+A: Server state là bản sao của dữ liệu nằm trên server, có thể cũ, cần cache, refetch, chống request trùng và xử lý loading/error. Client state chỉ tồn tại ở trình duyệt. Để dữ liệu API trong Redux thì phải tự viết lại những gì TanStack Query đã có sẵn, nên code dài và dễ sai.
+Q: Context có vấn đề gì về hiệu năng? Cách khắc phục?
+A: Khi value thay đổi (kể cả khi chỉ là object mới tạo lại mỗi lần render) thì mọi component dùng context đó đều render lại. Khắc phục: memo value, tách nhỏ context, tách context state và context dispatch, hoặc dùng Zustand để component chỉ subscribe phần dữ liệu mình cần.
+Q: Server Component và Client Component khác nhau thế nào?
+A: Server Component chạy trên server, có thể async và truy cập DB/secret trực tiếp, không gửi JS của nó xuống client, nhưng không có state, effect hay event. Client Component có `'use client'`, có tương tác, và JS của nó được gửi về trình duyệt. Server Component có thể chứa Client Component; props truyền qua ranh giới đó phải serialize được.
+Q: SSR, SSG, ISR khác nhau và khi nào dùng?
+A: SSR tạo HTML ở mỗi request, cho dữ liệu cá nhân hóa hoặc thay đổi liên tục. SSG tạo HTML lúc build, nhanh nhất, cho nội dung tĩnh. ISR là SSG nhưng tạo lại định kỳ hoặc khi được gọi, cho trang sản phẩm hay tin tức. Cả ba đều tốt cho SEO hơn CSR.
+Q: Vì sao truyền object làm dependency của useEffect dễ gây vòng lặp?
+A: Object và hàm được tạo mới ở mỗi lần render, nên với `Object.is` chúng luôn "khác". Effect chạy sau mỗi lần render; nếu effect lại set state thì gây render mới, và cứ thế lặp vô hạn. Cách sửa: dùng giá trị nguyên thủy làm dependency, tạo object bên trong effect, hoặc memo hóa.
+Q: Khi nào dùng useReducer thay vì useState?
+A: Khi state có nhiều trường liên quan với nhau, có nhiều loại hành động, giá trị mới phụ thuộc giá trị cũ theo logic phức tạp, hoặc muốn tách logic ra một hàm thuần để dễ test. `dispatch` có tham chiếu ổn định nên truyền xuống con không gây re-render thừa.
+Q: useTransition và useDeferredValue giải quyết vấn đề gì?
+A: Cả hai đều giữ cho giao diện phản hồi nhanh khi có một phần render nặng. useTransition bọc lệnh cập nhật state "không gấp", nên React ưu tiên cập nhật gấp (gõ phím) trước. useDeferredValue cho bạn bản "trễ" của một giá trị để dùng ở phần render nặng. Cả hai đều có thể bị ngắt giữa chừng nếu có cập nhật mới hơn.
+Q: Vì sao custom hook `useAuth` nên ném lỗi khi context là null?
+A: Để phát hiện ngay lỗi dùng hook ngoài Provider với thông báo rõ ràng, thay vì nhận về `null` rồi crash ở một chỗ khó hiểu. Kèm theo đó TypeScript có kiểu non-null, nên không cần kiểm tra `?.` ở mọi nơi dùng.
+Q: Hai component cùng gọi một custom hook `useCounter()`. Chúng có dùng chung state không?
+A: Không. Custom hook chỉ dùng chung logic; mỗi lần gọi tạo ra state riêng. Muốn dùng chung state thì phải nâng state lên cha, dùng Context, hoặc dùng store (Zustand).
+Q: layout.tsx và page.tsx trong Next.js khác nhau thế nào?
+A: page.tsx là nội dung riêng của route. layout.tsx bao quanh page và các route con, được giữ lại (không render lại, không mất state) khi điều hướng giữa các trang con. Đặt header, sidebar, provider ở layout.
+Q: Trong Next.js 15+, làm sao để cache kết quả fetch và làm mới khi dữ liệu thay đổi?
+A: Khai báo rõ `fetch(url, { next: { revalidate: 60, tags: ['products'] } })` hoặc `export const revalidate` ở cấp route (từ Next 15, fetch không được cache mặc định). Sau khi ghi dữ liệu thì gọi `revalidateTag('products')` hoặc `revalidatePath('/products')` trong Server Action hoặc route handler.
+Q: Vì sao chỉ chặn đăng nhập ở middleware là chưa đủ?
+A: Middleware chỉ chặn theo đường dẫn, có thể bị bỏ sót do cấu hình matcher, và không bảo vệ được Server Action (một endpoint POST gọi được trực tiếp) hay route handler. Phải kiểm tra quyền ngay tại nơi đọc/ghi dữ liệu: Server Component, Server Action, route handler, tầng data access.
+Q: Streaming với Suspense trong Next.js mang lại lợi ích gì?
+A: Phần nhanh của trang (thông tin sản phẩm) được gửi và hiển thị ngay; phần chậm (đánh giá, gợi ý) hiện skeleton rồi được stream xuống khi xong. Nhờ vậy TTFB và LCP tốt hơn, người dùng không phải chờ truy vấn chậm nhất.
+```
+```quiz
+Q: Đoạn `setCount(count + 1); setCount(count + 1);` trong một handler làm count tăng bao nhiêu?
++ 1
+- 2
+- 0
+- Báo lỗi
+E: Cả hai lần đều dùng cùng giá trị `count` cũ. Muốn tăng 2 thì dùng `setCount(c => c + 1)`.
+Q: Đổi `ref.current` sẽ dẫn đến?
+- Component re-render
++ Không re-render
+- Re-render cả cây
+- Báo lỗi
+E: useRef lưu giá trị qua các lần render mà không kích hoạt render.
+Q: `React.memo(Child)` KHÔNG có tác dụng trong trường hợp nào?
+- Props là các kiểu nguyên thủy không đổi
++ Cha truyền `onClick={() => ...}` mới ở mỗi lần render
+- Child nằm sâu trong cây
+- Child có state riêng
+E: Mỗi lần render tạo ra một hàm mới với tham chiếu khác, nên phép so sánh nông thấy props đổi. Cần dùng useCallback.
+Q: Ở môi trường dev, effect chạy 2 lần khi mount. Nguyên nhân là?
+- Bug của React
++ StrictMode cố ý mount, unmount rồi mount lại để kiểm tra cleanup
+- Dependency array bị sai
+- Do dùng Vite
+E: Chỉ xảy ra ở dev với StrictMode. Ở production effect chạy một lần.
+Q: Dữ liệu danh sách sản phẩm lấy từ API nên quản lý bằng gì?
+- useState trong App rồi truyền props xuống
+- Lưu trong localStorage
++ TanStack Query (hoặc SWR/RTK Query)
+- Một biến global
+E: Đây là server state, cần cache, refetch, chống request trùng và quản lý trạng thái loading/error.
+Q: Error Boundary bắt được lỗi nào?
++ Lỗi ném ra trong lúc render của component con
+- Lỗi trong onClick
+- Lỗi trong setTimeout
+- Lỗi server trả về 500
+E: Lỗi trong event handler và code async phải tự try/catch, rồi cập nhật state để hiển thị lỗi.
+Q: Trong Next.js App Router, component mặc định là?
++ Server Component
+- Client Component
+- Static HTML
+- Web Component
+E: Phải thêm `'use client'` thì mới thành Client Component.
+Q: Điều gì ĐÚNG về Server Actions?
+- Chỉ framework mới gọi được, nên không cần kiểm tra quyền
++ Thực chất là một endpoint POST, phải tự kiểm tra auth và validate input
+- Chạy ở trình duyệt
+- Không nhận được tham số
+E: Bất kỳ ai cũng có thể gửi request tới action đó, nên phải bảo vệ nó như một API.
+Q: `useEffect(fn)` không có mảng dependency sẽ chạy khi nào?
+- Chỉ một lần khi mount
++ Sau mọi lần render
+- Không bao giờ
+- Chỉ khi props đổi
+E: Không truyền mảng dependency nghĩa là effect chạy lại sau mỗi lần render.
+Q: Lỗi "Too many re-renders" thường do đâu?
+- Dùng quá nhiều useEffect
++ Gọi setState ngay khi render, ví dụ `onClick={setOpen(true)}`
+- Component có quá nhiều props
+- Thiếu key trong danh sách
+E: `setOpen(true)` được gọi ngay lúc render, gây render tiếp, rồi lại gọi... Phải truyền hàm `() => setOpen(true)`.
+Q: Hook nào tạo id ổn định, không lệch giữa server và client, để dùng cho `htmlFor`?
+- useRef
+- useMemo
++ useId
+- Math.random() trong useState
+E: useId sinh id nhất quán khi SSR/hydration. Math.random sẽ lệch giữa server và client.
+Q: Lọc danh sách 10.000 dòng theo ô input làm gõ phím bị giật. Hook nào giúp nhất?
+- useLayoutEffect
++ useTransition (hoặc useDeferredValue)
+- useImperativeHandle
+- useContext
+E: Đánh dấu việc lọc là cập nhật không gấp để ô input luôn được ưu tiên.
+Q: Trong Next.js App Router, file nào hiển thị giao diện chờ và tự bọc page trong Suspense?
+- error.tsx
++ loading.tsx
+- template.tsx
+- not-found.tsx
+E: loading.tsx tạo Suspense boundary cho route, giúp stream nội dung.
+Q: Từ Next.js 15, `params` và `cookies()` có đặc điểm gì?
++ Là API async, phải `await`
+- Là biến global
+- Chỉ dùng được trong Client Component
+- Đã bị loại bỏ
+E: Next 15 chuyển các API phụ thuộc request (params, searchParams, cookies, headers) sang dạng async.
+Q: Thư mục `app/(shop)/cart/page.tsx` tương ứng với URL nào?
+- /shop/cart
++ /cart
+- /(shop)/cart
+- /shop
+E: Route group trong ngoặc tròn chỉ để tổ chức code và dùng chung layout, không xuất hiện trên URL.
+Q: Sau khi Server Action tạo sản phẩm, danh sách ở `/products` vẫn hiển thị dữ liệu cũ. Nên gọi gì?
+- `router.refresh()` ở server
++ `revalidatePath('/products')` (hoặc `revalidateTag`)
+- `window.location.reload()` trong action
+- Không làm gì được
+E: revalidatePath và revalidateTag xóa cache của route hoặc dữ liệu liên quan để lần sau render lại với dữ liệu mới.
+```
+
+<h2 id="frontend-nen-tang">7. Nền tảng frontend và trình duyệt</h2>
+
+<h3>7.1. HTML và CSS <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>HTML semantic:</strong> <code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code>, <code>button</code> (không dùng <code>div onClick</code>), <code>label</code> gắn với input. Tốt cho SEO và cho người dùng trình đọc màn hình.</li>
+<li><strong>Box model</strong>, <code>box-sizing: border-box</code>; position (relative, absolute, fixed, sticky), z-index và stacking context.</li>
+<li><strong>Flexbox</strong> cho bố cục một chiều (thanh menu, căn giữa); <strong>Grid</strong> cho bố cục hai chiều (lưới sản phẩm, layout trang).</li>
+<li><strong>Responsive:</strong> thiết kế mobile-first, media query, đơn vị <code>rem</code>/<code>%</code>/<code>vw</code>, <code>clamp()</code>; ảnh responsive dùng <code>srcset</code>.</li>
+<li><strong>Tailwind CSS</strong> rất phổ biến hiện nay. Ngoài ra nên biết CSS Modules và thư viện component (shadcn/ui, MUI, Ant Design).</li>
+<li>Độ ưu tiên selector (specificity): inline &gt; id &gt; class/attribute/pseudo-class &gt; element.</li>
+</ul>
+
+<h3>7.2. Trình duyệt hoạt động thế nào <span class="tag must">Bắt buộc</span></h3>
+<ol>
+<li>Phân giải DNS → kết nối TCP + TLS → gửi request HTTP → nhận HTML.</li>
+<li>Phân tích HTML thành <strong>DOM</strong>, CSS thành <strong>CSSOM</strong>, ghép lại thành <strong>render tree</strong> → <strong>layout</strong> (tính vị trí) → <strong>paint</strong> (vẽ) → <strong>composite</strong> (ghép các lớp).</li>
+<li>Thẻ <code>&lt;script&gt;</code> thường chặn việc phân tích HTML. <code>defer</code> tải song song và chạy sau khi phân tích xong, giữ đúng thứ tự. <code>async</code> chạy ngay khi tải xong, không giữ thứ tự.</li>
+<li>Thay đổi kích thước hay vị trí gây <strong>reflow</strong> (tốn kém). Chỉ đổi màu thì gây <strong>repaint</strong>. Hiệu ứng chuyển động nên dùng <code>transform</code>/<code>opacity</code> để chỉ phải composite.</li>
+</ol>
+
+<h3>7.3. CORS, cookie, lưu trữ <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>Same-origin policy:</strong> origin gồm giao thức + domain + port. Trình duyệt chặn JS đọc response từ origin khác, trừ khi server cho phép qua header <code>Access-Control-Allow-Origin</code>.</li>
+<li><strong>Preflight:</strong> với request "không đơn giản" (PUT, DELETE, PATCH, header tùy chỉnh như <code>Authorization</code>, <code>Content-Type: application/json</code>), trình duyệt gửi <code>OPTIONS</code> trước để hỏi.</li>
+<li>Gửi cookie khác origin cần <code>credentials: 'include'</code> ở client và <code>Access-Control-Allow-Credentials: true</code> ở server. Khi đó <code>Allow-Origin</code> <strong>không được là <code>*</code></strong>.</li>
+<li>CORS là cơ chế <strong>của trình duyệt</strong>: Postman hay curl không bị chặn. Vì vậy CORS không thay thế được xác thực.</li>
+<li><strong>Thuộc tính cookie:</strong> <code>HttpOnly</code> (JS không đọc được, chống XSS lấy cookie), <code>Secure</code> (chỉ gửi qua HTTPS), <code>SameSite=Lax</code> (mặc định trên Chrome, chống phần lớn CSRF) / <code>Strict</code> / <code>None</code> (phải kèm Secure).</li>
+</ul>
+<div class="tbl"><table><thead><tr><th></th><th>Cookie</th><th>localStorage</th><th>sessionStorage</th></tr></thead><tbody>
+<tr><td>Dung lượng</td><td>~4 KB</td><td>~5–10 MB</td><td>~5 MB</td></tr>
+<tr><td>Tự gửi lên server</td><td>Có, mỗi request</td><td>Không</td><td>Không</td></tr>
+<tr><td>Hết hạn</td><td>Theo Expires/Max-Age</td><td>Không bao giờ</td><td>Khi đóng tab</td></tr>
+<tr><td>JS đọc được</td><td>Có, trừ khi HttpOnly</td><td>Có</td><td>Có</td></tr>
+</tbody></table></div>
+
+<h3>7.4. Hiệu năng web <span class="tag should">Nên biết</span></h3>
+<div class="tbl"><table><thead><tr><th>Chỉ số Core Web Vitals</th><th>Đo cái gì</th><th>Mức tốt</th><th>Cách cải thiện</th></tr></thead><tbody>
+<tr><td><strong>LCP</strong> (Largest Contentful Paint)</td><td>Tốc độ hiện nội dung chính</td><td>≤ 2,5 giây</td><td>Tối ưu ảnh (WebP/AVIF, kích thước đúng), preload, SSR, CDN</td></tr>
+<tr><td><strong>INP</strong> (Interaction to Next Paint)</td><td>Độ nhạy khi tương tác</td><td>≤ 200 ms</td><td>Giảm JS chạy trên main thread, chia nhỏ task dài, giảm re-render</td></tr>
+<tr><td><strong>CLS</strong> (Cumulative Layout Shift)</td><td>Bố cục có bị xô lệch không</td><td>≤ 0,1</td><td>Khai báo width/height cho ảnh, chừa chỗ trước cho quảng cáo, font</td></tr>
+</tbody></table></div>
+<ul>
+<li>Lazy load ảnh (<code>loading="lazy"</code>) và route; tree-shaking; phân tích bundle (<code>rollup-plugin-visualizer</code>); nén gzip/brotli; cache HTTP (<code>Cache-Control</code>, file tĩnh có hash trong tên).</li>
+<li><strong>Vite</strong> là công cụ build phổ biến cho SPA (Create React App đã ngừng phát triển). Đo bằng Lighthouse và tab Performance của DevTools.</li>
+</ul>
+
+<h3>7.5. Accessibility <span class="tag plus">Điểm cộng</span></h3>
+<p>Điều hướng được bằng bàn phím (Tab, Enter, Esc), focus hiển thị rõ, ảnh có <code>alt</code>, độ tương phản màu đủ, ARIA chỉ dùng khi HTML semantic không đủ (ví dụ <code>aria-label</code> cho nút chỉ có icon), và dùng <code>role="alert"</code> cho thông báo lỗi.</p>
+```qa
+Q: Trình bày điều gì xảy ra từ lúc gõ URL đến khi trang hiển thị.
+A: Phân giải DNS ra IP → kết nối TCP và bắt tay TLS → gửi HTTP request (có thể qua CDN/proxy) → server trả HTML → trình duyệt phân tích HTML thành DOM, tải CSS/JS → tạo CSSOM → render tree → layout → paint → composite. Script không có defer chặn việc phân tích; CSS chặn việc render.
+Q: CORS là gì? Vì sao gọi API bằng Postman được mà từ trình duyệt thì lỗi?
+A: CORS là cơ chế trình duyệt dùng để cho phép JS đọc response từ origin khác, dựa trên header mà server trả về. Postman không phải trình duyệt nên không áp dụng chính sách này. Cách sửa là cấu hình ở server (`Access-Control-Allow-Origin` đúng domain, methods, headers, credentials), không phải sửa ở frontend.
+Q: Preflight request là gì?
+A: Là request `OPTIONS` mà trình duyệt tự gửi trước một request "không đơn giản" (method khác GET/POST/HEAD, có header tùy chỉnh, hoặc Content-Type là application/json) để hỏi server có cho phép không. Server trả về các header Allow-Methods/Allow-Headers; có thể cache kết quả bằng `Access-Control-Max-Age`.
+Q: SameSite của cookie có tác dụng gì?
+A: Nó quy định cookie có được gửi kèm request từ trang khác không. `Strict`: không bao giờ. `Lax` (mặc định): chỉ gửi khi điều hướng cấp cao nhất bằng GET (bấm link). `None`: luôn gửi, bắt buộc kèm `Secure`. Lax/Strict chặn được phần lớn tấn công CSRF.
+Q: defer và async khác nhau thế nào?
+A: Cả hai đều tải script song song với việc phân tích HTML. `defer` chạy sau khi phân tích xong và giữ đúng thứ tự các script, phù hợp cho script của app. `async` chạy ngay khi tải xong, không giữ thứ tự, phù hợp cho script độc lập như analytics.
+Q: Kể 3 chỉ số Core Web Vitals và một cách cải thiện mỗi chỉ số.
+A: LCP ≤ 2,5 giây: tối ưu và preload ảnh hero, dùng SSR hoặc CDN. INP ≤ 200 ms: chia nhỏ task dài, giảm lượng JS và re-render. CLS ≤ 0,1: khai báo kích thước cho ảnh và iframe, chừa sẵn chỗ cho nội dung tải sau.
+Q: Flexbox và Grid khác nhau thế nào?
+A: Flexbox sắp xếp theo một chiều (hàng hoặc cột), kích thước phụ thuộc nội dung, phù hợp cho thanh công cụ hay căn giữa. Grid sắp theo hai chiều (hàng và cột cùng lúc), phù hợp cho layout trang hay lưới thẻ. Hai cái thường được dùng kết hợp.
+```
+```quiz
+Q: Trong trường hợp nào trình duyệt gửi preflight OPTIONS?
+- `GET /api/products` không có header đặc biệt
++ `POST` với `Content-Type: application/json`
+- Tải một ảnh bằng thẻ `<img>`
+- Gửi form HTML bằng `application/x-www-form-urlencoded`
+E: Content-Type application/json không nằm trong nhóm "simple request", nên trình duyệt gửi preflight trước.
+Q: Gửi cookie trong request khác origin, header nào ở server là SAI?
+- `Access-Control-Allow-Credentials: true`
++ `Access-Control-Allow-Origin: *`
+- `Access-Control-Allow-Origin: https://app.example.com`
+- `Vary: Origin`
+E: Khi có credentials, Allow-Origin phải là một origin cụ thể, không được dùng `*`.
+Q: Thuộc tính nào khiến JS không đọc được cookie?
+- Secure
+- SameSite=Strict
++ HttpOnly
+- Max-Age
+E: HttpOnly khiến `document.cookie` không thấy cookie đó, nên XSS không lấy được token.
+Q: Animation nào mượt nhất?
+- Đổi `top`/`left`
+- Đổi `width`
++ Đổi `transform: translateX()`
+- Đổi `margin`
+E: transform và opacity chỉ cần bước composite (thường được GPU xử lý), không gây reflow.
+Q: Chỉ số nào đo độ nhạy khi người dùng tương tác (thay cho FID từ năm 2024)?
+- LCP
+- CLS
++ INP
+- TTFB
+E: INP (Interaction to Next Paint) chính thức thay FID trong Core Web Vitals từ tháng 3/2024.
+Q: Bố cục nào nên dùng CSS Grid?
+- Căn giữa một nút
+- Thanh menu ngang
++ Layout trang gồm header, sidebar, nội dung, footer
+- Một hàng icon
+E: Grid mạnh khi cần kiểm soát cả hàng và cột cùng lúc.
+Q: Dữ liệu nào KHÔNG nên lưu trong localStorage?
+- Theme sáng/tối
+- Ngôn ngữ đã chọn
++ Refresh token
+- Bản nháp form
+E: localStorage bị mọi JS trên trang đọc được, nên dính XSS là mất token. Token dài hạn nên để trong cookie HttpOnly.
+```

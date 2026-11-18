@@ -1,0 +1,77 @@
+<h2 id="lo-trinh-tai-nguyen">16. Lộ trình 10 tuần, dự án portfolio và tài nguyên</h2>
+<p>Lộ trình dưới đây dành cho người đã đi làm: khoảng <strong>2 giờ mỗi ngày trong tuần, 4–5 giờ cuối tuần</strong>. Cuối tuần dành để làm dự án portfolio, áp dụng ngay kiến thức của tuần đó. Hết mỗi phần, hãy làm hết phần trắc nghiệm; nếu đúng dưới 80% thì ôn lại.</p>
+<p><strong>Làm song song suốt 10 tuần:</strong> mỗi ngày 30 phút tiếng Anh theo phần 14 (ngữ pháp và từ vựng, đọc một email hoặc bài báo); từ tuần 5, mỗi tuần 2 buổi luyện IQ 20 phút theo phần 15; làm dự án portfolio cùng Claude Code hoặc Codex theo quy trình ở phần 13, nhưng tự viết các phần cốt lõi để hiểu thật.</p>
+<div class="tbl"><table><thead><tr><th>Tuần</th><th>Học / ôn</th><th>Làm vào dự án portfolio</th></tr></thead><tbody>
+<tr><td>1</td><td>Phần 1: JavaScript nâng cao, TypeScript</td><td>Khởi tạo monorepo (pnpm workspaces): <code>apps/api</code>, <code>apps/web</code>, <code>packages/shared</code>; bật TS strict, ESLint, Prettier</td></tr>
+<tr><td>2</td><td>Phần 2: Node.js core</td><td>Validate biến môi trường bằng zod, logging bằng pino, graceful shutdown, export CSV bằng stream</td></tr>
+<tr><td>3</td><td>Phần 3: Express/NestJS, REST, xác thực</td><td>Đăng ký/đăng nhập, access + refresh token, RBAC, Swagger</td></tr>
+<tr><td>4</td><td>Phần 5: SQL, index, transaction, Redis</td><td>Thiết kế schema bằng Prisma, đặt hàng có transaction, cache sản phẩm, rate limit</td></tr>
+<tr><td>5</td><td>Phần 6: React (render, hooks, hiệu năng)</td><td>Dựng frontend bằng Vite hoặc Next.js; trang danh sách, chi tiết, giỏ hàng</td></tr>
+<tr><td>6</td><td>Phần 6–7: quản lý state, form, Next.js, trình duyệt</td><td>TanStack Query, Zustand, react-hook-form + zod dùng chung schema với backend</td></tr>
+<tr><td>7</td><td>Phần 4 và 8.1: GraphQL, testing</td><td>Thêm endpoint GraphQL cho báo cáo (có DataLoader); unit test và test API, độ phủ ≥ 70%</td></tr>
+<tr><td>8</td><td>Phần 8: Docker, CI/CD, bảo mật</td><td>Dockerfile multi-stage, docker compose, GitHub Actions, deploy lên VPS hoặc Render/Railway</td></tr>
+<tr><td>9</td><td>Phần 9–10: system design, microservices</td><td>Tách service gửi thông báo ra riêng: BullMQ hoặc RabbitMQ, outbox, consumer idempotent</td></tr>
+<tr><td>10</td><td>Phần 11–13: PHP, bài code, AI coding agent; làm 1 đề tiếng Anh và 1 đề IQ có bấm giờ; phỏng vấn thử</td><td>Viết README có sơ đồ kiến trúc, quay demo; cập nhật CV và bắt đầu nộp hồ sơ</td></tr>
+</tbody></table></div>
+
+<h3>16.1. Đặc tả dự án portfolio: "ShopLite"</h3>
+<p>Một trang thương mại điện tử nhỏ, đủ để thể hiện gần như mọi kỹ năng ở mức Middle. Khi nhà tuyển dụng hỏi "kể về dự án của bạn", đây sẽ là câu chuyện chính.</p>
+<ul>
+<li><strong>Backend</strong> (NestJS hoặc Express + TypeScript, PostgreSQL + Prisma, Redis): xác thực bằng JWT + refresh token rotation; phân quyền admin/khách; CRUD sản phẩm có phân trang cursor và tìm kiếm; đặt hàng có transaction chống bán vượt tồn kho; header Idempotency-Key khi tạo đơn; cache sản phẩm; rate limit đăng nhập; upload ảnh bằng presigned URL lên S3 (hoặc MinIO).</li>
+<li><strong>Bất đồng bộ:</strong> sau khi đặt hàng thì đẩy job gửi email xác nhận (BullMQ); thông báo trạng thái đơn hàng realtime qua SSE hoặc WebSocket.</li>
+<li><strong>GraphQL:</strong> endpoint <code>/graphql</code> cho dashboard admin (doanh thu, top sản phẩm), có DataLoader và giới hạn độ sâu query.</li>
+<li><strong>Frontend</strong> (React + Vite hoặc Next.js, TanStack Query, Zustand, Tailwind): danh sách, chi tiết, giỏ hàng, thanh toán giả lập, trang admin; có optimistic update và lazy load route.</li>
+<li><strong>Chất lượng:</strong> unit test, test API, một test E2E cho luồng mua hàng; CI chạy lint, type-check và test; Docker compose chạy toàn bộ bằng một lệnh.</li>
+<li><strong>README:</strong> sơ đồ kiến trúc, quyết định kỹ thuật và lý do chọn (ví dụ "Vì sao chọn cursor pagination"), hướng dẫn chạy, link demo.</li>
+</ul>
+
+<h3>16.2. Checklist tự đánh giá trước khi đi phỏng vấn</h3>
+<p class="hint">Chỉ đánh dấu khi bạn <strong>giải thích được thành lời trong 2 phút mà không cần xem tài liệu</strong>. Trạng thái đánh dấu được lưu trên trình duyệt của bạn.</p>
+<ul class="check">
+<li><label><input type="checkbox"> Giải thích closure, <code>this</code>, prototype; viết được debounce và throttle</label></li>
+<li><label><input type="checkbox"> Dùng thành thạo Promise.all, allSettled, race, any; biết khi nào chạy song song, khi nào tuần tự</label></li>
+<li><label><input type="checkbox"> TypeScript: generics, utility types, narrowing, discriminated union</label></li>
+<li><label><input type="checkbox"> Vẽ và giải thích được event loop, thứ tự nextTick, Promise, setTimeout, setImmediate</label></li>
+<li><label><input type="checkbox"> Biết những gì làm chặn event loop và cách xử lý (worker_threads, hàng đợi, stream)</label></li>
+<li><label><input type="checkbox"> Express: middleware, xử lý lỗi async (Express 4 và 5), tách createApp; NestJS: module/exports, DI và scope, guard/interceptor/filter, ValidationPipe</label></li>
+<li><label><input type="checkbox"> Thiết kế REST đúng chuẩn: method, status code, phân trang, idempotency</label></li>
+<li><label><input type="checkbox"> Xác thực bằng JWT: access + refresh token, lưu token ở đâu, thu hồi thế nào</label></li>
+<li><label><input type="checkbox"> GraphQL: schema, resolver, N+1 và DataLoader, so sánh với REST</label></li>
+<li><label><input type="checkbox"> Viết SQL có JOIN, GROUP BY, window function; đọc được EXPLAIN</label></li>
+<li><label><input type="checkbox"> Index: leftmost prefix, khi nào index không được dùng</label></li>
+<li><label><input type="checkbox"> Transaction, isolation level, 3 cách chống bán vượt tồn kho</label></li>
+<li><label><input type="checkbox"> Redis: cache-aside, xóa cache khi dữ liệu đổi, rate limit, cache stampede</label></li>
+<li><label><input type="checkbox"> React: khi nào component re-render, key, immutable state, batching</label></li>
+<li><label><input type="checkbox"> Hooks: dependency array, cleanup, stale closure, useReducer, useRef, Context + custom hook, useTransition; sửa được các lỗi trong bảng 6.2</label></li>
+<li><label><input type="checkbox"> Phân biệt server state và client state; dùng TanStack Query và Zustand</label></li>
+<li><label><input type="checkbox"> Next.js: quy ước file trong app/, Server và Client Component, cache và revalidate, Server Actions + useActionState, SSR/SSG/ISR</label></li>
+<li><label><input type="checkbox"> CORS, preflight, các thuộc tính của cookie, Core Web Vitals</label></li>
+<li><label><input type="checkbox"> Viết unit test, test API và component test</label></li>
+<li><label><input type="checkbox"> Viết Dockerfile multi-stage, docker compose, CI bằng GitHub Actions</label></li>
+<li><label><input type="checkbox"> OWASP: SQL injection, XSS, CSRF, IDOR và cách phòng chống</label></li>
+<li><label><input type="checkbox"> System design: scale ngang, cache, read replica, hàng đợi; giải được 1 bài mẫu</label></li>
+<li><label><input type="checkbox"> Microservices: khi nào nên dùng, Saga, Outbox, consumer idempotent, circuit breaker</label></li>
+<li><label><input type="checkbox"> So sánh PHP-FPM và Node; trả lời được các câu về Laravel (container, Eloquent N+1)</label></li>
+<li><label><input type="checkbox"> Tự viết Promise.all, LRU cache, mapLimit trong 20 phút</label></li>
+<li><label><input type="checkbox"> Trình bày được quy trình làm việc với coding agent: CLAUDE.md/AGENTS.md, lập kế hoạch, kiểm chứng, rủi ro bảo mật</label></li>
+<li><label><input type="checkbox"> Làm đúng ≥ 80% phần trắc nghiệm tiếng Anh (phần 14) và viết được email 120 từ trong 15 phút</label></li>
+<li><label><input type="checkbox"> Làm đúng ≥ 80% phần trắc nghiệm IQ (phần 15), trung bình dưới 1 phút mỗi câu</label></li>
+<li><label><input type="checkbox"> Chuẩn bị sẵn 3 câu chuyện STAR và câu trả lời "vì sao chuyển từ PHP"</label></li>
+<li><label><input type="checkbox"> Dự án portfolio đã deploy, có README và sơ đồ kiến trúc</label></li>
+</ul>
+
+<h3>16.3. Tài nguyên học</h3>
+<div class="tbl"><table><thead><tr><th>Mảng</th><th>Tài nguyên</th></tr></thead><tbody>
+<tr><td>JavaScript</td><td><a href="https://javascript.info/">javascript.info</a> (rất đầy đủ, có bản tiếng Việt một phần) · <a href="https://developer.mozilla.org/">MDN Web Docs</a></td></tr>
+<tr><td>TypeScript</td><td><a href="https://www.typescriptlang.org/docs/handbook/">TypeScript Handbook</a> · <a href="https://github.com/type-challenges/type-challenges">type-challenges</a></td></tr>
+<tr><td>Node.js</td><td><a href="https://nodejs.org/en/learn">Node.js Learn</a> (có bài về event loop) · <a href="https://github.com/goldbergyoni/nodebestpractices">Node.js Best Practices</a></td></tr>
+<tr><td>NestJS / Express</td><td><a href="https://docs.nestjs.com/">docs.nestjs.com</a> · <a href="https://expressjs.com/">expressjs.com</a></td></tr>
+<tr><td>GraphQL</td><td><a href="https://graphql.org/learn/">graphql.org/learn</a> · <a href="https://www.apollographql.com/docs/">Apollo Docs</a></td></tr>
+<tr><td>Database</td><td><a href="https://use-the-index-luke.com/">Use The Index, Luke</a> (index, rất nên đọc) · <a href="https://www.postgresql.org/docs/">PostgreSQL Docs</a> · <a href="https://www.prisma.io/docs">Prisma Docs</a> · <a href="https://redis.io/docs/">Redis Docs</a></td></tr>
+<tr><td>React</td><td><a href="https://react.dev/learn">react.dev/learn</a> (đọc kỹ "You Might Not Need an Effect") · <a href="https://tanstack.com/query/latest">TanStack Query</a> · <a href="https://nextjs.org/docs">Next.js Docs</a></td></tr>
+<tr><td>Testing</td><td><a href="https://testing-library.com/docs/">Testing Library</a> · <a href="https://vitest.dev/">Vitest</a> · <a href="https://playwright.dev/">Playwright</a></td></tr>
+<tr><td>Bảo mật</td><td><a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a> · <a href="https://cheatsheetseries.owasp.org/">OWASP Cheat Sheet Series</a></td></tr>
+<tr><td>System design, microservices</td><td><a href="https://github.com/donnemartin/system-design-primer">System Design Primer</a> · <a href="https://microservices.io/patterns/">microservices.io/patterns</a> (Saga, Outbox...)</td></tr>
+<tr><td>PHP / Laravel</td><td><a href="https://www.php.net/releases/">PHP Releases</a> · <a href="https://laravel.com/docs">Laravel Docs</a></td></tr>
+<tr><td>Lộ trình tổng thể</td><td><a href="https://roadmap.sh/nodejs">roadmap.sh/nodejs</a> · <a href="https://roadmap.sh/react">roadmap.sh/react</a></td></tr>
+</tbody></table></div>

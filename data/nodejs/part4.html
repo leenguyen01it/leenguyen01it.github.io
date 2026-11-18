@@ -1,0 +1,228 @@
+<h2 id="testing-devops-bao-mat">8. Testing, Git, DevOps và bảo mật</h2>
+
+<h3>8.1. Testing <span class="tag must">Bắt buộc</span></h3>
+<p>JD mức Middle thường ghi "viết unit test" và hỏi bạn test cái gì, mock thế nào. <strong>Kim tự tháp test:</strong> nhiều unit test (nhanh, rẻ), vừa phải integration test (API + DB thật), ít E2E test (chậm, dễ chập chờn).</p>
+<div class="tbl"><table><thead><tr><th>Loại</th><th>Công cụ</th><th>Test cái gì</th></tr></thead><tbody>
+<tr><td>Unit</td><td>Vitest, Jest, <code>node:test</code></td><td>Hàm thuần, service (mock repository)</td></tr>
+<tr><td>Integration / API</td><td>Supertest + DB test (Testcontainers hoặc Docker)</td><td>Route → service → DB thật, status code, response</td></tr>
+<tr><td>Component</td><td>React Testing Library</td><td>Hành vi giao diện nhìn từ phía người dùng</td></tr>
+<tr><td>Mock API (frontend)</td><td>MSW (Mock Service Worker)</td><td>Giả lập backend cho test và cho lúc dev</td></tr>
+<tr><td>E2E</td><td>Playwright, Cypress</td><td>Các luồng chính: đăng ký, thanh toán</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Cấu trúc AAA:</strong> Arrange (chuẩn bị), Act (thực hiện), Assert (kiểm tra). Mỗi test kiểm tra một hành vi và có tên mô tả hành vi đó.</li>
+<li>Test <strong>hành vi</strong>, không test chi tiết cài đặt. Với RTL, tìm phần tử theo role/label (<code>getByRole</code>), không theo class CSS.</li>
+<li><strong>Mock</strong> những thứ nằm ngoài tầm kiểm soát: API bên thứ ba, thời gian (<code>vi.useFakeTimers</code>), email. Đừng mock mọi thứ, nếu không test sẽ không còn ý nghĩa.</li>
+<li>Độ phủ (coverage) 70–80% là mục tiêu hợp lý. Coverage cao chưa chắc test đã tốt.</li>
+</ul>
+```ts
+// Unit test cho service, mock repository (Vitest)
+import { describe, it, expect, vi } from 'vitest';
+describe('OrderService.create', () => {
+  it('báo lỗi khi sản phẩm hết hàng', async () => {
+    const repo = { findProduct: vi.fn().mockResolvedValue({ id: 1, stock: 0 }), save: vi.fn() };
+    const service = new OrderService(repo);
+    await expect(service.create({ productId: 1, qty: 1 })).rejects.toThrow('Hết hàng');
+    expect(repo.save).not.toHaveBeenCalled();
+  });
+});
+
+// Integration test cho API (Supertest)
+import request from 'supertest';
+it('POST /api/v1/users trả 400 khi email sai định dạng', async () => {
+  const res = await request(app).post('/api/v1/users').send({ email: 'abc', password: '12345678' });
+  expect(res.status).toBe(400);
+  expect(res.body.code).toBe('VALIDATION_ERROR');
+});
+```
+```tsx
+// Component test (React Testing Library + user-event)
+it('hiện lỗi khi email không hợp lệ', async () => {
+  render(<LoginForm />);
+  await userEvent.type(screen.getByRole('textbox', { name: /email/i }), 'abc');
+  await userEvent.click(screen.getByRole('button', { name: /đăng nhập/i }));
+  expect(await screen.findByRole('alert')).toHaveTextContent('Email không hợp lệ');
+});
+```
+
+<h3>8.2. Git và quy trình làm việc nhóm <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li>Lệnh hằng ngày: <code>branch</code>, <code>switch</code>, <code>commit</code>, <code>pull --rebase</code>, <code>push</code>, <code>stash</code>, <code>log --oneline --graph</code>. Lệnh cứu hộ: <code>reflog</code>, <code>revert</code>, <code>reset</code>, <code>cherry-pick</code>.</li>
+<li><strong>Merge và rebase:</strong> merge giữ nguyên lịch sử và tạo merge commit. Rebase viết lại lịch sử cho thẳng hàng. <strong>Không rebase nhánh đã push mà người khác đang dùng.</strong></li>
+<li>Mô hình nhánh: GitHub Flow hoặc trunk-based (nhánh tính năng ngắn ngày → PR → main), hoặc Git Flow (develop, release, hotfix) ở công ty có lịch release cố định.</li>
+<li><strong>Conventional Commits:</strong> <code>feat:</code>, <code>fix:</code>, <code>refactor:</code>, <code>chore:</code>... PR nhỏ, có mô tả và có test. Khi review thì góp ý cụ thể và lịch sự.</li>
+<li>Công cụ chất lượng code: ESLint, Prettier, Husky + lint-staged (chạy lint trước khi commit), TypeScript strict.</li>
+</ul>
+
+<h3>8.3. Docker <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>Image</strong> là bản đóng gói chỉ đọc; <strong>container</strong> là một image đang chạy. Mỗi lệnh trong Dockerfile tạo một <strong>layer</strong> được cache, nên hãy copy <code>package*.json</code> và cài dependency <em>trước</em> khi copy source.</li>
+<li><strong>Multi-stage build</strong> cho image nhỏ: stage build có devDependencies, stage chạy chỉ giữ thứ cần thiết.</li>
+<li>Thêm <code>.dockerignore</code> (bỏ <code>node_modules</code>, <code>.env</code>, <code>.git</code>), chạy bằng user không phải root, và không đóng gói secret vào image.</li>
+</ul>
+```dockerfile
+# ---- build ----
+FROM node:24-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build && npm prune --omit=dev
+
+# ---- runtime ----
+FROM node:24-alpine
+ENV NODE_ENV=production
+WORKDIR /app
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/dist ./dist
+COPY package.json ./
+USER node
+EXPOSE 3000
+CMD ["node", "dist/main.js"]
+```
+```yaml
+# docker-compose.yml cho môi trường dev: app + Postgres + Redis
+services:
+  api:
+    build: .
+    ports: ["3000:3000"]
+    env_file: .env
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_started }
+  db:
+    image: postgres:17
+    environment: { POSTGRES_PASSWORD: secret, POSTGRES_DB: app }
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U postgres"], interval: 5s, retries: 10 }
+  redis:
+    image: redis:7-alpine
+volumes:
+  pgdata:
+```
+
+<h3>8.4. CI/CD và triển khai <span class="tag should">Nên biết</span></h3>
+<ul>
+<li><strong>CI</strong> (mỗi PR): cài dependency → lint → type-check → test → build. <strong>CD</strong> (khi merge vào main): build image → đẩy lên registry → deploy (VPS, ECS, Kubernetes, Vercel cho Next.js).</li>
+<li><strong>Nginx</strong> làm reverse proxy: kết thúc TLS, nén, phục vụ file tĩnh, chuyển request về app Node. Chạy app bằng <strong>PM2</strong> nếu deploy thẳng trên VPS.</li>
+<li><strong>Quản lý secret:</strong> biến môi trường của nền tảng, GitHub Secrets, AWS Secrets Manager, Vault. Không bao giờ commit file <code>.env</code>.</li>
+<li><strong>Quan sát hệ thống (observability):</strong> log (Loki, ELK), metrics (Prometheus + Grafana), tracing (OpenTelemetry), bắt lỗi (Sentry).</li>
+<li><span class="tag plus">Điểm cộng</span> Kiến thức cơ bản về Kubernetes (Pod, Deployment, Service, Ingress) và AWS (EC2, S3, RDS, CloudFront).</li>
+</ul>
+```yaml
+# .github/workflows/ci.yml
+name: CI
+on: [pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env: { POSTGRES_PASSWORD: test }
+        ports: ["5432:5432"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run lint && npm run typecheck
+      - run: npm test
+        env: { DATABASE_URL: "postgresql://postgres:test@localhost:5432/postgres" }
+```
+
+<h3>8.5. Bảo mật web (OWASP) <span class="tag must">Bắt buộc</span></h3>
+<div class="tbl"><table><thead><tr><th>Lỗ hổng</th><th>Ví dụ</th><th>Phòng chống</th></tr></thead><tbody>
+<tr><td><strong>SQL / NoSQL Injection</strong></td><td>Nối chuỗi <code>"WHERE id = " + req.query.id</code>; Mongo nhận <code>{"$gt": ""}</code></td><td>Parameterized query hoặc ORM; validate kiểu dữ liệu bằng zod</td></tr>
+<tr><td><strong>XSS</strong></td><td>Hiển thị bình luận chứa <code>&lt;script&gt;</code></td><td>React tự escape; tránh <code>dangerouslySetInnerHTML</code> (nếu phải dùng thì sanitize bằng DOMPurify); đặt header CSP</td></tr>
+<tr><td><strong>CSRF</strong></td><td>Trang lạ tự gửi form tới API đang dùng cookie</td><td>Cookie SameSite; CSRF token; kiểm tra Origin</td></tr>
+<tr><td><strong>Broken Access Control / IDOR</strong></td><td>Đổi <code>/orders/41</code> thành <code>/orders/42</code> và xem được đơn của người khác</td><td>Kiểm tra quyền sở hữu ở mọi endpoint</td></tr>
+<tr><td><strong>Lỗi xác thực</strong></td><td>Brute force mật khẩu, JWT dùng <code>alg: none</code></td><td>Rate limit đăng nhập, khóa tạm tài khoản, chỉ định rõ <code>algorithms</code>, MFA</td></tr>
+<tr><td><strong>Lộ dữ liệu nhạy cảm</strong></td><td>Trả cả <code>password_hash</code> trong response; log chứa token</td><td>Dùng DTO cho output, che dữ liệu trong log, bắt buộc HTTPS</td></tr>
+<tr><td><strong>SSRF</strong></td><td>API nhận URL để tải ảnh và bị trỏ vào <code>http://169.254.169.254</code></td><td>Allowlist domain, chặn dải IP nội bộ</td></tr>
+<tr><td><strong>Thư viện có lỗ hổng</strong></td><td>Package lỗi thời hoặc bị chèn mã độc</td><td><code>npm audit</code>, Dependabot/Renovate, commit lockfile, cẩn trọng với script postinstall</td></tr>
+<tr><td><strong>DoS ở tầng ứng dụng</strong></td><td>Body 1 GB, regex ReDoS, query không có limit</td><td>Giới hạn kích thước body, rate limit, timeout, phân trang bắt buộc</td></tr>
+</tbody></table></div>
+<p>Các middleware nên có: <code>helmet</code> (header bảo mật), <code>cors</code> chỉ cho phép đúng domain, <code>express-rate-limit</code> (lưu đếm trong Redis khi chạy nhiều instance).</p>
+```ts
+// SAI: SQL injection
+await db.query(`SELECT * FROM users WHERE email = '${req.body.email}'`);
+// ĐÚNG: parameterized query
+await db.query('SELECT * FROM users WHERE email = $1', [req.body.email]);
+
+// SAI: IDOR
+const order = await prisma.order.findUnique({ where: { id } });
+// ĐÚNG: luôn lọc kèm chủ sở hữu
+const order2 = await prisma.order.findFirst({ where: { id, userId: req.user.id } });
+if (!order2) throw new NotFoundError('Đơn hàng');
+```
+```qa
+Q: Unit test, integration test và E2E test khác nhau thế nào? Bạn viết loại nào nhiều nhất?
+A: Unit test kiểm tra một hàm hoặc một class, phần phụ thuộc thì mock, chạy rất nhanh. Integration test kiểm tra nhiều thành phần chạy cùng nhau, ví dụ API với DB thật. E2E chạy trên trình duyệt thật theo luồng của người dùng. Theo kim tự tháp test thì unit test nhiều nhất; tuy vậy với API backend, integration test qua Supertest thường đem lại nhiều giá trị nhất.
+Q: Khi nào nên mock, khi nào không?
+A: Nên mock những thứ chậm, không ổn định hoặc gây tác dụng phụ: API bên ngoài, email, thanh toán, thời gian, số ngẫu nhiên. Không nên mock chính thứ đang test, và với integration test thì hạn chế mock DB (dùng DB test trong Docker). Mock quá nhiều khiến test vẫn pass trong khi code thật đã hỏng.
+Q: Merge và rebase khác nhau thế nào? Khi nào không được rebase?
+A: Merge tạo một merge commit và giữ nguyên lịch sử gốc. Rebase đặt lại các commit của bạn lên trên nhánh đích để lịch sử thẳng hàng, nhưng điều đó làm đổi hash của commit. Không rebase những nhánh đã push mà người khác đang làm việc trên đó.
+Q: Vì sao trong Dockerfile phải COPY package.json trước rồi mới COPY source?
+A: Để tận dụng cache của layer. Khi chỉ sửa code mà không đổi dependency, layer `npm ci` được dùng lại nên build nhanh hơn rất nhiều.
+Q: Multi-stage build có lợi gì?
+A: Image cuối cùng chỉ chứa code đã build và dependency để chạy, không có devDependencies, source TS hay công cụ build. Nhờ vậy image nhỏ hơn, deploy nhanh hơn và ít bề mặt tấn công hơn.
+Q: Trình bày XSS và cách React chống XSS.
+A: XSS là khi kẻ tấn công chèn được script vào trang, script đó chạy trên trình duyệt nạn nhân và lấy cắp token hay thực hiện hành động thay họ. React tự escape mọi giá trị được render qua `{}`. Rủi ro còn lại nằm ở `dangerouslySetInnerHTML`, ở URL dạng `javascript:` trong href, và ở thư viện bên thứ ba. Biện pháp bổ sung: sanitize bằng DOMPurify, đặt header CSP, để token trong cookie HttpOnly.
+Q: CSRF là gì, và nếu dùng JWT trong header Authorization thì có bị CSRF không?
+A: CSRF là khi trang web khác khiến trình duyệt của nạn nhân gửi request kèm cookie của họ tới site của bạn. Nếu token được gửi qua header Authorization (do JS gắn vào) thì trình duyệt không tự gửi, nên không bị CSRF. Ngược lại, khả năng bị XSS lấy token lại cao hơn. Nếu xác thực bằng cookie thì cần SameSite và/hoặc CSRF token.
+Q: Lỗi IDOR là gì?
+A: Insecure Direct Object Reference: API chỉ kiểm tra là user đã đăng nhập, mà không kiểm tra tài nguyên có thuộc về user đó không. Kẻ tấn công chỉ cần đổi id trong URL. Phòng chống: luôn lọc theo chủ sở hữu hoặc kiểm tra policy ở tầng service.
+Q: Bạn quản lý secret (mật khẩu DB, API key) thế nào?
+A: Để trong biến môi trường hoặc trình quản lý secret của nền tảng (GitHub Secrets, AWS Secrets Manager, Vault). Có file `.env.example` không chứa giá trị thật; `.env` nằm trong `.gitignore`. Không đóng gói secret vào image, không ghi secret ra log. Nếu lỡ lộ thì đổi (rotate) ngay.
+```
+```quiz
+Q: Trong React Testing Library, cách tìm phần tử được khuyến khích nhất là?
+- `container.querySelector('.btn-primary')`
++ `screen.getByRole('button', { name: /lưu/i })`
+- `getByTestId` cho mọi phần tử
+- Tìm theo thứ tự trong DOM
+E: Tìm theo role và tên giống cách người dùng (và trình đọc màn hình) nhận ra phần tử, nên test không vỡ khi đổi CSS.
+Q: Test nào có giá trị nhất để kiểm tra endpoint `POST /orders` trả 201 và ghi vào DB?
+- Unit test mock toàn bộ
++ Integration test bằng Supertest với DB test thật
+- Kiểm tra thủ công bằng Postman
+- Snapshot test
+E: Integration test kiểm tra được route, validate, service và DB chạy cùng nhau.
+Q: Lệnh nào hoàn tác một commit ĐÃ PUSH lên nhánh chung một cách an toàn?
+- `git reset --hard HEAD~1` rồi `push --force`
++ `git revert <hash>`
+- `git commit --amend`
+- `git rebase -i`
+E: revert tạo một commit mới đảo ngược thay đổi, không viết lại lịch sử chung.
+Q: Thứ tự nào trong Dockerfile cho cache tốt nhất?
++ COPY package*.json → RUN npm ci → COPY . .
+- COPY . . → RUN npm ci
+- RUN npm ci → COPY package*.json
+- Không quan trọng
+E: Chỉ khi package.json thay đổi thì layer cài dependency mới phải build lại.
+Q: Cách chống SQL injection đúng nhất là?
+- Thay ký tự `'` bằng `''`
+- Chặn từ khóa SELECT trong input
++ Dùng parameterized query (prepared statement) hoặc ORM
+- Mã hóa input bằng base64
+E: Khi tham số được gửi tách riêng khỏi câu SQL, DB không bao giờ coi input là code.
+Q: Header nào giúp hạn chế thiệt hại của XSS?
+- `Access-Control-Allow-Origin`
++ `Content-Security-Policy`
+- `Cache-Control`
+- `ETag`
+E: CSP giới hạn nguồn mà script được phép chạy, chặn script inline lạ.
+Q: Đổi id trong URL là xem được hóa đơn của người khác. Đây là lỗi gì?
+- XSS
+- CSRF
++ IDOR (Broken Access Control)
+- SSRF
+E: Endpoint không kiểm tra quyền sở hữu tài nguyên. Đây là nhóm lỗi đứng đầu OWASP Top 10.
+Q: Ứng dụng chạy 4 instance phía sau load balancer. Bộ đếm rate limit nên lưu ở đâu?
+- Biến trong RAM của từng instance
++ Redis dùng chung
+- Cookie của client
+- localStorage
+E: Lưu trong RAM thì mỗi instance đếm riêng, nên giới hạn thực tế bị nhân lên 4 lần. Client thì có thể tự sửa cookie.
+```

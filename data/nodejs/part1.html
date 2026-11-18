@@ -1,0 +1,398 @@
+<h2 id="tong-quan">Tổng quan: Middle Node.js/React là ai?</h2>
+<p>Một Middle Fullstack Node.js/React là người <strong>tự làm trọn một tính năng từ database đến giao diện mà không cần kèm cặp</strong>, hiểu vì sao code chạy như vậy, và biết cân nhắc đánh đổi giữa các cách làm. Tài liệu này liệt kê toàn bộ kiến thức cần có, chia theo từng mảng, kèm câu hỏi ôn tập, trắc nghiệm và lộ trình ôn 10 tuần.</p>
+<div class="tbl"><table><thead><tr><th>Tiêu chí</th><th>Junior</th><th>Middle</th></tr></thead><tbody>
+<tr><td><strong>Nhận việc</strong></td><td>Cần task được mô tả chi tiết</td><td>Nhận yêu cầu nghiệp vụ, tự chia nhỏ task và ước lượng thời gian</td></tr>
+<tr><td><strong>Hiểu code</strong></td><td>Biết dùng API, thư viện</td><td>Hiểu cơ chế bên dưới: event loop, re-render, index, transaction</td></tr>
+<tr><td><strong>Chất lượng</strong></td><td>Code chạy được</td><td>Code dễ đọc, có test, xử lý lỗi, có log</td></tr>
+<tr><td><strong>Debug</strong></td><td>Hỏi người khác</td><td>Tự đọc log, profiling, tìm ra nguyên nhân gốc</td></tr>
+<tr><td><strong>Thiết kế</strong></td><td>Làm theo cấu trúc có sẵn</td><td>Thiết kế API, schema DB, cấu trúc module</td></tr>
+<tr><td><strong>Đội nhóm</strong></td><td>Được review code</td><td>Review code cho Junior, góp ý về kỹ thuật</td></tr>
+</tbody></table></div>
+<p>Mỗi mục kiến thức có nhãn ưu tiên:</p>
+<ul>
+<li><span class="tag must">Bắt buộc</span> gần như chắc chắn bị hỏi khi phỏng vấn Middle.</li>
+<li><span class="tag should">Nên biết</span> tạo khác biệt, giúp bạn deal lương cao hơn.</li>
+<li><span class="tag plus">Điểm cộng</span> biết sơ qua là đủ.</li>
+</ul>
+<div class="callout ok"><div class="ct">Lợi thế khi bạn đi lên từ PHP</div>3 năm PHP đã cho bạn nền tảng về SQL, HTTP, MVC, session/cookie và xử lý nghiệp vụ. Hãy dồn sức vào những điểm <strong>khác biệt</strong> giữa PHP và Node: mô hình bất đồng bộ đơn luồng, hệ sinh thái npm, TypeScript, và tư duy component của React. Khi phỏng vấn, hãy kể kinh nghiệm PHP như kinh nghiệm backend thực thụ: thiết kế DB, tối ưu query, xử lý nghiệp vụ phức tạp.</div>
+
+<div class="tbl"><table><thead><tr><th>Khái niệm PHP (Laravel)</th><th>Tương đương bên Node.js</th></tr></thead><tbody>
+<tr><td>Mỗi request một process/thread (PHP-FPM)</td><td>Một process, một luồng JS, xử lý nhiều request đồng thời nhờ event loop</td></tr>
+<tr><td>Composer, <code>composer.json</code></td><td>npm/pnpm, <code>package.json</code>, <code>package-lock.json</code></td></tr>
+<tr><td>Laravel (routing, middleware, DI container)</td><td>NestJS (gần Laravel nhất), hoặc Express/Fastify</td></tr>
+<tr><td>Eloquent ORM, migration</td><td>Prisma, TypeORM, Drizzle, Sequelize</td></tr>
+<tr><td>Blade template</td><td>React (SPA) hoặc Next.js (SSR)</td></tr>
+<tr><td>Queue (Laravel Horizon)</td><td>BullMQ (dùng Redis)</td></tr>
+<tr><td>PHPUnit</td><td>Jest, Vitest, <code>node:test</code></td></tr>
+<tr><td><code>.env</code> + <code>config()</code></td><td><code>.env</code> + <code>process.env</code>, validate bằng zod</td></tr>
+</tbody></table></div>
+<div class="upd"><strong>Về phiên bản (11/2026):</strong> dùng Node.js bản LTS hiện hành (Node 24 hoặc 26), React 19, TypeScript 5.x, Express 5, Next.js App Router. Kiến thức nền như event loop, HTTP, SQL, hooks thì nhiều năm vẫn đúng. Tên thư viện và cú pháp mới thì nên đối chiếu với tài liệu chính thức.</div>
+
+<h2 id="javascript-typescript">1. JavaScript nâng cao và TypeScript</h2>
+<p>Đây là phần nền của cả backend lẫn frontend. Rất nhiều buổi phỏng vấn Middle mở đầu bằng 10–15 phút hỏi JavaScript core.</p>
+
+<h3>1.1. Scope, closure, hoisting <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><strong>var / let / const:</strong> <code>var</code> có function scope và được hoisting với giá trị <code>undefined</code>. <code>let</code>/<code>const</code> có block scope và nằm trong <em>Temporal Dead Zone</em> cho đến dòng khai báo.</li>
+<li><strong>Closure:</strong> hàm "nhớ" các biến của scope nơi nó được tạo ra, kể cả khi scope đó đã chạy xong. Ứng dụng: đóng gói dữ liệu, factory function, memoize, debounce.</li>
+</ul>
+```js
+// Câu hỏi kinh điển: in ra gì?
+for (var i = 0; i < 3; i++) setTimeout(() => console.log(i), 0); // 3 3 3
+for (let j = 0; j < 3; j++) setTimeout(() => console.log(j), 0); // 0 1 2
+// let tạo một biến j mới cho mỗi vòng lặp; var dùng chung một biến i.
+
+// Closure: bộ đếm có dữ liệu "private"
+function createCounter() {
+  let count = 0;
+  return { inc: () => ++count, get: () => count };
+}
+const c = createCounter();
+c.inc(); c.inc();
+console.log(c.get()); // 2
+```
+
+<h3>1.2. <code>this</code>, prototype, class <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li><code>this</code> được xác định <strong>lúc gọi hàm</strong>, không phải lúc khai báo: <code>obj.fn()</code> thì <code>this = obj</code>. Gọi hàm rời (<code>fn()</code>) thì <code>this</code> là <code>undefined</code> trong strict mode.</li>
+<li>Arrow function <strong>không có <code>this</code> riêng</strong> mà lấy <code>this</code> của scope bao ngoài. Vì vậy không nên dùng arrow function làm method của object.</li>
+<li><code>call</code>/<code>apply</code> gọi hàm với <code>this</code> chỉ định; <code>bind</code> trả về một hàm mới đã gắn cố định <code>this</code>.</li>
+<li><code>class</code> chỉ là cú pháp đẹp hơn cho <strong>prototype</strong>. Mỗi object có <code>[[Prototype]]</code>; khi tìm thuộc tính, JS đi ngược lên chuỗi prototype.</li>
+</ul>
+
+<h3>1.3. Kiểu dữ liệu, so sánh, sao chép <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li>7 kiểu nguyên thủy (string, number, bigint, boolean, undefined, null, symbol) được truyền theo giá trị. Object, array, function được truyền theo <strong>tham chiếu</strong>.</li>
+<li>Luôn dùng <code>===</code>. Cần biết <code>==</code> có ép kiểu (<code>0 == ''</code> cho kết quả <code>true</code>).</li>
+<li><strong>Shallow copy:</strong> <code>{...obj}</code>, <code>[...arr]</code>, <code>Object.assign</code>. <strong>Deep copy:</strong> <code>structuredClone(obj)</code>. Cách <code>JSON.parse(JSON.stringify())</code> làm mất Date, Map, undefined, function.</li>
+<li><code>??</code> khác <code>||</code>: <code>??</code> chỉ thay khi giá trị là <code>null</code>/<code>undefined</code>, còn <code>||</code> thay cả với <code>0</code>, <code>''</code>, <code>false</code>.</li>
+<li>Cấu trúc dữ liệu: <code>Map</code> (key là kiểu bất kỳ, giữ thứ tự), <code>Set</code> (loại trùng), <code>WeakMap</code> (key là object, không chặn garbage collection).</li>
+</ul>
+
+<h3>1.4. Bất đồng bộ: callback, Promise, async/await <span class="tag must">Bắt buộc</span></h3>
+<p>Đây là mảng <strong>quan trọng nhất</strong> với người chuyển từ PHP sang, vì PHP chạy tuần tự còn Node thì không.</p>
+<div class="tbl"><table><thead><tr><th>Hàm</th><th>Khi nào resolve</th><th>Khi nào reject</th><th>Dùng khi</th></tr></thead><tbody>
+<tr><td><code>Promise.all</code></td><td>Tất cả thành công</td><td>Ngay khi 1 cái lỗi</td><td>Các việc phụ thuộc nhau, thiếu một là hỏng</td></tr>
+<tr><td><code>Promise.allSettled</code></td><td>Tất cả xong (thành công hay lỗi)</td><td>Không bao giờ</td><td>Gửi nhiều email, lỗi cái nào ghi log cái đó</td></tr>
+<tr><td><code>Promise.race</code></td><td>Cái đầu tiên xong</td><td>Cái đầu tiên lỗi</td><td>Timeout</td></tr>
+<tr><td><code>Promise.any</code></td><td>Cái đầu tiên thành công</td><td>Tất cả đều lỗi</td><td>Gọi nhiều server dự phòng, lấy kết quả nhanh nhất</td></tr>
+</tbody></table></div>
+```js
+// SAI: chạy tuần tự, tổng thời gian = a + b + c
+const user = await getUser(id);
+const orders = await getOrders(id);
+const stats = await getStats(id);
+
+// ĐÚNG: 3 việc độc lập thì chạy song song, tổng thời gian = max(a, b, c)
+const [user2, orders2, stats2] = await Promise.all([getUser(id), getOrders(id), getStats(id)]);
+
+// SAI: forEach không chờ async callback
+items.forEach(async (item) => { await save(item); });
+// ĐÚNG: tuần tự thì dùng for...of; song song thì dùng Promise.all + map
+for (const item of items) await save(item);
+await Promise.all(items.map((item) => save(item)));
+
+// Timeout cho một promise bất kỳ
+const withTimeout = (p, ms) =>
+  Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('Timeout')), ms))]);
+```
+<div class="callout warn"><div class="ct">Lỗi hay gặp</div>Quên <code>await</code> nên lỗi không được <code>try/catch</code> bắt. Dùng <code>Promise.all</code> với 10.000 phần tử làm DB quá tải: hãy giới hạn số việc chạy cùng lúc (chia batch, hoặc dùng thư viện <code>p-limit</code>).</div>
+
+<h3>1.5. Hàm bậc cao và các mẫu hay hỏi <span class="tag must">Bắt buộc</span></h3>
+<p>Bạn cần dùng thành thạo <code>map</code>, <code>filter</code>, <code>reduce</code>, <code>some</code>, <code>every</code>, <code>find</code>, <code>flatMap</code>, destructuring, rest/spread và optional chaining <code>?.</code>. Hai bài code hay bị yêu cầu viết tay:</p>
+```js
+// Debounce: chỉ chạy sau khi người dùng ngừng gõ `ms` mili giây (ô tìm kiếm)
+function debounce(fn, ms) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), ms);
+  };
+}
+
+// Throttle: chạy tối đa 1 lần mỗi `ms` mili giây (sự kiện scroll, resize)
+function throttle(fn, ms) {
+  let last = 0;
+  return (...args) => {
+    const now = Date.now();
+    if (now - last >= ms) { last = now; fn(...args); }
+  };
+}
+```
+
+<h3>1.6. TypeScript <span class="tag must">Bắt buộc</span></h3>
+<p>Ở mức Middle, hầu hết JD (mô tả công việc) đều ghi TypeScript là yêu cầu bắt buộc. Bạn cần biết:</p>
+<ul>
+<li><strong>Kiểu cơ bản</strong>, <code>type</code> và <code>interface</code>: interface có thể mở rộng/gộp khai báo, phù hợp mô tả object; type dùng được cho union, tuple và mapped type.</li>
+<li><strong>Union và narrowing:</strong> thu hẹp kiểu bằng <code>typeof</code>, <code>in</code>, <code>instanceof</code>, hoặc type guard tự viết.</li>
+<li><strong>Generics:</strong> viết hàm/kiểu dùng lại được mà vẫn giữ đúng kiểu dữ liệu.</li>
+<li><strong>Utility types:</strong> <code>Partial</code>, <code>Required</code>, <code>Pick</code>, <code>Omit</code>, <code>Record</code>, <code>ReturnType</code>, <code>Awaited</code>.</li>
+<li><strong><code>unknown</code> và <code>any</code>:</strong> <code>unknown</code> buộc phải kiểm tra kiểu trước khi dùng nên an toàn hơn. Nên tránh <code>any</code>.</li>
+<li><code>never</code> dùng để kiểm tra đã xử lý hết mọi trường hợp; <code>satisfies</code> kiểm tra kiểu mà không làm mất kiểu cụ thể.</li>
+<li>Bật <code>"strict": true</code> trong <code>tsconfig.json</code>.</li>
+</ul>
+```ts
+// Discriminated union + kiểm tra đã xử lý hết trường hợp
+type ApiResult<T> =
+  | { status: 'success'; data: T }
+  | { status: 'error'; message: string };
+
+function render<T>(r: ApiResult<T>) {
+  switch (r.status) {
+    case 'success': return r.data;      // TS biết r có data
+    case 'error':   return r.message;   // TS biết r có message
+    default: { const _never: never = r; return _never; } // thêm status mới mà quên xử lý → báo lỗi
+  }
+}
+
+// Generic có ràng buộc
+function pluck<T, K extends keyof T>(items: T[], key: K): T[K][] {
+  return items.map((i) => i[key]);
+}
+
+// Utility types cho DTO
+interface User { id: number; email: string; password: string; createdAt: Date }
+type PublicUser = Omit<User, 'password'>;
+type UpdateUserDto = Partial<Pick<User, 'email' | 'password'>>;
+```
+
+```qa
+Q: Closure là gì? Cho một ví dụ dùng closure trong dự án thật.
+A: Closure là một hàm cùng với các biến của scope nơi hàm đó được tạo ra. Hàm vẫn dùng được các biến này dù scope bên ngoài đã chạy xong. Ví dụ trong dự án: middleware factory `requireRole('admin')` trả về một middleware nhớ được role; hàm debounce nhớ `timer`; module giữ biến private.
+Q: Khác nhau giữa `var`, `let`, `const`?
+A: `var` có function scope, được hoisting với giá trị `undefined` và khai báo lại được. `let` và `const` có block scope và nằm trong TDZ trước dòng khai báo. `const` không gán lại được, nhưng object khai báo bằng `const` vẫn sửa được nội dung bên trong.
+Q: Arrow function khác function thường ở điểm nào?
+A: Arrow function không có `this`, `arguments` và `prototype` riêng, nên không dùng làm constructor với `new` được. `this` của nó lấy từ scope bao ngoài, vì thế rất tiện cho callback trong method, nhưng không nên dùng làm method của object.
+Q: `Promise.all` và `Promise.allSettled` khác nhau thế nào? Khi nào dùng cái nào?
+A: `all` reject ngay khi có một promise lỗi, nên hợp với các việc mà thiếu một cái là cả kết quả vô nghĩa. `allSettled` chờ tất cả chạy xong và trả về trạng thái của từng cái, nên hợp với các việc độc lập như gửi thông báo hàng loạt, cái nào lỗi thì ghi log cái đó.
+Q: Vì sao `await` bên trong `forEach` không hoạt động như mong đợi?
+A: `forEach` không quan tâm promise mà callback trả về, nên nó gọi hết các callback rồi kết thúc ngay. Muốn chạy tuần tự thì dùng `for...of`; muốn chạy song song thì dùng `Promise.all(arr.map(...))`.
+Q: Deep copy một object thế nào? `JSON.parse(JSON.stringify())` có vấn đề gì?
+A: Dùng `structuredClone`. Cách JSON làm mất `undefined`, function và Symbol, biến Date thành string, không giữ được Map/Set, và báo lỗi khi gặp tham chiếu vòng.
+Q: `interface` và `type` trong TypeScript khác nhau ra sao?
+A: Cả hai đều mô tả được object. `interface` có thể gộp khai báo (declaration merging) và `extends`, phù hợp cho kiểu public hoặc kiểu cần mở rộng. `type` dùng được cho union, tuple, mapped type và conditional type. Trong một dự án nên thống nhất một quy ước.
+Q: `unknown` khác `any` thế nào?
+A: `any` tắt kiểm tra kiểu hoàn toàn. `unknown` nhận mọi giá trị nhưng bắt buộc phải thu hẹp kiểu (typeof, kiểm tra bằng zod) trước khi dùng. Vì vậy dữ liệu từ bên ngoài như body request hay JSON.parse nên khai báo là `unknown`.
+```
+```quiz
+Q: Đoạn `for (var i = 0; i < 3; i++) setTimeout(() => console.log(i))` in ra gì?
+- 0 1 2
++ 3 3 3
+- undefined ×3
+- Báo lỗi
+E: `var` chỉ có một biến `i` dùng chung cho cả vòng lặp. Khi các callback chạy thì vòng lặp đã xong và `i = 3`.
+Q: Giá trị của `0 ?? 5` và `0 || 5` lần lượt là?
+- 5 và 5
+- 0 và 0
++ 0 và 5
+- 5 và 0
+E: `??` chỉ thay thế khi giá trị là null/undefined; `||` thay thế cả với mọi giá trị falsy, kể cả 0.
+Q: Promise nào reject chỉ khi TẤT CẢ các promise con đều lỗi?
+- Promise.all
+- Promise.race
+- Promise.allSettled
++ Promise.any
+E: `any` resolve với promise thành công đầu tiên; chỉ khi tất cả đều lỗi mới reject với AggregateError.
+Q: Trong strict mode, `const f = obj.method; f();` thì `this` bên trong là gì?
+- obj
++ undefined
+- globalThis
+- Hàm f
+E: `this` được xác định lúc gọi hàm. Gọi hàm rời không qua object thì `this` là undefined trong strict mode (ES module và class luôn ở strict mode).
+Q: Utility type nào tạo kiểu mà mọi thuộc tính đều không bắt buộc?
+- Required<T>
+- Readonly<T>
++ Partial<T>
+- Pick<T, K>
+E: `Partial<T>` thêm `?` cho mọi thuộc tính, rất hay dùng cho DTO cập nhật (PATCH).
+Q: Có 3 lời gọi API độc lập, mỗi cái mất 1 giây. Cách nào nhanh nhất?
+- Ba lệnh `await` liên tiếp
++ `await Promise.all([a(), b(), c()])`
+- `[a, b, c].forEach(async f => await f())` rồi dùng kết quả
+- Dùng `setTimeout` lồng nhau
+E: Promise.all chạy song song nên mất khoảng 1 giây. Ba lệnh await nối tiếp mất 3 giây; forEach không chờ nên không có kết quả để dùng.
+Q: Tình huống nào nên dùng debounce thay vì throttle?
++ Ô tìm kiếm gọi API khi người dùng ngừng gõ
+- Cập nhật vị trí khi người dùng cuộn trang
+- Gửi tọa độ chuột 10 lần mỗi giây
+- Game loop
+E: Debounce chờ một khoảng "yên lặng" rồi mới chạy một lần. Throttle giới hạn số lần chạy trong khoảng thời gian, hợp với sự kiện liên tục như scroll.
+Q: Từ khóa `never` trong TypeScript thường dùng để làm gì?
+- Khai báo biến có thể null
+- Thay thế cho void
++ Kiểm tra lúc biên dịch rằng mọi trường hợp của union đã được xử lý
+- Tắt kiểm tra kiểu
+E: Gán biến đã thu hẹp hết vào kiểu `never` khiến TS báo lỗi khi union có thêm thành viên mà switch chưa xử lý.
+```
+
+<h2 id="nodejs-core">2. Node.js core</h2>
+<p>Đây là phần phân biệt rõ nhất giữa người "biết dùng Express" và một Middle thực thụ.</p>
+
+<h3>2.1. Kiến trúc và event loop <span class="tag must">Bắt buộc</span></h3>
+<p>Node.js = engine <strong>V8</strong> (chạy JS) + <strong>libuv</strong> (event loop, I/O bất đồng bộ). Code JS của bạn chạy trên <strong>một luồng</strong>. Network I/O dùng cơ chế bất đồng bộ của hệ điều hành (epoll, kqueue). Một số việc như <code>fs</code>, <code>dns.lookup</code>, <code>crypto.pbkdf2</code>, <code>zlib</code> chạy trên <strong>thread pool của libuv</strong> (mặc định 4 luồng, đổi bằng <code>UV_THREADPOOL_SIZE</code>).</p>
+<figure class="diagram"><svg viewBox="0 0 760 270" role="img" aria-label="Các pha của event loop Node.js" xmlns="http://www.w3.org/2000/svg" font-family="inherit"><defs><marker id="el" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9aa0a6"/></marker></defs>
+<text x="24" y="34" font-size="15" font-weight="600" fill="#1f2328">Event loop đi lần lượt qua các pha, rồi quay lại từ đầu</text>
+<g fill="none" stroke="#9aa0a6" stroke-width="1.25"><path d="M152 106H168" marker-end="url(#el)"/><path d="M298 106H314" marker-end="url(#el)"/><path d="M444 106H460" marker-end="url(#el)"/><path d="M590 106H606" marker-end="url(#el)"/><path d="M672 142V170H88V146" marker-end="url(#el)"/></g>
+<rect x="24" y="70" width="128" height="72" rx="8" fill="#2f7ae5" fill-opacity="0.12" stroke="#2f7ae5" stroke-width="1.5"/><text x="88" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">1. timers</text><text x="88" y="112" text-anchor="middle" font-size="11.5" fill="#57606a">setTimeout</text><text x="88" y="128" text-anchor="middle" font-size="11.5" fill="#57606a">setInterval</text>
+<rect x="170" y="70" width="128" height="72" rx="8" fill="none" stroke="#9aa0a6" stroke-width="1.25"/><text x="234" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">2. pending</text><text x="234" y="112" text-anchor="middle" font-size="11.5" fill="#57606a">callback lỗi I/O</text><text x="234" y="128" text-anchor="middle" font-size="11.5" fill="#57606a">bị hoãn lại</text>
+<rect x="316" y="70" width="128" height="72" rx="8" fill="#6c4fd8" fill-opacity="0.12" stroke="#6c4fd8" stroke-width="2"/><text x="380" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">3. poll</text><text x="380" y="112" text-anchor="middle" font-size="11.5" fill="#57606a">chờ và chạy I/O</text><text x="380" y="128" text-anchor="middle" font-size="11.5" fill="#57606a">(fs, mạng, DB)</text>
+<rect x="462" y="70" width="128" height="72" rx="8" fill="#1aa37a" fill-opacity="0.12" stroke="#1aa37a" stroke-width="1.5"/><text x="526" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">4. check</text><text x="526" y="112" text-anchor="middle" font-size="11.5" fill="#57606a">setImmediate</text>
+<rect x="608" y="70" width="128" height="72" rx="8" fill="none" stroke="#9aa0a6" stroke-width="1.25"/><text x="672" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#1f2328">5. close</text><text x="672" y="112" text-anchor="middle" font-size="11.5" fill="#57606a">sự kiện 'close'</text><text x="672" y="128" text-anchor="middle" font-size="11.5" fill="#57606a">của socket</text>
+<text x="380" y="190" text-anchor="middle" font-size="11.5" fill="#57606a">vòng lặp tiếp theo</text>
+<rect x="24" y="208" width="712" height="40" rx="8" fill="#e8703a" fill-opacity="0.12" stroke="#e8703a" stroke-width="1.5"/><text x="380" y="233" text-anchor="middle" font-size="13" fill="#1f2328">Sau MỖI callback: chạy hết hàng đợi process.nextTick, rồi hết hàng đợi Promise (microtask)</text>
+</svg><figcaption>Event loop của Node.js · 5 pha chính (bỏ qua pha nội bộ idle/prepare)</figcaption></figure>
+```js
+// CommonJS (file .js không có "type": "module")
+console.log('1');
+setTimeout(() => console.log('timeout'), 0);
+setImmediate(() => console.log('immediate'));
+Promise.resolve().then(() => console.log('promise'));
+process.nextTick(() => console.log('nextTick'));
+console.log('2');
+// Kết quả: 1, 2, nextTick, promise, rồi timeout/immediate (thứ tự 2 cái cuối KHÔNG cố định)
+// Nếu đặt trong callback của fs.readFile thì immediate LUÔN chạy trước timeout.
+// Trong ES module, code top-level chạy như một microtask nên 'promise' in trước 'nextTick'.
+```
+<div class="callout warn"><div class="ct">Chặn event loop = cả server đứng hình</div>Một vòng lặp tính toán nặng, <code>JSON.parse</code> file 200 MB, regex tệ (ReDoS) hay <code>fs.readFileSync</code> trong request handler đều làm <strong>mọi request khác phải chờ</strong>. Cách xử lý: chia nhỏ công việc, dùng <code>worker_threads</code> cho việc nặng CPU, đẩy việc vào hàng đợi (BullMQ), dùng stream cho file lớn.</div>
+
+<h3>2.2. Module: CommonJS và ES Module <span class="tag must">Bắt buộc</span></h3>
+<div class="tbl"><table><thead><tr><th></th><th>CommonJS</th><th>ES Module</th></tr></thead><tbody>
+<tr><td>Cú pháp</td><td><code>require</code> / <code>module.exports</code></td><td><code>import</code> / <code>export</code></td></tr>
+<tr><td>Nạp module</td><td>Đồng bộ, lúc chạy</td><td>Phân tích tĩnh, cho phép top-level <code>await</code></td></tr>
+<tr><td>Bật bằng</td><td>Mặc định, file <code>.cjs</code></td><td><code>"type": "module"</code> trong package.json, file <code>.mjs</code></td></tr>
+<tr><td>Biến có sẵn</td><td><code>__dirname</code>, <code>__filename</code></td><td><code>import.meta.dirname</code>, <code>import.meta.url</code></td></tr>
+</tbody></table></div>
+<p>Dự án mới nên dùng ESM. Hãy luôn import module có sẵn với tiền tố <code>node:</code> (<code>import fs from 'node:fs/promises'</code>).</p>
+
+<h3>2.3. Stream và Buffer <span class="tag should">Nên biết</span></h3>
+<ul>
+<li>4 loại stream: <strong>Readable</strong> (đọc file, request), <strong>Writable</strong> (ghi file, response), <strong>Duplex</strong> (socket), <strong>Transform</strong> (nén, mã hóa).</li>
+<li><strong>Backpressure:</strong> khi bên ghi chậm hơn bên đọc, stream tạm dừng việc đọc để RAM không bị đầy. Hàm <code>pipeline</code> xử lý việc này và cả lỗi cho bạn.</li>
+<li>Buffer là dữ liệu nhị phân. Dùng khi xử lý file, ảnh, mã hóa.</li>
+</ul>
+```js
+import { createReadStream, createWriteStream } from 'node:fs';
+import { createGzip } from 'node:zlib';
+import { pipeline } from 'node:stream/promises';
+
+// Nén file 5 GB mà chỉ tốn vài MB RAM
+await pipeline(createReadStream('big.log'), createGzip(), createWriteStream('big.log.gz'));
+
+// Express: trả file CSV lớn theo dạng stream thay vì đọc hết vào RAM
+app.get('/export', (req, res) => {
+  res.setHeader('Content-Type', 'text/csv');
+  createReadStream('report.csv').pipe(res);
+});
+```
+
+<h3>2.4. Xử lý lỗi <span class="tag must">Bắt buộc</span></h3>
+<ul>
+<li>Phân biệt <strong>lỗi vận hành</strong> (DB mất kết nối, input sai, gọi API timeout): bắt lỗi và trả về response phù hợp. Còn <strong>lỗi lập trình</strong> (bug, <code>undefined is not a function</code>): ghi log và để process khởi động lại.</li>
+<li>Tự tạo class lỗi có <code>statusCode</code>, rồi xử lý tập trung ở một middleware.</li>
+<li>Từ Node 15, một <code>unhandledRejection</code> sẽ làm <strong>process tắt</strong>. Hãy ghi log trong <code>process.on('unhandledRejection')</code> và <code>uncaughtException</code>, rồi thoát để PM2/Docker khởi động lại.</li>
+</ul>
+```ts
+export class AppError extends Error {
+  constructor(public statusCode: number, message: string, public code = 'APP_ERROR') {
+    super(message);
+  }
+}
+export class NotFoundError extends AppError {
+  constructor(resource: string) { super(404, `${resource} không tồn tại`, 'NOT_FOUND'); }
+}
+```
+
+<h3>2.5. Tận dụng nhiều nhân CPU <span class="tag should">Nên biết</span></h3>
+<ul>
+<li><strong>Cluster / PM2 (<code>pm2 start app.js -i max</code>):</strong> chạy nhiều process, mỗi process một nhân CPU, dùng chung một port. Các process <strong>không chia sẻ bộ nhớ</strong>, nên session và cache phải để trong Redis.</li>
+<li><strong>worker_threads:</strong> luồng riêng cho tác vụ nặng CPU (xử lý ảnh, tạo PDF, mã hóa), không làm chặn event loop chính.</li>
+<li><strong>child_process:</strong> chạy chương trình bên ngoài (ffmpeg, script Python).</li>
+<li>Trong Kubernetes thường chạy mỗi container một process và scale bằng số lượng pod.</li>
+</ul>
+
+<h3>2.6. EventEmitter, cấu hình, hiệu năng <span class="tag should">Nên biết</span></h3>
+<ul>
+<li><strong>EventEmitter:</strong> nền tảng của stream, server, socket. Nhớ gỡ listener (<code>off</code>) để tránh rò rỉ bộ nhớ.</li>
+<li><strong>Cấu hình:</strong> đọc từ biến môi trường và validate ngay khi khởi động. Thiếu biến thì báo lỗi ngay, không để đến lúc chạy mới lỗi.</li>
+<li><strong>Rò rỉ bộ nhớ hay gặp:</strong> cache trong biến global không giới hạn kích thước, listener không được gỡ, closure giữ object lớn, <code>setInterval</code> không được clear.</li>
+<li><strong>Công cụ:</strong> <code>node --inspect</code> + Chrome DevTools (heap snapshot, CPU profile), <code>clinic.js</code>, <code>autocannon</code> để load test.</li>
+<li>Node bản mới có sẵn nhiều thứ: <code>fetch</code>, <code>node --watch</code>, <code>node --env-file=.env</code>, test runner <code>node:test</code>, chạy trực tiếp file <code>.ts</code> (type stripping).</li>
+</ul>
+```ts
+import { z } from 'zod';
+const Env = z.object({
+  NODE_ENV: z.enum(['development', 'test', 'production']).default('development'),
+  PORT: z.coerce.number().default(3000),
+  DATABASE_URL: z.string().url(),
+  JWT_SECRET: z.string().min(32),
+});
+export const env = Env.parse(process.env); // thiếu hoặc sai biến → app không khởi động
+```
+```qa
+Q: Node.js là đơn luồng, vậy sao xử lý được hàng nghìn request cùng lúc?
+A: Chỉ phần chạy code JS là đơn luồng. I/O như mạng, file hay DB được giao cho hệ điều hành hoặc thread pool của libuv. Trong lúc chờ I/O, event loop tiếp tục nhận request khác; khi I/O xong thì callback được đưa vào hàng đợi để chạy. Mô hình này rất hợp với ứng dụng nhiều I/O, nhưng không hợp với việc nặng CPU.
+Q: Kể các pha của event loop. `process.nextTick` và Promise chạy lúc nào?
+A: Các pha là timers → pending callbacks → (idle/prepare) → poll → check → close callbacks. Sau mỗi callback, Node chạy hết hàng đợi `nextTick`, rồi đến hết hàng đợi microtask của Promise, sau đó mới sang callback hoặc pha tiếp theo.
+Q: `setImmediate` khác `setTimeout(fn, 0)` thế nào?
+A: `setImmediate` chạy ở pha check, ngay sau pha poll. `setTimeout 0` chạy ở pha timers. Trong code chính, thứ tự hai cái không cố định; trong callback I/O thì `setImmediate` luôn chạy trước.
+Q: Làm sao biết event loop đang bị chặn và xử lý thế nào?
+A: Dấu hiệu là latency tăng đều ở mọi endpoint và CPU 100% trên một nhân. Đo bằng `perf_hooks.monitorEventLoopDelay` hoặc clinic.js, tìm hàm nóng bằng CPU profile. Cách xử lý: dùng hàm async thay hàm sync, chuyển việc nặng sang worker_threads hoặc hàng đợi, dùng stream cho dữ liệu lớn, sửa regex dễ bị ReDoS.
+Q: Backpressure là gì?
+A: Là khi bên nhận dữ liệu (Writable) xử lý chậm hơn bên gửi (Readable). `write()` trả về false thì bên gửi phải dừng lại cho đến khi có sự kiện `drain`. `pipe` và `pipeline` tự xử lý việc này, nhờ vậy RAM không bị đầy.
+Q: Cluster và worker_threads khác nhau thế nào?
+A: Cluster tạo nhiều process, mỗi cái có bộ nhớ và event loop riêng, dùng chung port, dùng để scale khả năng xử lý request HTTP. worker_threads là các luồng trong cùng một process, có thể chia sẻ bộ nhớ (SharedArrayBuffer), dùng cho tác vụ nặng CPU.
+Q: Khi gặp `uncaughtException` có nên để app chạy tiếp không?
+A: Không nên. Lúc đó trạng thái của app có thể đã hỏng. Đúng cách là ghi log, đóng kết nối một cách êm (graceful shutdown) rồi thoát process; PM2, Docker hoặc Kubernetes sẽ khởi động lại.
+Q: Những nguyên nhân phổ biến gây rò rỉ bộ nhớ trong Node?
+A: Cache bằng object/Map global mà không giới hạn hay đặt TTL; thêm event listener mà không gỡ; `setInterval` không clear; closure giữ tham chiếu tới object lớn; mảng log tăng mãi. Cách tìm: chụp 2–3 heap snapshot cách nhau rồi so sánh xem object nào tăng lên.
+```
+```quiz
+Q: Tác vụ nào chạy trên thread pool của libuv?
+- Một request HTTP gửi đi
++ `crypto.pbkdf2` và `fs.readFile`
+- `setTimeout`
+- `Promise.resolve().then()`
+E: Network I/O dùng cơ chế bất đồng bộ của hệ điều hành. fs, dns.lookup, crypto (pbkdf2, scrypt) và zlib mới dùng thread pool (mặc định 4 luồng).
+Q: Trong CommonJS, thứ tự in của `nextTick`, `Promise.then` và `setTimeout 0` là?
++ nextTick → promise → timeout
+- promise → nextTick → timeout
+- timeout → nextTick → promise
+- Không xác định
+E: Hàng đợi nextTick được chạy trước microtask của Promise; cả hai chạy trước khi event loop sang pha timers.
+Q: Endpoint nào làm chặn cả server?
+- `await db.query(...)`
+- `await fetch(url)`
++ `fs.readFileSync('2GB.log')` bên trong handler
+- `res.json(data)` với data nhỏ
+E: Hàm *Sync chặn luồng JS cho đến khi xong, khiến mọi request khác phải chờ.
+Q: Cách đúng để nén một file 10 GB trong Node là?
+- `readFile` → `gzipSync` → `writeFile`
++ `pipeline(createReadStream, createGzip(), createWriteStream)`
+- Đọc vào Buffer rồi chia nhỏ
+- Tăng `--max-old-space-size`
+E: Stream xử lý dữ liệu theo từng khối nhỏ và có backpressure, nên RAM dùng ít và không đổi.
+Q: Từ Node 15, một Promise bị reject mà không ai bắt sẽ dẫn đến?
+- Chỉ in ra cảnh báo
+- Bị bỏ qua
++ Process bị dừng
+- Tự động thử lại
+E: Mặc định `--unhandled-rejections=throw` khiến process thoát.
+Q: Trong ES module, lấy thư mục chứa file hiện tại bằng cách nào?
+- `__dirname`
++ `import.meta.dirname`
+- `process.cwd()`
+- `require.main.path`
+E: `__dirname` chỉ có trong CommonJS. `process.cwd()` là thư mục nơi chạy lệnh, không phải thư mục chứa file.
+Q: Chạy app trên server 8 nhân CPU bằng PM2 chế độ cluster. Điều gì SAI?
+- Mỗi process có event loop riêng
+- Các process dùng chung port
++ Các process dùng chung biến JS trong RAM
+- Session nên được lưu trong Redis
+E: Các process không chia sẻ bộ nhớ. Cache hay session lưu trong RAM thì process này không thấy được của process kia.
+Q: Công cụ nào phù hợp nhất để tìm rò rỉ bộ nhớ?
+- `console.time`
++ So sánh heap snapshot trong Chrome DevTools (`node --inspect`)
+- `npm audit`
+- ESLint
+E: Heap snapshot cho thấy object nào giữ bộ nhớ và ai đang giữ tham chiếu tới nó.
+```
